@@ -8,23 +8,31 @@ import 'swiper/css/pagination';
 const quotes = [
   {
     text: "Did I drink enough water? No. Does my skin feel hydrated? No, but it’s softer, plumper, and dewier than ever!",
-    author: "Sophie JK.",
-    imgSrc: "//beautina-cosmetic.myshopify.com/cdn/shop/files/fleur-kaan-w4Dj3MshHQ0-unsplash.jpg?v=1773124926&width=720"
+    id: 1,
+    name: "SARAH JENKINS",
+    imgSrc: "/assets/migrated/23_fleur-kaan-w4Dj3MshHQ0-unsplash.jpg",
+    rating: 5,
   },
   {
     text: "My skin has never felt this soft! Was it magic? No. Did it work wonders? No, but I’m glowing like never before!",
-    author: "Jane Smith",
-    imgSrc: "//beautina-cosmetic.myshopify.com/cdn/shop/files/home-after.jpg?v=1773124924&width=720"
+    id: 2,
+    name: "EMILY R.",
+    imgSrc: "/assets/migrated/3_home-after_4fcfbfed-535d-4e65-8f9f-1fe66b041eff.jpg",
+    rating: 5,
   },
   {
     text: "Did I apply a filter? No. Does my skin look flawless? No, but this glow is giving effortlessly airbrushed vibes!",
-    author: "Mike Johnson",
-    imgSrc: "//beautina-cosmetic.myshopify.com/cdn/shop/files/after-image.jpg?v=1773124923&width=720"
+    id: 3,
+    name: "JESSICA T.",
+    imgSrc: "/assets/migrated/0_home-after_1.jpg",
+    rating: 5,
   },
   {
     text: "Great product and excellent customer service.",
-    author: "Mike Johnson",
-    imgSrc: "//beautina-cosmetic.myshopify.com/cdn/shop/files/gallery-5-v2.webp?v=1773124923&width=720"
+    id: 4,
+    name: "MICHELLE W.",
+    imgSrc: "/assets/migrated/22_gallery-5-v2.webp",
+    rating: 5,
   }
 ];
 
@@ -104,7 +112,7 @@ const TestimonialsCarousel = () => {
                     </div>
                     
                     <div className="font-sans text-[13px] md:text-[14px] font-semibold uppercase tracking-widest text-[#111111]">
-                      {quote.author}
+                      {quote.name}
                     </div>
                   </div>
 

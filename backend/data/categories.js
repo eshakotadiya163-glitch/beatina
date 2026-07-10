@@ -3,37 +3,37 @@ const categories = [
     name: 'Skin Care',
     slug: 'skin-care',
     description: 'Luxurious skin care products for radiant and youthful skin.',
-    image: 'https://images.unsplash.com/photo-1556228578-0d85b1a4d571?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    image: '/assets/migrated/10_collection-tab-1.jpg',
   },
   {
     name: 'Body Care',
     slug: 'body-care',
     description: 'Nourishing body lotions and scrubs for everyday indulgence.',
-    image: 'https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    image: '/assets/migrated/49_b12_720x_301f00ae-898e-41d1-b635-14ec61052c17.webp',
   },
   {
     name: 'Hair Care',
     slug: 'hair-care',
     description: 'Premium hair care essentials for healthy, voluminous hair.',
-    image: 'https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    image: '/assets/migrated/2_b2_1_96db18e7-8cd1-4ac2-95aa-f203226fc675.webp',
   },
   {
     name: 'Fragrance',
     slug: 'fragrance',
     description: 'Captivating signature scents crafted from the finest ingredients.',
-    image: 'https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    image: '/assets/migrated/5_custom-banner-2.jpg',
   },
   {
     name: 'Wellness',
     slug: 'wellness',
     description: 'Holistic wellness products to rejuvenate mind and body.',
-    image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    image: '/assets/migrated/9_b17_540x_aa6b96c0-cd33-460e-8da7-208e8c30f82e.webp',
   },
   {
     name: 'Gift Sets',
     slug: 'gift-sets',
     description: 'Curated luxury collections for the perfect gift.',
-    image: 'https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    image: '/assets/migrated/24_3.11_a206c225-bd03-40da-8e5f-e3a3e160e25a.webp',
   }
 ];
 

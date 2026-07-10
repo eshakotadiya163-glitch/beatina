@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600&family=Figtree:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
 
 @theme {
   /* === EXACT Beautina Colors (extracted from storefront) === */
@@ -14,9 +14,11 @@
   --color-brand-btn-hover: #333333;    /* Button hover */
 
   /* === EXACT Beautina Fonts === */
-  --font-heading: 'Epilogue', sans-serif; 
-  --font-body: 'Poppins', sans-serif; 
-  --font-button: 'Epilogue', sans-serif;
+  --font-serif: 'Fraunces', serif; 
+  --font-sans: 'Figtree', sans-serif;
+  --font-heading: 'Fraunces', serif; 
+  --font-body: 'Figtree', sans-serif; 
+  --font-button: 'Figtree', sans-serif;
 
   /* Success / Error */
   --color-success: #4CAF50;
