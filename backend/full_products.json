@@ -1,0 +1,1128 @@
+[
+  {
+    "name": "Sebum Control Clear Skin Wash",
+    "slug": "sebum-control-clear-skin-wash-0-0",
+    "brand": "MADARA COSMETICS",
+    "price": 2100,
+    "compareAtPrice": null,
+    "tabCategory": "New Arrivals",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-sebum-control-clear-skin-wash-A2004.jpg?v=1773123671&width=720",
+        "altText": "Sebum Control Clear Skin Wash"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2-acne-cleansing-treatment-A2004.jpg?v=1773123671&width=720",
+        "altText": "Sebum Control Clear Skin Wash hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Custom Actives",
+    "slug": "custom-actives-0-1",
+    "brand": "MADARA COSMETICS",
+    "price": 1700,
+    "compareAtPrice": null,
+    "tabCategory": "New Arrivals",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-omega-3-6-9-concentrate-A3263.jpg?v=1773123671&width=720",
+        "altText": "Custom Actives"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2-omega-concentrate-A3263.jpg?v=1773123670&width=720",
+        "altText": "Custom Actives hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Face Cream for Men",
+    "slug": "face-cream-for-men-0-2",
+    "brand": "MADARA COSMETICS",
+    "price": 100,
+    "compareAtPrice": null,
+    "tabCategory": "New Arrivals",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-his-face-cream-for-men-A5003.jpg?v=1773123670&width=720",
+        "altText": "Face Cream for Men"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/madara-face-cream-for-men-2ml-sample-SC5003-2.jpg?v=1773123670&width=720",
+        "altText": "Face Cream for Men hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "After Shave Serum for Men",
+    "slug": "after-shave-serum-for-men-0-3",
+    "brand": "MADARA COSMETICS",
+    "price": 3000,
+    "compareAtPrice": null,
+    "tabCategory": "New Arrivals",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-after-shave-serum-for-men-madara-A5002.jpg?v=1773123669&width=720",
+        "altText": "After Shave Serum for Men"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2-after-shave-for-men-A5002.jpg?v=1773123669&width=720",
+        "altText": "After Shave Serum for Men hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Niacinamide Alternative 5-in-1 Serum",
+    "slug": "niacinamide-alternative-5-in-1-serum-0-4",
+    "brand": "MADARA COSMETICS",
+    "price": 2200,
+    "compareAtPrice": null,
+    "tabCategory": "New Arrivals",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-botanic-niacinamide-alternative-5-in-1-serum-A2223.jpg?v=1773123675&width=720",
+        "altText": "Niacinamide Alternative 5-in-1 Serum"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-niacinamide-alternative-travel-size-SM2223-15.jpg?v=1773123675&width=720",
+        "altText": "Niacinamide Alternative 5-in-1 Serum hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Brightening AHA Peel Mask",
+    "slug": "brightening-aha-peel-mask-0-5",
+    "brand": "MADARA COSMETICS",
+    "price": 100,
+    "compareAtPrice": null,
+    "tabCategory": "New Arrivals",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-brightening-5-aha-peel-mask-A2101.jpg?v=1773123676&width=720",
+        "altText": "Brightening AHA Peel Mask"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/madara-brightening-aha-peel-mask-5ml-SC2101-5.jpg?v=1773123676&width=720",
+        "altText": "Brightening AHA Peel Mask hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Creamy Clay AHA Peel Mask",
+    "slug": "creamy-clay-aha-peel-mask-0-6",
+    "brand": "MADARA COSMETICS",
+    "price": 100,
+    "compareAtPrice": null,
+    "tabCategory": "New Arrivals",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-creamy-clay-7-aha-peel-mask-A2105.jpg?v=1773123674&width=720",
+        "altText": "Creamy Clay AHA Peel Mask"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/madara-creamy-peel-aha-clay-mask-3ml-SC2105-3.jpg?v=1773123674&width=720",
+        "altText": "Creamy Clay AHA Peel Mask hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Exfoliating Oil-To-Milk Scrub",
+    "slug": "exfoliating-oil-to-milk-scrub-0-7",
+    "brand": "MADARA COSMETICS",
+    "price": 2600,
+    "compareAtPrice": null,
+    "tabCategory": "New Arrivals",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-exfoliating-oil-to-milk-scrub-A2151.jpg?v=1773123673&width=720",
+        "altText": "Exfoliating Oil-To-Milk Scrub"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2-oil-based-face-scrub-texture-A2151.jpg?v=1773123673&width=720",
+        "altText": "Exfoliating Oil-To-Milk Scrub hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Clarifying Toner",
+    "slug": "clarifying-toner-0-8",
+    "brand": "MADARA COSMETICS",
+    "price": 1900,
+    "compareAtPrice": null,
+    "tabCategory": "New Arrivals",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-clarifying-toner-A2051.jpg?v=1773123673&width=720",
+        "altText": "Clarifying Toner"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2-cosmos-natural-exfoliating-toner-A2051.jpg?v=1773123673&width=720",
+        "altText": "Clarifying Toner hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Spot Roll-On",
+    "slug": "spot-roll-on-0-9",
+    "brand": "MADARA COSMETICS",
+    "price": 1500,
+    "compareAtPrice": null,
+    "tabCategory": "New Arrivals",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-acne-spot-roll-on-A2103.jpg?v=1773123672&width=720",
+        "altText": "Spot Roll-On"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2-salicylic-acid-treatment-A2103.jpg?v=1773123673&width=720",
+        "altText": "Spot Roll-On hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Sebum Control Clear Skin Wash",
+    "slug": "sebum-control-clear-skin-wash-0-10",
+    "brand": "MADARA COSMETICS",
+    "price": 2100,
+    "compareAtPrice": null,
+    "tabCategory": "New Arrivals",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-sebum-control-clear-skin-wash-A2004.jpg?v=1773123671&width=720",
+        "altText": "Sebum Control Clear Skin Wash"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2-acne-cleansing-treatment-A2004.jpg?v=1773123671&width=720",
+        "altText": "Sebum Control Clear Skin Wash hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Custom Actives",
+    "slug": "custom-actives-0-11",
+    "brand": "MADARA COSMETICS",
+    "price": 1700,
+    "compareAtPrice": null,
+    "tabCategory": "New Arrivals",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-omega-3-6-9-concentrate-A3263.jpg?v=1773123671&width=720",
+        "altText": "Custom Actives"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2-omega-concentrate-A3263.jpg?v=1773123670&width=720",
+        "altText": "Custom Actives hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Face Cream for Men",
+    "slug": "face-cream-for-men-0-12",
+    "brand": "MADARA COSMETICS",
+    "price": 100,
+    "compareAtPrice": null,
+    "tabCategory": "New Arrivals",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-his-face-cream-for-men-A5003.jpg?v=1773123670&width=720",
+        "altText": "Face Cream for Men"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/madara-face-cream-for-men-2ml-sample-SC5003-2.jpg?v=1773123670&width=720",
+        "altText": "Face Cream for Men hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "After Shave Serum for Men",
+    "slug": "after-shave-serum-for-men-0-13",
+    "brand": "MADARA COSMETICS",
+    "price": 3000,
+    "compareAtPrice": null,
+    "tabCategory": "New Arrivals",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-after-shave-serum-for-men-madara-A5002.jpg?v=1773123669&width=720",
+        "altText": "After Shave Serum for Men"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2-after-shave-for-men-A5002.jpg?v=1773123669&width=720",
+        "altText": "After Shave Serum for Men hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Niacinamide Alternative 5-in-1 Serum",
+    "slug": "niacinamide-alternative-5-in-1-serum-0-14",
+    "brand": "MADARA COSMETICS",
+    "price": 2200,
+    "compareAtPrice": null,
+    "tabCategory": "New Arrivals",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-botanic-niacinamide-alternative-5-in-1-serum-A2223.jpg?v=1773123675&width=720",
+        "altText": "Niacinamide Alternative 5-in-1 Serum"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-niacinamide-alternative-travel-size-SM2223-15.jpg?v=1773123675&width=720",
+        "altText": "Niacinamide Alternative 5-in-1 Serum hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Brightening AHA Peel Mask",
+    "slug": "brightening-aha-peel-mask-0-15",
+    "brand": "MADARA COSMETICS",
+    "price": 100,
+    "compareAtPrice": null,
+    "tabCategory": "New Arrivals",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-brightening-5-aha-peel-mask-A2101.jpg?v=1773123676&width=720",
+        "altText": "Brightening AHA Peel Mask"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/madara-brightening-aha-peel-mask-5ml-SC2101-5.jpg?v=1773123676&width=720",
+        "altText": "Brightening AHA Peel Mask hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Creamy Clay AHA Peel Mask",
+    "slug": "creamy-clay-aha-peel-mask-0-16",
+    "brand": "MADARA COSMETICS",
+    "price": 100,
+    "compareAtPrice": null,
+    "tabCategory": "New Arrivals",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-creamy-clay-7-aha-peel-mask-A2105.jpg?v=1773123674&width=720",
+        "altText": "Creamy Clay AHA Peel Mask"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/madara-creamy-peel-aha-clay-mask-3ml-SC2105-3.jpg?v=1773123674&width=720",
+        "altText": "Creamy Clay AHA Peel Mask hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Exfoliating Oil-To-Milk Scrub",
+    "slug": "exfoliating-oil-to-milk-scrub-0-17",
+    "brand": "MADARA COSMETICS",
+    "price": 2600,
+    "compareAtPrice": null,
+    "tabCategory": "New Arrivals",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-exfoliating-oil-to-milk-scrub-A2151.jpg?v=1773123673&width=720",
+        "altText": "Exfoliating Oil-To-Milk Scrub"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2-oil-based-face-scrub-texture-A2151.jpg?v=1773123673&width=720",
+        "altText": "Exfoliating Oil-To-Milk Scrub hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Rich Hydra-Barrier CICA Cream",
+    "slug": "rich-hydra-barrier-cica-cream-1-0",
+    "brand": "MADARA COSMETICS",
+    "price": 100,
+    "compareAtPrice": null,
+    "tabCategory": "Best Sellers",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-sos-rich-hydra-barrier-cica-cream-A3012.jpg?v=1773123663&width=720",
+        "altText": "Rich Hydra-Barrier CICA Cream"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/madara-sos-rich-hydra-barrier-cica-cream-2ml-SC3012-2.jpg?v=1773123663&width=720",
+        "altText": "Rich Hydra-Barrier CICA Cream hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Illuminating Recovery Cream",
+    "slug": "illuminating-recovery-cream-1-1",
+    "brand": "MADARA COSMETICS",
+    "price": 100,
+    "compareAtPrice": null,
+    "tabCategory": "Best Sellers",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-A3302-vitamin-c-illuminating-recovery-cream-madara_fac25d95-bad7-467c-8120-525e46626e3c.jpg?v=1773123660&width=720",
+        "altText": "Illuminating Recovery Cream"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-vitamin-c-illuminating-recovery-cream-madara-A3302.jpg?v=1773123660&width=720",
+        "altText": "Illuminating Recovery Cream hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Intense Glow Concentrate",
+    "slug": "intense-glow-concentrate-1-2",
+    "brand": "MADARA COSMETICS",
+    "price": 4400,
+    "compareAtPrice": null,
+    "tabCategory": "Best Sellers",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-vitamin-c-intense-glow-concentrate-A3301.jpg?v=1773123659&width=720",
+        "altText": "Intense Glow Concentrate"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2-radiance-boosting-essence-A3301.jpg?v=1773123659&width=720",
+        "altText": "Intense Glow Concentrate hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Hydra Moisture+Radiance Mask",
+    "slug": "hydra-moisture-radiance-mask-1-3",
+    "brand": "MADARA COSMETICS",
+    "price": 3400,
+    "compareAtPrice": null,
+    "tabCategory": "Best Sellers",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-instant-moisture-radiance-face-mask-A3025.jpg?v=1773123658&width=720",
+        "altText": "Hydra Moisture+Radiance Mask"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2-organic-moisturising-face-mask-A3025.jpg?v=1773123658&width=720",
+        "altText": "Hydra Moisture+Radiance Mask hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Hydra Repair Intensive Serum",
+    "slug": "hydra-repair-intensive-serum-1-4",
+    "brand": "MADARA COSMETICS",
+    "price": 100,
+    "compareAtPrice": null,
+    "tabCategory": "Best Sellers",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-sos-hydra-repair-intensive-serum-A3021.jpg?v=1773123668&width=720",
+        "altText": "Hydra Repair Intensive Serum"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/madara-sos-hydra-repair-intensive-serum-2ml-SC3021-2.jpg?v=1773123668&width=720",
+        "altText": "Hydra Repair Intensive Serum hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Hydra Recharge Cream",
+    "slug": "hydra-recharge-cream-1-5",
+    "brand": "MADARA COSMETICS",
+    "price": 100,
+    "compareAtPrice": null,
+    "tabCategory": "Best Sellers",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-A3011-SOS-hydra-recharge-cream-madara.jpg?v=1773123667&width=720",
+        "altText": "Hydra Recharge Cream"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-sos-hydra-recharge-cream-A3011.jpg?v=1773123667&width=720",
+        "altText": "Hydra Recharge Cream hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Eye Revive Hydra Cream & Mask",
+    "slug": "eye-revive-hydra-cream-mask-1-6",
+    "brand": "MADARA COSMETICS",
+    "price": 3400,
+    "compareAtPrice": null,
+    "tabCategory": "Best Sellers",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-eye-revive-hydra-cream-and-mask-A3031.jpg?v=1773123666&width=720",
+        "altText": "Eye Revive Hydra Cream & Mask"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2-moisturising-eye-mask-madara-A3031.jpg?v=1773123666&width=720",
+        "altText": "Eye Revive Hydra Cream & Mask hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Hydra Intense Rose Jelly",
+    "slug": "hydra-intense-rose-jelly-1-7",
+    "brand": "MADARA COSMETICS",
+    "price": 3600,
+    "compareAtPrice": null,
+    "tabCategory": "Best Sellers",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-sos-hydra-intense-rose-jelly-A3022.jpg?v=1773123665&width=720",
+        "altText": "Hydra Intense Rose Jelly"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2-rose-water-jelly-A3022.jpg?v=1773123666&width=720",
+        "altText": "Hydra Intense Rose Jelly hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Sensitive Moisturiser",
+    "slug": "sensitive-moisturiser-1-8",
+    "brand": "MADARA COSMETICS",
+    "price": 1500,
+    "compareAtPrice": null,
+    "tabCategory": "Best Sellers",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-sos-sensitive-moisturiser-A3015.jpg?v=1773123665&width=720",
+        "altText": "Sensitive Moisturiser"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-sos-sensitive-moisturiser-travel-size-SM3015-15.jpg?v=1773123665&width=720",
+        "altText": "Sensitive Moisturiser hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Sensitive Night Cream",
+    "slug": "sensitive-night-cream-1-9",
+    "brand": "MADARA COSMETICS",
+    "price": 1500,
+    "compareAtPrice": null,
+    "tabCategory": "Best Sellers",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-sos-sensitive-night-cream-A3014.jpg?v=1773123664&width=720",
+        "altText": "Sensitive Night Cream"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-sos-sensitive-night-cream-travel-size-SM3014-17.jpg?v=1773123664&width=720",
+        "altText": "Sensitive Night Cream hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Rich Hydra-Barrier CICA Cream",
+    "slug": "rich-hydra-barrier-cica-cream-1-10",
+    "brand": "MADARA COSMETICS",
+    "price": 100,
+    "compareAtPrice": null,
+    "tabCategory": "Best Sellers",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-sos-rich-hydra-barrier-cica-cream-A3012.jpg?v=1773123663&width=720",
+        "altText": "Rich Hydra-Barrier CICA Cream"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/madara-sos-rich-hydra-barrier-cica-cream-2ml-SC3012-2.jpg?v=1773123663&width=720",
+        "altText": "Rich Hydra-Barrier CICA Cream hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Illuminating Recovery Cream",
+    "slug": "illuminating-recovery-cream-1-11",
+    "brand": "MADARA COSMETICS",
+    "price": 100,
+    "compareAtPrice": null,
+    "tabCategory": "Best Sellers",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-A3302-vitamin-c-illuminating-recovery-cream-madara_fac25d95-bad7-467c-8120-525e46626e3c.jpg?v=1773123660&width=720",
+        "altText": "Illuminating Recovery Cream"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-vitamin-c-illuminating-recovery-cream-madara-A3302.jpg?v=1773123660&width=720",
+        "altText": "Illuminating Recovery Cream hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Intense Glow Concentrate",
+    "slug": "intense-glow-concentrate-1-12",
+    "brand": "MADARA COSMETICS",
+    "price": 4400,
+    "compareAtPrice": null,
+    "tabCategory": "Best Sellers",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-vitamin-c-intense-glow-concentrate-A3301.jpg?v=1773123659&width=720",
+        "altText": "Intense Glow Concentrate"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2-radiance-boosting-essence-A3301.jpg?v=1773123659&width=720",
+        "altText": "Intense Glow Concentrate hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Hydra Moisture+Radiance Mask",
+    "slug": "hydra-moisture-radiance-mask-1-13",
+    "brand": "MADARA COSMETICS",
+    "price": 3400,
+    "compareAtPrice": null,
+    "tabCategory": "Best Sellers",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-instant-moisture-radiance-face-mask-A3025.jpg?v=1773123658&width=720",
+        "altText": "Hydra Moisture+Radiance Mask"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2-organic-moisturising-face-mask-A3025.jpg?v=1773123658&width=720",
+        "altText": "Hydra Moisture+Radiance Mask hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Hydra Repair Intensive Serum",
+    "slug": "hydra-repair-intensive-serum-1-14",
+    "brand": "MADARA COSMETICS",
+    "price": 100,
+    "compareAtPrice": null,
+    "tabCategory": "Best Sellers",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-sos-hydra-repair-intensive-serum-A3021.jpg?v=1773123668&width=720",
+        "altText": "Hydra Repair Intensive Serum"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/madara-sos-hydra-repair-intensive-serum-2ml-SC3021-2.jpg?v=1773123668&width=720",
+        "altText": "Hydra Repair Intensive Serum hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Hydra Recharge Cream",
+    "slug": "hydra-recharge-cream-1-15",
+    "brand": "MADARA COSMETICS",
+    "price": 100,
+    "compareAtPrice": null,
+    "tabCategory": "Best Sellers",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-A3011-SOS-hydra-recharge-cream-madara.jpg?v=1773123667&width=720",
+        "altText": "Hydra Recharge Cream"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-sos-hydra-recharge-cream-A3011.jpg?v=1773123667&width=720",
+        "altText": "Hydra Recharge Cream hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Eye Revive Hydra Cream & Mask",
+    "slug": "eye-revive-hydra-cream-mask-1-16",
+    "brand": "MADARA COSMETICS",
+    "price": 3400,
+    "compareAtPrice": null,
+    "tabCategory": "Best Sellers",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-eye-revive-hydra-cream-and-mask-A3031.jpg?v=1773123666&width=720",
+        "altText": "Eye Revive Hydra Cream & Mask"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2-moisturising-eye-mask-madara-A3031.jpg?v=1773123666&width=720",
+        "altText": "Eye Revive Hydra Cream & Mask hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Hydra Intense Rose Jelly",
+    "slug": "hydra-intense-rose-jelly-1-17",
+    "brand": "MADARA COSMETICS",
+    "price": 3600,
+    "compareAtPrice": null,
+    "tabCategory": "Best Sellers",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-sos-hydra-intense-rose-jelly-A3022.jpg?v=1773123665&width=720",
+        "altText": "Hydra Intense Rose Jelly"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2-rose-water-jelly-A3022.jpg?v=1773123666&width=720",
+        "altText": "Hydra Intense Rose Jelly hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Gloss and Vibrancy Shampoo",
+    "slug": "gloss-and-vibrancy-shampoo-2-0",
+    "brand": "MADARA COSMETICS",
+    "price": 1600,
+    "compareAtPrice": null,
+    "tabCategory": "Trending",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-gloss-and-vibrancy-shampoo-A4003.jpg?v=1773123683&width=720",
+        "altText": "Gloss and Vibrancy Shampoo"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2-gloss-and-vibrancy-shampoo-texture-A4003.jpg?v=1773123683&width=720",
+        "altText": "Gloss and Vibrancy Shampoo hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Gloss and Vibrancy Conditioner",
+    "slug": "gloss-and-vibrancy-conditioner-2-1",
+    "brand": "MADARA COSMETICS",
+    "price": 1600,
+    "compareAtPrice": null,
+    "tabCategory": "Trending",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-conditioner-for-all-hair-types-A4053.jpg?v=1773123685&width=720",
+        "altText": "Gloss and Vibrancy Conditioner"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Colour and Shine Shampoo",
+    "slug": "colour-and-shine-shampoo-2-2",
+    "brand": "MADARA COSMETICS",
+    "price": 1600,
+    "compareAtPrice": null,
+    "tabCategory": "Trending",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-colour-and-shine-shampoo-A4002.jpg?v=1773123682&width=720",
+        "altText": "Colour and Shine Shampoo"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2-colour-and-shine-shampoo-texture-A4002.jpg?v=1773123683&width=720",
+        "altText": "Colour and Shine Shampoo hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Colour and Shine Conditioner",
+    "slug": "colour-and-shine-conditioner-2-3",
+    "brand": "MADARA COSMETICS",
+    "price": 1600,
+    "compareAtPrice": null,
+    "tabCategory": "Trending",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-colour-and-shine-conditioner-madara-A4052.jpg?v=1773123684&width=720",
+        "altText": "Colour and Shine Conditioner"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2-conditioner-for-coloured-hair-A4052.jpg?v=1773123684&width=720",
+        "altText": "Colour and Shine Conditioner hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Grow Volume Hair Care Set for Fuller, Stronger Hair",
+    "slug": "grow-volume-hair-care-set-for-fuller-stronger-hair-2-4",
+    "brand": "MADARA COSMETICS",
+    "price": 4100,
+    "compareAtPrice": null,
+    "tabCategory": "Trending",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1_grow_combo.jpg?v=1773123687&width=720",
+        "altText": "Grow Volume Hair Care Set for Fuller, Stronger Hair"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2_madara-cosmetics-grow-volume-shampoo-results-hair.jpg?v=1773123687&width=720",
+        "altText": "Grow Volume Hair Care Set for Fuller, Stronger Hair hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "3-Step Hair Care Set for Thinning Hair",
+    "slug": "3-step-hair-care-set-for-thinning-hair-2-5",
+    "brand": "MADARA COSMETICS",
+    "price": 6500,
+    "compareAtPrice": null,
+    "tabCategory": "Trending",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1_grow_duo_and_boost.jpg?v=1773123688&width=720",
+        "altText": "3-Step Hair Care Set for Thinning Hair"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2_madara-cosmetics-grow-hair-care-results.jpg?v=1773123688&width=720",
+        "altText": "3-Step Hair Care Set for Thinning Hair hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "3-Step Hair Care Routine for Fuller, Stronger Hair",
+    "slug": "3-step-hair-care-routine-for-fuller-stronger-hair-2-6",
+    "brand": "MADARA COSMETICS",
+    "price": 6100,
+    "compareAtPrice": null,
+    "tabCategory": "Trending",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1_grow_duo_and_silk.jpg?v=1773123688&width=720",
+        "altText": "3-Step Hair Care Routine for Fuller, Stronger Hair"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2_madara-cosmetics-grow-silk-haircare-results-blonde-hair-volume-shine_c7a5cec7-a575-48e2-bed9-55d84c9200c6.jpg?v=1773123688&width=720",
+        "altText": "3-Step Hair Care Routine for Fuller, Stronger Hair hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Scalp Peel Serum",
+    "slug": "scalp-peel-serum-2-7",
+    "brand": "MADARA COSMETICS",
+    "price": 2000,
+    "compareAtPrice": null,
+    "tabCategory": "Trending",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-scalp-peel-serum-madara-A4074.jpg?v=1773123686&width=720",
+        "altText": "Scalp Peel Serum"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2-natural-scalp-serum-A4074.jpg?v=1773123687&width=720",
+        "altText": "Scalp Peel Serum hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Nourish and Repair Shampoo",
+    "slug": "nourish-and-repair-shampoo-2-8",
+    "brand": "MADARA COSMETICS",
+    "price": 100,
+    "compareAtPrice": null,
+    "tabCategory": "Trending",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-nourish-and-repair-shampoo-A4001.jpg?v=1773123682&width=720",
+        "altText": "Nourish and Repair Shampoo"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/madara-nourish-and-repair-shampoo-10ml-SC4001-10.jpg?v=1773123681&width=720",
+        "altText": "Nourish and Repair Shampoo hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Nourish and Repair Conditioner",
+    "slug": "nourish-and-repair-conditioner-2-9",
+    "brand": "MADARA COSMETICS",
+    "price": 1600,
+    "compareAtPrice": null,
+    "tabCategory": "Trending",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-nourish-and-repair-conditioner-A4051.jpg?v=1773123683&width=720",
+        "altText": "Nourish and Repair Conditioner"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2-nourish-and-repair-hair-care-A4051.jpg?v=1773123684&width=720",
+        "altText": "Nourish and Repair Conditioner hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Gloss and Vibrancy Shampoo",
+    "slug": "gloss-and-vibrancy-shampoo-2-10",
+    "brand": "MADARA COSMETICS",
+    "price": 1600,
+    "compareAtPrice": null,
+    "tabCategory": "Trending",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-gloss-and-vibrancy-shampoo-A4003.jpg?v=1773123683&width=720",
+        "altText": "Gloss and Vibrancy Shampoo"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2-gloss-and-vibrancy-shampoo-texture-A4003.jpg?v=1773123683&width=720",
+        "altText": "Gloss and Vibrancy Shampoo hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Gloss and Vibrancy Conditioner",
+    "slug": "gloss-and-vibrancy-conditioner-2-11",
+    "brand": "MADARA COSMETICS",
+    "price": 1600,
+    "compareAtPrice": null,
+    "tabCategory": "Trending",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-conditioner-for-all-hair-types-A4053.jpg?v=1773123685&width=720",
+        "altText": "Gloss and Vibrancy Conditioner"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Colour and Shine Shampoo",
+    "slug": "colour-and-shine-shampoo-2-12",
+    "brand": "MADARA COSMETICS",
+    "price": 1600,
+    "compareAtPrice": null,
+    "tabCategory": "Trending",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-colour-and-shine-shampoo-A4002.jpg?v=1773123682&width=720",
+        "altText": "Colour and Shine Shampoo"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2-colour-and-shine-shampoo-texture-A4002.jpg?v=1773123683&width=720",
+        "altText": "Colour and Shine Shampoo hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Colour and Shine Conditioner",
+    "slug": "colour-and-shine-conditioner-2-13",
+    "brand": "MADARA COSMETICS",
+    "price": 1600,
+    "compareAtPrice": null,
+    "tabCategory": "Trending",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-colour-and-shine-conditioner-madara-A4052.jpg?v=1773123684&width=720",
+        "altText": "Colour and Shine Conditioner"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2-conditioner-for-coloured-hair-A4052.jpg?v=1773123684&width=720",
+        "altText": "Colour and Shine Conditioner hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Grow Volume Hair Care Set for Fuller, Stronger Hair",
+    "slug": "grow-volume-hair-care-set-for-fuller-stronger-hair-2-14",
+    "brand": "MADARA COSMETICS",
+    "price": 4100,
+    "compareAtPrice": null,
+    "tabCategory": "Trending",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1_grow_combo.jpg?v=1773123687&width=720",
+        "altText": "Grow Volume Hair Care Set for Fuller, Stronger Hair"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2_madara-cosmetics-grow-volume-shampoo-results-hair.jpg?v=1773123687&width=720",
+        "altText": "Grow Volume Hair Care Set for Fuller, Stronger Hair hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "3-Step Hair Care Set for Thinning Hair",
+    "slug": "3-step-hair-care-set-for-thinning-hair-2-15",
+    "brand": "MADARA COSMETICS",
+    "price": 6500,
+    "compareAtPrice": null,
+    "tabCategory": "Trending",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1_grow_duo_and_boost.jpg?v=1773123688&width=720",
+        "altText": "3-Step Hair Care Set for Thinning Hair"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2_madara-cosmetics-grow-hair-care-results.jpg?v=1773123688&width=720",
+        "altText": "3-Step Hair Care Set for Thinning Hair hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "3-Step Hair Care Routine for Fuller, Stronger Hair",
+    "slug": "3-step-hair-care-routine-for-fuller-stronger-hair-2-16",
+    "brand": "MADARA COSMETICS",
+    "price": 6100,
+    "compareAtPrice": null,
+    "tabCategory": "Trending",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1_grow_duo_and_silk.jpg?v=1773123688&width=720",
+        "altText": "3-Step Hair Care Routine for Fuller, Stronger Hair"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2_madara-cosmetics-grow-silk-haircare-results-blonde-hair-volume-shine_c7a5cec7-a575-48e2-bed9-55d84c9200c6.jpg?v=1773123688&width=720",
+        "altText": "3-Step Hair Care Routine for Fuller, Stronger Hair hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  },
+  {
+    "name": "Scalp Peel Serum",
+    "slug": "scalp-peel-serum-2-17",
+    "brand": "MADARA COSMETICS",
+    "price": 2000,
+    "compareAtPrice": null,
+    "tabCategory": "Trending",
+    "images": [
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/1-scalp-peel-serum-madara-A4074.jpg?v=1773123686&width=720",
+        "altText": "Scalp Peel Serum"
+      },
+      {
+        "url": "//beautina-cosmetic.myshopify.com/cdn/shop/files/2-natural-scalp-serum-A4074.jpg?v=1773123687&width=720",
+        "altText": "Scalp Peel Serum hover"
+      }
+    ],
+    "countInStock": 100,
+    "rating": 5,
+    "numReviews": 10
+  }
+]

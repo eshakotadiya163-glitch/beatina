@@ -1,0 +1,279 @@
+import { useEffect, useRef } from 'react';
+
+/* ─── Exact SVG paths from Beautina source ─────────────────────────── */
+const SVG_SHIPPING = `<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M353 762.402C336.17 762.382 319.84 762.431 303.511 762.324C287.322 762.218 274.73 749.468 274.696 733.328C274.661 716.953 287.29 703.877 303.57 703.717C319.564 703.559 335.562 703.666 351.558 703.631C353.365 703.627 355.228 703.966 357.604 702.734C340.747 659.118 339.371 614.855 354.65 569.931C347.722 568.648 341.362 567.67 335.095 566.274C312.602 561.266 291.305 553.367 272.931 539.035C261.462 530.089 252.811 519.145 250.654 504.149C248.321 487.929 253.749 473.873 263.349 461.334C283.931 434.449 311.517 417.194 342.659 405.184C346.734 403.612 349.612 401.541 352.309 398.09C362.098 385.566 373.988 375.106 386.12 364.895C420.795 335.71 459.894 314.203 502.11 298.235C518.145 292.17 534.515 286.907 551.978 286.752C561.234 286.67 569.934 288.286 576.698 295.347C578.431 297.155 580.216 296.489 582.213 295.984C592.551 293.369 602.917 291.092 613.73 291.687C627.503 292.446 636.594 298.572 639.801 309.596C641.821 316.537 640.329 323.085 637.753 329.546C633.971 339.029 627.429 346.61 620.696 354.005C600.652 376.019 576.82 393.236 551.474 408.561C527.018 423.349 501.322 435.485 474.539 445.395C471.632 446.47 468.491 447.243 465.808 449.832C470.135 460.061 472.514 470.832 472.629 482.389C479.964 481.926 486.738 481.415 493.521 481.086C514.683 480.062 535.805 481.098 556.927 482.326C576.866 483.486 596.697 485.64 616.422 488.729C651.126 494.165 685.075 502.26 716.109 519.466C755.82 541.484 782.932 573.422 792.436 618.712C794.466 628.386 791.837 637.93 790.066 647.345C780.806 696.571 752.592 731.015 707.378 751.734C692.085 758.742 675.812 762.297 658.929 762.309C557.119 762.381 455.31 762.379 353 762.402Z" fill="black"/>
+<path d="M346.191 475.445C341.216 461.562 348.429 450.501 361.961 450.641C370.447 450.728 376.378 455.706 378.363 464.408C380.128 472.145 376.894 479.782 370.454 483.083C363.26 486.771 353.634 485.035 348.594 479.083C347.743 478.078 347.108 476.891 346.191 475.445Z" fill="black"/>
+</svg>`;
+
+const SVG_CUSTOMER = `<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M644.378 539.38C657.252 529.166 668.602 517.573 682.261 508.966C690.15 503.994 698.782 502 708.4 503.892C719.433 506.062 728.146 511.696 733.509 521.056C739.321 531.199 742.553 541.745 736.938 554.118C731.606 565.864 722.573 573.861 714.06 582.542C694.38 602.61 674.618 622.608 654.479 642.212C638.859 657.416 624.543 673.893 608.425 688.606C600.366 695.963 590.799 699.126 580.333 699.159C527.506 699.322 474.671 699.678 421.856 698.871C406.063 698.629 396.512 706.131 387.812 717.394C379.829 727.728 373.263 739.274 363.542 748.135C350.322 760.185 331.317 757.515 321.415 742.212C318.428 737.597 317.064 732.342 315.433 727.072C313.088 719.494 311.294 711.732 308.541 704.265C306.13 697.729 304.166 690.975 302.394 684.297C300.136 675.788 296.983 667.563 294.986 658.968C293.495 652.548 291.382 646.203 289.346 639.932C283.646 622.376 287.332 607.177 299.325 593.727C305.299 587.027 311.361 580.25 318.663 575.012C328.534 567.932 338.039 560.134 349.855 556.166C352.169 555.389 354.072 553.452 356.351 552.492C379.445 542.763 403.451 539.624 428.462 541.144C437.413 541.688 445.307 544.558 453.215 547.568C459.125 549.817 464.237 554.147 469.74 557.49C472.809 559.355 476.125 559.841 479.765 559.827C509.761 559.717 539.758 559.669 569.754 559.883C580.745 559.961 590.474 563.915 598.387 571.711C600.947 574.232 603.154 574.171 605.767 571.961C618.533 561.16 631.338 550.405 644.378 539.38Z" fill="black"/>
+<path d="M432.814 470.022C423.843 470.283 415.381 470.079 406.882 469.574C393.232 468.761 380.922 463.709 369.282 457.535C357.514 451.293 347.996 442.051 340.615 430.562C334.012 420.285 329.288 409.43 325.469 397.854C322.469 388.762 320.767 379.444 319.269 370.202C317.113 356.905 324.604 344.376 339.52 342.493C355.004 340.539 370.917 339.589 386.346 342.253C404.92 345.46 422.914 351.278 436.647 365.357C446.609 375.571 455.16 386.696 459.796 400.669C461.365 405.398 463.341 410.261 465.489 414.835C469.732 423.868 470.159 433.741 470.969 443.087C471.557 449.866 474.086 452.766 478.736 456.298C485.852 461.702 492.442 467.823 499.051 473.863C504.012 478.396 504.36 482.735 500.62 486.902C497.032 490.9 489.308 491.171 485.145 487.572C477.88 481.293 470.533 475.109 463.246 468.856C460.874 466.82 458.672 466.529 455.53 467.761C448.419 470.55 440.671 468.766 432.814 470.022Z" fill="black"/>
+<path d="M486.023 409.882C479.371 398.248 474.828 386.338 472.443 373.398C470.491 362.808 470.945 352.612 473.267 342.261C476.322 328.641 482.845 316.759 490.018 304.894C496.6 294.005 505.54 285.529 513.924 276.338C522.12 267.354 538.043 269.521 545.049 276.578C557.734 289.355 568.88 303.367 576.802 319.655C588.966 344.665 590.327 370.264 579.218 395.884C571.029 414.768 559.548 431.509 543.388 444.705C540.391 447.153 538.422 450.008 538.748 454.511C539.337 462.636 539.206 470.82 539.182 478.979C539.163 485.644 535.287 490.016 529.605 490.179C523.88 490.344 520.065 486.851 519.744 479.951C519.38 472.151 519.471 464.29 520.016 456.501C520.388 451.188 518.136 447.788 514.424 444.575C503.063 434.74 494.012 422.966 486.023 409.882Z" fill="black"/>
+<path d="M644.274 356.941C652.869 355.633 660.246 350.882 668.88 351.355C672.517 351.554 676.189 350.982 679.847 350.967C689.354 350.928 698.789 360.459 699.316 369.968C700.156 385.101 698.813 400.132 693.759 414.257C688.749 428.262 679.84 439.865 667.083 448.498C660.917 452.67 654.107 456.219 647.536 457.642C635.544 460.239 623.517 464.818 610.828 462.817C607.561 462.302 605.711 464.048 604.038 466.037C597.617 473.676 590.555 480.685 583.314 487.521C578.683 491.893 572.21 492.163 568.54 488.293C565.35 484.929 566.349 477.617 570.203 473.488C577.535 465.631 584.668 457.589 591.917 449.653C594.335 447.006 595.048 443.942 594.815 440.432C594.013 428.371 595.591 416.273 598.4 404.822C602.137 389.588 611.273 376.965 624.09 367.32C630.149 362.76 637.027 359.964 644.274 356.941Z" fill="black"/>
+</svg>`;
+
+const SVG_PAYMENT = `<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M652.911 339.841C662.103 334.719 671.013 329.836 679.827 324.787C683.242 322.83 686.528 321.523 689.889 324.567C693.145 327.516 692.013 330.868 690.476 334.179C678.981 358.949 667.491 383.721 655.985 408.486C652.408 416.185 648.675 423.815 645.23 431.572C643.458 435.561 640.827 437.493 636.366 437.35C604.911 436.339 573.452 435.466 541.998 434.455C532.346 434.145 522.679 434.46 513.037 433.511C509.471 433.159 506.828 431.926 505.937 428.405C504.971 424.587 506.989 422.137 510.233 420.321C521.258 414.149 532.237 407.892 543.964 401.255C533.82 383.325 523.824 365.657 513.312 347.077C507.712 356.782 502.655 365.536 497.606 374.295C484.633 396.801 471.675 419.314 458.687 441.811C455.205 447.844 452.053 448.589 445.974 445.092C417.537 428.732 389.092 412.388 360.64 396.057C354.005 392.249 353.076 388.859 356.922 382.205C367.838 363.319 378.977 344.558 389.594 325.506C404.188 299.318 426.745 286.414 456.173 286.187C499.478 285.853 542.796 286.103 586.097 286.823C604.947 287.137 619.249 296.963 629.29 312.649C634.4 320.63 638.787 329.081 643.356 337.399C646.599 343.304 646.491 343.364 652.911 339.841Z" fill="black"/>
+<path d="M591.499 573.276C592.717 574.782 594.093 574.69 595.413 574.665C613.733 574.321 632.053 573.962 650.372 573.585C650.845 573.575 651.313 573.327 651.831 573.176C652.6 571.024 650.939 569.737 650.051 568.28C632.194 538.979 614.298 509.702 596.4 480.426C592.439 473.948 593.044 471.469 599.536 467.491C626.806 450.783 654.068 434.061 681.335 417.347C682.329 416.738 683.332 416.142 684.343 415.56C690.215 412.184 693.293 412.811 696.793 418.548C706.942 435.185 716.866 451.961 727.102 468.544C733.058 478.193 739.335 487.608 741.689 498.981C745.275 516.315 744.31 533.163 735.802 548.962C717.72 582.543 699.485 616.041 681.138 649.478C676.589 657.767 672.79 666.521 666.284 673.681C655.204 685.873 641.278 691.586 625.108 692.162C616.287 692.476 607.443 692.436 598.617 692.22C594.542 692.12 593.048 693.376 593.151 697.596C593.429 708.921 593.248 720.256 593.379 731.586C593.424 735.477 592.483 738.585 588.332 739.662C584.568 740.639 582.339 738.326 580.624 735.505C561.325 703.768 542.098 671.987 522.749 640.281C520.487 636.573 520.444 633.34 522.568 629.578C540.906 597.087 559.154 564.545 577.397 532.001C579.137 528.896 581.602 527.112 585.143 527.925C588.964 528.801 590.308 531.705 590.321 535.451C590.367 547.938 590.04 560.436 591.499 573.276Z" fill="black"/>
+<path d="M462.933 690.381C448.133 689.843 433.79 690.947 419.5 689.372C397.624 686.961 379.759 676.894 368.294 658.408C353.295 634.223 340.019 608.968 326.016 584.166C318.319 570.533 310.719 556.844 302.951 543.252C291.902 523.919 291.989 504.587 302.936 485.338C307.628 477.088 312.705 469.052 317.754 461.011C319.565 458.125 319.228 456.523 316.139 454.731C306.629 449.219 297.333 443.339 287.909 437.677C284.455 435.601 281.166 433.314 282.523 428.692C283.842 424.203 287.67 423.629 291.794 423.749C327.753 424.795 363.712 425.806 399.672 426.771C403.865 426.883 406.91 428.403 409.045 432.188C426.887 463.814 444.816 495.39 462.716 526.983C463.291 527.997 463.883 529.004 464.405 530.046C465.904 533.041 465.713 535.895 463.32 538.326C460.822 540.863 457.949 540.674 455.099 538.951C445.546 533.177 436.024 527.355 426.478 521.571C424.794 520.551 423.318 519.115 420.625 518.685C410.157 535.935 399.589 553.352 389.001 570.8C391.07 572.339 392.962 571.764 394.704 571.785C428.522 572.2 462.34 572.553 496.158 572.936C505.211 573.039 507.437 575.154 507.145 584.29C506.116 616.439 506.499 648.602 506.033 680.757C505.917 688.785 503.593 691.1 495.402 691.013C484.742 690.9 474.083 690.602 462.933 690.381Z" fill="black"/>
+</svg>`;
+
+/* ─── Feature data (exact from Beautina) ───────────────────────────── */
+const features = [
+  { svg: SVG_SHIPPING,  title: 'Worldwide Shipping',  desc: 'Get free shipping on orders of $100 or more' },
+  { svg: SVG_CUSTOMER,  title: 'Customer service',    desc: 'Be rewarded every time' },
+  { svg: SVG_PAYMENT,   title: 'Secure payment',      desc: 'Your payment information is processed securely' },
+];
+
+/* ─────────────────────────────────────────────────────────────────────
+   IconFeatures — pixel-perfect recreation of Beautina's service.liquid
+   
+   Original CSS extracted:
+     section:  background-color: #eeffec; padding: 0 (desktop)
+               padding: 40px 0 (mobile ≤750px)
+     container: Bootstrap container (max-width 1140px @ ≥1200px,
+                padding: 0 15px, margin: auto)
+     row:       display:flex; flex-wrap:wrap; margin: 0 -15px
+     col:       flex: 1; padding: 0 15px; max-width: 100%
+     media-body: flex: 1; py-lg-5 = padding-top/bottom: 3rem (≥992px)
+     iconx8 svg: width: 100px; height: 100px; stroke:currentColor;
+                 fill: none; stroke-width: 2px; color: #000
+     h5.h6:     font-size: 1rem; font-weight: 600; line-height: 1.2;
+                margin-top: 0; margin-bottom: 0.25rem; color: #000
+     desc div:  color: #5c6978
+     mobile:    slick carousel, 1 slide, dots shown (dots-negative class)
+   ──────────────────────────────────────────────────────────────────── */
+const IconFeatures = () => {
+  const sliderRef = useRef<HTMLDivElement>(null);
+  const dotsRef   = useRef<HTMLDivElement>(null);
+  const currentSlide = useRef(0);
+
+  // Simple manual mobile-only slider (mirrors Shopify's slick init)
+  useEffect(() => {
+    const slider = sliderRef.current;
+    const dotsEl = dotsRef.current;
+    if (!slider || !dotsEl) return;
+
+    const slides = slider.querySelectorAll<HTMLDivElement>('.sv-service-item');
+    const total  = slides.length;
+    if (total === 0) return;
+
+    // Build dots
+    const dots: HTMLButtonElement[] = [];
+    slides.forEach((_, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'sv-dot' + (i === 0 ? ' active' : '');
+      btn.setAttribute('type', 'button');
+      btn.addEventListener('click', () => goTo(i));
+      dotsEl.appendChild(btn);
+      dots.push(btn);
+    });
+
+    const goTo = (idx: number) => {
+      currentSlide.current = idx;
+      slides.forEach((s, i) => {
+        (s as HTMLElement).style.transform = `translateX(${(i - idx) * 100}%)`;
+        (s as HTMLElement).style.opacity   = i === idx ? '1' : '0';
+      });
+      dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+    };
+
+    // Initial positions
+    slides.forEach((s, i) => {
+      (s as HTMLElement).style.position  = 'absolute';
+      (s as HTMLElement).style.width     = '100%';
+      (s as HTMLElement).style.transition = 'transform 0.4s ease, opacity 0.4s ease';
+      (s as HTMLElement).style.transform = `translateX(${i * 100}%)`;
+      (s as HTMLElement).style.opacity   = i === 0 ? '1' : '0';
+    });
+
+    // Touch swipe support
+    let startX = 0;
+    slider.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
+    slider.addEventListener('touchend', e => {
+      const diff = startX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 40) {
+        const next = diff > 0
+          ? Math.min(currentSlide.current + 1, total - 1)
+          : Math.max(currentSlide.current - 1, 0);
+        goTo(next);
+      }
+    });
+
+    return () => { dotsEl.innerHTML = ''; };
+  }, []);
+
+  return (
+    <>
+      {/* ── Exact styles matching Beautina's service.liquid CSS ─────── */}
+      <style>{`
+        /* Section */
+        .sv-section {
+          background-color: #eeffec;
+          padding: 0;
+          margin: 0;
+        }
+        @media (max-width: 750px) {
+          .sv-section { padding: 40px 0; }
+        }
+
+        /* Bootstrap-compatible container */
+        .sv-container {
+          width: 100%;
+          padding-right: 15px;
+          padding-left: 15px;
+          margin-right: auto;
+          margin-left: auto;
+        }
+        @media (min-width: 1200px) { .sv-container { max-width: 1140px; } }
+        @media (min-width: 1550px) { .sv-container { max-width: 1550px; } }
+
+        /* Bootstrap row */
+        .sv-row {
+          display: flex;
+          flex-wrap: wrap;
+          margin-right: -15px;
+          margin-left: -15px;
+        }
+
+        /* Bootstrap col (flex-grow) */
+        .sv-col {
+          position: relative;
+          width: 100%;
+          padding-right: 15px;
+          padding-left: 15px;
+          flex-basis: 0;
+          flex-grow: 1;
+          max-width: 100%;
+        }
+
+        /* media / service-2: text-center */
+        .sv-media {
+          display: flex;
+          align-items: flex-start;
+        }
+        .sv-media-body {
+          flex: 1;
+          text-align: center;
+        }
+
+        /* py-lg-5 = padding-top / bottom 3rem on ≥992px */
+        @media (min-width: 992px) {
+          .sv-media-body {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+          }
+        }
+
+        /* Icon: mb-3 = margin-bottom 1rem */
+        .sv-iconx8 {
+          margin-bottom: 1rem;
+          color: #000000;
+          display: inline-flex;
+        }
+        .sv-iconx8 svg {
+          width: 100px;
+          height: 100px;
+          font-size: 100px;
+          stroke: currentColor;
+          fill: none;
+          stroke-width: 2px;
+        }
+
+        /* h5.h6: font-size 1rem, weight 600, line-height 1.2, mt-0 mb-1 */
+        .sv-title {
+          margin-top: 0;
+          margin-bottom: 0.25rem;
+          font-size: 1rem;
+          font-weight: 600;
+          line-height: 1.2;
+          color: #000000;
+        }
+
+        /* Description */
+        .sv-desc {
+          color: #5c6978;
+        }
+
+        /* ── Mobile slider (mirrors slick, ≤750px) ──────────────────── */
+        .sv-slider-wrapper {
+          position: relative;
+          overflow: hidden;
+        }
+        @media (min-width: 751px) {
+          /* On desktop the slider wrapper becomes a normal flex row */
+          .sv-slider-wrapper { overflow: visible; }
+          .sv-service-item {
+            position: static !important;
+            transform: none !important;
+            opacity: 1 !important;
+          }
+        }
+        @media (max-width: 750px) {
+          .sv-slider-wrapper { min-height: 200px; }
+        }
+
+        /* Dots (dots-negative class in original) */
+        .sv-dots {
+          display: none;
+          text-align: center;
+          margin-top: 8px;
+        }
+        @media (max-width: 750px) { .sv-dots { display: block; } }
+        .sv-dot {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          margin: 0 4px;
+          background: rgba(0,0,0,0.3);
+          border-radius: 50%;
+          cursor: pointer;
+          border: none;
+          padding: 0;
+          vertical-align: middle;
+          transition: background 0.2s;
+        }
+        .sv-dot.active { background: rgba(0,0,0,0.9); }
+      `}</style>
+
+      <section className="sv-section">
+        <div className="sv-container">
+          {/* section-block / section-heading removed — section has no heading */}
+          <div className="sv-slider-wrapper sv-row mb-0" ref={sliderRef}>
+            {features.map((feat, i) => (
+              <div
+                key={i}
+                className="sv-col sv-service-item"
+                data-aos="fade-up"
+                data-aos-delay={String((i + 1) * 100)}
+              >
+                <div className="sv-media sv-service-2 text-center">
+                  <div
+                    className="sv-media-body"
+                    style={{ backgroundColor: 'rgba(0,0,0,0)' }}
+                  >
+                    {/* Icon — iconx8 + mb-3 */}
+                    <div
+                      className="sv-iconx8"
+                      dangerouslySetInnerHTML={{ __html: feat.svg }}
+                    />
+                    {/* h5.h6 — mt-0 mb-1 */}
+                    <h5 className="sv-title">{feat.title}</h5>
+                    {/* Description */}
+                    <div className="sv-desc">{feat.desc}</div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Dots — only visible on mobile */}
+          <div className="sv-dots" ref={dotsRef} />
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default IconFeatures;

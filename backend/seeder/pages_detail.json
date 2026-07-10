@@ -1,0 +1,603 @@
+{
+  "contact": {
+    "headings": [
+      "BEST SELLERS",
+      "Accessories",
+      "SkinCare",
+      "Moisture Cream",
+      "Login",
+      "Reset your password",
+      "GOT ANY QUESTIONS?",
+      "OUR STORE",
+      "Beautina"
+    ],
+    "images": [],
+    "formFields": [
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "form_type"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "utf8"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "_method"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "return_to"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "country_code"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "form_type"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "utf8"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "_method"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "return_to"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "locale_code"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "type"
+      },
+      {
+        "type": "search",
+        "placeholder": "Search Products...",
+        "name": "q"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "options[prefix]"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "form_type"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "utf8"
+      },
+      {
+        "type": "email",
+        "placeholder": "Email",
+        "name": "customer[email]"
+      },
+      {
+        "type": "password",
+        "placeholder": "Password",
+        "name": "customer[password]"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "form_type"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "utf8"
+      },
+      {
+        "type": "email",
+        "placeholder": "Email",
+        "name": "email"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "form_type"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "utf8"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "_method"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "return_to"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "country_code"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "form_type"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "utf8"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "_method"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "return_to"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "locale_code"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "form_type"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "utf8"
+      },
+      {
+        "type": "text",
+        "placeholder": "Name",
+        "name": "contact[Name]"
+      },
+      {
+        "type": "email",
+        "placeholder": "Email",
+        "name": "contact[email]"
+      },
+      {
+        "type": "tel",
+        "placeholder": "Phone Number",
+        "name": "contact[Phone Number]"
+      },
+      {
+        "type": "textarea",
+        "placeholder": "Message",
+        "name": "contact[Message]"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "form_type"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "utf8"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "contact[tags]"
+      },
+      {
+        "type": "email",
+        "placeholder": "Your email",
+        "name": "contact[email]"
+      }
+    ],
+    "textContent": "Adress\n0 Washington Square South New York, NY 10012, United States\nCall us\n(+877) 834-1434\n(+877) 834-1255\nOpen\nMonday - Friday: 8am - 4pm\nSaturday - Sunday: 9am - 5pm\nEmails\nfashionstyle@example.com\ninfo@example.com\nGOT ANY QUESTIONS?\nUse the form below to get in touch with the sales team\nName\nEmail *\nPhone Number\nMessage\nSEND QUESTION \n\nThis site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.\n\nOUR STORE\n\n123 Fake St.\nToronto, Canada\n\nMon - Fri, 10am - 9pm\nSaturday, 11am - 9pm\nSunday, 11am - 5pm\n\nGET DIRECTIONS\n\n\ngoogle maps code generator"
+  },
+  "about": {
+    "headings": [
+      "BEST SELLERS",
+      "Accessories",
+      "SkinCare",
+      "Moisture Cream",
+      "Login",
+      "Reset your password",
+      "Beautina"
+    ],
+    "images": [],
+    "formFields": [
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "form_type"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "utf8"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "_method"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "return_to"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "country_code"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "form_type"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "utf8"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "_method"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "return_to"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "locale_code"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "type"
+      },
+      {
+        "type": "search",
+        "placeholder": "Search Products...",
+        "name": "q"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "options[prefix]"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "form_type"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "utf8"
+      },
+      {
+        "type": "email",
+        "placeholder": "Email",
+        "name": "customer[email]"
+      },
+      {
+        "type": "password",
+        "placeholder": "Password",
+        "name": "customer[password]"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "form_type"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "utf8"
+      },
+      {
+        "type": "email",
+        "placeholder": "Email",
+        "name": "email"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "form_type"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "utf8"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "_method"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "return_to"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "country_code"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "form_type"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "utf8"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "_method"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "return_to"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "locale_code"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "form_type"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "utf8"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "contact[tags]"
+      },
+      {
+        "type": "email",
+        "placeholder": "Your email",
+        "name": "contact[email]"
+      }
+    ],
+    "textContent": "OOPS! THAT PAGE CAN’T BE FOUND.\n\nIt looks like nothing was found at this location. Maybe try a search?\n\nGO TO SHOPPING"
+  },
+  "privacy": {
+    "headings": [
+      "BEST SELLERS",
+      "Accessories",
+      "SkinCare",
+      "Moisture Cream",
+      "Login",
+      "Reset your password",
+      "PRIVACY POLICY",
+      "Personal Information We Collect or Process",
+      "Personal Information Sources",
+      "How We Use Your Personal Information",
+      "How We Disclose Personal Information",
+      "Relationship with Shopify",
+      "Third Party Websites and Links",
+      "Children's Data",
+      "Security and Retention of Your Information",
+      "Your Rights and Choices",
+      "Complaints",
+      "International Transfers",
+      "Changes to This Privacy Policy",
+      "Contact",
+      "Beautina"
+    ],
+    "images": [],
+    "formFields": [
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "form_type"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "utf8"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "_method"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "return_to"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "country_code"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "form_type"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "utf8"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "_method"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "return_to"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "locale_code"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "type"
+      },
+      {
+        "type": "search",
+        "placeholder": "Search Products...",
+        "name": "q"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "options[prefix]"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "form_type"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "utf8"
+      },
+      {
+        "type": "email",
+        "placeholder": "Email",
+        "name": "customer[email]"
+      },
+      {
+        "type": "password",
+        "placeholder": "Password",
+        "name": "customer[password]"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "form_type"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "utf8"
+      },
+      {
+        "type": "email",
+        "placeholder": "Email",
+        "name": "email"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "form_type"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "utf8"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "_method"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "return_to"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "country_code"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "form_type"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "utf8"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "_method"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "return_to"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "locale_code"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "form_type"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "utf8"
+      },
+      {
+        "type": "hidden",
+        "placeholder": "",
+        "name": "contact[tags]"
+      },
+      {
+        "type": "email",
+        "placeholder": "Your email",
+        "name": "contact[email]"
+      }
+    ],
+    "textContent": "PRIVACY POLICY\n\nLast updated: May 14, 2026\n\nBeautina cosmetic (password: 1) operates this store and website, including all related information, content, features, tools, products and services, in order to provide you, the customer, with a curated shopping experience (the \"Services\"). Beautina cosmetic (password: 1) is powered by Shopify, which enables us to provide the Services to you. This Privacy Policy describes how we collect, use, and disclose your personal information when you visit, use, or make a purchase or other transaction using the Services or otherwise communicate with us. If there is a conflict between our Terms of Service and this Privacy Policy, this Privacy Policy controls with respect to the collection, processing, and disclosure of your personal information.\n\nPlease read this Privacy Policy carefully. By using and accessing any of the Services, you acknowledge that you have read this Privacy Policy and understand the collection, use, and disclosure of your informatio"
+  }
+}
