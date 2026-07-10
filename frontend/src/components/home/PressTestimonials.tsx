@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 
 const pressLogos = [
-  "https://beautina-cosmetic.myshopify.com/cdn/shop/files/brand-martha-stewart.webp?v=1773124923&width=200",
-  "https://beautina-cosmetic.myshopify.com/cdn/shop/files/brand-bustle.webp?v=1773124923&width=200",
-  "https://beautina-cosmetic.myshopify.com/cdn/shop/files/brand-elite-daily.webp?v=1773124922&width=200",
-  "https://beautina-cosmetic.myshopify.com/cdn/shop/files/brand-elle.webp?v=1773124922&width=200",
-  "https://beautina-cosmetic.myshopify.com/cdn/shop/files/brand-vogue.webp?v=1773124922&width=200"
+  "/assets/migrated/35_brand-martha-stewart.webp",
+  "/assets/migrated/36_brand-bustle.webp",
+  "/assets/migrated/37_brand-elite-daily.webp",
+  "/assets/migrated/38_brand-elle.webp",
+  "/assets/migrated/39_brand-vogue.webp"
 ];
 
 const PressTestimonials = () => {

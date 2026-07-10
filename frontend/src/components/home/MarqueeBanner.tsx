@@ -2,32 +2,32 @@ import { Link } from 'react-router-dom';
 
 const marqueeItems = [
   {
-    image: "https://beautina-cosmetic.myshopify.com/cdn/shop/files/5-omega-and-vitamin-e-oil-for-face-A2281.jpg?v=1773123679&width=200",
+    image: "/assets/migrated/29_5-omega-and-vitamin-e-oil-for-face-A2281.jpg",
     label: "Skin Care",
     href: "/collections/skincare"
   },
   {
-    image: "https://beautina-cosmetic.myshopify.com/cdn/shop/files/5-madara-sos-skincare-A3021.jpg?v=1773123668&width=200",
+    image: "/assets/migrated/30_5-madara-sos-skincare-A3021.jpg",
     label: "Makeup",
     href: "/collections/moisture-cream"
   },
   {
-    image: "https://beautina-cosmetic.myshopify.com/cdn/shop/files/gallery-3-v2.webp?v=1773124923&width=200",
+    image: "/assets/migrated/6_gallery-3-v2.webp",
     label: "Best Sellers",
     href: "/collections/accessories"
   },
   {
-    image: "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-nourish-and-repair-hair-care-A4051.jpg?v=1773123684&width=200",
+    image: "/assets/migrated/31_2-nourish-and-repair-hair-care-A4051.jpg",
     label: "Body Care",
     href: "/collections/serum-cream"
   },
   {
-    image: "https://beautina-cosmetic.myshopify.com/cdn/shop/files/6-madara-his-collection-A5003.jpg?v=1773123669&width=200",
+    image: "/assets/migrated/32_6-madara-his-collection-A5003.jpg",
     label: "Face Care",
     href: "/collections/skincare"
   },
   {
-    image: "https://beautina-cosmetic.myshopify.com/cdn/shop/files/4_madara-cosmetics-grow-volume-shampoo-conditioner-boost-scalp-treatment-set.jpg?v=1773123689&width=200",
+    image: "/assets/migrated/33_4_madara-cosmetics-grow-volume-shampoo-conditioner-boost-scalp-treatment-set.jpg",
     label: "Hair Care",
     href: "/collections/hair-care"
   },

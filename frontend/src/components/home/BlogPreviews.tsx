@@ -1,21 +1,21 @@
 // Real blog article images from Beautina Shopify storefront
 const blogPosts = [
   {
-    image: 'https://beautina-cosmetic.myshopify.com/cdn/shop/articles/b2_1_96db18e7-8cd1-4ac2-95aa-f203226fc675.webp?v=1773147608',
+    image: '/assets/migrated/2_b2_1_96db18e7-8cd1-4ac2-95aa-f203226fc675.webp',
     title: 'Must-Have Beauty Accessories for Your Daily Routine',
     date: 'April 2025',
     excerpt: 'Discover the essential beauty accessories that can elevate your daily skincare and beauty routine.',
     link: '#',
   },
   {
-    image: 'https://beautina-cosmetic.myshopify.com/cdn/shop/articles/home-after_4fcfbfed-535d-4e65-8f9f-1fe66b041eff.jpg?v=1773147551',
+    image: '/assets/migrated/3_home-after_4fcfbfed-535d-4e65-8f9f-1fe66b041eff.jpg',
     title: 'Why Face Serums Are a Must-Have in Your Skincare Routine',
     date: 'March 2025',
     excerpt: 'Face serums deliver potent active ingredients deep into the skin for visible, targeted results.',
     link: '#',
   },
   {
-    image: 'https://beautina-cosmetic.myshopify.com/cdn/shop/articles/gallery-image-8_11d220c1-ae96-4a4b-9528-eaf7e7947e95.webp?v=1773147561',
+    image: '/assets/migrated/4_gallery-image-8_11d220c1-ae96-4a4b-9528-eaf7e7947e95.webp',
     title: 'How Face Creams Help Keep Your Skin Soft and Hydrated',
     date: 'February 2025',
     excerpt: 'Learn how to choose the right face cream for your skin type and build an effective moisture barrier.',

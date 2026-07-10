@@ -1,22 +1,22 @@
 // Real promise icons from Beautina (from zest-cosmo CDN which they use)
 const promises = [
   {
-    icon: 'https://zest-cosmo.myshopify.com/cdn/shop/files/highlight-icon-1.webp',
+    icon: '/assets/migrated/15_highlight-icon-1.webp',
     title: 'Fast Delivery',
     desc: 'Orders shipped within 24 hours',
   },
   {
-    icon: 'https://zest-cosmo.myshopify.com/cdn/shop/files/highlight-icon-2.webp',
+    icon: '/assets/migrated/16_highlight-icon-2.webp',
     title: 'Secure Payment',
     desc: '100% secure and encrypted checkout',
   },
   {
-    icon: 'https://zest-cosmo.myshopify.com/cdn/shop/files/highlight-icon-3.webp',
+    icon: '/assets/migrated/17_highlight-icon-3.webp',
     title: '30 Days Free Returns',
     desc: 'Hassle-free returns within 30 days',
   },
   {
-    icon: 'https://zest-cosmo.myshopify.com/cdn/shop/files/highlight-icon-4.webp',
+    icon: '/assets/migrated/34_highlight-icon-4.webp',
     title: '100% Natural',
     desc: 'Certified organic ingredients',
   },

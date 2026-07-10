@@ -7,7 +7,7 @@ const articles = [
     date: '03-10-2026',
     comments: 0,
     excerpt: 'Beauty accessories play a vital role in enhancing your skincare and makeup routine. The right tools help you apply products...',
-    image: 'https://beautina-cosmetic.myshopify.com/cdn/shop/articles/b2_1_96db18e7-8cd1-4ac2-95aa-f203226fc675.webp?v=1773147608&width=800',
+    image: '/assets/migrated/2_b2_1_96db18e7-8cd1-4ac2-95aa-f203226fc675.webp',
     link: '/blog/must-have-beauty-accessories'
   },
   {
@@ -15,7 +15,7 @@ const articles = [
     date: '03-10-2026',
     comments: 0,
     excerpt: 'Face serums are powerful skincare products designed to deliver concentrated active ingredients directly into the skin. Benefits of Using Serums...',
-    image: 'https://beautina-cosmetic.myshopify.com/cdn/shop/articles/home-after_4fcfbfed-535d-4e65-8f9f-1fe66b041eff.jpg?v=1773147551&width=800',
+    image: '/assets/migrated/3_home-after_4fcfbfed-535d-4e65-8f9f-1fe66b041eff.jpg',
     link: '/blog/why-face-serums'
   },
   {
@@ -23,7 +23,7 @@ const articles = [
     date: '03-10-2026',
     comments: 0,
     excerpt: 'Face creams are an essential part of skincare. They help maintain hydration, improve skin texture, and protect the skin barrier....',
-    image: 'https://beautina-cosmetic.myshopify.com/cdn/shop/articles/gallery-image-8_11d220c1-ae96-4a4b-9528-eaf7e7947e95.webp?v=1773147561&width=800',
+    image: '/assets/migrated/4_gallery-image-8_11d220c1-ae96-4a4b-9528-eaf7e7947e95.webp',
     link: '/blog/how-face-creams-help'
   }
 ];

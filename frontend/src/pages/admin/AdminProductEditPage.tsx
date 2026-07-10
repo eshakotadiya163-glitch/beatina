@@ -121,7 +121,7 @@ const AdminProductEditPage = () => {
     } catch (error: any) {
       console.error(error);
       // Fallback for development if upload route isn't fully ready
-      const dummyUrl = 'https://beautina-cosmetic.myshopify.com/cdn/shop/files/gallery-image-7.webp?v=1773124923';
+      const dummyUrl = '/assets/migrated/19_gallery-image-7.webp';
       setImages([...images, { url: dummyUrl, altText: 'Dummy Image' }]);
       toast.success('Used development dummy image (Upload endpoint failed)');
     } finally {

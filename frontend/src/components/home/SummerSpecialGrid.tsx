@@ -15,7 +15,7 @@ const SummerSpecialGrid = () => {
             className="group relative overflow-hidden bg-brand-light h-[450px] md:h-[630px] flex flex-col justify-end items-center text-center p-8 md:p-14"
           >
             <img 
-              src="https://beautina-cosmetic.myshopify.com/cdn/shop/files/b12_720x_301f00ae-898e-41d1-b635-14ec61052c17.webp?v=1773124923&width=1066" 
+              src="/assets/migrated/49_b12_720x_301f00ae-898e-41d1-b635-14ec61052c17.webp" 
               alt="Focus On Summer Special Care" 
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 ease-out"
               loading="lazy"
@@ -72,7 +72,7 @@ const SummerSpecialGrid = () => {
             className="group relative overflow-hidden bg-brand-light h-[450px] md:h-[630px] flex flex-col justify-end items-center text-center p-8 md:p-14"
           >
             <img 
-              src="https://beautina-cosmetic.myshopify.com/cdn/shop/files/about-img-2.webp?v=1773124923&width=1066" 
+              src="/assets/migrated/50_about-img-2.webp" 
               alt="For Naturally Resilient Skin" 
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 ease-out"
               loading="lazy"

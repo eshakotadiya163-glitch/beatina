@@ -16,7 +16,7 @@ const ImageTextPromo = () => {
             <motion.img 
               whileHover={{ scale: 1.1, rotate: 5 }}
               transition={{ type: "spring", stiffness: 300 }}
-              src="https://zest-cosmo.myshopify.com/cdn/shop/files/highlight-icon-1.webp" 
+              src="/assets/migrated/15_highlight-icon-1.webp" 
               alt="" 
               className="w-[50px] md:w-[70px] lg:w-[90px] h-auto block drop-shadow-sm" 
             />
@@ -30,7 +30,7 @@ const ImageTextPromo = () => {
             <motion.img 
               whileHover={{ scale: 1.1, rotate: -5 }}
               transition={{ type: "spring", stiffness: 300 }}
-              src="https://zest-cosmo.myshopify.com/cdn/shop/files/highlight-icon-2.webp" 
+              src="/assets/migrated/16_highlight-icon-2.webp" 
               alt="" 
               className="w-[50px] md:w-[70px] lg:w-[90px] h-auto block drop-shadow-sm" 
             />
@@ -38,7 +38,7 @@ const ImageTextPromo = () => {
             <motion.img 
               whileHover={{ scale: 1.1, rotate: 5 }}
               transition={{ type: "spring", stiffness: 300 }}
-              src="https://zest-cosmo.myshopify.com/cdn/shop/files/highlight-icon-3.webp" 
+              src="/assets/migrated/17_highlight-icon-3.webp" 
               alt="" 
               className="w-[50px] md:w-[70px] lg:w-[90px] h-auto block drop-shadow-sm" 
             />

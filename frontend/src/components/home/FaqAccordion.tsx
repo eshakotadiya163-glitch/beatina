@@ -106,7 +106,7 @@ const FaqAccordion = () => {
                 className="relative w-full aspect-[4/5] overflow-hidden"
               >
                 <img 
-                  src="https://beautina-cosmetic.myshopify.com/cdn/shop/files/collection-tab-1.jpg?v=1773124924&width=1080" 
+                  src="/assets/migrated/10_collection-tab-1.jpg" 
                   alt="FAQ Image" 
                   className="absolute inset-0 w-full h-full object-cover"
                   loading="lazy"

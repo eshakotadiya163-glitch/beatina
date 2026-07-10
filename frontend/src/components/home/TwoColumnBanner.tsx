@@ -26,7 +26,7 @@ const TwoColumnBanner = () => {
           <div className="w-full md:w-7/12 grid grid-cols-2 gap-4">
             <div className="aspect-[4/5] overflow-hidden bg-brand-light">
               <img
-                src="https://beautina-cosmetic.myshopify.com/cdn/shop/files/4-replenishing-night-cream-A3062.jpg?v=1773123650"
+                src="/assets/migrated/8_4-replenishing-night-cream-A3062.jpg"
                 alt="Moisture Cream"
                 className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700"
                 loading="lazy"
@@ -34,7 +34,7 @@ const TwoColumnBanner = () => {
             </div>
             <div className="aspect-[4/5] overflow-hidden bg-brand-light mt-8">
               <img
-                src="https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-age-pro-intense-wrinkle-serum-A3340.jpg?v=1773123652"
+                src="/assets/migrated/51_1-age-pro-intense-wrinkle-serum-A3340.jpg"
                 alt="Intense Wrinkle Serum"
                 className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700"
                 loading="lazy"

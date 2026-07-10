@@ -4,7 +4,19 @@ const products = [
     "slug": "luminous-relaxation-tea-1",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1598444747738-963b516b24d7?auto=format&fit=crop&w=800&q=80&sig=1",
+        "url": "/assets/migrated/0_home-after_1.jpg",
+        "altText": "Luminous Relaxation Tea"
+      },
+      {
+        "url": "/assets/migrated/1_home-before_1.jpg",
+        "altText": "Luminous Relaxation Tea"
+      },
+      {
+        "url": "/assets/migrated/2_b2_1_96db18e7-8cd1-4ac2-95aa-f203226fc675.webp",
+        "altText": "Luminous Relaxation Tea"
+      },
+      {
+        "url": "/assets/migrated/3_home-after_4fcfbfed-535d-4e65-8f9f-1fe66b041eff.jpg",
         "altText": "Luminous Relaxation Tea"
       }
     ],
@@ -30,7 +42,19 @@ const products = [
     "slug": "soothing-hair-serum-2",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=800&q=80&sig=2",
+        "url": "/assets/migrated/4_gallery-image-8_11d220c1-ae96-4a4b-9528-eaf7e7947e95.webp",
+        "altText": "Soothing Hair Serum"
+      },
+      {
+        "url": "/assets/migrated/5_custom-banner-2.jpg",
+        "altText": "Soothing Hair Serum"
+      },
+      {
+        "url": "/assets/migrated/6_gallery-3-v2.webp",
+        "altText": "Soothing Hair Serum"
+      },
+      {
+        "url": "/assets/migrated/7_2-anti-age-recovery-treatment-A2603.jpg",
         "altText": "Soothing Hair Serum"
       }
     ],
@@ -56,7 +80,19 @@ const products = [
     "slug": "soothing-bridal-kit-3",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=800&q=80&sig=3",
+        "url": "/assets/migrated/8_4-replenishing-night-cream-A3062.jpg",
+        "altText": "Soothing Bridal Kit"
+      },
+      {
+        "url": "/assets/migrated/9_b17_540x_aa6b96c0-cd33-460e-8da7-208e8c30f82e.webp",
+        "altText": "Soothing Bridal Kit"
+      },
+      {
+        "url": "/assets/migrated/10_collection-tab-1.jpg",
+        "altText": "Soothing Bridal Kit"
+      },
+      {
+        "url": "/assets/migrated/11_2.png",
         "altText": "Soothing Bridal Kit"
       }
     ],
@@ -82,7 +118,19 @@ const products = [
     "slug": "divine-shampoo-4",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=800&q=80&sig=4",
+        "url": "/assets/migrated/12_s31_900x_8f09b4d4-6d08-410a-b6c2-5f291c6eb648.webp",
+        "altText": "Divine Shampoo"
+      },
+      {
+        "url": "/assets/migrated/13_1.png",
+        "altText": "Divine Shampoo"
+      },
+      {
+        "url": "/assets/migrated/14_s32_900x_8acd0d58-b6ff-42e4-9796-69f7e92d8ef7.jpg",
+        "altText": "Divine Shampoo"
+      },
+      {
+        "url": "/assets/migrated/15_highlight-icon-1.webp",
         "altText": "Divine Shampoo"
       }
     ],
@@ -108,7 +156,19 @@ const products = [
     "slug": "hydrating-body-butter-5",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1608248593842-8021a8d0b57e?auto=format&fit=crop&w=800&q=80&sig=5",
+        "url": "/assets/migrated/16_highlight-icon-2.webp",
+        "altText": "Hydrating Body Butter"
+      },
+      {
+        "url": "/assets/migrated/17_highlight-icon-3.webp",
+        "altText": "Hydrating Body Butter"
+      },
+      {
+        "url": "/assets/migrated/18_gallery-2-v2.webp",
+        "altText": "Hydrating Body Butter"
+      },
+      {
+        "url": "/assets/migrated/19_gallery-image-7.webp",
         "altText": "Hydrating Body Butter"
       }
     ],
@@ -134,7 +194,19 @@ const products = [
     "slug": "nourishing-gua-sha-6",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1598444747738-963b516b24d7?auto=format&fit=crop&w=800&q=80&sig=6",
+        "url": "/assets/migrated/20_gallery-image-1.jpg",
+        "altText": "Nourishing Gua Sha"
+      },
+      {
+        "url": "/assets/migrated/21_about-img-3.webp",
+        "altText": "Nourishing Gua Sha"
+      },
+      {
+        "url": "/assets/migrated/22_gallery-5-v2.webp",
+        "altText": "Nourishing Gua Sha"
+      },
+      {
+        "url": "/assets/migrated/23_fleur-kaan-w4Dj3MshHQ0-unsplash.jpg",
         "altText": "Nourishing Gua Sha"
       }
     ],
@@ -160,7 +232,19 @@ const products = [
     "slug": "radiant-body-wash-7",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1608248593842-8021a8d0b57e?auto=format&fit=crop&w=800&q=80&sig=7",
+        "url": "/assets/migrated/24_3.11_a206c225-bd03-40da-8e5f-e3a3e160e25a.webp",
+        "altText": "Radiant Body Wash"
+      },
+      {
+        "url": "/assets/migrated/25_gallery-image-5.webp",
+        "altText": "Radiant Body Wash"
+      },
+      {
+        "url": "/assets/migrated/26_luminous-perfecting-concealer_1.jpg",
+        "altText": "Radiant Body Wash"
+      },
+      {
+        "url": "/assets/migrated/27_intense-glow-concentrate.jpg",
         "altText": "Radiant Body Wash"
       }
     ],
@@ -186,7 +270,19 @@ const products = [
     "slug": "purifying-relaxation-tea-8",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1598444747738-963b516b24d7?auto=format&fit=crop&w=800&q=80&sig=8",
+        "url": "/assets/migrated/28_superseed-age-recovery-organic-facial-oil.jpg",
+        "altText": "Purifying Relaxation Tea"
+      },
+      {
+        "url": "/assets/migrated/29_5-omega-and-vitamin-e-oil-for-face-A2281.jpg",
+        "altText": "Purifying Relaxation Tea"
+      },
+      {
+        "url": "/assets/migrated/30_5-madara-sos-skincare-A3021.jpg",
+        "altText": "Purifying Relaxation Tea"
+      },
+      {
+        "url": "/assets/migrated/31_2-nourish-and-repair-hair-care-A4051.jpg",
         "altText": "Purifying Relaxation Tea"
       }
     ],
@@ -212,7 +308,19 @@ const products = [
     "slug": "pure-travel-essentials-kit-9",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=800&q=80&sig=9",
+        "url": "/assets/migrated/32_6-madara-his-collection-A5003.jpg",
+        "altText": "Pure Travel Essentials Kit"
+      },
+      {
+        "url": "/assets/migrated/33_4_madara-cosmetics-grow-volume-shampoo-conditioner-boost-scalp-treatment-set.jpg",
+        "altText": "Pure Travel Essentials Kit"
+      },
+      {
+        "url": "/assets/migrated/34_highlight-icon-4.webp",
+        "altText": "Pure Travel Essentials Kit"
+      },
+      {
+        "url": "/assets/migrated/35_brand-martha-stewart.webp",
         "altText": "Pure Travel Essentials Kit"
       }
     ],
@@ -238,7 +346,19 @@ const products = [
     "slug": "purifying-soothing-gel-10",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228720-192a6af4e86e?auto=format&fit=crop&w=800&q=80&sig=10",
+        "url": "/assets/migrated/36_brand-bustle.webp",
+        "altText": "Purifying Soothing Gel"
+      },
+      {
+        "url": "/assets/migrated/37_brand-elite-daily.webp",
+        "altText": "Purifying Soothing Gel"
+      },
+      {
+        "url": "/assets/migrated/38_brand-elle.webp",
+        "altText": "Purifying Soothing Gel"
+      },
+      {
+        "url": "/assets/migrated/39_brand-vogue.webp",
         "altText": "Purifying Soothing Gel"
       }
     ],
@@ -264,7 +384,19 @@ const products = [
     "slug": "luminous-sunscreen-11",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80&sig=11",
+        "url": "/assets/migrated/41_b11b019c831543709c9f0852c3d79b21.thumbnail.0000000000_small.jpg",
+        "altText": "Luminous Sunscreen"
+      },
+      {
+        "url": "/assets/migrated/43_788b041920114347915fb7d4a16de257.thumbnail.0000000000_small.jpg",
+        "altText": "Luminous Sunscreen"
+      },
+      {
+        "url": "/assets/migrated/45_fb984906407f4fb9b5c5ceb14dd78350.thumbnail.0000000000_small.jpg",
+        "altText": "Luminous Sunscreen"
+      },
+      {
+        "url": "/assets/migrated/47_4b2f2c0725434683af01f499b85d7b90.thumbnail.0000000000_small.jpg",
         "altText": "Luminous Sunscreen"
       }
     ],
@@ -290,7 +422,19 @@ const products = [
     "slug": "midnight-bridal-kit-12",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=800&q=80&sig=12",
+        "url": "/assets/migrated/48_ChatGPT_Image_Mar_11_2026_10_46_49_AM.png",
+        "altText": "Midnight Bridal Kit"
+      },
+      {
+        "url": "/assets/migrated/49_b12_720x_301f00ae-898e-41d1-b635-14ec61052c17.webp",
+        "altText": "Midnight Bridal Kit"
+      },
+      {
+        "url": "/assets/migrated/50_about-img-2.webp",
+        "altText": "Midnight Bridal Kit"
+      },
+      {
+        "url": "/assets/migrated/51_1-age-pro-intense-wrinkle-serum-A3340.jpg",
         "altText": "Midnight Bridal Kit"
       }
     ],
@@ -316,7 +460,19 @@ const products = [
     "slug": "pure-intimate-wash-13",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228720-192a6af4e86e?auto=format&fit=crop&w=800&q=80&sig=13",
+        "url": "/assets/migrated/52_s2_1512x_98eb4d02-1fb4-4572-912e-640bff0b5a70.jpg",
+        "altText": "Pure Intimate Wash"
+      },
+      {
+        "url": "/assets/migrated/53_Beautina_1.png",
+        "altText": "Pure Intimate Wash"
+      },
+      {
+        "url": "/assets/migrated/54_Icon_2.png",
+        "altText": "Pure Intimate Wash"
+      },
+      {
+        "url": "/assets/migrated/55_Icon_4.png",
         "altText": "Pure Intimate Wash"
       }
     ],
@@ -342,7 +498,19 @@ const products = [
     "slug": "revitalizing-solid-perfume-14",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=800&q=80&sig=14",
+        "url": "/assets/migrated/56_Icon_3.png",
+        "altText": "Revitalizing Solid Perfume"
+      },
+      {
+        "url": "/assets/migrated/57_1-superseed-age-recovery-oil-30ml-A2603.jpg",
+        "altText": "Revitalizing Solid Perfume"
+      },
+      {
+        "url": "/assets/migrated/0_home-after_1.jpg",
+        "altText": "Revitalizing Solid Perfume"
+      },
+      {
+        "url": "/assets/migrated/1_home-before_1.jpg",
         "altText": "Revitalizing Solid Perfume"
       }
     ],
@@ -368,7 +536,19 @@ const products = [
     "slug": "nourishing-hair-mask-15",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1585232351009-aa87416fca90?auto=format&fit=crop&w=800&q=80&sig=15",
+        "url": "/assets/migrated/2_b2_1_96db18e7-8cd1-4ac2-95aa-f203226fc675.webp",
+        "altText": "Nourishing Hair Mask"
+      },
+      {
+        "url": "/assets/migrated/3_home-after_4fcfbfed-535d-4e65-8f9f-1fe66b041eff.jpg",
+        "altText": "Nourishing Hair Mask"
+      },
+      {
+        "url": "/assets/migrated/4_gallery-image-8_11d220c1-ae96-4a4b-9528-eaf7e7947e95.webp",
+        "altText": "Nourishing Hair Mask"
+      },
+      {
+        "url": "/assets/migrated/5_custom-banner-2.jpg",
         "altText": "Nourishing Hair Mask"
       }
     ],
@@ -394,7 +574,19 @@ const products = [
     "slug": "nourishing-body-lotion-16",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1614859324967-bdf45d8b8431?auto=format&fit=crop&w=800&q=80&sig=16",
+        "url": "/assets/migrated/6_gallery-3-v2.webp",
+        "altText": "Nourishing Body Lotion"
+      },
+      {
+        "url": "/assets/migrated/7_2-anti-age-recovery-treatment-A2603.jpg",
+        "altText": "Nourishing Body Lotion"
+      },
+      {
+        "url": "/assets/migrated/8_4-replenishing-night-cream-A3062.jpg",
+        "altText": "Nourishing Body Lotion"
+      },
+      {
+        "url": "/assets/migrated/9_b17_540x_aa6b96c0-cd33-460e-8da7-208e8c30f82e.webp",
         "altText": "Nourishing Body Lotion"
       }
     ],
@@ -420,7 +612,19 @@ const products = [
     "slug": "pure-body-mist-17",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=800&q=80&sig=17",
+        "url": "/assets/migrated/10_collection-tab-1.jpg",
+        "altText": "Pure Body Mist"
+      },
+      {
+        "url": "/assets/migrated/11_2.png",
+        "altText": "Pure Body Mist"
+      },
+      {
+        "url": "/assets/migrated/12_s31_900x_8f09b4d4-6d08-410a-b6c2-5f291c6eb648.webp",
+        "altText": "Pure Body Mist"
+      },
+      {
+        "url": "/assets/migrated/13_1.png",
         "altText": "Pure Body Mist"
       }
     ],
@@ -446,7 +650,19 @@ const products = [
     "slug": "divine-body-butter-18",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1608248593842-8021a8d0b57e?auto=format&fit=crop&w=800&q=80&sig=18",
+        "url": "/assets/migrated/14_s32_900x_8acd0d58-b6ff-42e4-9796-69f7e92d8ef7.jpg",
+        "altText": "Divine Body Butter"
+      },
+      {
+        "url": "/assets/migrated/15_highlight-icon-1.webp",
+        "altText": "Divine Body Butter"
+      },
+      {
+        "url": "/assets/migrated/16_highlight-icon-2.webp",
+        "altText": "Divine Body Butter"
+      },
+      {
+        "url": "/assets/migrated/17_highlight-icon-3.webp",
         "altText": "Divine Body Butter"
       }
     ],
@@ -472,7 +688,19 @@ const products = [
     "slug": "purifying-spa-day-bundle-19",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=800&q=80&sig=19",
+        "url": "/assets/migrated/18_gallery-2-v2.webp",
+        "altText": "Purifying Spa Day Bundle"
+      },
+      {
+        "url": "/assets/migrated/19_gallery-image-7.webp",
+        "altText": "Purifying Spa Day Bundle"
+      },
+      {
+        "url": "/assets/migrated/20_gallery-image-1.jpg",
+        "altText": "Purifying Spa Day Bundle"
+      },
+      {
+        "url": "/assets/migrated/21_about-img-3.webp",
         "altText": "Purifying Spa Day Bundle"
       }
     ],
@@ -498,7 +726,19 @@ const products = [
     "slug": "velvet-shower-gel-20",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80&sig=20",
+        "url": "/assets/migrated/22_gallery-5-v2.webp",
+        "altText": "Velvet Shower Gel"
+      },
+      {
+        "url": "/assets/migrated/23_fleur-kaan-w4Dj3MshHQ0-unsplash.jpg",
+        "altText": "Velvet Shower Gel"
+      },
+      {
+        "url": "/assets/migrated/24_3.11_a206c225-bd03-40da-8e5f-e3a3e160e25a.webp",
+        "altText": "Velvet Shower Gel"
+      },
+      {
+        "url": "/assets/migrated/25_gallery-image-5.webp",
         "altText": "Velvet Shower Gel"
       }
     ],
@@ -524,7 +764,19 @@ const products = [
     "slug": "hydrating-body-lotion-21",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1608248593842-8021a8d0b57e?auto=format&fit=crop&w=800&q=80&sig=21",
+        "url": "/assets/migrated/26_luminous-perfecting-concealer_1.jpg",
+        "altText": "Hydrating Body Lotion"
+      },
+      {
+        "url": "/assets/migrated/27_intense-glow-concentrate.jpg",
+        "altText": "Hydrating Body Lotion"
+      },
+      {
+        "url": "/assets/migrated/28_superseed-age-recovery-organic-facial-oil.jpg",
+        "altText": "Hydrating Body Lotion"
+      },
+      {
+        "url": "/assets/migrated/29_5-omega-and-vitamin-e-oil-for-face-A2281.jpg",
         "altText": "Hydrating Body Lotion"
       }
     ],
@@ -550,7 +802,19 @@ const products = [
     "slug": "essential-hair-mask-22",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1585232351009-aa87416fca90?auto=format&fit=crop&w=800&q=80&sig=22",
+        "url": "/assets/migrated/30_5-madara-sos-skincare-A3021.jpg",
+        "altText": "Essential Hair Mask"
+      },
+      {
+        "url": "/assets/migrated/31_2-nourish-and-repair-hair-care-A4051.jpg",
+        "altText": "Essential Hair Mask"
+      },
+      {
+        "url": "/assets/migrated/32_6-madara-his-collection-A5003.jpg",
+        "altText": "Essential Hair Mask"
+      },
+      {
+        "url": "/assets/migrated/33_4_madara-cosmetics-grow-volume-shampoo-conditioner-boost-scalp-treatment-set.jpg",
         "altText": "Essential Hair Mask"
       }
     ],
@@ -576,7 +840,19 @@ const products = [
     "slug": "purifying-travel-essentials-kit-23",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=800&q=80&sig=23",
+        "url": "/assets/migrated/34_highlight-icon-4.webp",
+        "altText": "Purifying Travel Essentials Kit"
+      },
+      {
+        "url": "/assets/migrated/35_brand-martha-stewart.webp",
+        "altText": "Purifying Travel Essentials Kit"
+      },
+      {
+        "url": "/assets/migrated/36_brand-bustle.webp",
+        "altText": "Purifying Travel Essentials Kit"
+      },
+      {
+        "url": "/assets/migrated/37_brand-elite-daily.webp",
         "altText": "Purifying Travel Essentials Kit"
       }
     ],
@@ -602,7 +878,19 @@ const products = [
     "slug": "luminous-bath-salt-24",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80&sig=24",
+        "url": "/assets/migrated/38_brand-elle.webp",
+        "altText": "Luminous Bath Salt"
+      },
+      {
+        "url": "/assets/migrated/39_brand-vogue.webp",
+        "altText": "Luminous Bath Salt"
+      },
+      {
+        "url": "/assets/migrated/41_b11b019c831543709c9f0852c3d79b21.thumbnail.0000000000_small.jpg",
+        "altText": "Luminous Bath Salt"
+      },
+      {
+        "url": "/assets/migrated/43_788b041920114347915fb7d4a16de257.thumbnail.0000000000_small.jpg",
         "altText": "Luminous Bath Salt"
       }
     ],
@@ -628,7 +916,19 @@ const products = [
     "slug": "essential-shower-gel-25",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80&sig=25",
+        "url": "/assets/migrated/45_fb984906407f4fb9b5c5ceb14dd78350.thumbnail.0000000000_small.jpg",
+        "altText": "Essential Shower Gel"
+      },
+      {
+        "url": "/assets/migrated/47_4b2f2c0725434683af01f499b85d7b90.thumbnail.0000000000_small.jpg",
+        "altText": "Essential Shower Gel"
+      },
+      {
+        "url": "/assets/migrated/48_ChatGPT_Image_Mar_11_2026_10_46_49_AM.png",
+        "altText": "Essential Shower Gel"
+      },
+      {
+        "url": "/assets/migrated/49_b12_720x_301f00ae-898e-41d1-b635-14ec61052c17.webp",
         "altText": "Essential Shower Gel"
       }
     ],
@@ -654,7 +954,19 @@ const products = [
     "slug": "divine-body-lotion-26",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1608248593842-8021a8d0b57e?auto=format&fit=crop&w=800&q=80&sig=26",
+        "url": "/assets/migrated/50_about-img-2.webp",
+        "altText": "Divine Body Lotion"
+      },
+      {
+        "url": "/assets/migrated/51_1-age-pro-intense-wrinkle-serum-A3340.jpg",
+        "altText": "Divine Body Lotion"
+      },
+      {
+        "url": "/assets/migrated/52_s2_1512x_98eb4d02-1fb4-4572-912e-640bff0b5a70.jpg",
+        "altText": "Divine Body Lotion"
+      },
+      {
+        "url": "/assets/migrated/53_Beautina_1.png",
         "altText": "Divine Body Lotion"
       }
     ],
@@ -680,7 +992,19 @@ const products = [
     "slug": "nourishing-bath-bomb-27",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80&sig=27",
+        "url": "/assets/migrated/54_Icon_2.png",
+        "altText": "Nourishing Bath Bomb"
+      },
+      {
+        "url": "/assets/migrated/55_Icon_4.png",
+        "altText": "Nourishing Bath Bomb"
+      },
+      {
+        "url": "/assets/migrated/56_Icon_3.png",
+        "altText": "Nourishing Bath Bomb"
+      },
+      {
+        "url": "/assets/migrated/57_1-superseed-age-recovery-oil-30ml-A2603.jpg",
         "altText": "Nourishing Bath Bomb"
       }
     ],
@@ -706,7 +1030,19 @@ const products = [
     "slug": "velvet-bridal-kit-28",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=800&q=80&sig=28",
+        "url": "/assets/migrated/0_home-after_1.jpg",
+        "altText": "Velvet Bridal Kit"
+      },
+      {
+        "url": "/assets/migrated/1_home-before_1.jpg",
+        "altText": "Velvet Bridal Kit"
+      },
+      {
+        "url": "/assets/migrated/2_b2_1_96db18e7-8cd1-4ac2-95aa-f203226fc675.webp",
+        "altText": "Velvet Bridal Kit"
+      },
+      {
+        "url": "/assets/migrated/3_home-after_4fcfbfed-535d-4e65-8f9f-1fe66b041eff.jpg",
         "altText": "Velvet Bridal Kit"
       }
     ],
@@ -732,7 +1068,19 @@ const products = [
     "slug": "botanical-body-mist-29",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=800&q=80&sig=29",
+        "url": "/assets/migrated/4_gallery-image-8_11d220c1-ae96-4a4b-9528-eaf7e7947e95.webp",
+        "altText": "Botanical Body Mist"
+      },
+      {
+        "url": "/assets/migrated/5_custom-banner-2.jpg",
+        "altText": "Botanical Body Mist"
+      },
+      {
+        "url": "/assets/migrated/6_gallery-3-v2.webp",
+        "altText": "Botanical Body Mist"
+      },
+      {
+        "url": "/assets/migrated/7_2-anti-age-recovery-treatment-A2603.jpg",
         "altText": "Botanical Body Mist"
       }
     ],
@@ -758,7 +1106,19 @@ const products = [
     "slug": "radiant-bath-bomb-30",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80&sig=30",
+        "url": "/assets/migrated/8_4-replenishing-night-cream-A3062.jpg",
+        "altText": "Radiant Bath Bomb"
+      },
+      {
+        "url": "/assets/migrated/9_b17_540x_aa6b96c0-cd33-460e-8da7-208e8c30f82e.webp",
+        "altText": "Radiant Bath Bomb"
+      },
+      {
+        "url": "/assets/migrated/10_collection-tab-1.jpg",
+        "altText": "Radiant Bath Bomb"
+      },
+      {
+        "url": "/assets/migrated/11_2.png",
         "altText": "Radiant Bath Bomb"
       }
     ],
@@ -784,7 +1144,19 @@ const products = [
     "slug": "radiant-ultimate-glow-box-31",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=800&q=80&sig=31",
+        "url": "/assets/migrated/12_s31_900x_8f09b4d4-6d08-410a-b6c2-5f291c6eb648.webp",
+        "altText": "Radiant Ultimate Glow Box"
+      },
+      {
+        "url": "/assets/migrated/13_1.png",
+        "altText": "Radiant Ultimate Glow Box"
+      },
+      {
+        "url": "/assets/migrated/14_s32_900x_8acd0d58-b6ff-42e4-9796-69f7e92d8ef7.jpg",
+        "altText": "Radiant Ultimate Glow Box"
+      },
+      {
+        "url": "/assets/migrated/15_highlight-icon-1.webp",
         "altText": "Radiant Ultimate Glow Box"
       }
     ],
@@ -810,7 +1182,19 @@ const products = [
     "slug": "essential-face-wash-32",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1615397323214-3a7894a7e930?auto=format&fit=crop&w=800&q=80&sig=32",
+        "url": "/assets/migrated/16_highlight-icon-2.webp",
+        "altText": "Essential Face Wash"
+      },
+      {
+        "url": "/assets/migrated/17_highlight-icon-3.webp",
+        "altText": "Essential Face Wash"
+      },
+      {
+        "url": "/assets/migrated/18_gallery-2-v2.webp",
+        "altText": "Essential Face Wash"
+      },
+      {
+        "url": "/assets/migrated/19_gallery-image-7.webp",
         "altText": "Essential Face Wash"
       }
     ],
@@ -836,7 +1220,19 @@ const products = [
     "slug": "radiant-exfoliating-scrub-33",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80&sig=33",
+        "url": "/assets/migrated/20_gallery-image-1.jpg",
+        "altText": "Radiant Exfoliating Scrub"
+      },
+      {
+        "url": "/assets/migrated/21_about-img-3.webp",
+        "altText": "Radiant Exfoliating Scrub"
+      },
+      {
+        "url": "/assets/migrated/22_gallery-5-v2.webp",
+        "altText": "Radiant Exfoliating Scrub"
+      },
+      {
+        "url": "/assets/migrated/23_fleur-kaan-w4Dj3MshHQ0-unsplash.jpg",
         "altText": "Radiant Exfoliating Scrub"
       }
     ],
@@ -862,7 +1258,19 @@ const products = [
     "slug": "essential-body-wash-34",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1608248593842-8021a8d0b57e?auto=format&fit=crop&w=800&q=80&sig=34",
+        "url": "/assets/migrated/24_3.11_a206c225-bd03-40da-8e5f-e3a3e160e25a.webp",
+        "altText": "Essential Body Wash"
+      },
+      {
+        "url": "/assets/migrated/25_gallery-image-5.webp",
+        "altText": "Essential Body Wash"
+      },
+      {
+        "url": "/assets/migrated/26_luminous-perfecting-concealer_1.jpg",
+        "altText": "Essential Body Wash"
+      },
+      {
+        "url": "/assets/migrated/27_intense-glow-concentrate.jpg",
         "altText": "Essential Body Wash"
       }
     ],
@@ -888,7 +1296,19 @@ const products = [
     "slug": "midnight-eau-de-parfum-35",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=800&q=80&sig=35",
+        "url": "/assets/migrated/28_superseed-age-recovery-organic-facial-oil.jpg",
+        "altText": "Midnight Eau de Parfum"
+      },
+      {
+        "url": "/assets/migrated/29_5-omega-and-vitamin-e-oil-for-face-A2281.jpg",
+        "altText": "Midnight Eau de Parfum"
+      },
+      {
+        "url": "/assets/migrated/30_5-madara-sos-skincare-A3021.jpg",
+        "altText": "Midnight Eau de Parfum"
+      },
+      {
+        "url": "/assets/migrated/31_2-nourish-and-repair-hair-care-A4051.jpg",
         "altText": "Midnight Eau de Parfum"
       }
     ],
@@ -914,7 +1334,19 @@ const products = [
     "slug": "soothing-solid-perfume-36",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=800&q=80&sig=36",
+        "url": "/assets/migrated/32_6-madara-his-collection-A5003.jpg",
+        "altText": "Soothing Solid Perfume"
+      },
+      {
+        "url": "/assets/migrated/33_4_madara-cosmetics-grow-volume-shampoo-conditioner-boost-scalp-treatment-set.jpg",
+        "altText": "Soothing Solid Perfume"
+      },
+      {
+        "url": "/assets/migrated/34_highlight-icon-4.webp",
+        "altText": "Soothing Solid Perfume"
+      },
+      {
+        "url": "/assets/migrated/35_brand-martha-stewart.webp",
         "altText": "Soothing Solid Perfume"
       }
     ],
@@ -940,7 +1372,19 @@ const products = [
     "slug": "hydrating-soothing-gel-37",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228720-192a6af4e86e?auto=format&fit=crop&w=800&q=80&sig=37",
+        "url": "/assets/migrated/36_brand-bustle.webp",
+        "altText": "Hydrating Soothing Gel"
+      },
+      {
+        "url": "/assets/migrated/37_brand-elite-daily.webp",
+        "altText": "Hydrating Soothing Gel"
+      },
+      {
+        "url": "/assets/migrated/38_brand-elle.webp",
+        "altText": "Hydrating Soothing Gel"
+      },
+      {
+        "url": "/assets/migrated/39_brand-vogue.webp",
         "altText": "Hydrating Soothing Gel"
       }
     ],
@@ -966,7 +1410,19 @@ const products = [
     "slug": "radiant-face-wash-38",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80&sig=38",
+        "url": "/assets/migrated/41_b11b019c831543709c9f0852c3d79b21.thumbnail.0000000000_small.jpg",
+        "altText": "Radiant Face Wash"
+      },
+      {
+        "url": "/assets/migrated/43_788b041920114347915fb7d4a16de257.thumbnail.0000000000_small.jpg",
+        "altText": "Radiant Face Wash"
+      },
+      {
+        "url": "/assets/migrated/45_fb984906407f4fb9b5c5ceb14dd78350.thumbnail.0000000000_small.jpg",
+        "altText": "Radiant Face Wash"
+      },
+      {
+        "url": "/assets/migrated/47_4b2f2c0725434683af01f499b85d7b90.thumbnail.0000000000_small.jpg",
         "altText": "Radiant Face Wash"
       }
     ],
@@ -992,7 +1448,19 @@ const products = [
     "slug": "nourishing-bridal-kit-39",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=800&q=80&sig=39",
+        "url": "/assets/migrated/48_ChatGPT_Image_Mar_11_2026_10_46_49_AM.png",
+        "altText": "Nourishing Bridal Kit"
+      },
+      {
+        "url": "/assets/migrated/49_b12_720x_301f00ae-898e-41d1-b635-14ec61052c17.webp",
+        "altText": "Nourishing Bridal Kit"
+      },
+      {
+        "url": "/assets/migrated/50_about-img-2.webp",
+        "altText": "Nourishing Bridal Kit"
+      },
+      {
+        "url": "/assets/migrated/51_1-age-pro-intense-wrinkle-serum-A3340.jpg",
         "altText": "Nourishing Bridal Kit"
       }
     ],
@@ -1018,7 +1486,19 @@ const products = [
     "slug": "botanical-shower-gel-40",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80&sig=40",
+        "url": "/assets/migrated/52_s2_1512x_98eb4d02-1fb4-4572-912e-640bff0b5a70.jpg",
+        "altText": "Botanical Shower Gel"
+      },
+      {
+        "url": "/assets/migrated/53_Beautina_1.png",
+        "altText": "Botanical Shower Gel"
+      },
+      {
+        "url": "/assets/migrated/54_Icon_2.png",
+        "altText": "Botanical Shower Gel"
+      },
+      {
+        "url": "/assets/migrated/55_Icon_4.png",
         "altText": "Botanical Shower Gel"
       }
     ],
@@ -1044,7 +1524,19 @@ const products = [
     "slug": "midnight-bath-bomb-41",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80&sig=41",
+        "url": "/assets/migrated/56_Icon_3.png",
+        "altText": "Midnight Bath Bomb"
+      },
+      {
+        "url": "/assets/migrated/57_1-superseed-age-recovery-oil-30ml-A2603.jpg",
+        "altText": "Midnight Bath Bomb"
+      },
+      {
+        "url": "/assets/migrated/0_home-after_1.jpg",
+        "altText": "Midnight Bath Bomb"
+      },
+      {
+        "url": "/assets/migrated/1_home-before_1.jpg",
         "altText": "Midnight Bath Bomb"
       }
     ],
@@ -1070,7 +1562,19 @@ const products = [
     "slug": "hydrating-eau-de-parfum-42",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=800&q=80&sig=42",
+        "url": "/assets/migrated/2_b2_1_96db18e7-8cd1-4ac2-95aa-f203226fc675.webp",
+        "altText": "Hydrating Eau de Parfum"
+      },
+      {
+        "url": "/assets/migrated/3_home-after_4fcfbfed-535d-4e65-8f9f-1fe66b041eff.jpg",
+        "altText": "Hydrating Eau de Parfum"
+      },
+      {
+        "url": "/assets/migrated/4_gallery-image-8_11d220c1-ae96-4a4b-9528-eaf7e7947e95.webp",
+        "altText": "Hydrating Eau de Parfum"
+      },
+      {
+        "url": "/assets/migrated/5_custom-banner-2.jpg",
         "altText": "Hydrating Eau de Parfum"
       }
     ],
@@ -1096,7 +1600,19 @@ const products = [
     "slug": "botanical-bath-bomb-43",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80&sig=43",
+        "url": "/assets/migrated/6_gallery-3-v2.webp",
+        "altText": "Botanical Bath Bomb"
+      },
+      {
+        "url": "/assets/migrated/7_2-anti-age-recovery-treatment-A2603.jpg",
+        "altText": "Botanical Bath Bomb"
+      },
+      {
+        "url": "/assets/migrated/8_4-replenishing-night-cream-A3062.jpg",
+        "altText": "Botanical Bath Bomb"
+      },
+      {
+        "url": "/assets/migrated/9_b17_540x_aa6b96c0-cd33-460e-8da7-208e8c30f82e.webp",
         "altText": "Botanical Bath Bomb"
       }
     ],
@@ -1122,7 +1638,19 @@ const products = [
     "slug": "pure-hair-serum-44",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1585232351009-aa87416fca90?auto=format&fit=crop&w=800&q=80&sig=44",
+        "url": "/assets/migrated/10_collection-tab-1.jpg",
+        "altText": "Pure Hair Serum"
+      },
+      {
+        "url": "/assets/migrated/11_2.png",
+        "altText": "Pure Hair Serum"
+      },
+      {
+        "url": "/assets/migrated/12_s31_900x_8f09b4d4-6d08-410a-b6c2-5f291c6eb648.webp",
+        "altText": "Pure Hair Serum"
+      },
+      {
+        "url": "/assets/migrated/13_1.png",
         "altText": "Pure Hair Serum"
       }
     ],
@@ -1148,7 +1676,19 @@ const products = [
     "slug": "pure-conditioner-45",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1585232351009-aa87416fca90?auto=format&fit=crop&w=800&q=80&sig=45",
+        "url": "/assets/migrated/14_s32_900x_8acd0d58-b6ff-42e4-9796-69f7e92d8ef7.jpg",
+        "altText": "Pure Conditioner"
+      },
+      {
+        "url": "/assets/migrated/15_highlight-icon-1.webp",
+        "altText": "Pure Conditioner"
+      },
+      {
+        "url": "/assets/migrated/16_highlight-icon-2.webp",
+        "altText": "Pure Conditioner"
+      },
+      {
+        "url": "/assets/migrated/17_highlight-icon-3.webp",
         "altText": "Pure Conditioner"
       }
     ],
@@ -1174,7 +1714,19 @@ const products = [
     "slug": "divine-moisturizer-46",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1615397323214-3a7894a7e930?auto=format&fit=crop&w=800&q=80&sig=46",
+        "url": "/assets/migrated/18_gallery-2-v2.webp",
+        "altText": "Divine Moisturizer"
+      },
+      {
+        "url": "/assets/migrated/19_gallery-image-7.webp",
+        "altText": "Divine Moisturizer"
+      },
+      {
+        "url": "/assets/migrated/20_gallery-image-1.jpg",
+        "altText": "Divine Moisturizer"
+      },
+      {
+        "url": "/assets/migrated/21_about-img-3.webp",
         "altText": "Divine Moisturizer"
       }
     ],
@@ -1200,7 +1752,19 @@ const products = [
     "slug": "luminous-relaxation-tea-47",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1598444747738-963b516b24d7?auto=format&fit=crop&w=800&q=80&sig=47",
+        "url": "/assets/migrated/22_gallery-5-v2.webp",
+        "altText": "Luminous Relaxation Tea"
+      },
+      {
+        "url": "/assets/migrated/23_fleur-kaan-w4Dj3MshHQ0-unsplash.jpg",
+        "altText": "Luminous Relaxation Tea"
+      },
+      {
+        "url": "/assets/migrated/24_3.11_a206c225-bd03-40da-8e5f-e3a3e160e25a.webp",
+        "altText": "Luminous Relaxation Tea"
+      },
+      {
+        "url": "/assets/migrated/25_gallery-image-5.webp",
         "altText": "Luminous Relaxation Tea"
       }
     ],
@@ -1226,7 +1790,19 @@ const products = [
     "slug": "purifying-intimate-wash-48",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228720-192a6af4e86e?auto=format&fit=crop&w=800&q=80&sig=48",
+        "url": "/assets/migrated/26_luminous-perfecting-concealer_1.jpg",
+        "altText": "Purifying Intimate Wash"
+      },
+      {
+        "url": "/assets/migrated/27_intense-glow-concentrate.jpg",
+        "altText": "Purifying Intimate Wash"
+      },
+      {
+        "url": "/assets/migrated/28_superseed-age-recovery-organic-facial-oil.jpg",
+        "altText": "Purifying Intimate Wash"
+      },
+      {
+        "url": "/assets/migrated/29_5-omega-and-vitamin-e-oil-for-face-A2281.jpg",
         "altText": "Purifying Intimate Wash"
       }
     ],
@@ -1252,7 +1828,19 @@ const products = [
     "slug": "luminous-cleanser-49",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80&sig=49",
+        "url": "/assets/migrated/30_5-madara-sos-skincare-A3021.jpg",
+        "altText": "Luminous Cleanser"
+      },
+      {
+        "url": "/assets/migrated/31_2-nourish-and-repair-hair-care-A4051.jpg",
+        "altText": "Luminous Cleanser"
+      },
+      {
+        "url": "/assets/migrated/32_6-madara-his-collection-A5003.jpg",
+        "altText": "Luminous Cleanser"
+      },
+      {
+        "url": "/assets/migrated/33_4_madara-cosmetics-grow-volume-shampoo-conditioner-boost-scalp-treatment-set.jpg",
         "altText": "Luminous Cleanser"
       }
     ],
@@ -1278,7 +1866,19 @@ const products = [
     "slug": "revitalizing-hair-serum-50",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1585232351009-aa87416fca90?auto=format&fit=crop&w=800&q=80&sig=50",
+        "url": "/assets/migrated/34_highlight-icon-4.webp",
+        "altText": "Revitalizing Hair Serum"
+      },
+      {
+        "url": "/assets/migrated/35_brand-martha-stewart.webp",
+        "altText": "Revitalizing Hair Serum"
+      },
+      {
+        "url": "/assets/migrated/36_brand-bustle.webp",
+        "altText": "Revitalizing Hair Serum"
+      },
+      {
+        "url": "/assets/migrated/37_brand-elite-daily.webp",
         "altText": "Revitalizing Hair Serum"
       }
     ],
@@ -1304,7 +1904,19 @@ const products = [
     "slug": "pure-roll-on-perfume-51",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=800&q=80&sig=51",
+        "url": "/assets/migrated/38_brand-elle.webp",
+        "altText": "Pure Roll-on Perfume"
+      },
+      {
+        "url": "/assets/migrated/39_brand-vogue.webp",
+        "altText": "Pure Roll-on Perfume"
+      },
+      {
+        "url": "/assets/migrated/41_b11b019c831543709c9f0852c3d79b21.thumbnail.0000000000_small.jpg",
+        "altText": "Pure Roll-on Perfume"
+      },
+      {
+        "url": "/assets/migrated/43_788b041920114347915fb7d4a16de257.thumbnail.0000000000_small.jpg",
         "altText": "Pure Roll-on Perfume"
       }
     ],
@@ -1330,7 +1942,19 @@ const products = [
     "slug": "soothing-body-butter-52",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1614859324967-bdf45d8b8431?auto=format&fit=crop&w=800&q=80&sig=52",
+        "url": "/assets/migrated/45_fb984906407f4fb9b5c5ceb14dd78350.thumbnail.0000000000_small.jpg",
+        "altText": "Soothing Body Butter"
+      },
+      {
+        "url": "/assets/migrated/47_4b2f2c0725434683af01f499b85d7b90.thumbnail.0000000000_small.jpg",
+        "altText": "Soothing Body Butter"
+      },
+      {
+        "url": "/assets/migrated/48_ChatGPT_Image_Mar_11_2026_10_46_49_AM.png",
+        "altText": "Soothing Body Butter"
+      },
+      {
+        "url": "/assets/migrated/49_b12_720x_301f00ae-898e-41d1-b635-14ec61052c17.webp",
         "altText": "Soothing Body Butter"
       }
     ],
@@ -1356,7 +1980,19 @@ const products = [
     "slug": "hydrating-face-serum-53",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1615397323214-3a7894a7e930?auto=format&fit=crop&w=800&q=80&sig=53",
+        "url": "/assets/migrated/50_about-img-2.webp",
+        "altText": "Hydrating Face Serum"
+      },
+      {
+        "url": "/assets/migrated/51_1-age-pro-intense-wrinkle-serum-A3340.jpg",
+        "altText": "Hydrating Face Serum"
+      },
+      {
+        "url": "/assets/migrated/52_s2_1512x_98eb4d02-1fb4-4572-912e-640bff0b5a70.jpg",
+        "altText": "Hydrating Face Serum"
+      },
+      {
+        "url": "/assets/migrated/53_Beautina_1.png",
         "altText": "Hydrating Face Serum"
       }
     ],
@@ -1382,7 +2018,19 @@ const products = [
     "slug": "botanical-hair-mask-54",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1585232351009-aa87416fca90?auto=format&fit=crop&w=800&q=80&sig=54",
+        "url": "/assets/migrated/54_Icon_2.png",
+        "altText": "Botanical Hair Mask"
+      },
+      {
+        "url": "/assets/migrated/55_Icon_4.png",
+        "altText": "Botanical Hair Mask"
+      },
+      {
+        "url": "/assets/migrated/56_Icon_3.png",
+        "altText": "Botanical Hair Mask"
+      },
+      {
+        "url": "/assets/migrated/57_1-superseed-age-recovery-oil-30ml-A2603.jpg",
         "altText": "Botanical Hair Mask"
       }
     ],
@@ -1408,7 +2056,19 @@ const products = [
     "slug": "purifying-shampoo-55",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=800&q=80&sig=55",
+        "url": "/assets/migrated/0_home-after_1.jpg",
+        "altText": "Purifying Shampoo"
+      },
+      {
+        "url": "/assets/migrated/1_home-before_1.jpg",
+        "altText": "Purifying Shampoo"
+      },
+      {
+        "url": "/assets/migrated/2_b2_1_96db18e7-8cd1-4ac2-95aa-f203226fc675.webp",
+        "altText": "Purifying Shampoo"
+      },
+      {
+        "url": "/assets/migrated/3_home-after_4fcfbfed-535d-4e65-8f9f-1fe66b041eff.jpg",
         "altText": "Purifying Shampoo"
       }
     ],
@@ -1434,7 +2094,19 @@ const products = [
     "slug": "pure-gua-sha-56",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80&sig=56",
+        "url": "/assets/migrated/4_gallery-image-8_11d220c1-ae96-4a4b-9528-eaf7e7947e95.webp",
+        "altText": "Pure Gua Sha"
+      },
+      {
+        "url": "/assets/migrated/5_custom-banner-2.jpg",
+        "altText": "Pure Gua Sha"
+      },
+      {
+        "url": "/assets/migrated/6_gallery-3-v2.webp",
+        "altText": "Pure Gua Sha"
+      },
+      {
+        "url": "/assets/migrated/7_2-anti-age-recovery-treatment-A2603.jpg",
         "altText": "Pure Gua Sha"
       }
     ],
@@ -1460,7 +2132,19 @@ const products = [
     "slug": "soothing-bath-salt-57",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80&sig=57",
+        "url": "/assets/migrated/8_4-replenishing-night-cream-A3062.jpg",
+        "altText": "Soothing Bath Salt"
+      },
+      {
+        "url": "/assets/migrated/9_b17_540x_aa6b96c0-cd33-460e-8da7-208e8c30f82e.webp",
+        "altText": "Soothing Bath Salt"
+      },
+      {
+        "url": "/assets/migrated/10_collection-tab-1.jpg",
+        "altText": "Soothing Bath Salt"
+      },
+      {
+        "url": "/assets/migrated/11_2.png",
         "altText": "Soothing Bath Salt"
       }
     ],
@@ -1486,7 +2170,19 @@ const products = [
     "slug": "midnight-ph-balance-wipes-58",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228720-192a6af4e86e?auto=format&fit=crop&w=800&q=80&sig=58",
+        "url": "/assets/migrated/12_s31_900x_8f09b4d4-6d08-410a-b6c2-5f291c6eb648.webp",
+        "altText": "Midnight pH Balance Wipes"
+      },
+      {
+        "url": "/assets/migrated/13_1.png",
+        "altText": "Midnight pH Balance Wipes"
+      },
+      {
+        "url": "/assets/migrated/14_s32_900x_8acd0d58-b6ff-42e4-9796-69f7e92d8ef7.jpg",
+        "altText": "Midnight pH Balance Wipes"
+      },
+      {
+        "url": "/assets/migrated/15_highlight-icon-1.webp",
         "altText": "Midnight pH Balance Wipes"
       }
     ],
@@ -1512,7 +2208,19 @@ const products = [
     "slug": "essential-conditioner-59",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1585232351009-aa87416fca90?auto=format&fit=crop&w=800&q=80&sig=59",
+        "url": "/assets/migrated/16_highlight-icon-2.webp",
+        "altText": "Essential Conditioner"
+      },
+      {
+        "url": "/assets/migrated/17_highlight-icon-3.webp",
+        "altText": "Essential Conditioner"
+      },
+      {
+        "url": "/assets/migrated/18_gallery-2-v2.webp",
+        "altText": "Essential Conditioner"
+      },
+      {
+        "url": "/assets/migrated/19_gallery-image-7.webp",
         "altText": "Essential Conditioner"
       }
     ],
@@ -1538,7 +2246,19 @@ const products = [
     "slug": "midnight-intimate-wash-60",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228720-192a6af4e86e?auto=format&fit=crop&w=800&q=80&sig=60",
+        "url": "/assets/migrated/20_gallery-image-1.jpg",
+        "altText": "Midnight Intimate Wash"
+      },
+      {
+        "url": "/assets/migrated/21_about-img-3.webp",
+        "altText": "Midnight Intimate Wash"
+      },
+      {
+        "url": "/assets/migrated/22_gallery-5-v2.webp",
+        "altText": "Midnight Intimate Wash"
+      },
+      {
+        "url": "/assets/migrated/23_fleur-kaan-w4Dj3MshHQ0-unsplash.jpg",
         "altText": "Midnight Intimate Wash"
       }
     ],
@@ -1564,7 +2284,19 @@ const products = [
     "slug": "pure-sunscreen-61",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80&sig=61",
+        "url": "/assets/migrated/24_3.11_a206c225-bd03-40da-8e5f-e3a3e160e25a.webp",
+        "altText": "Pure Sunscreen"
+      },
+      {
+        "url": "/assets/migrated/25_gallery-image-5.webp",
+        "altText": "Pure Sunscreen"
+      },
+      {
+        "url": "/assets/migrated/26_luminous-perfecting-concealer_1.jpg",
+        "altText": "Pure Sunscreen"
+      },
+      {
+        "url": "/assets/migrated/27_intense-glow-concentrate.jpg",
         "altText": "Pure Sunscreen"
       }
     ],
@@ -1590,7 +2322,19 @@ const products = [
     "slug": "hydrating-bath-salt-62",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80&sig=62",
+        "url": "/assets/migrated/28_superseed-age-recovery-organic-facial-oil.jpg",
+        "altText": "Hydrating Bath Salt"
+      },
+      {
+        "url": "/assets/migrated/29_5-omega-and-vitamin-e-oil-for-face-A2281.jpg",
+        "altText": "Hydrating Bath Salt"
+      },
+      {
+        "url": "/assets/migrated/30_5-madara-sos-skincare-A3021.jpg",
+        "altText": "Hydrating Bath Salt"
+      },
+      {
+        "url": "/assets/migrated/31_2-nourish-and-repair-hair-care-A4051.jpg",
         "altText": "Hydrating Bath Salt"
       }
     ],
@@ -1616,7 +2360,19 @@ const products = [
     "slug": "botanical-conditioner-63",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1585232351009-aa87416fca90?auto=format&fit=crop&w=800&q=80&sig=63",
+        "url": "/assets/migrated/32_6-madara-his-collection-A5003.jpg",
+        "altText": "Botanical Conditioner"
+      },
+      {
+        "url": "/assets/migrated/33_4_madara-cosmetics-grow-volume-shampoo-conditioner-boost-scalp-treatment-set.jpg",
+        "altText": "Botanical Conditioner"
+      },
+      {
+        "url": "/assets/migrated/34_highlight-icon-4.webp",
+        "altText": "Botanical Conditioner"
+      },
+      {
+        "url": "/assets/migrated/35_brand-martha-stewart.webp",
         "altText": "Botanical Conditioner"
       }
     ],
@@ -1642,7 +2398,19 @@ const products = [
     "slug": "pure-face-serum-64",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1615397323214-3a7894a7e930?auto=format&fit=crop&w=800&q=80&sig=64",
+        "url": "/assets/migrated/36_brand-bustle.webp",
+        "altText": "Pure Face Serum"
+      },
+      {
+        "url": "/assets/migrated/37_brand-elite-daily.webp",
+        "altText": "Pure Face Serum"
+      },
+      {
+        "url": "/assets/migrated/38_brand-elle.webp",
+        "altText": "Pure Face Serum"
+      },
+      {
+        "url": "/assets/migrated/39_brand-vogue.webp",
         "altText": "Pure Face Serum"
       }
     ],
@@ -1668,7 +2436,19 @@ const products = [
     "slug": "botanical-hair-serum-65",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1585232351009-aa87416fca90?auto=format&fit=crop&w=800&q=80&sig=65",
+        "url": "/assets/migrated/41_b11b019c831543709c9f0852c3d79b21.thumbnail.0000000000_small.jpg",
+        "altText": "Botanical Hair Serum"
+      },
+      {
+        "url": "/assets/migrated/43_788b041920114347915fb7d4a16de257.thumbnail.0000000000_small.jpg",
+        "altText": "Botanical Hair Serum"
+      },
+      {
+        "url": "/assets/migrated/45_fb984906407f4fb9b5c5ceb14dd78350.thumbnail.0000000000_small.jpg",
+        "altText": "Botanical Hair Serum"
+      },
+      {
+        "url": "/assets/migrated/47_4b2f2c0725434683af01f499b85d7b90.thumbnail.0000000000_small.jpg",
         "altText": "Botanical Hair Serum"
       }
     ],
@@ -1694,7 +2474,19 @@ const products = [
     "slug": "revitalizing-bath-salt-66",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80&sig=66",
+        "url": "/assets/migrated/48_ChatGPT_Image_Mar_11_2026_10_46_49_AM.png",
+        "altText": "Revitalizing Bath Salt"
+      },
+      {
+        "url": "/assets/migrated/49_b12_720x_301f00ae-898e-41d1-b635-14ec61052c17.webp",
+        "altText": "Revitalizing Bath Salt"
+      },
+      {
+        "url": "/assets/migrated/50_about-img-2.webp",
+        "altText": "Revitalizing Bath Salt"
+      },
+      {
+        "url": "/assets/migrated/51_1-age-pro-intense-wrinkle-serum-A3340.jpg",
         "altText": "Revitalizing Bath Salt"
       }
     ],
@@ -1720,7 +2512,19 @@ const products = [
     "slug": "hydrating-soothing-gel-67",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228720-192a6af4e86e?auto=format&fit=crop&w=800&q=80&sig=67",
+        "url": "/assets/migrated/52_s2_1512x_98eb4d02-1fb4-4572-912e-640bff0b5a70.jpg",
+        "altText": "Hydrating Soothing Gel"
+      },
+      {
+        "url": "/assets/migrated/53_Beautina_1.png",
+        "altText": "Hydrating Soothing Gel"
+      },
+      {
+        "url": "/assets/migrated/54_Icon_2.png",
+        "altText": "Hydrating Soothing Gel"
+      },
+      {
+        "url": "/assets/migrated/55_Icon_4.png",
         "altText": "Hydrating Soothing Gel"
       }
     ],
@@ -1746,7 +2550,19 @@ const products = [
     "slug": "radiant-body-lotion-68",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1614859324967-bdf45d8b8431?auto=format&fit=crop&w=800&q=80&sig=68",
+        "url": "/assets/migrated/56_Icon_3.png",
+        "altText": "Radiant Body Lotion"
+      },
+      {
+        "url": "/assets/migrated/57_1-superseed-age-recovery-oil-30ml-A2603.jpg",
+        "altText": "Radiant Body Lotion"
+      },
+      {
+        "url": "/assets/migrated/0_home-after_1.jpg",
+        "altText": "Radiant Body Lotion"
+      },
+      {
+        "url": "/assets/migrated/1_home-before_1.jpg",
         "altText": "Radiant Body Lotion"
       }
     ],
@@ -1772,7 +2588,19 @@ const products = [
     "slug": "radiant-spa-day-bundle-69",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=800&q=80&sig=69",
+        "url": "/assets/migrated/2_b2_1_96db18e7-8cd1-4ac2-95aa-f203226fc675.webp",
+        "altText": "Radiant Spa Day Bundle"
+      },
+      {
+        "url": "/assets/migrated/3_home-after_4fcfbfed-535d-4e65-8f9f-1fe66b041eff.jpg",
+        "altText": "Radiant Spa Day Bundle"
+      },
+      {
+        "url": "/assets/migrated/4_gallery-image-8_11d220c1-ae96-4a4b-9528-eaf7e7947e95.webp",
+        "altText": "Radiant Spa Day Bundle"
+      },
+      {
+        "url": "/assets/migrated/5_custom-banner-2.jpg",
         "altText": "Radiant Spa Day Bundle"
       }
     ],
@@ -1798,7 +2626,19 @@ const products = [
     "slug": "hydrating-bath-bomb-70",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80&sig=70",
+        "url": "/assets/migrated/6_gallery-3-v2.webp",
+        "altText": "Hydrating Bath Bomb"
+      },
+      {
+        "url": "/assets/migrated/7_2-anti-age-recovery-treatment-A2603.jpg",
+        "altText": "Hydrating Bath Bomb"
+      },
+      {
+        "url": "/assets/migrated/8_4-replenishing-night-cream-A3062.jpg",
+        "altText": "Hydrating Bath Bomb"
+      },
+      {
+        "url": "/assets/migrated/9_b17_540x_aa6b96c0-cd33-460e-8da7-208e8c30f82e.webp",
         "altText": "Hydrating Bath Bomb"
       }
     ],
@@ -1824,7 +2664,19 @@ const products = [
     "slug": "soothing-moisturizer-71",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1615397323214-3a7894a7e930?auto=format&fit=crop&w=800&q=80&sig=71",
+        "url": "/assets/migrated/10_collection-tab-1.jpg",
+        "altText": "Soothing Moisturizer"
+      },
+      {
+        "url": "/assets/migrated/11_2.png",
+        "altText": "Soothing Moisturizer"
+      },
+      {
+        "url": "/assets/migrated/12_s31_900x_8f09b4d4-6d08-410a-b6c2-5f291c6eb648.webp",
+        "altText": "Soothing Moisturizer"
+      },
+      {
+        "url": "/assets/migrated/13_1.png",
         "altText": "Soothing Moisturizer"
       }
     ],
@@ -1850,7 +2702,19 @@ const products = [
     "slug": "nourishing-silk-sleep-mask-72",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80&sig=72",
+        "url": "/assets/migrated/14_s32_900x_8acd0d58-b6ff-42e4-9796-69f7e92d8ef7.jpg",
+        "altText": "Nourishing Silk Sleep Mask"
+      },
+      {
+        "url": "/assets/migrated/15_highlight-icon-1.webp",
+        "altText": "Nourishing Silk Sleep Mask"
+      },
+      {
+        "url": "/assets/migrated/16_highlight-icon-2.webp",
+        "altText": "Nourishing Silk Sleep Mask"
+      },
+      {
+        "url": "/assets/migrated/17_highlight-icon-3.webp",
         "altText": "Nourishing Silk Sleep Mask"
       }
     ],
@@ -1876,7 +2740,19 @@ const products = [
     "slug": "radiant-shower-gel-73",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80&sig=73",
+        "url": "/assets/migrated/18_gallery-2-v2.webp",
+        "altText": "Radiant Shower Gel"
+      },
+      {
+        "url": "/assets/migrated/19_gallery-image-7.webp",
+        "altText": "Radiant Shower Gel"
+      },
+      {
+        "url": "/assets/migrated/20_gallery-image-1.jpg",
+        "altText": "Radiant Shower Gel"
+      },
+      {
+        "url": "/assets/migrated/21_about-img-3.webp",
         "altText": "Radiant Shower Gel"
       }
     ],
@@ -1902,7 +2778,19 @@ const products = [
     "slug": "midnight-bridal-kit-74",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=800&q=80&sig=74",
+        "url": "/assets/migrated/22_gallery-5-v2.webp",
+        "altText": "Midnight Bridal Kit"
+      },
+      {
+        "url": "/assets/migrated/23_fleur-kaan-w4Dj3MshHQ0-unsplash.jpg",
+        "altText": "Midnight Bridal Kit"
+      },
+      {
+        "url": "/assets/migrated/24_3.11_a206c225-bd03-40da-8e5f-e3a3e160e25a.webp",
+        "altText": "Midnight Bridal Kit"
+      },
+      {
+        "url": "/assets/migrated/25_gallery-image-5.webp",
         "altText": "Midnight Bridal Kit"
       }
     ],
@@ -1928,7 +2816,19 @@ const products = [
     "slug": "essential-moisturizer-75",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80&sig=75",
+        "url": "/assets/migrated/26_luminous-perfecting-concealer_1.jpg",
+        "altText": "Essential Moisturizer"
+      },
+      {
+        "url": "/assets/migrated/27_intense-glow-concentrate.jpg",
+        "altText": "Essential Moisturizer"
+      },
+      {
+        "url": "/assets/migrated/28_superseed-age-recovery-organic-facial-oil.jpg",
+        "altText": "Essential Moisturizer"
+      },
+      {
+        "url": "/assets/migrated/29_5-omega-and-vitamin-e-oil-for-face-A2281.jpg",
         "altText": "Essential Moisturizer"
       }
     ],
@@ -1954,7 +2854,19 @@ const products = [
     "slug": "hydrating-body-butter-76",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1614859324967-bdf45d8b8431?auto=format&fit=crop&w=800&q=80&sig=76",
+        "url": "/assets/migrated/30_5-madara-sos-skincare-A3021.jpg",
+        "altText": "Hydrating Body Butter"
+      },
+      {
+        "url": "/assets/migrated/31_2-nourish-and-repair-hair-care-A4051.jpg",
+        "altText": "Hydrating Body Butter"
+      },
+      {
+        "url": "/assets/migrated/32_6-madara-his-collection-A5003.jpg",
+        "altText": "Hydrating Body Butter"
+      },
+      {
+        "url": "/assets/migrated/33_4_madara-cosmetics-grow-volume-shampoo-conditioner-boost-scalp-treatment-set.jpg",
         "altText": "Hydrating Body Butter"
       }
     ],
@@ -1980,7 +2892,19 @@ const products = [
     "slug": "revitalizing-relaxation-tea-77",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1598444747738-963b516b24d7?auto=format&fit=crop&w=800&q=80&sig=77",
+        "url": "/assets/migrated/34_highlight-icon-4.webp",
+        "altText": "Revitalizing Relaxation Tea"
+      },
+      {
+        "url": "/assets/migrated/35_brand-martha-stewart.webp",
+        "altText": "Revitalizing Relaxation Tea"
+      },
+      {
+        "url": "/assets/migrated/36_brand-bustle.webp",
+        "altText": "Revitalizing Relaxation Tea"
+      },
+      {
+        "url": "/assets/migrated/37_brand-elite-daily.webp",
         "altText": "Revitalizing Relaxation Tea"
       }
     ],
@@ -2006,7 +2930,19 @@ const products = [
     "slug": "nourishing-travel-essentials-kit-78",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=800&q=80&sig=78",
+        "url": "/assets/migrated/38_brand-elle.webp",
+        "altText": "Nourishing Travel Essentials Kit"
+      },
+      {
+        "url": "/assets/migrated/39_brand-vogue.webp",
+        "altText": "Nourishing Travel Essentials Kit"
+      },
+      {
+        "url": "/assets/migrated/41_b11b019c831543709c9f0852c3d79b21.thumbnail.0000000000_small.jpg",
+        "altText": "Nourishing Travel Essentials Kit"
+      },
+      {
+        "url": "/assets/migrated/43_788b041920114347915fb7d4a16de257.thumbnail.0000000000_small.jpg",
         "altText": "Nourishing Travel Essentials Kit"
       }
     ],
@@ -2032,7 +2968,19 @@ const products = [
     "slug": "hydrating-bath-salt-79",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80&sig=79",
+        "url": "/assets/migrated/45_fb984906407f4fb9b5c5ceb14dd78350.thumbnail.0000000000_small.jpg",
+        "altText": "Hydrating Bath Salt"
+      },
+      {
+        "url": "/assets/migrated/47_4b2f2c0725434683af01f499b85d7b90.thumbnail.0000000000_small.jpg",
+        "altText": "Hydrating Bath Salt"
+      },
+      {
+        "url": "/assets/migrated/48_ChatGPT_Image_Mar_11_2026_10_46_49_AM.png",
+        "altText": "Hydrating Bath Salt"
+      },
+      {
+        "url": "/assets/migrated/49_b12_720x_301f00ae-898e-41d1-b635-14ec61052c17.webp",
         "altText": "Hydrating Bath Salt"
       }
     ],
@@ -2058,7 +3006,19 @@ const products = [
     "slug": "purifying-relaxation-tea-80",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1598444747738-963b516b24d7?auto=format&fit=crop&w=800&q=80&sig=80",
+        "url": "/assets/migrated/50_about-img-2.webp",
+        "altText": "Purifying Relaxation Tea"
+      },
+      {
+        "url": "/assets/migrated/51_1-age-pro-intense-wrinkle-serum-A3340.jpg",
+        "altText": "Purifying Relaxation Tea"
+      },
+      {
+        "url": "/assets/migrated/52_s2_1512x_98eb4d02-1fb4-4572-912e-640bff0b5a70.jpg",
+        "altText": "Purifying Relaxation Tea"
+      },
+      {
+        "url": "/assets/migrated/53_Beautina_1.png",
         "altText": "Purifying Relaxation Tea"
       }
     ],
@@ -2084,7 +3044,19 @@ const products = [
     "slug": "botanical-body-mist-81",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=800&q=80&sig=81",
+        "url": "/assets/migrated/54_Icon_2.png",
+        "altText": "Botanical Body Mist"
+      },
+      {
+        "url": "/assets/migrated/55_Icon_4.png",
+        "altText": "Botanical Body Mist"
+      },
+      {
+        "url": "/assets/migrated/56_Icon_3.png",
+        "altText": "Botanical Body Mist"
+      },
+      {
+        "url": "/assets/migrated/57_1-superseed-age-recovery-oil-30ml-A2603.jpg",
         "altText": "Botanical Body Mist"
       }
     ],
@@ -2110,7 +3082,19 @@ const products = [
     "slug": "divine-ph-balance-wipes-82",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228720-192a6af4e86e?auto=format&fit=crop&w=800&q=80&sig=82",
+        "url": "/assets/migrated/0_home-after_1.jpg",
+        "altText": "Divine pH Balance Wipes"
+      },
+      {
+        "url": "/assets/migrated/1_home-before_1.jpg",
+        "altText": "Divine pH Balance Wipes"
+      },
+      {
+        "url": "/assets/migrated/2_b2_1_96db18e7-8cd1-4ac2-95aa-f203226fc675.webp",
+        "altText": "Divine pH Balance Wipes"
+      },
+      {
+        "url": "/assets/migrated/3_home-after_4fcfbfed-535d-4e65-8f9f-1fe66b041eff.jpg",
         "altText": "Divine pH Balance Wipes"
       }
     ],
@@ -2136,7 +3120,19 @@ const products = [
     "slug": "velvet-ultimate-glow-box-83",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=800&q=80&sig=83",
+        "url": "/assets/migrated/4_gallery-image-8_11d220c1-ae96-4a4b-9528-eaf7e7947e95.webp",
+        "altText": "Velvet Ultimate Glow Box"
+      },
+      {
+        "url": "/assets/migrated/5_custom-banner-2.jpg",
+        "altText": "Velvet Ultimate Glow Box"
+      },
+      {
+        "url": "/assets/migrated/6_gallery-3-v2.webp",
+        "altText": "Velvet Ultimate Glow Box"
+      },
+      {
+        "url": "/assets/migrated/7_2-anti-age-recovery-treatment-A2603.jpg",
         "altText": "Velvet Ultimate Glow Box"
       }
     ],
@@ -2162,7 +3158,19 @@ const products = [
     "slug": "soothing-face-serum-84",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80&sig=84",
+        "url": "/assets/migrated/8_4-replenishing-night-cream-A3062.jpg",
+        "altText": "Soothing Face Serum"
+      },
+      {
+        "url": "/assets/migrated/9_b17_540x_aa6b96c0-cd33-460e-8da7-208e8c30f82e.webp",
+        "altText": "Soothing Face Serum"
+      },
+      {
+        "url": "/assets/migrated/10_collection-tab-1.jpg",
+        "altText": "Soothing Face Serum"
+      },
+      {
+        "url": "/assets/migrated/11_2.png",
         "altText": "Soothing Face Serum"
       }
     ],
@@ -2188,7 +3196,19 @@ const products = [
     "slug": "divine-body-butter-85",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1614859324967-bdf45d8b8431?auto=format&fit=crop&w=800&q=80&sig=85",
+        "url": "/assets/migrated/12_s31_900x_8f09b4d4-6d08-410a-b6c2-5f291c6eb648.webp",
+        "altText": "Divine Body Butter"
+      },
+      {
+        "url": "/assets/migrated/13_1.png",
+        "altText": "Divine Body Butter"
+      },
+      {
+        "url": "/assets/migrated/14_s32_900x_8acd0d58-b6ff-42e4-9796-69f7e92d8ef7.jpg",
+        "altText": "Divine Body Butter"
+      },
+      {
+        "url": "/assets/migrated/15_highlight-icon-1.webp",
         "altText": "Divine Body Butter"
       }
     ],
@@ -2214,7 +3234,19 @@ const products = [
     "slug": "midnight-ultimate-glow-box-86",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=800&q=80&sig=86",
+        "url": "/assets/migrated/16_highlight-icon-2.webp",
+        "altText": "Midnight Ultimate Glow Box"
+      },
+      {
+        "url": "/assets/migrated/17_highlight-icon-3.webp",
+        "altText": "Midnight Ultimate Glow Box"
+      },
+      {
+        "url": "/assets/migrated/18_gallery-2-v2.webp",
+        "altText": "Midnight Ultimate Glow Box"
+      },
+      {
+        "url": "/assets/migrated/19_gallery-image-7.webp",
         "altText": "Midnight Ultimate Glow Box"
       }
     ],
@@ -2240,7 +3272,19 @@ const products = [
     "slug": "essential-ph-balance-wipes-87",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228720-192a6af4e86e?auto=format&fit=crop&w=800&q=80&sig=87",
+        "url": "/assets/migrated/20_gallery-image-1.jpg",
+        "altText": "Essential pH Balance Wipes"
+      },
+      {
+        "url": "/assets/migrated/21_about-img-3.webp",
+        "altText": "Essential pH Balance Wipes"
+      },
+      {
+        "url": "/assets/migrated/22_gallery-5-v2.webp",
+        "altText": "Essential pH Balance Wipes"
+      },
+      {
+        "url": "/assets/migrated/23_fleur-kaan-w4Dj3MshHQ0-unsplash.jpg",
         "altText": "Essential pH Balance Wipes"
       }
     ],
@@ -2266,7 +3310,19 @@ const products = [
     "slug": "radiant-hair-mask-88",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1585232351009-aa87416fca90?auto=format&fit=crop&w=800&q=80&sig=88",
+        "url": "/assets/migrated/24_3.11_a206c225-bd03-40da-8e5f-e3a3e160e25a.webp",
+        "altText": "Radiant Hair Mask"
+      },
+      {
+        "url": "/assets/migrated/25_gallery-image-5.webp",
+        "altText": "Radiant Hair Mask"
+      },
+      {
+        "url": "/assets/migrated/26_luminous-perfecting-concealer_1.jpg",
+        "altText": "Radiant Hair Mask"
+      },
+      {
+        "url": "/assets/migrated/27_intense-glow-concentrate.jpg",
         "altText": "Radiant Hair Mask"
       }
     ],
@@ -2292,7 +3348,19 @@ const products = [
     "slug": "soothing-exfoliating-scrub-89",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80&sig=89",
+        "url": "/assets/migrated/28_superseed-age-recovery-organic-facial-oil.jpg",
+        "altText": "Soothing Exfoliating Scrub"
+      },
+      {
+        "url": "/assets/migrated/29_5-omega-and-vitamin-e-oil-for-face-A2281.jpg",
+        "altText": "Soothing Exfoliating Scrub"
+      },
+      {
+        "url": "/assets/migrated/30_5-madara-sos-skincare-A3021.jpg",
+        "altText": "Soothing Exfoliating Scrub"
+      },
+      {
+        "url": "/assets/migrated/31_2-nourish-and-repair-hair-care-A4051.jpg",
         "altText": "Soothing Exfoliating Scrub"
       }
     ],
@@ -2318,7 +3386,19 @@ const products = [
     "slug": "essential-body-lotion-90",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1614859324967-bdf45d8b8431?auto=format&fit=crop&w=800&q=80&sig=90",
+        "url": "/assets/migrated/32_6-madara-his-collection-A5003.jpg",
+        "altText": "Essential Body Lotion"
+      },
+      {
+        "url": "/assets/migrated/33_4_madara-cosmetics-grow-volume-shampoo-conditioner-boost-scalp-treatment-set.jpg",
+        "altText": "Essential Body Lotion"
+      },
+      {
+        "url": "/assets/migrated/34_highlight-icon-4.webp",
+        "altText": "Essential Body Lotion"
+      },
+      {
+        "url": "/assets/migrated/35_brand-martha-stewart.webp",
         "altText": "Essential Body Lotion"
       }
     ],
@@ -2344,7 +3424,19 @@ const products = [
     "slug": "midnight-conditioner-91",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=800&q=80&sig=91",
+        "url": "/assets/migrated/36_brand-bustle.webp",
+        "altText": "Midnight Conditioner"
+      },
+      {
+        "url": "/assets/migrated/37_brand-elite-daily.webp",
+        "altText": "Midnight Conditioner"
+      },
+      {
+        "url": "/assets/migrated/38_brand-elle.webp",
+        "altText": "Midnight Conditioner"
+      },
+      {
+        "url": "/assets/migrated/39_brand-vogue.webp",
         "altText": "Midnight Conditioner"
       }
     ],
@@ -2370,7 +3462,19 @@ const products = [
     "slug": "hydrating-intimate-wash-92",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228720-192a6af4e86e?auto=format&fit=crop&w=800&q=80&sig=92",
+        "url": "/assets/migrated/41_b11b019c831543709c9f0852c3d79b21.thumbnail.0000000000_small.jpg",
+        "altText": "Hydrating Intimate Wash"
+      },
+      {
+        "url": "/assets/migrated/43_788b041920114347915fb7d4a16de257.thumbnail.0000000000_small.jpg",
+        "altText": "Hydrating Intimate Wash"
+      },
+      {
+        "url": "/assets/migrated/45_fb984906407f4fb9b5c5ceb14dd78350.thumbnail.0000000000_small.jpg",
+        "altText": "Hydrating Intimate Wash"
+      },
+      {
+        "url": "/assets/migrated/47_4b2f2c0725434683af01f499b85d7b90.thumbnail.0000000000_small.jpg",
         "altText": "Hydrating Intimate Wash"
       }
     ],
@@ -2396,7 +3500,19 @@ const products = [
     "slug": "hydrating-soothing-gel-93",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228720-192a6af4e86e?auto=format&fit=crop&w=800&q=80&sig=93",
+        "url": "/assets/migrated/48_ChatGPT_Image_Mar_11_2026_10_46_49_AM.png",
+        "altText": "Hydrating Soothing Gel"
+      },
+      {
+        "url": "/assets/migrated/49_b12_720x_301f00ae-898e-41d1-b635-14ec61052c17.webp",
+        "altText": "Hydrating Soothing Gel"
+      },
+      {
+        "url": "/assets/migrated/50_about-img-2.webp",
+        "altText": "Hydrating Soothing Gel"
+      },
+      {
+        "url": "/assets/migrated/51_1-age-pro-intense-wrinkle-serum-A3340.jpg",
         "altText": "Hydrating Soothing Gel"
       }
     ],
@@ -2422,7 +3538,19 @@ const products = [
     "slug": "divine-shampoo-94",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1585232351009-aa87416fca90?auto=format&fit=crop&w=800&q=80&sig=94",
+        "url": "/assets/migrated/52_s2_1512x_98eb4d02-1fb4-4572-912e-640bff0b5a70.jpg",
+        "altText": "Divine Shampoo"
+      },
+      {
+        "url": "/assets/migrated/53_Beautina_1.png",
+        "altText": "Divine Shampoo"
+      },
+      {
+        "url": "/assets/migrated/54_Icon_2.png",
+        "altText": "Divine Shampoo"
+      },
+      {
+        "url": "/assets/migrated/55_Icon_4.png",
         "altText": "Divine Shampoo"
       }
     ],
@@ -2448,7 +3576,19 @@ const products = [
     "slug": "botanical-relaxation-tea-95",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80&sig=95",
+        "url": "/assets/migrated/56_Icon_3.png",
+        "altText": "Botanical Relaxation Tea"
+      },
+      {
+        "url": "/assets/migrated/57_1-superseed-age-recovery-oil-30ml-A2603.jpg",
+        "altText": "Botanical Relaxation Tea"
+      },
+      {
+        "url": "/assets/migrated/0_home-after_1.jpg",
+        "altText": "Botanical Relaxation Tea"
+      },
+      {
+        "url": "/assets/migrated/1_home-before_1.jpg",
         "altText": "Botanical Relaxation Tea"
       }
     ],
@@ -2474,7 +3614,19 @@ const products = [
     "slug": "radiant-bath-bomb-96",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80&sig=96",
+        "url": "/assets/migrated/2_b2_1_96db18e7-8cd1-4ac2-95aa-f203226fc675.webp",
+        "altText": "Radiant Bath Bomb"
+      },
+      {
+        "url": "/assets/migrated/3_home-after_4fcfbfed-535d-4e65-8f9f-1fe66b041eff.jpg",
+        "altText": "Radiant Bath Bomb"
+      },
+      {
+        "url": "/assets/migrated/4_gallery-image-8_11d220c1-ae96-4a4b-9528-eaf7e7947e95.webp",
+        "altText": "Radiant Bath Bomb"
+      },
+      {
+        "url": "/assets/migrated/5_custom-banner-2.jpg",
         "altText": "Radiant Bath Bomb"
       }
     ],
@@ -2500,7 +3652,19 @@ const products = [
     "slug": "purifying-lip-balm-97",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1615397323214-3a7894a7e930?auto=format&fit=crop&w=800&q=80&sig=97",
+        "url": "/assets/migrated/6_gallery-3-v2.webp",
+        "altText": "Purifying Lip Balm"
+      },
+      {
+        "url": "/assets/migrated/7_2-anti-age-recovery-treatment-A2603.jpg",
+        "altText": "Purifying Lip Balm"
+      },
+      {
+        "url": "/assets/migrated/8_4-replenishing-night-cream-A3062.jpg",
+        "altText": "Purifying Lip Balm"
+      },
+      {
+        "url": "/assets/migrated/9_b17_540x_aa6b96c0-cd33-460e-8da7-208e8c30f82e.webp",
         "altText": "Purifying Lip Balm"
       }
     ],
@@ -2526,7 +3690,19 @@ const products = [
     "slug": "botanical-bath-bomb-98",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80&sig=98",
+        "url": "/assets/migrated/10_collection-tab-1.jpg",
+        "altText": "Botanical Bath Bomb"
+      },
+      {
+        "url": "/assets/migrated/11_2.png",
+        "altText": "Botanical Bath Bomb"
+      },
+      {
+        "url": "/assets/migrated/12_s31_900x_8f09b4d4-6d08-410a-b6c2-5f291c6eb648.webp",
+        "altText": "Botanical Bath Bomb"
+      },
+      {
+        "url": "/assets/migrated/13_1.png",
         "altText": "Botanical Bath Bomb"
       }
     ],
@@ -2552,7 +3728,19 @@ const products = [
     "slug": "radiant-cleanser-99",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80&sig=99",
+        "url": "/assets/migrated/14_s32_900x_8acd0d58-b6ff-42e4-9796-69f7e92d8ef7.jpg",
+        "altText": "Radiant Cleanser"
+      },
+      {
+        "url": "/assets/migrated/15_highlight-icon-1.webp",
+        "altText": "Radiant Cleanser"
+      },
+      {
+        "url": "/assets/migrated/16_highlight-icon-2.webp",
+        "altText": "Radiant Cleanser"
+      },
+      {
+        "url": "/assets/migrated/17_highlight-icon-3.webp",
         "altText": "Radiant Cleanser"
       }
     ],
@@ -2578,7 +3766,19 @@ const products = [
     "slug": "radiant-roll-on-perfume-100",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=800&q=80&sig=100",
+        "url": "/assets/migrated/18_gallery-2-v2.webp",
+        "altText": "Radiant Roll-on Perfume"
+      },
+      {
+        "url": "/assets/migrated/19_gallery-image-7.webp",
+        "altText": "Radiant Roll-on Perfume"
+      },
+      {
+        "url": "/assets/migrated/20_gallery-image-1.jpg",
+        "altText": "Radiant Roll-on Perfume"
+      },
+      {
+        "url": "/assets/migrated/21_about-img-3.webp",
         "altText": "Radiant Roll-on Perfume"
       }
     ],
@@ -2604,7 +3804,19 @@ const products = [
     "slug": "nourishing-exfoliating-scrub-101",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80&sig=101",
+        "url": "/assets/migrated/22_gallery-5-v2.webp",
+        "altText": "Nourishing Exfoliating Scrub"
+      },
+      {
+        "url": "/assets/migrated/23_fleur-kaan-w4Dj3MshHQ0-unsplash.jpg",
+        "altText": "Nourishing Exfoliating Scrub"
+      },
+      {
+        "url": "/assets/migrated/24_3.11_a206c225-bd03-40da-8e5f-e3a3e160e25a.webp",
+        "altText": "Nourishing Exfoliating Scrub"
+      },
+      {
+        "url": "/assets/migrated/25_gallery-image-5.webp",
         "altText": "Nourishing Exfoliating Scrub"
       }
     ],
@@ -2630,7 +3842,19 @@ const products = [
     "slug": "radiant-body-lotion-102",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1614859324967-bdf45d8b8431?auto=format&fit=crop&w=800&q=80&sig=102",
+        "url": "/assets/migrated/26_luminous-perfecting-concealer_1.jpg",
+        "altText": "Radiant Body Lotion"
+      },
+      {
+        "url": "/assets/migrated/27_intense-glow-concentrate.jpg",
+        "altText": "Radiant Body Lotion"
+      },
+      {
+        "url": "/assets/migrated/28_superseed-age-recovery-organic-facial-oil.jpg",
+        "altText": "Radiant Body Lotion"
+      },
+      {
+        "url": "/assets/migrated/29_5-omega-and-vitamin-e-oil-for-face-A2281.jpg",
         "altText": "Radiant Body Lotion"
       }
     ],
@@ -2656,7 +3880,19 @@ const products = [
     "slug": "velvet-gua-sha-103",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1598444747738-963b516b24d7?auto=format&fit=crop&w=800&q=80&sig=103",
+        "url": "/assets/migrated/30_5-madara-sos-skincare-A3021.jpg",
+        "altText": "Velvet Gua Sha"
+      },
+      {
+        "url": "/assets/migrated/31_2-nourish-and-repair-hair-care-A4051.jpg",
+        "altText": "Velvet Gua Sha"
+      },
+      {
+        "url": "/assets/migrated/32_6-madara-his-collection-A5003.jpg",
+        "altText": "Velvet Gua Sha"
+      },
+      {
+        "url": "/assets/migrated/33_4_madara-cosmetics-grow-volume-shampoo-conditioner-boost-scalp-treatment-set.jpg",
         "altText": "Velvet Gua Sha"
       }
     ],
@@ -2682,7 +3918,19 @@ const products = [
     "slug": "purifying-moisturizer-104",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1615397323214-3a7894a7e930?auto=format&fit=crop&w=800&q=80&sig=104",
+        "url": "/assets/migrated/34_highlight-icon-4.webp",
+        "altText": "Purifying Moisturizer"
+      },
+      {
+        "url": "/assets/migrated/35_brand-martha-stewart.webp",
+        "altText": "Purifying Moisturizer"
+      },
+      {
+        "url": "/assets/migrated/36_brand-bustle.webp",
+        "altText": "Purifying Moisturizer"
+      },
+      {
+        "url": "/assets/migrated/37_brand-elite-daily.webp",
         "altText": "Purifying Moisturizer"
       }
     ],
@@ -2708,7 +3956,19 @@ const products = [
     "slug": "luminous-hair-mask-105",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1585232351009-aa87416fca90?auto=format&fit=crop&w=800&q=80&sig=105",
+        "url": "/assets/migrated/38_brand-elle.webp",
+        "altText": "Luminous Hair Mask"
+      },
+      {
+        "url": "/assets/migrated/39_brand-vogue.webp",
+        "altText": "Luminous Hair Mask"
+      },
+      {
+        "url": "/assets/migrated/41_b11b019c831543709c9f0852c3d79b21.thumbnail.0000000000_small.jpg",
+        "altText": "Luminous Hair Mask"
+      },
+      {
+        "url": "/assets/migrated/43_788b041920114347915fb7d4a16de257.thumbnail.0000000000_small.jpg",
         "altText": "Luminous Hair Mask"
       }
     ],
@@ -2734,7 +3994,19 @@ const products = [
     "slug": "soothing-relaxation-tea-106",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1598444747738-963b516b24d7?auto=format&fit=crop&w=800&q=80&sig=106",
+        "url": "/assets/migrated/45_fb984906407f4fb9b5c5ceb14dd78350.thumbnail.0000000000_small.jpg",
+        "altText": "Soothing Relaxation Tea"
+      },
+      {
+        "url": "/assets/migrated/47_4b2f2c0725434683af01f499b85d7b90.thumbnail.0000000000_small.jpg",
+        "altText": "Soothing Relaxation Tea"
+      },
+      {
+        "url": "/assets/migrated/48_ChatGPT_Image_Mar_11_2026_10_46_49_AM.png",
+        "altText": "Soothing Relaxation Tea"
+      },
+      {
+        "url": "/assets/migrated/49_b12_720x_301f00ae-898e-41d1-b635-14ec61052c17.webp",
         "altText": "Soothing Relaxation Tea"
       }
     ],
@@ -2760,7 +4032,19 @@ const products = [
     "slug": "botanical-roll-on-perfume-107",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=800&q=80&sig=107",
+        "url": "/assets/migrated/50_about-img-2.webp",
+        "altText": "Botanical Roll-on Perfume"
+      },
+      {
+        "url": "/assets/migrated/51_1-age-pro-intense-wrinkle-serum-A3340.jpg",
+        "altText": "Botanical Roll-on Perfume"
+      },
+      {
+        "url": "/assets/migrated/52_s2_1512x_98eb4d02-1fb4-4572-912e-640bff0b5a70.jpg",
+        "altText": "Botanical Roll-on Perfume"
+      },
+      {
+        "url": "/assets/migrated/53_Beautina_1.png",
         "altText": "Botanical Roll-on Perfume"
       }
     ],
@@ -2786,7 +4070,19 @@ const products = [
     "slug": "hydrating-sunscreen-108",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80&sig=108",
+        "url": "/assets/migrated/54_Icon_2.png",
+        "altText": "Hydrating Sunscreen"
+      },
+      {
+        "url": "/assets/migrated/55_Icon_4.png",
+        "altText": "Hydrating Sunscreen"
+      },
+      {
+        "url": "/assets/migrated/56_Icon_3.png",
+        "altText": "Hydrating Sunscreen"
+      },
+      {
+        "url": "/assets/migrated/57_1-superseed-age-recovery-oil-30ml-A2603.jpg",
         "altText": "Hydrating Sunscreen"
       }
     ],
@@ -2812,7 +4108,19 @@ const products = [
     "slug": "nourishing-spa-day-bundle-109",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=800&q=80&sig=109",
+        "url": "/assets/migrated/0_home-after_1.jpg",
+        "altText": "Nourishing Spa Day Bundle"
+      },
+      {
+        "url": "/assets/migrated/1_home-before_1.jpg",
+        "altText": "Nourishing Spa Day Bundle"
+      },
+      {
+        "url": "/assets/migrated/2_b2_1_96db18e7-8cd1-4ac2-95aa-f203226fc675.webp",
+        "altText": "Nourishing Spa Day Bundle"
+      },
+      {
+        "url": "/assets/migrated/3_home-after_4fcfbfed-535d-4e65-8f9f-1fe66b041eff.jpg",
         "altText": "Nourishing Spa Day Bundle"
       }
     ],
@@ -2838,7 +4146,19 @@ const products = [
     "slug": "midnight-sunscreen-110",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80&sig=110",
+        "url": "/assets/migrated/4_gallery-image-8_11d220c1-ae96-4a4b-9528-eaf7e7947e95.webp",
+        "altText": "Midnight Sunscreen"
+      },
+      {
+        "url": "/assets/migrated/5_custom-banner-2.jpg",
+        "altText": "Midnight Sunscreen"
+      },
+      {
+        "url": "/assets/migrated/6_gallery-3-v2.webp",
+        "altText": "Midnight Sunscreen"
+      },
+      {
+        "url": "/assets/migrated/7_2-anti-age-recovery-treatment-A2603.jpg",
         "altText": "Midnight Sunscreen"
       }
     ],
@@ -2864,7 +4184,19 @@ const products = [
     "slug": "soothing-lip-balm-111",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80&sig=111",
+        "url": "/assets/migrated/8_4-replenishing-night-cream-A3062.jpg",
+        "altText": "Soothing Lip Balm"
+      },
+      {
+        "url": "/assets/migrated/9_b17_540x_aa6b96c0-cd33-460e-8da7-208e8c30f82e.webp",
+        "altText": "Soothing Lip Balm"
+      },
+      {
+        "url": "/assets/migrated/10_collection-tab-1.jpg",
+        "altText": "Soothing Lip Balm"
+      },
+      {
+        "url": "/assets/migrated/11_2.png",
         "altText": "Soothing Lip Balm"
       }
     ],
@@ -2890,7 +4222,19 @@ const products = [
     "slug": "revitalizing-shower-gel-112",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80&sig=112",
+        "url": "/assets/migrated/12_s31_900x_8f09b4d4-6d08-410a-b6c2-5f291c6eb648.webp",
+        "altText": "Revitalizing Shower Gel"
+      },
+      {
+        "url": "/assets/migrated/13_1.png",
+        "altText": "Revitalizing Shower Gel"
+      },
+      {
+        "url": "/assets/migrated/14_s32_900x_8acd0d58-b6ff-42e4-9796-69f7e92d8ef7.jpg",
+        "altText": "Revitalizing Shower Gel"
+      },
+      {
+        "url": "/assets/migrated/15_highlight-icon-1.webp",
         "altText": "Revitalizing Shower Gel"
       }
     ],
@@ -2916,7 +4260,19 @@ const products = [
     "slug": "essential-bridal-kit-113",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=800&q=80&sig=113",
+        "url": "/assets/migrated/16_highlight-icon-2.webp",
+        "altText": "Essential Bridal Kit"
+      },
+      {
+        "url": "/assets/migrated/17_highlight-icon-3.webp",
+        "altText": "Essential Bridal Kit"
+      },
+      {
+        "url": "/assets/migrated/18_gallery-2-v2.webp",
+        "altText": "Essential Bridal Kit"
+      },
+      {
+        "url": "/assets/migrated/19_gallery-image-7.webp",
         "altText": "Essential Bridal Kit"
       }
     ],
@@ -2942,7 +4298,19 @@ const products = [
     "slug": "midnight-shampoo-114",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1585232351009-aa87416fca90?auto=format&fit=crop&w=800&q=80&sig=114",
+        "url": "/assets/migrated/20_gallery-image-1.jpg",
+        "altText": "Midnight Shampoo"
+      },
+      {
+        "url": "/assets/migrated/21_about-img-3.webp",
+        "altText": "Midnight Shampoo"
+      },
+      {
+        "url": "/assets/migrated/22_gallery-5-v2.webp",
+        "altText": "Midnight Shampoo"
+      },
+      {
+        "url": "/assets/migrated/23_fleur-kaan-w4Dj3MshHQ0-unsplash.jpg",
         "altText": "Midnight Shampoo"
       }
     ],
@@ -2968,7 +4336,19 @@ const products = [
     "slug": "hydrating-facial-roller-115",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80&sig=115",
+        "url": "/assets/migrated/24_3.11_a206c225-bd03-40da-8e5f-e3a3e160e25a.webp",
+        "altText": "Hydrating Facial Roller"
+      },
+      {
+        "url": "/assets/migrated/25_gallery-image-5.webp",
+        "altText": "Hydrating Facial Roller"
+      },
+      {
+        "url": "/assets/migrated/26_luminous-perfecting-concealer_1.jpg",
+        "altText": "Hydrating Facial Roller"
+      },
+      {
+        "url": "/assets/migrated/27_intense-glow-concentrate.jpg",
         "altText": "Hydrating Facial Roller"
       }
     ],
@@ -2994,7 +4374,19 @@ const products = [
     "slug": "radiant-soothing-gel-116",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228720-192a6af4e86e?auto=format&fit=crop&w=800&q=80&sig=116",
+        "url": "/assets/migrated/28_superseed-age-recovery-organic-facial-oil.jpg",
+        "altText": "Radiant Soothing Gel"
+      },
+      {
+        "url": "/assets/migrated/29_5-omega-and-vitamin-e-oil-for-face-A2281.jpg",
+        "altText": "Radiant Soothing Gel"
+      },
+      {
+        "url": "/assets/migrated/30_5-madara-sos-skincare-A3021.jpg",
+        "altText": "Radiant Soothing Gel"
+      },
+      {
+        "url": "/assets/migrated/31_2-nourish-and-repair-hair-care-A4051.jpg",
         "altText": "Radiant Soothing Gel"
       }
     ],
@@ -3020,7 +4412,19 @@ const products = [
     "slug": "divine-ultimate-glow-box-117",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=800&q=80&sig=117",
+        "url": "/assets/migrated/32_6-madara-his-collection-A5003.jpg",
+        "altText": "Divine Ultimate Glow Box"
+      },
+      {
+        "url": "/assets/migrated/33_4_madara-cosmetics-grow-volume-shampoo-conditioner-boost-scalp-treatment-set.jpg",
+        "altText": "Divine Ultimate Glow Box"
+      },
+      {
+        "url": "/assets/migrated/34_highlight-icon-4.webp",
+        "altText": "Divine Ultimate Glow Box"
+      },
+      {
+        "url": "/assets/migrated/35_brand-martha-stewart.webp",
         "altText": "Divine Ultimate Glow Box"
       }
     ],
@@ -3046,7 +4450,19 @@ const products = [
     "slug": "botanical-silk-sleep-mask-118",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80&sig=118",
+        "url": "/assets/migrated/36_brand-bustle.webp",
+        "altText": "Botanical Silk Sleep Mask"
+      },
+      {
+        "url": "/assets/migrated/37_brand-elite-daily.webp",
+        "altText": "Botanical Silk Sleep Mask"
+      },
+      {
+        "url": "/assets/migrated/38_brand-elle.webp",
+        "altText": "Botanical Silk Sleep Mask"
+      },
+      {
+        "url": "/assets/migrated/39_brand-vogue.webp",
         "altText": "Botanical Silk Sleep Mask"
       }
     ],
@@ -3072,7 +4488,19 @@ const products = [
     "slug": "pure-solid-perfume-119",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=800&q=80&sig=119",
+        "url": "/assets/migrated/41_b11b019c831543709c9f0852c3d79b21.thumbnail.0000000000_small.jpg",
+        "altText": "Pure Solid Perfume"
+      },
+      {
+        "url": "/assets/migrated/43_788b041920114347915fb7d4a16de257.thumbnail.0000000000_small.jpg",
+        "altText": "Pure Solid Perfume"
+      },
+      {
+        "url": "/assets/migrated/45_fb984906407f4fb9b5c5ceb14dd78350.thumbnail.0000000000_small.jpg",
+        "altText": "Pure Solid Perfume"
+      },
+      {
+        "url": "/assets/migrated/47_4b2f2c0725434683af01f499b85d7b90.thumbnail.0000000000_small.jpg",
         "altText": "Pure Solid Perfume"
       }
     ],
@@ -3098,7 +4526,19 @@ const products = [
     "slug": "revitalizing-soothing-gel-120",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228720-192a6af4e86e?auto=format&fit=crop&w=800&q=80&sig=120",
+        "url": "/assets/migrated/48_ChatGPT_Image_Mar_11_2026_10_46_49_AM.png",
+        "altText": "Revitalizing Soothing Gel"
+      },
+      {
+        "url": "/assets/migrated/49_b12_720x_301f00ae-898e-41d1-b635-14ec61052c17.webp",
+        "altText": "Revitalizing Soothing Gel"
+      },
+      {
+        "url": "/assets/migrated/50_about-img-2.webp",
+        "altText": "Revitalizing Soothing Gel"
+      },
+      {
+        "url": "/assets/migrated/51_1-age-pro-intense-wrinkle-serum-A3340.jpg",
         "altText": "Revitalizing Soothing Gel"
       }
     ],
@@ -3124,7 +4564,19 @@ const products = [
     "slug": "pure-ultimate-glow-box-121",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=800&q=80&sig=121",
+        "url": "/assets/migrated/52_s2_1512x_98eb4d02-1fb4-4572-912e-640bff0b5a70.jpg",
+        "altText": "Pure Ultimate Glow Box"
+      },
+      {
+        "url": "/assets/migrated/53_Beautina_1.png",
+        "altText": "Pure Ultimate Glow Box"
+      },
+      {
+        "url": "/assets/migrated/54_Icon_2.png",
+        "altText": "Pure Ultimate Glow Box"
+      },
+      {
+        "url": "/assets/migrated/55_Icon_4.png",
         "altText": "Pure Ultimate Glow Box"
       }
     ],
@@ -3150,7 +4602,19 @@ const products = [
     "slug": "divine-conditioner-122",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1585232351009-aa87416fca90?auto=format&fit=crop&w=800&q=80&sig=122",
+        "url": "/assets/migrated/56_Icon_3.png",
+        "altText": "Divine Conditioner"
+      },
+      {
+        "url": "/assets/migrated/57_1-superseed-age-recovery-oil-30ml-A2603.jpg",
+        "altText": "Divine Conditioner"
+      },
+      {
+        "url": "/assets/migrated/0_home-after_1.jpg",
+        "altText": "Divine Conditioner"
+      },
+      {
+        "url": "/assets/migrated/1_home-before_1.jpg",
         "altText": "Divine Conditioner"
       }
     ],
@@ -3176,7 +4640,19 @@ const products = [
     "slug": "nourishing-bath-bomb-123",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80&sig=123",
+        "url": "/assets/migrated/2_b2_1_96db18e7-8cd1-4ac2-95aa-f203226fc675.webp",
+        "altText": "Nourishing Bath Bomb"
+      },
+      {
+        "url": "/assets/migrated/3_home-after_4fcfbfed-535d-4e65-8f9f-1fe66b041eff.jpg",
+        "altText": "Nourishing Bath Bomb"
+      },
+      {
+        "url": "/assets/migrated/4_gallery-image-8_11d220c1-ae96-4a4b-9528-eaf7e7947e95.webp",
+        "altText": "Nourishing Bath Bomb"
+      },
+      {
+        "url": "/assets/migrated/5_custom-banner-2.jpg",
         "altText": "Nourishing Bath Bomb"
       }
     ],
@@ -3202,7 +4678,19 @@ const products = [
     "slug": "botanical-bath-bomb-124",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80&sig=124",
+        "url": "/assets/migrated/6_gallery-3-v2.webp",
+        "altText": "Botanical Bath Bomb"
+      },
+      {
+        "url": "/assets/migrated/7_2-anti-age-recovery-treatment-A2603.jpg",
+        "altText": "Botanical Bath Bomb"
+      },
+      {
+        "url": "/assets/migrated/8_4-replenishing-night-cream-A3062.jpg",
+        "altText": "Botanical Bath Bomb"
+      },
+      {
+        "url": "/assets/migrated/9_b17_540x_aa6b96c0-cd33-460e-8da7-208e8c30f82e.webp",
         "altText": "Botanical Bath Bomb"
       }
     ],
@@ -3228,7 +4716,19 @@ const products = [
     "slug": "pure-moisturizer-125",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1615397323214-3a7894a7e930?auto=format&fit=crop&w=800&q=80&sig=125",
+        "url": "/assets/migrated/10_collection-tab-1.jpg",
+        "altText": "Pure Moisturizer"
+      },
+      {
+        "url": "/assets/migrated/11_2.png",
+        "altText": "Pure Moisturizer"
+      },
+      {
+        "url": "/assets/migrated/12_s31_900x_8f09b4d4-6d08-410a-b6c2-5f291c6eb648.webp",
+        "altText": "Pure Moisturizer"
+      },
+      {
+        "url": "/assets/migrated/13_1.png",
         "altText": "Pure Moisturizer"
       }
     ],
@@ -3254,7 +4754,19 @@ const products = [
     "slug": "revitalizing-exfoliating-scrub-126",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80&sig=126",
+        "url": "/assets/migrated/14_s32_900x_8acd0d58-b6ff-42e4-9796-69f7e92d8ef7.jpg",
+        "altText": "Revitalizing Exfoliating Scrub"
+      },
+      {
+        "url": "/assets/migrated/15_highlight-icon-1.webp",
+        "altText": "Revitalizing Exfoliating Scrub"
+      },
+      {
+        "url": "/assets/migrated/16_highlight-icon-2.webp",
+        "altText": "Revitalizing Exfoliating Scrub"
+      },
+      {
+        "url": "/assets/migrated/17_highlight-icon-3.webp",
         "altText": "Revitalizing Exfoliating Scrub"
       }
     ],
@@ -3280,7 +4792,19 @@ const products = [
     "slug": "divine-silk-sleep-mask-127",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80&sig=127",
+        "url": "/assets/migrated/18_gallery-2-v2.webp",
+        "altText": "Divine Silk Sleep Mask"
+      },
+      {
+        "url": "/assets/migrated/19_gallery-image-7.webp",
+        "altText": "Divine Silk Sleep Mask"
+      },
+      {
+        "url": "/assets/migrated/20_gallery-image-1.jpg",
+        "altText": "Divine Silk Sleep Mask"
+      },
+      {
+        "url": "/assets/migrated/21_about-img-3.webp",
         "altText": "Divine Silk Sleep Mask"
       }
     ],
@@ -3306,7 +4830,19 @@ const products = [
     "slug": "essential-hair-mask-128",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=800&q=80&sig=128",
+        "url": "/assets/migrated/22_gallery-5-v2.webp",
+        "altText": "Essential Hair Mask"
+      },
+      {
+        "url": "/assets/migrated/23_fleur-kaan-w4Dj3MshHQ0-unsplash.jpg",
+        "altText": "Essential Hair Mask"
+      },
+      {
+        "url": "/assets/migrated/24_3.11_a206c225-bd03-40da-8e5f-e3a3e160e25a.webp",
+        "altText": "Essential Hair Mask"
+      },
+      {
+        "url": "/assets/migrated/25_gallery-image-5.webp",
         "altText": "Essential Hair Mask"
       }
     ],
@@ -3332,7 +4868,19 @@ const products = [
     "slug": "midnight-face-serum-129",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80&sig=129",
+        "url": "/assets/migrated/26_luminous-perfecting-concealer_1.jpg",
+        "altText": "Midnight Face Serum"
+      },
+      {
+        "url": "/assets/migrated/27_intense-glow-concentrate.jpg",
+        "altText": "Midnight Face Serum"
+      },
+      {
+        "url": "/assets/migrated/28_superseed-age-recovery-organic-facial-oil.jpg",
+        "altText": "Midnight Face Serum"
+      },
+      {
+        "url": "/assets/migrated/29_5-omega-and-vitamin-e-oil-for-face-A2281.jpg",
         "altText": "Midnight Face Serum"
       }
     ],
@@ -3358,7 +4906,19 @@ const products = [
     "slug": "luminous-roll-on-perfume-130",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=800&q=80&sig=130",
+        "url": "/assets/migrated/30_5-madara-sos-skincare-A3021.jpg",
+        "altText": "Luminous Roll-on Perfume"
+      },
+      {
+        "url": "/assets/migrated/31_2-nourish-and-repair-hair-care-A4051.jpg",
+        "altText": "Luminous Roll-on Perfume"
+      },
+      {
+        "url": "/assets/migrated/32_6-madara-his-collection-A5003.jpg",
+        "altText": "Luminous Roll-on Perfume"
+      },
+      {
+        "url": "/assets/migrated/33_4_madara-cosmetics-grow-volume-shampoo-conditioner-boost-scalp-treatment-set.jpg",
         "altText": "Luminous Roll-on Perfume"
       }
     ],
@@ -3384,7 +4944,19 @@ const products = [
     "slug": "nourishing-bridal-kit-131",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=800&q=80&sig=131",
+        "url": "/assets/migrated/34_highlight-icon-4.webp",
+        "altText": "Nourishing Bridal Kit"
+      },
+      {
+        "url": "/assets/migrated/35_brand-martha-stewart.webp",
+        "altText": "Nourishing Bridal Kit"
+      },
+      {
+        "url": "/assets/migrated/36_brand-bustle.webp",
+        "altText": "Nourishing Bridal Kit"
+      },
+      {
+        "url": "/assets/migrated/37_brand-elite-daily.webp",
         "altText": "Nourishing Bridal Kit"
       }
     ],
@@ -3410,7 +4982,19 @@ const products = [
     "slug": "divine-intimate-wash-132",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228720-192a6af4e86e?auto=format&fit=crop&w=800&q=80&sig=132",
+        "url": "/assets/migrated/38_brand-elle.webp",
+        "altText": "Divine Intimate Wash"
+      },
+      {
+        "url": "/assets/migrated/39_brand-vogue.webp",
+        "altText": "Divine Intimate Wash"
+      },
+      {
+        "url": "/assets/migrated/41_b11b019c831543709c9f0852c3d79b21.thumbnail.0000000000_small.jpg",
+        "altText": "Divine Intimate Wash"
+      },
+      {
+        "url": "/assets/migrated/43_788b041920114347915fb7d4a16de257.thumbnail.0000000000_small.jpg",
         "altText": "Divine Intimate Wash"
       }
     ],
@@ -3436,7 +5020,19 @@ const products = [
     "slug": "revitalizing-relaxation-tea-133",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80&sig=133",
+        "url": "/assets/migrated/45_fb984906407f4fb9b5c5ceb14dd78350.thumbnail.0000000000_small.jpg",
+        "altText": "Revitalizing Relaxation Tea"
+      },
+      {
+        "url": "/assets/migrated/47_4b2f2c0725434683af01f499b85d7b90.thumbnail.0000000000_small.jpg",
+        "altText": "Revitalizing Relaxation Tea"
+      },
+      {
+        "url": "/assets/migrated/48_ChatGPT_Image_Mar_11_2026_10_46_49_AM.png",
+        "altText": "Revitalizing Relaxation Tea"
+      },
+      {
+        "url": "/assets/migrated/49_b12_720x_301f00ae-898e-41d1-b635-14ec61052c17.webp",
         "altText": "Revitalizing Relaxation Tea"
       }
     ],
@@ -3462,7 +5058,19 @@ const products = [
     "slug": "nourishing-soothing-gel-134",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228720-192a6af4e86e?auto=format&fit=crop&w=800&q=80&sig=134",
+        "url": "/assets/migrated/50_about-img-2.webp",
+        "altText": "Nourishing Soothing Gel"
+      },
+      {
+        "url": "/assets/migrated/51_1-age-pro-intense-wrinkle-serum-A3340.jpg",
+        "altText": "Nourishing Soothing Gel"
+      },
+      {
+        "url": "/assets/migrated/52_s2_1512x_98eb4d02-1fb4-4572-912e-640bff0b5a70.jpg",
+        "altText": "Nourishing Soothing Gel"
+      },
+      {
+        "url": "/assets/migrated/53_Beautina_1.png",
         "altText": "Nourishing Soothing Gel"
       }
     ],
@@ -3488,7 +5096,19 @@ const products = [
     "slug": "divine-intimate-wash-135",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228720-192a6af4e86e?auto=format&fit=crop&w=800&q=80&sig=135",
+        "url": "/assets/migrated/54_Icon_2.png",
+        "altText": "Divine Intimate Wash"
+      },
+      {
+        "url": "/assets/migrated/55_Icon_4.png",
+        "altText": "Divine Intimate Wash"
+      },
+      {
+        "url": "/assets/migrated/56_Icon_3.png",
+        "altText": "Divine Intimate Wash"
+      },
+      {
+        "url": "/assets/migrated/57_1-superseed-age-recovery-oil-30ml-A2603.jpg",
         "altText": "Divine Intimate Wash"
       }
     ],
@@ -3514,7 +5134,19 @@ const products = [
     "slug": "luminous-bridal-kit-136",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=800&q=80&sig=136",
+        "url": "/assets/migrated/0_home-after_1.jpg",
+        "altText": "Luminous Bridal Kit"
+      },
+      {
+        "url": "/assets/migrated/1_home-before_1.jpg",
+        "altText": "Luminous Bridal Kit"
+      },
+      {
+        "url": "/assets/migrated/2_b2_1_96db18e7-8cd1-4ac2-95aa-f203226fc675.webp",
+        "altText": "Luminous Bridal Kit"
+      },
+      {
+        "url": "/assets/migrated/3_home-after_4fcfbfed-535d-4e65-8f9f-1fe66b041eff.jpg",
         "altText": "Luminous Bridal Kit"
       }
     ],
@@ -3540,7 +5172,19 @@ const products = [
     "slug": "revitalizing-exfoliating-scrub-137",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80&sig=137",
+        "url": "/assets/migrated/4_gallery-image-8_11d220c1-ae96-4a4b-9528-eaf7e7947e95.webp",
+        "altText": "Revitalizing Exfoliating Scrub"
+      },
+      {
+        "url": "/assets/migrated/5_custom-banner-2.jpg",
+        "altText": "Revitalizing Exfoliating Scrub"
+      },
+      {
+        "url": "/assets/migrated/6_gallery-3-v2.webp",
+        "altText": "Revitalizing Exfoliating Scrub"
+      },
+      {
+        "url": "/assets/migrated/7_2-anti-age-recovery-treatment-A2603.jpg",
         "altText": "Revitalizing Exfoliating Scrub"
       }
     ],
@@ -3566,7 +5210,19 @@ const products = [
     "slug": "hydrating-face-wash-138",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1615397323214-3a7894a7e930?auto=format&fit=crop&w=800&q=80&sig=138",
+        "url": "/assets/migrated/8_4-replenishing-night-cream-A3062.jpg",
+        "altText": "Hydrating Face Wash"
+      },
+      {
+        "url": "/assets/migrated/9_b17_540x_aa6b96c0-cd33-460e-8da7-208e8c30f82e.webp",
+        "altText": "Hydrating Face Wash"
+      },
+      {
+        "url": "/assets/migrated/10_collection-tab-1.jpg",
+        "altText": "Hydrating Face Wash"
+      },
+      {
+        "url": "/assets/migrated/11_2.png",
         "altText": "Hydrating Face Wash"
       }
     ],
@@ -3592,7 +5248,19 @@ const products = [
     "slug": "pure-roll-on-perfume-139",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=800&q=80&sig=139",
+        "url": "/assets/migrated/12_s31_900x_8f09b4d4-6d08-410a-b6c2-5f291c6eb648.webp",
+        "altText": "Pure Roll-on Perfume"
+      },
+      {
+        "url": "/assets/migrated/13_1.png",
+        "altText": "Pure Roll-on Perfume"
+      },
+      {
+        "url": "/assets/migrated/14_s32_900x_8acd0d58-b6ff-42e4-9796-69f7e92d8ef7.jpg",
+        "altText": "Pure Roll-on Perfume"
+      },
+      {
+        "url": "/assets/migrated/15_highlight-icon-1.webp",
         "altText": "Pure Roll-on Perfume"
       }
     ],
@@ -3618,7 +5286,19 @@ const products = [
     "slug": "radiant-relaxation-tea-140",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80&sig=140",
+        "url": "/assets/migrated/16_highlight-icon-2.webp",
+        "altText": "Radiant Relaxation Tea"
+      },
+      {
+        "url": "/assets/migrated/17_highlight-icon-3.webp",
+        "altText": "Radiant Relaxation Tea"
+      },
+      {
+        "url": "/assets/migrated/18_gallery-2-v2.webp",
+        "altText": "Radiant Relaxation Tea"
+      },
+      {
+        "url": "/assets/migrated/19_gallery-image-7.webp",
         "altText": "Radiant Relaxation Tea"
       }
     ],
@@ -3644,7 +5324,19 @@ const products = [
     "slug": "purifying-travel-essentials-kit-141",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=800&q=80&sig=141",
+        "url": "/assets/migrated/20_gallery-image-1.jpg",
+        "altText": "Purifying Travel Essentials Kit"
+      },
+      {
+        "url": "/assets/migrated/21_about-img-3.webp",
+        "altText": "Purifying Travel Essentials Kit"
+      },
+      {
+        "url": "/assets/migrated/22_gallery-5-v2.webp",
+        "altText": "Purifying Travel Essentials Kit"
+      },
+      {
+        "url": "/assets/migrated/23_fleur-kaan-w4Dj3MshHQ0-unsplash.jpg",
         "altText": "Purifying Travel Essentials Kit"
       }
     ],
@@ -3670,7 +5362,19 @@ const products = [
     "slug": "radiant-intimate-wash-142",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228720-192a6af4e86e?auto=format&fit=crop&w=800&q=80&sig=142",
+        "url": "/assets/migrated/24_3.11_a206c225-bd03-40da-8e5f-e3a3e160e25a.webp",
+        "altText": "Radiant Intimate Wash"
+      },
+      {
+        "url": "/assets/migrated/25_gallery-image-5.webp",
+        "altText": "Radiant Intimate Wash"
+      },
+      {
+        "url": "/assets/migrated/26_luminous-perfecting-concealer_1.jpg",
+        "altText": "Radiant Intimate Wash"
+      },
+      {
+        "url": "/assets/migrated/27_intense-glow-concentrate.jpg",
         "altText": "Radiant Intimate Wash"
       }
     ],
@@ -3696,7 +5400,19 @@ const products = [
     "slug": "divine-face-serum-143",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80&sig=143",
+        "url": "/assets/migrated/28_superseed-age-recovery-organic-facial-oil.jpg",
+        "altText": "Divine Face Serum"
+      },
+      {
+        "url": "/assets/migrated/29_5-omega-and-vitamin-e-oil-for-face-A2281.jpg",
+        "altText": "Divine Face Serum"
+      },
+      {
+        "url": "/assets/migrated/30_5-madara-sos-skincare-A3021.jpg",
+        "altText": "Divine Face Serum"
+      },
+      {
+        "url": "/assets/migrated/31_2-nourish-and-repair-hair-care-A4051.jpg",
         "altText": "Divine Face Serum"
       }
     ],
@@ -3722,7 +5438,19 @@ const products = [
     "slug": "nourishing-conditioner-144",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=800&q=80&sig=144",
+        "url": "/assets/migrated/32_6-madara-his-collection-A5003.jpg",
+        "altText": "Nourishing Conditioner"
+      },
+      {
+        "url": "/assets/migrated/33_4_madara-cosmetics-grow-volume-shampoo-conditioner-boost-scalp-treatment-set.jpg",
+        "altText": "Nourishing Conditioner"
+      },
+      {
+        "url": "/assets/migrated/34_highlight-icon-4.webp",
+        "altText": "Nourishing Conditioner"
+      },
+      {
+        "url": "/assets/migrated/35_brand-martha-stewart.webp",
         "altText": "Nourishing Conditioner"
       }
     ],
@@ -3748,7 +5476,19 @@ const products = [
     "slug": "radiant-shampoo-145",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1585232351009-aa87416fca90?auto=format&fit=crop&w=800&q=80&sig=145",
+        "url": "/assets/migrated/36_brand-bustle.webp",
+        "altText": "Radiant Shampoo"
+      },
+      {
+        "url": "/assets/migrated/37_brand-elite-daily.webp",
+        "altText": "Radiant Shampoo"
+      },
+      {
+        "url": "/assets/migrated/38_brand-elle.webp",
+        "altText": "Radiant Shampoo"
+      },
+      {
+        "url": "/assets/migrated/39_brand-vogue.webp",
         "altText": "Radiant Shampoo"
       }
     ],
@@ -3774,7 +5514,19 @@ const products = [
     "slug": "nourishing-hair-mask-146",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=800&q=80&sig=146",
+        "url": "/assets/migrated/41_b11b019c831543709c9f0852c3d79b21.thumbnail.0000000000_small.jpg",
+        "altText": "Nourishing Hair Mask"
+      },
+      {
+        "url": "/assets/migrated/43_788b041920114347915fb7d4a16de257.thumbnail.0000000000_small.jpg",
+        "altText": "Nourishing Hair Mask"
+      },
+      {
+        "url": "/assets/migrated/45_fb984906407f4fb9b5c5ceb14dd78350.thumbnail.0000000000_small.jpg",
+        "altText": "Nourishing Hair Mask"
+      },
+      {
+        "url": "/assets/migrated/47_4b2f2c0725434683af01f499b85d7b90.thumbnail.0000000000_small.jpg",
         "altText": "Nourishing Hair Mask"
       }
     ],
@@ -3800,7 +5552,19 @@ const products = [
     "slug": "revitalizing-solid-perfume-147",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=800&q=80&sig=147",
+        "url": "/assets/migrated/48_ChatGPT_Image_Mar_11_2026_10_46_49_AM.png",
+        "altText": "Revitalizing Solid Perfume"
+      },
+      {
+        "url": "/assets/migrated/49_b12_720x_301f00ae-898e-41d1-b635-14ec61052c17.webp",
+        "altText": "Revitalizing Solid Perfume"
+      },
+      {
+        "url": "/assets/migrated/50_about-img-2.webp",
+        "altText": "Revitalizing Solid Perfume"
+      },
+      {
+        "url": "/assets/migrated/51_1-age-pro-intense-wrinkle-serum-A3340.jpg",
         "altText": "Revitalizing Solid Perfume"
       }
     ],
@@ -3826,7 +5590,19 @@ const products = [
     "slug": "radiant-body-wash-148",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1608248593842-8021a8d0b57e?auto=format&fit=crop&w=800&q=80&sig=148",
+        "url": "/assets/migrated/52_s2_1512x_98eb4d02-1fb4-4572-912e-640bff0b5a70.jpg",
+        "altText": "Radiant Body Wash"
+      },
+      {
+        "url": "/assets/migrated/53_Beautina_1.png",
+        "altText": "Radiant Body Wash"
+      },
+      {
+        "url": "/assets/migrated/54_Icon_2.png",
+        "altText": "Radiant Body Wash"
+      },
+      {
+        "url": "/assets/migrated/55_Icon_4.png",
         "altText": "Radiant Body Wash"
       }
     ],
@@ -3852,7 +5628,19 @@ const products = [
     "slug": "purifying-body-wash-149",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1608248593842-8021a8d0b57e?auto=format&fit=crop&w=800&q=80&sig=149",
+        "url": "/assets/migrated/56_Icon_3.png",
+        "altText": "Purifying Body Wash"
+      },
+      {
+        "url": "/assets/migrated/57_1-superseed-age-recovery-oil-30ml-A2603.jpg",
+        "altText": "Purifying Body Wash"
+      },
+      {
+        "url": "/assets/migrated/0_home-after_1.jpg",
+        "altText": "Purifying Body Wash"
+      },
+      {
+        "url": "/assets/migrated/1_home-before_1.jpg",
         "altText": "Purifying Body Wash"
       }
     ],
@@ -3878,7 +5666,19 @@ const products = [
     "slug": "nourishing-eau-de-parfum-150",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=800&q=80&sig=150",
+        "url": "/assets/migrated/2_b2_1_96db18e7-8cd1-4ac2-95aa-f203226fc675.webp",
+        "altText": "Nourishing Eau de Parfum"
+      },
+      {
+        "url": "/assets/migrated/3_home-after_4fcfbfed-535d-4e65-8f9f-1fe66b041eff.jpg",
+        "altText": "Nourishing Eau de Parfum"
+      },
+      {
+        "url": "/assets/migrated/4_gallery-image-8_11d220c1-ae96-4a4b-9528-eaf7e7947e95.webp",
+        "altText": "Nourishing Eau de Parfum"
+      },
+      {
+        "url": "/assets/migrated/5_custom-banner-2.jpg",
         "altText": "Nourishing Eau de Parfum"
       }
     ],
@@ -3904,7 +5704,19 @@ const products = [
     "slug": "nourishing-silk-sleep-mask-151",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80&sig=151",
+        "url": "/assets/migrated/6_gallery-3-v2.webp",
+        "altText": "Nourishing Silk Sleep Mask"
+      },
+      {
+        "url": "/assets/migrated/7_2-anti-age-recovery-treatment-A2603.jpg",
+        "altText": "Nourishing Silk Sleep Mask"
+      },
+      {
+        "url": "/assets/migrated/8_4-replenishing-night-cream-A3062.jpg",
+        "altText": "Nourishing Silk Sleep Mask"
+      },
+      {
+        "url": "/assets/migrated/9_b17_540x_aa6b96c0-cd33-460e-8da7-208e8c30f82e.webp",
         "altText": "Nourishing Silk Sleep Mask"
       }
     ],
@@ -3930,7 +5742,19 @@ const products = [
     "slug": "botanical-soothing-gel-152",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228720-192a6af4e86e?auto=format&fit=crop&w=800&q=80&sig=152",
+        "url": "/assets/migrated/10_collection-tab-1.jpg",
+        "altText": "Botanical Soothing Gel"
+      },
+      {
+        "url": "/assets/migrated/11_2.png",
+        "altText": "Botanical Soothing Gel"
+      },
+      {
+        "url": "/assets/migrated/12_s31_900x_8f09b4d4-6d08-410a-b6c2-5f291c6eb648.webp",
+        "altText": "Botanical Soothing Gel"
+      },
+      {
+        "url": "/assets/migrated/13_1.png",
         "altText": "Botanical Soothing Gel"
       }
     ],
@@ -3956,7 +5780,19 @@ const products = [
     "slug": "nourishing-roll-on-perfume-153",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=800&q=80&sig=153",
+        "url": "/assets/migrated/14_s32_900x_8acd0d58-b6ff-42e4-9796-69f7e92d8ef7.jpg",
+        "altText": "Nourishing Roll-on Perfume"
+      },
+      {
+        "url": "/assets/migrated/15_highlight-icon-1.webp",
+        "altText": "Nourishing Roll-on Perfume"
+      },
+      {
+        "url": "/assets/migrated/16_highlight-icon-2.webp",
+        "altText": "Nourishing Roll-on Perfume"
+      },
+      {
+        "url": "/assets/migrated/17_highlight-icon-3.webp",
         "altText": "Nourishing Roll-on Perfume"
       }
     ],
@@ -3982,7 +5818,19 @@ const products = [
     "slug": "divine-sunscreen-154",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80&sig=154",
+        "url": "/assets/migrated/18_gallery-2-v2.webp",
+        "altText": "Divine Sunscreen"
+      },
+      {
+        "url": "/assets/migrated/19_gallery-image-7.webp",
+        "altText": "Divine Sunscreen"
+      },
+      {
+        "url": "/assets/migrated/20_gallery-image-1.jpg",
+        "altText": "Divine Sunscreen"
+      },
+      {
+        "url": "/assets/migrated/21_about-img-3.webp",
         "altText": "Divine Sunscreen"
       }
     ],
@@ -4008,7 +5856,19 @@ const products = [
     "slug": "pure-travel-essentials-kit-155",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=800&q=80&sig=155",
+        "url": "/assets/migrated/22_gallery-5-v2.webp",
+        "altText": "Pure Travel Essentials Kit"
+      },
+      {
+        "url": "/assets/migrated/23_fleur-kaan-w4Dj3MshHQ0-unsplash.jpg",
+        "altText": "Pure Travel Essentials Kit"
+      },
+      {
+        "url": "/assets/migrated/24_3.11_a206c225-bd03-40da-8e5f-e3a3e160e25a.webp",
+        "altText": "Pure Travel Essentials Kit"
+      },
+      {
+        "url": "/assets/migrated/25_gallery-image-5.webp",
         "altText": "Pure Travel Essentials Kit"
       }
     ],
@@ -4034,7 +5894,19 @@ const products = [
     "slug": "soothing-sunscreen-156",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1615397323214-3a7894a7e930?auto=format&fit=crop&w=800&q=80&sig=156",
+        "url": "/assets/migrated/26_luminous-perfecting-concealer_1.jpg",
+        "altText": "Soothing Sunscreen"
+      },
+      {
+        "url": "/assets/migrated/27_intense-glow-concentrate.jpg",
+        "altText": "Soothing Sunscreen"
+      },
+      {
+        "url": "/assets/migrated/28_superseed-age-recovery-organic-facial-oil.jpg",
+        "altText": "Soothing Sunscreen"
+      },
+      {
+        "url": "/assets/migrated/29_5-omega-and-vitamin-e-oil-for-face-A2281.jpg",
         "altText": "Soothing Sunscreen"
       }
     ],
@@ -4060,7 +5932,19 @@ const products = [
     "slug": "purifying-gua-sha-157",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80&sig=157",
+        "url": "/assets/migrated/30_5-madara-sos-skincare-A3021.jpg",
+        "altText": "Purifying Gua Sha"
+      },
+      {
+        "url": "/assets/migrated/31_2-nourish-and-repair-hair-care-A4051.jpg",
+        "altText": "Purifying Gua Sha"
+      },
+      {
+        "url": "/assets/migrated/32_6-madara-his-collection-A5003.jpg",
+        "altText": "Purifying Gua Sha"
+      },
+      {
+        "url": "/assets/migrated/33_4_madara-cosmetics-grow-volume-shampoo-conditioner-boost-scalp-treatment-set.jpg",
         "altText": "Purifying Gua Sha"
       }
     ],
@@ -4086,7 +5970,19 @@ const products = [
     "slug": "velvet-solid-perfume-158",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=800&q=80&sig=158",
+        "url": "/assets/migrated/34_highlight-icon-4.webp",
+        "altText": "Velvet Solid Perfume"
+      },
+      {
+        "url": "/assets/migrated/35_brand-martha-stewart.webp",
+        "altText": "Velvet Solid Perfume"
+      },
+      {
+        "url": "/assets/migrated/36_brand-bustle.webp",
+        "altText": "Velvet Solid Perfume"
+      },
+      {
+        "url": "/assets/migrated/37_brand-elite-daily.webp",
         "altText": "Velvet Solid Perfume"
       }
     ],
@@ -4112,7 +6008,19 @@ const products = [
     "slug": "nourishing-body-lotion-159",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1614859324967-bdf45d8b8431?auto=format&fit=crop&w=800&q=80&sig=159",
+        "url": "/assets/migrated/38_brand-elle.webp",
+        "altText": "Nourishing Body Lotion"
+      },
+      {
+        "url": "/assets/migrated/39_brand-vogue.webp",
+        "altText": "Nourishing Body Lotion"
+      },
+      {
+        "url": "/assets/migrated/41_b11b019c831543709c9f0852c3d79b21.thumbnail.0000000000_small.jpg",
+        "altText": "Nourishing Body Lotion"
+      },
+      {
+        "url": "/assets/migrated/43_788b041920114347915fb7d4a16de257.thumbnail.0000000000_small.jpg",
         "altText": "Nourishing Body Lotion"
       }
     ],
@@ -4138,7 +6046,19 @@ const products = [
     "slug": "botanical-body-wash-160",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1614859324967-bdf45d8b8431?auto=format&fit=crop&w=800&q=80&sig=160",
+        "url": "/assets/migrated/45_fb984906407f4fb9b5c5ceb14dd78350.thumbnail.0000000000_small.jpg",
+        "altText": "Botanical Body Wash"
+      },
+      {
+        "url": "/assets/migrated/47_4b2f2c0725434683af01f499b85d7b90.thumbnail.0000000000_small.jpg",
+        "altText": "Botanical Body Wash"
+      },
+      {
+        "url": "/assets/migrated/48_ChatGPT_Image_Mar_11_2026_10_46_49_AM.png",
+        "altText": "Botanical Body Wash"
+      },
+      {
+        "url": "/assets/migrated/49_b12_720x_301f00ae-898e-41d1-b635-14ec61052c17.webp",
         "altText": "Botanical Body Wash"
       }
     ],
@@ -4164,7 +6084,19 @@ const products = [
     "slug": "pure-cleanser-161",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80&sig=161",
+        "url": "/assets/migrated/50_about-img-2.webp",
+        "altText": "Pure Cleanser"
+      },
+      {
+        "url": "/assets/migrated/51_1-age-pro-intense-wrinkle-serum-A3340.jpg",
+        "altText": "Pure Cleanser"
+      },
+      {
+        "url": "/assets/migrated/52_s2_1512x_98eb4d02-1fb4-4572-912e-640bff0b5a70.jpg",
+        "altText": "Pure Cleanser"
+      },
+      {
+        "url": "/assets/migrated/53_Beautina_1.png",
         "altText": "Pure Cleanser"
       }
     ],
@@ -4190,7 +6122,19 @@ const products = [
     "slug": "radiant-body-wash-162",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1608248593842-8021a8d0b57e?auto=format&fit=crop&w=800&q=80&sig=162",
+        "url": "/assets/migrated/54_Icon_2.png",
+        "altText": "Radiant Body Wash"
+      },
+      {
+        "url": "/assets/migrated/55_Icon_4.png",
+        "altText": "Radiant Body Wash"
+      },
+      {
+        "url": "/assets/migrated/56_Icon_3.png",
+        "altText": "Radiant Body Wash"
+      },
+      {
+        "url": "/assets/migrated/57_1-superseed-age-recovery-oil-30ml-A2603.jpg",
         "altText": "Radiant Body Wash"
       }
     ],
@@ -4216,7 +6160,19 @@ const products = [
     "slug": "purifying-exfoliating-scrub-163",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80&sig=163",
+        "url": "/assets/migrated/0_home-after_1.jpg",
+        "altText": "Purifying Exfoliating Scrub"
+      },
+      {
+        "url": "/assets/migrated/1_home-before_1.jpg",
+        "altText": "Purifying Exfoliating Scrub"
+      },
+      {
+        "url": "/assets/migrated/2_b2_1_96db18e7-8cd1-4ac2-95aa-f203226fc675.webp",
+        "altText": "Purifying Exfoliating Scrub"
+      },
+      {
+        "url": "/assets/migrated/3_home-after_4fcfbfed-535d-4e65-8f9f-1fe66b041eff.jpg",
         "altText": "Purifying Exfoliating Scrub"
       }
     ],
@@ -4242,7 +6198,19 @@ const products = [
     "slug": "purifying-solid-perfume-164",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=800&q=80&sig=164",
+        "url": "/assets/migrated/4_gallery-image-8_11d220c1-ae96-4a4b-9528-eaf7e7947e95.webp",
+        "altText": "Purifying Solid Perfume"
+      },
+      {
+        "url": "/assets/migrated/5_custom-banner-2.jpg",
+        "altText": "Purifying Solid Perfume"
+      },
+      {
+        "url": "/assets/migrated/6_gallery-3-v2.webp",
+        "altText": "Purifying Solid Perfume"
+      },
+      {
+        "url": "/assets/migrated/7_2-anti-age-recovery-treatment-A2603.jpg",
         "altText": "Purifying Solid Perfume"
       }
     ],
@@ -4268,7 +6236,19 @@ const products = [
     "slug": "soothing-travel-essentials-kit-165",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=800&q=80&sig=165",
+        "url": "/assets/migrated/8_4-replenishing-night-cream-A3062.jpg",
+        "altText": "Soothing Travel Essentials Kit"
+      },
+      {
+        "url": "/assets/migrated/9_b17_540x_aa6b96c0-cd33-460e-8da7-208e8c30f82e.webp",
+        "altText": "Soothing Travel Essentials Kit"
+      },
+      {
+        "url": "/assets/migrated/10_collection-tab-1.jpg",
+        "altText": "Soothing Travel Essentials Kit"
+      },
+      {
+        "url": "/assets/migrated/11_2.png",
         "altText": "Soothing Travel Essentials Kit"
       }
     ],
@@ -4294,7 +6274,19 @@ const products = [
     "slug": "purifying-conditioner-166",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1585232351009-aa87416fca90?auto=format&fit=crop&w=800&q=80&sig=166",
+        "url": "/assets/migrated/12_s31_900x_8f09b4d4-6d08-410a-b6c2-5f291c6eb648.webp",
+        "altText": "Purifying Conditioner"
+      },
+      {
+        "url": "/assets/migrated/13_1.png",
+        "altText": "Purifying Conditioner"
+      },
+      {
+        "url": "/assets/migrated/14_s32_900x_8acd0d58-b6ff-42e4-9796-69f7e92d8ef7.jpg",
+        "altText": "Purifying Conditioner"
+      },
+      {
+        "url": "/assets/migrated/15_highlight-icon-1.webp",
         "altText": "Purifying Conditioner"
       }
     ],
@@ -4320,7 +6312,19 @@ const products = [
     "slug": "pure-shower-gel-167",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80&sig=167",
+        "url": "/assets/migrated/16_highlight-icon-2.webp",
+        "altText": "Pure Shower Gel"
+      },
+      {
+        "url": "/assets/migrated/17_highlight-icon-3.webp",
+        "altText": "Pure Shower Gel"
+      },
+      {
+        "url": "/assets/migrated/18_gallery-2-v2.webp",
+        "altText": "Pure Shower Gel"
+      },
+      {
+        "url": "/assets/migrated/19_gallery-image-7.webp",
         "altText": "Pure Shower Gel"
       }
     ],
@@ -4346,7 +6350,19 @@ const products = [
     "slug": "revitalizing-hair-mask-168",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1585232351009-aa87416fca90?auto=format&fit=crop&w=800&q=80&sig=168",
+        "url": "/assets/migrated/20_gallery-image-1.jpg",
+        "altText": "Revitalizing Hair Mask"
+      },
+      {
+        "url": "/assets/migrated/21_about-img-3.webp",
+        "altText": "Revitalizing Hair Mask"
+      },
+      {
+        "url": "/assets/migrated/22_gallery-5-v2.webp",
+        "altText": "Revitalizing Hair Mask"
+      },
+      {
+        "url": "/assets/migrated/23_fleur-kaan-w4Dj3MshHQ0-unsplash.jpg",
         "altText": "Revitalizing Hair Mask"
       }
     ],
@@ -4372,7 +6388,19 @@ const products = [
     "slug": "revitalizing-ultimate-glow-box-169",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=800&q=80&sig=169",
+        "url": "/assets/migrated/24_3.11_a206c225-bd03-40da-8e5f-e3a3e160e25a.webp",
+        "altText": "Revitalizing Ultimate Glow Box"
+      },
+      {
+        "url": "/assets/migrated/25_gallery-image-5.webp",
+        "altText": "Revitalizing Ultimate Glow Box"
+      },
+      {
+        "url": "/assets/migrated/26_luminous-perfecting-concealer_1.jpg",
+        "altText": "Revitalizing Ultimate Glow Box"
+      },
+      {
+        "url": "/assets/migrated/27_intense-glow-concentrate.jpg",
         "altText": "Revitalizing Ultimate Glow Box"
       }
     ],
@@ -4398,7 +6426,19 @@ const products = [
     "slug": "midnight-spa-day-bundle-170",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=800&q=80&sig=170",
+        "url": "/assets/migrated/28_superseed-age-recovery-organic-facial-oil.jpg",
+        "altText": "Midnight Spa Day Bundle"
+      },
+      {
+        "url": "/assets/migrated/29_5-omega-and-vitamin-e-oil-for-face-A2281.jpg",
+        "altText": "Midnight Spa Day Bundle"
+      },
+      {
+        "url": "/assets/migrated/30_5-madara-sos-skincare-A3021.jpg",
+        "altText": "Midnight Spa Day Bundle"
+      },
+      {
+        "url": "/assets/migrated/31_2-nourish-and-repair-hair-care-A4051.jpg",
         "altText": "Midnight Spa Day Bundle"
       }
     ],
@@ -4424,7 +6464,19 @@ const products = [
     "slug": "nourishing-travel-essentials-kit-171",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=800&q=80&sig=171",
+        "url": "/assets/migrated/32_6-madara-his-collection-A5003.jpg",
+        "altText": "Nourishing Travel Essentials Kit"
+      },
+      {
+        "url": "/assets/migrated/33_4_madara-cosmetics-grow-volume-shampoo-conditioner-boost-scalp-treatment-set.jpg",
+        "altText": "Nourishing Travel Essentials Kit"
+      },
+      {
+        "url": "/assets/migrated/34_highlight-icon-4.webp",
+        "altText": "Nourishing Travel Essentials Kit"
+      },
+      {
+        "url": "/assets/migrated/35_brand-martha-stewart.webp",
         "altText": "Nourishing Travel Essentials Kit"
       }
     ],
@@ -4450,7 +6502,19 @@ const products = [
     "slug": "midnight-shower-gel-172",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80&sig=172",
+        "url": "/assets/migrated/36_brand-bustle.webp",
+        "altText": "Midnight Shower Gel"
+      },
+      {
+        "url": "/assets/migrated/37_brand-elite-daily.webp",
+        "altText": "Midnight Shower Gel"
+      },
+      {
+        "url": "/assets/migrated/38_brand-elle.webp",
+        "altText": "Midnight Shower Gel"
+      },
+      {
+        "url": "/assets/migrated/39_brand-vogue.webp",
         "altText": "Midnight Shower Gel"
       }
     ],
@@ -4476,7 +6540,19 @@ const products = [
     "slug": "nourishing-hair-serum-173",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=800&q=80&sig=173",
+        "url": "/assets/migrated/41_b11b019c831543709c9f0852c3d79b21.thumbnail.0000000000_small.jpg",
+        "altText": "Nourishing Hair Serum"
+      },
+      {
+        "url": "/assets/migrated/43_788b041920114347915fb7d4a16de257.thumbnail.0000000000_small.jpg",
+        "altText": "Nourishing Hair Serum"
+      },
+      {
+        "url": "/assets/migrated/45_fb984906407f4fb9b5c5ceb14dd78350.thumbnail.0000000000_small.jpg",
+        "altText": "Nourishing Hair Serum"
+      },
+      {
+        "url": "/assets/migrated/47_4b2f2c0725434683af01f499b85d7b90.thumbnail.0000000000_small.jpg",
         "altText": "Nourishing Hair Serum"
       }
     ],
@@ -4502,7 +6578,19 @@ const products = [
     "slug": "midnight-silk-sleep-mask-174",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1598444747738-963b516b24d7?auto=format&fit=crop&w=800&q=80&sig=174",
+        "url": "/assets/migrated/48_ChatGPT_Image_Mar_11_2026_10_46_49_AM.png",
+        "altText": "Midnight Silk Sleep Mask"
+      },
+      {
+        "url": "/assets/migrated/49_b12_720x_301f00ae-898e-41d1-b635-14ec61052c17.webp",
+        "altText": "Midnight Silk Sleep Mask"
+      },
+      {
+        "url": "/assets/migrated/50_about-img-2.webp",
+        "altText": "Midnight Silk Sleep Mask"
+      },
+      {
+        "url": "/assets/migrated/51_1-age-pro-intense-wrinkle-serum-A3340.jpg",
         "altText": "Midnight Silk Sleep Mask"
       }
     ],
@@ -4528,7 +6616,19 @@ const products = [
     "slug": "velvet-bridal-kit-175",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=800&q=80&sig=175",
+        "url": "/assets/migrated/52_s2_1512x_98eb4d02-1fb4-4572-912e-640bff0b5a70.jpg",
+        "altText": "Velvet Bridal Kit"
+      },
+      {
+        "url": "/assets/migrated/53_Beautina_1.png",
+        "altText": "Velvet Bridal Kit"
+      },
+      {
+        "url": "/assets/migrated/54_Icon_2.png",
+        "altText": "Velvet Bridal Kit"
+      },
+      {
+        "url": "/assets/migrated/55_Icon_4.png",
         "altText": "Velvet Bridal Kit"
       }
     ],
@@ -4554,7 +6654,19 @@ const products = [
     "slug": "luminous-solid-perfume-176",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=800&q=80&sig=176",
+        "url": "/assets/migrated/56_Icon_3.png",
+        "altText": "Luminous Solid Perfume"
+      },
+      {
+        "url": "/assets/migrated/57_1-superseed-age-recovery-oil-30ml-A2603.jpg",
+        "altText": "Luminous Solid Perfume"
+      },
+      {
+        "url": "/assets/migrated/0_home-after_1.jpg",
+        "altText": "Luminous Solid Perfume"
+      },
+      {
+        "url": "/assets/migrated/1_home-before_1.jpg",
         "altText": "Luminous Solid Perfume"
       }
     ],
@@ -4580,7 +6692,19 @@ const products = [
     "slug": "essential-roll-on-perfume-177",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=800&q=80&sig=177",
+        "url": "/assets/migrated/2_b2_1_96db18e7-8cd1-4ac2-95aa-f203226fc675.webp",
+        "altText": "Essential Roll-on Perfume"
+      },
+      {
+        "url": "/assets/migrated/3_home-after_4fcfbfed-535d-4e65-8f9f-1fe66b041eff.jpg",
+        "altText": "Essential Roll-on Perfume"
+      },
+      {
+        "url": "/assets/migrated/4_gallery-image-8_11d220c1-ae96-4a4b-9528-eaf7e7947e95.webp",
+        "altText": "Essential Roll-on Perfume"
+      },
+      {
+        "url": "/assets/migrated/5_custom-banner-2.jpg",
         "altText": "Essential Roll-on Perfume"
       }
     ],
@@ -4606,7 +6730,19 @@ const products = [
     "slug": "pure-body-butter-178",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1614859324967-bdf45d8b8431?auto=format&fit=crop&w=800&q=80&sig=178",
+        "url": "/assets/migrated/6_gallery-3-v2.webp",
+        "altText": "Pure Body Butter"
+      },
+      {
+        "url": "/assets/migrated/7_2-anti-age-recovery-treatment-A2603.jpg",
+        "altText": "Pure Body Butter"
+      },
+      {
+        "url": "/assets/migrated/8_4-replenishing-night-cream-A3062.jpg",
+        "altText": "Pure Body Butter"
+      },
+      {
+        "url": "/assets/migrated/9_b17_540x_aa6b96c0-cd33-460e-8da7-208e8c30f82e.webp",
         "altText": "Pure Body Butter"
       }
     ],
@@ -4632,7 +6768,19 @@ const products = [
     "slug": "pure-body-butter-179",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1608248593842-8021a8d0b57e?auto=format&fit=crop&w=800&q=80&sig=179",
+        "url": "/assets/migrated/10_collection-tab-1.jpg",
+        "altText": "Pure Body Butter"
+      },
+      {
+        "url": "/assets/migrated/11_2.png",
+        "altText": "Pure Body Butter"
+      },
+      {
+        "url": "/assets/migrated/12_s31_900x_8f09b4d4-6d08-410a-b6c2-5f291c6eb648.webp",
+        "altText": "Pure Body Butter"
+      },
+      {
+        "url": "/assets/migrated/13_1.png",
         "altText": "Pure Body Butter"
       }
     ],
@@ -4658,7 +6806,19 @@ const products = [
     "slug": "botanical-lip-balm-180",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80&sig=180",
+        "url": "/assets/migrated/14_s32_900x_8acd0d58-b6ff-42e4-9796-69f7e92d8ef7.jpg",
+        "altText": "Botanical Lip Balm"
+      },
+      {
+        "url": "/assets/migrated/15_highlight-icon-1.webp",
+        "altText": "Botanical Lip Balm"
+      },
+      {
+        "url": "/assets/migrated/16_highlight-icon-2.webp",
+        "altText": "Botanical Lip Balm"
+      },
+      {
+        "url": "/assets/migrated/17_highlight-icon-3.webp",
         "altText": "Botanical Lip Balm"
       }
     ],
@@ -4684,7 +6844,19 @@ const products = [
     "slug": "velvet-shower-gel-181",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80&sig=181",
+        "url": "/assets/migrated/18_gallery-2-v2.webp",
+        "altText": "Velvet Shower Gel"
+      },
+      {
+        "url": "/assets/migrated/19_gallery-image-7.webp",
+        "altText": "Velvet Shower Gel"
+      },
+      {
+        "url": "/assets/migrated/20_gallery-image-1.jpg",
+        "altText": "Velvet Shower Gel"
+      },
+      {
+        "url": "/assets/migrated/21_about-img-3.webp",
         "altText": "Velvet Shower Gel"
       }
     ],
@@ -4710,7 +6882,19 @@ const products = [
     "slug": "velvet-body-butter-182",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1608248593842-8021a8d0b57e?auto=format&fit=crop&w=800&q=80&sig=182",
+        "url": "/assets/migrated/22_gallery-5-v2.webp",
+        "altText": "Velvet Body Butter"
+      },
+      {
+        "url": "/assets/migrated/23_fleur-kaan-w4Dj3MshHQ0-unsplash.jpg",
+        "altText": "Velvet Body Butter"
+      },
+      {
+        "url": "/assets/migrated/24_3.11_a206c225-bd03-40da-8e5f-e3a3e160e25a.webp",
+        "altText": "Velvet Body Butter"
+      },
+      {
+        "url": "/assets/migrated/25_gallery-image-5.webp",
         "altText": "Velvet Body Butter"
       }
     ],
@@ -4736,7 +6920,19 @@ const products = [
     "slug": "soothing-conditioner-183",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=800&q=80&sig=183",
+        "url": "/assets/migrated/26_luminous-perfecting-concealer_1.jpg",
+        "altText": "Soothing Conditioner"
+      },
+      {
+        "url": "/assets/migrated/27_intense-glow-concentrate.jpg",
+        "altText": "Soothing Conditioner"
+      },
+      {
+        "url": "/assets/migrated/28_superseed-age-recovery-organic-facial-oil.jpg",
+        "altText": "Soothing Conditioner"
+      },
+      {
+        "url": "/assets/migrated/29_5-omega-and-vitamin-e-oil-for-face-A2281.jpg",
         "altText": "Soothing Conditioner"
       }
     ],
@@ -4762,7 +6958,19 @@ const products = [
     "slug": "hydrating-conditioner-184",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1585232351009-aa87416fca90?auto=format&fit=crop&w=800&q=80&sig=184",
+        "url": "/assets/migrated/30_5-madara-sos-skincare-A3021.jpg",
+        "altText": "Hydrating Conditioner"
+      },
+      {
+        "url": "/assets/migrated/31_2-nourish-and-repair-hair-care-A4051.jpg",
+        "altText": "Hydrating Conditioner"
+      },
+      {
+        "url": "/assets/migrated/32_6-madara-his-collection-A5003.jpg",
+        "altText": "Hydrating Conditioner"
+      },
+      {
+        "url": "/assets/migrated/33_4_madara-cosmetics-grow-volume-shampoo-conditioner-boost-scalp-treatment-set.jpg",
         "altText": "Hydrating Conditioner"
       }
     ],
@@ -4788,7 +6996,19 @@ const products = [
     "slug": "radiant-body-butter-185",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1614859324967-bdf45d8b8431?auto=format&fit=crop&w=800&q=80&sig=185",
+        "url": "/assets/migrated/34_highlight-icon-4.webp",
+        "altText": "Radiant Body Butter"
+      },
+      {
+        "url": "/assets/migrated/35_brand-martha-stewart.webp",
+        "altText": "Radiant Body Butter"
+      },
+      {
+        "url": "/assets/migrated/36_brand-bustle.webp",
+        "altText": "Radiant Body Butter"
+      },
+      {
+        "url": "/assets/migrated/37_brand-elite-daily.webp",
         "altText": "Radiant Body Butter"
       }
     ],
@@ -4814,7 +7034,19 @@ const products = [
     "slug": "botanical-eau-de-parfum-186",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=800&q=80&sig=186",
+        "url": "/assets/migrated/38_brand-elle.webp",
+        "altText": "Botanical Eau de Parfum"
+      },
+      {
+        "url": "/assets/migrated/39_brand-vogue.webp",
+        "altText": "Botanical Eau de Parfum"
+      },
+      {
+        "url": "/assets/migrated/41_b11b019c831543709c9f0852c3d79b21.thumbnail.0000000000_small.jpg",
+        "altText": "Botanical Eau de Parfum"
+      },
+      {
+        "url": "/assets/migrated/43_788b041920114347915fb7d4a16de257.thumbnail.0000000000_small.jpg",
         "altText": "Botanical Eau de Parfum"
       }
     ],
@@ -4840,7 +7072,19 @@ const products = [
     "slug": "revitalizing-spa-day-bundle-187",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=800&q=80&sig=187",
+        "url": "/assets/migrated/45_fb984906407f4fb9b5c5ceb14dd78350.thumbnail.0000000000_small.jpg",
+        "altText": "Revitalizing Spa Day Bundle"
+      },
+      {
+        "url": "/assets/migrated/47_4b2f2c0725434683af01f499b85d7b90.thumbnail.0000000000_small.jpg",
+        "altText": "Revitalizing Spa Day Bundle"
+      },
+      {
+        "url": "/assets/migrated/48_ChatGPT_Image_Mar_11_2026_10_46_49_AM.png",
+        "altText": "Revitalizing Spa Day Bundle"
+      },
+      {
+        "url": "/assets/migrated/49_b12_720x_301f00ae-898e-41d1-b635-14ec61052c17.webp",
         "altText": "Revitalizing Spa Day Bundle"
       }
     ],
@@ -4866,7 +7110,19 @@ const products = [
     "slug": "purifying-solid-perfume-188",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=800&q=80&sig=188",
+        "url": "/assets/migrated/50_about-img-2.webp",
+        "altText": "Purifying Solid Perfume"
+      },
+      {
+        "url": "/assets/migrated/51_1-age-pro-intense-wrinkle-serum-A3340.jpg",
+        "altText": "Purifying Solid Perfume"
+      },
+      {
+        "url": "/assets/migrated/52_s2_1512x_98eb4d02-1fb4-4572-912e-640bff0b5a70.jpg",
+        "altText": "Purifying Solid Perfume"
+      },
+      {
+        "url": "/assets/migrated/53_Beautina_1.png",
         "altText": "Purifying Solid Perfume"
       }
     ],
@@ -4892,7 +7148,19 @@ const products = [
     "slug": "divine-relaxation-tea-189",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1598444747738-963b516b24d7?auto=format&fit=crop&w=800&q=80&sig=189",
+        "url": "/assets/migrated/54_Icon_2.png",
+        "altText": "Divine Relaxation Tea"
+      },
+      {
+        "url": "/assets/migrated/55_Icon_4.png",
+        "altText": "Divine Relaxation Tea"
+      },
+      {
+        "url": "/assets/migrated/56_Icon_3.png",
+        "altText": "Divine Relaxation Tea"
+      },
+      {
+        "url": "/assets/migrated/57_1-superseed-age-recovery-oil-30ml-A2603.jpg",
         "altText": "Divine Relaxation Tea"
       }
     ],
@@ -4918,7 +7186,19 @@ const products = [
     "slug": "essential-bath-bomb-190",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80&sig=190",
+        "url": "/assets/migrated/0_home-after_1.jpg",
+        "altText": "Essential Bath Bomb"
+      },
+      {
+        "url": "/assets/migrated/1_home-before_1.jpg",
+        "altText": "Essential Bath Bomb"
+      },
+      {
+        "url": "/assets/migrated/2_b2_1_96db18e7-8cd1-4ac2-95aa-f203226fc675.webp",
+        "altText": "Essential Bath Bomb"
+      },
+      {
+        "url": "/assets/migrated/3_home-after_4fcfbfed-535d-4e65-8f9f-1fe66b041eff.jpg",
         "altText": "Essential Bath Bomb"
       }
     ],
@@ -4944,7 +7224,19 @@ const products = [
     "slug": "luminous-cleanser-191",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1615397323214-3a7894a7e930?auto=format&fit=crop&w=800&q=80&sig=191",
+        "url": "/assets/migrated/4_gallery-image-8_11d220c1-ae96-4a4b-9528-eaf7e7947e95.webp",
+        "altText": "Luminous Cleanser"
+      },
+      {
+        "url": "/assets/migrated/5_custom-banner-2.jpg",
+        "altText": "Luminous Cleanser"
+      },
+      {
+        "url": "/assets/migrated/6_gallery-3-v2.webp",
+        "altText": "Luminous Cleanser"
+      },
+      {
+        "url": "/assets/migrated/7_2-anti-age-recovery-treatment-A2603.jpg",
         "altText": "Luminous Cleanser"
       }
     ],
@@ -4970,7 +7262,19 @@ const products = [
     "slug": "velvet-travel-essentials-kit-192",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=800&q=80&sig=192",
+        "url": "/assets/migrated/8_4-replenishing-night-cream-A3062.jpg",
+        "altText": "Velvet Travel Essentials Kit"
+      },
+      {
+        "url": "/assets/migrated/9_b17_540x_aa6b96c0-cd33-460e-8da7-208e8c30f82e.webp",
+        "altText": "Velvet Travel Essentials Kit"
+      },
+      {
+        "url": "/assets/migrated/10_collection-tab-1.jpg",
+        "altText": "Velvet Travel Essentials Kit"
+      },
+      {
+        "url": "/assets/migrated/11_2.png",
         "altText": "Velvet Travel Essentials Kit"
       }
     ],
@@ -4996,7 +7300,19 @@ const products = [
     "slug": "hydrating-hair-mask-193",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1585232351009-aa87416fca90?auto=format&fit=crop&w=800&q=80&sig=193",
+        "url": "/assets/migrated/12_s31_900x_8f09b4d4-6d08-410a-b6c2-5f291c6eb648.webp",
+        "altText": "Hydrating Hair Mask"
+      },
+      {
+        "url": "/assets/migrated/13_1.png",
+        "altText": "Hydrating Hair Mask"
+      },
+      {
+        "url": "/assets/migrated/14_s32_900x_8acd0d58-b6ff-42e4-9796-69f7e92d8ef7.jpg",
+        "altText": "Hydrating Hair Mask"
+      },
+      {
+        "url": "/assets/migrated/15_highlight-icon-1.webp",
         "altText": "Hydrating Hair Mask"
       }
     ],
@@ -5022,7 +7338,19 @@ const products = [
     "slug": "revitalizing-shower-gel-194",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80&sig=194",
+        "url": "/assets/migrated/16_highlight-icon-2.webp",
+        "altText": "Revitalizing Shower Gel"
+      },
+      {
+        "url": "/assets/migrated/17_highlight-icon-3.webp",
+        "altText": "Revitalizing Shower Gel"
+      },
+      {
+        "url": "/assets/migrated/18_gallery-2-v2.webp",
+        "altText": "Revitalizing Shower Gel"
+      },
+      {
+        "url": "/assets/migrated/19_gallery-image-7.webp",
         "altText": "Revitalizing Shower Gel"
       }
     ],
@@ -5048,7 +7376,19 @@ const products = [
     "slug": "divine-face-serum-195",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80&sig=195",
+        "url": "/assets/migrated/20_gallery-image-1.jpg",
+        "altText": "Divine Face Serum"
+      },
+      {
+        "url": "/assets/migrated/21_about-img-3.webp",
+        "altText": "Divine Face Serum"
+      },
+      {
+        "url": "/assets/migrated/22_gallery-5-v2.webp",
+        "altText": "Divine Face Serum"
+      },
+      {
+        "url": "/assets/migrated/23_fleur-kaan-w4Dj3MshHQ0-unsplash.jpg",
         "altText": "Divine Face Serum"
       }
     ],
@@ -5074,7 +7414,19 @@ const products = [
     "slug": "divine-hair-serum-196",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1585232351009-aa87416fca90?auto=format&fit=crop&w=800&q=80&sig=196",
+        "url": "/assets/migrated/24_3.11_a206c225-bd03-40da-8e5f-e3a3e160e25a.webp",
+        "altText": "Divine Hair Serum"
+      },
+      {
+        "url": "/assets/migrated/25_gallery-image-5.webp",
+        "altText": "Divine Hair Serum"
+      },
+      {
+        "url": "/assets/migrated/26_luminous-perfecting-concealer_1.jpg",
+        "altText": "Divine Hair Serum"
+      },
+      {
+        "url": "/assets/migrated/27_intense-glow-concentrate.jpg",
         "altText": "Divine Hair Serum"
       }
     ],
@@ -5100,7 +7452,19 @@ const products = [
     "slug": "velvet-body-butter-197",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1614859324967-bdf45d8b8431?auto=format&fit=crop&w=800&q=80&sig=197",
+        "url": "/assets/migrated/28_superseed-age-recovery-organic-facial-oil.jpg",
+        "altText": "Velvet Body Butter"
+      },
+      {
+        "url": "/assets/migrated/29_5-omega-and-vitamin-e-oil-for-face-A2281.jpg",
+        "altText": "Velvet Body Butter"
+      },
+      {
+        "url": "/assets/migrated/30_5-madara-sos-skincare-A3021.jpg",
+        "altText": "Velvet Body Butter"
+      },
+      {
+        "url": "/assets/migrated/31_2-nourish-and-repair-hair-care-A4051.jpg",
         "altText": "Velvet Body Butter"
       }
     ],
@@ -5126,7 +7490,19 @@ const products = [
     "slug": "midnight-ph-balance-wipes-198",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1556228720-192a6af4e86e?auto=format&fit=crop&w=800&q=80&sig=198",
+        "url": "/assets/migrated/32_6-madara-his-collection-A5003.jpg",
+        "altText": "Midnight pH Balance Wipes"
+      },
+      {
+        "url": "/assets/migrated/33_4_madara-cosmetics-grow-volume-shampoo-conditioner-boost-scalp-treatment-set.jpg",
+        "altText": "Midnight pH Balance Wipes"
+      },
+      {
+        "url": "/assets/migrated/34_highlight-icon-4.webp",
+        "altText": "Midnight pH Balance Wipes"
+      },
+      {
+        "url": "/assets/migrated/35_brand-martha-stewart.webp",
         "altText": "Midnight pH Balance Wipes"
       }
     ],
@@ -5152,7 +7528,19 @@ const products = [
     "slug": "nourishing-ultimate-glow-box-199",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=800&q=80&sig=199",
+        "url": "/assets/migrated/36_brand-bustle.webp",
+        "altText": "Nourishing Ultimate Glow Box"
+      },
+      {
+        "url": "/assets/migrated/37_brand-elite-daily.webp",
+        "altText": "Nourishing Ultimate Glow Box"
+      },
+      {
+        "url": "/assets/migrated/38_brand-elle.webp",
+        "altText": "Nourishing Ultimate Glow Box"
+      },
+      {
+        "url": "/assets/migrated/39_brand-vogue.webp",
         "altText": "Nourishing Ultimate Glow Box"
       }
     ],
@@ -5178,7 +7566,19 @@ const products = [
     "slug": "pure-exfoliating-scrub-200",
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80&sig=200",
+        "url": "/assets/migrated/41_b11b019c831543709c9f0852c3d79b21.thumbnail.0000000000_small.jpg",
+        "altText": "Pure Exfoliating Scrub"
+      },
+      {
+        "url": "/assets/migrated/43_788b041920114347915fb7d4a16de257.thumbnail.0000000000_small.jpg",
+        "altText": "Pure Exfoliating Scrub"
+      },
+      {
+        "url": "/assets/migrated/45_fb984906407f4fb9b5c5ceb14dd78350.thumbnail.0000000000_small.jpg",
+        "altText": "Pure Exfoliating Scrub"
+      },
+      {
+        "url": "/assets/migrated/47_4b2f2c0725434683af01f499b85d7b90.thumbnail.0000000000_small.jpg",
         "altText": "Pure Exfoliating Scrub"
       }
     ],

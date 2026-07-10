@@ -24,7 +24,7 @@ const BeforeAfterSection = () => {
 
   return (
     <section className="bg-white py-16 md:py-24 overflow-hidden border-y border-gray-100">
-      <div className="container mx-auto px-4 md:px-8 text-center">
+      <div className="mx-auto max-w-[1550px] px-4 sm:px-6 lg:px-8 text-center">
         
         {/* Section Heading */}
         <motion.div
@@ -60,7 +60,7 @@ const BeforeAfterSection = () => {
         >
           {/* After Image (Background) */}
           <img 
-            src="https://beautina-cosmetic.myshopify.com/cdn/shop/files/home-after_1.jpg?v=1773290459&width=1500" 
+            src="/assets/migrated/0_home-after_1.jpg" 
             alt="After" 
             className="absolute inset-0 w-full h-full object-cover pointer-events-none"
             loading="lazy"
@@ -72,7 +72,7 @@ const BeforeAfterSection = () => {
             style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
           >
             <img 
-              src="https://beautina-cosmetic.myshopify.com/cdn/shop/files/home-before_1.jpg?v=1773290460&width=1500" 
+              src="/assets/migrated/1_home-before_1.jpg" 
               alt="Before" 
               className="absolute inset-0 w-full h-full object-cover max-w-none pointer-events-none"
               style={{ width: '100%', height: '100%' }}

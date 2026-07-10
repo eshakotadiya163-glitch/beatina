@@ -9,8 +9,8 @@ import 'swiper/css/navigation';
 const slides = [
   {
     id: 'slide-1',
-    image: 'https://beautina-cosmetic.myshopify.com/cdn/shop/files/2.png?v=1773203940&width=2000',
-    mobileImage: 'https://beautina-cosmetic.myshopify.com/cdn/shop/files/s31_900x_8f09b4d4-6d08-410a-b6c2-5f291c6eb648.webp?v=1773134590&width=1100',
+    image: '/assets/migrated/11_2.png',
+    mobileImage: '/assets/migrated/12_s31_900x_8f09b4d4-6d08-410a-b6c2-5f291c6eb648.webp',
     bgColor: '#3190ae',
     label: 'New Skincare Arrival',
     title: "Skin's Natural\nRadiance.",
@@ -20,8 +20,8 @@ const slides = [
   },
   {
     id: 'slide-2',
-    image: 'https://beautina-cosmetic.myshopify.com/cdn/shop/files/1.png?v=1773203940&width=2000',
-    mobileImage: 'https://beautina-cosmetic.myshopify.com/cdn/shop/files/s32_900x_8acd0d58-b6ff-42e4-9796-69f7e92d8ef7.jpg?v=1773124923&width=1100',
+    image: '/assets/migrated/13_1.png',
+    mobileImage: '/assets/migrated/14_s32_900x_8acd0d58-b6ff-42e4-9796-69f7e92d8ef7.jpg',
     bgColor: '#858961',
     label: 'Nighttime Ritual',
     title: 'Glow While\nYou Sleep.',

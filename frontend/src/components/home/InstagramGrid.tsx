@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 const Instagram = (props: any) => <svg width={props.size || 24} height={props.size || 24} viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth={props.strokeWidth || 2} className={props.className} {...props}><rect x='2' y='2' width='20' height='20' rx='5' ry='5'/><path d='M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z'/><line x1='17.5' y1='6.5' x2='17.51' y2='6.5'/></svg>;
 
 const images = [
-  "https://beautina-cosmetic.myshopify.com/cdn/shop/files/b17_540x_aa6b96c0-cd33-460e-8da7-208e8c30f82e.webp?v=1773124923&width=600",
-  "https://beautina-cosmetic.myshopify.com/cdn/shop/files/custom-banner-2.jpg?v=1773124923&width=600",
-  "https://beautina-cosmetic.myshopify.com/cdn/shop/files/gallery-2-v2.webp?v=1773124923&width=600",
-  "https://beautina-cosmetic.myshopify.com/cdn/shop/files/gallery-image-7.webp?v=1773124923&width=600",
-  "https://beautina-cosmetic.myshopify.com/cdn/shop/files/gallery-image-1.jpg?v=1773124923&width=600",
-  "https://beautina-cosmetic.myshopify.com/cdn/shop/files/about-img-3.webp?v=1773124923&width=600"
+  "/assets/migrated/9_b17_540x_aa6b96c0-cd33-460e-8da7-208e8c30f82e.webp",
+  "/assets/migrated/5_custom-banner-2.jpg",
+  "/assets/migrated/18_gallery-2-v2.webp",
+  "/assets/migrated/19_gallery-image-7.webp",
+  "/assets/migrated/20_gallery-image-1.jpg",
+  "/assets/migrated/21_about-img-3.webp"
 ];
 
 const containerVariants = {

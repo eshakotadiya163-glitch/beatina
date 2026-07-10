@@ -14,20 +14,20 @@ interface ShoppableVideosProps {
 
 const shopVideos = [
   {
-    videoSrc: "https://beautina-cosmetic.myshopify.com/cdn/shop/videos/c/vp/b11b019c831543709c9f0852c3d79b21/b11b019c831543709c9f0852c3d79b21.HD-1080p-3.3Mbps-77545356.mp4?v=0",
-    poster: "https://beautina-cosmetic.myshopify.com/cdn/shop/files/preview_images/b11b019c831543709c9f0852c3d79b21.thumbnail.0000000000_small.jpg?v=1773130279",
+    videoSrc: "/assets/migrated/40_b11b019c831543709c9f0852c3d79b21.HD-1080p-3.3Mbps-77545356.mp4",
+    poster: "/assets/migrated/41_b11b019c831543709c9f0852c3d79b21.thumbnail.0000000000_small.jpg",
   },
   {
-    videoSrc: "https://beautina-cosmetic.myshopify.com/cdn/shop/videos/c/vp/788b041920114347915fb7d4a16de257/788b041920114347915fb7d4a16de257.HD-1080p-7.2Mbps-77545360.mp4?v=0",
-    poster: "https://beautina-cosmetic.myshopify.com/cdn/shop/files/preview_images/788b041920114347915fb7d4a16de257.thumbnail.0000000000_small.jpg?v=1773130277",
+    videoSrc: "/assets/migrated/42_788b041920114347915fb7d4a16de257.HD-1080p-7.2Mbps-77545360.mp4",
+    poster: "/assets/migrated/43_788b041920114347915fb7d4a16de257.thumbnail.0000000000_small.jpg",
   },
   {
-    videoSrc: "https://beautina-cosmetic.myshopify.com/cdn/shop/videos/c/vp/fb984906407f4fb9b5c5ceb14dd78350/fb984906407f4fb9b5c5ceb14dd78350.HD-1080p-2.5Mbps-77626008.mp4?v=0",
-    poster: "https://beautina-cosmetic.myshopify.com/cdn/shop/files/preview_images/fb984906407f4fb9b5c5ceb14dd78350.thumbnail.0000000000_small.jpg?v=1773206918",
+    videoSrc: "/assets/migrated/44_fb984906407f4fb9b5c5ceb14dd78350.HD-1080p-2.5Mbps-77626008.mp4",
+    poster: "/assets/migrated/45_fb984906407f4fb9b5c5ceb14dd78350.thumbnail.0000000000_small.jpg",
   },
   {
-    videoSrc: "https://beautina-cosmetic.myshopify.com/cdn/shop/videos/c/vp/4b2f2c0725434683af01f499b85d7b90/4b2f2c0725434683af01f499b85d7b90.HD-1080p-4.8Mbps-77545359.mp4?v=0",
-    poster: "https://beautina-cosmetic.myshopify.com/cdn/shop/files/preview_images/4b2f2c0725434683af01f499b85d7b90.thumbnail.0000000000_small.jpg?v=1773130279",
+    videoSrc: "/assets/migrated/46_4b2f2c0725434683af01f499b85d7b90.HD-1080p-4.8Mbps-77545359.mp4",
+    poster: "/assets/migrated/47_4b2f2c0725434683af01f499b85d7b90.thumbnail.0000000000_small.jpg",
   }
 ];
 
