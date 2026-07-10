@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 
 const pressLogos = [
   "https://beautina-cosmetic.myshopify.com/cdn/shop/files/brand-martha-stewart.webp?v=1773124923&width=200",
@@ -9,51 +10,95 @@ const pressLogos = [
 
 const PressTestimonials = () => {
   return (
-    <section className="bg-white py-[60px] md:py-[50px]">
+    <section className="bg-white py-16 md:py-24 border-y border-gray-100">
       <div className="container mx-auto px-4 md:px-8">
         
         {/* Section Heading */}
-        <h3 className="font-heading text-3xl md:text-[40px] text-brand-dark mb-10 text-center">
-          <span>Our Press</span>
-        </h3>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center mb-10 md:mb-14"
+        >
+          <h3 className="font-serif text-3xl md:text-[40px] text-brand-dark font-light">
+            Our Press
+          </h3>
+        </motion.div>
 
         {/* Quote Wrapper */}
         <div className="flex flex-col items-center text-center">
           
           {/* Stars */}
-          <ul className="flex justify-center gap-1 mb-4">
+          <motion.ul 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={{
+              hidden: {},
+              visible: { transition: { staggerChildren: 0.1 } }
+            }}
+            className="flex justify-center gap-1.5 mb-6"
+          >
             {[...Array(5)].map((_, i) => (
-              <li key={i} className="text-[#f7d50e]">
-                <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <motion.li 
+                key={i} 
+                variants={{
+                  hidden: { opacity: 0, scale: 0.5 },
+                  visible: { opacity: 1, scale: 1, transition: { type: "spring", stiffness: 300 } }
+                }}
+                className="text-[#f7d50e]"
+              >
+                <svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
                 </svg>
-              </li>
+              </motion.li>
             ))}
-          </ul>
+          </motion.ul>
 
           {/* Quote Text */}
-          <div className="py-2 mb-8">
-            <h4 className="font-heading text-lg md:text-2xl text-brand-dark leading-snug max-w-2xl mx-auto">
+          <motion.div 
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="py-2 mb-10 md:mb-14"
+          >
+            <h4 className="font-serif text-xl md:text-3xl lg:text-[32px] text-gray-800 leading-snug max-w-3xl mx-auto font-light italic">
               “Glow naturally with skincare that nourishes,<br className="hidden md:block" /> protects, and enhances your beauty.”
             </h4>
-          </div>
+          </motion.div>
 
-          {/* Logos Row (Confined to ~50% width on desktop like original col-lg-6) */}
-          <div className="w-full lg:w-1/2 overflow-hidden mx-auto">
-            <div className="flex flex-nowrap justify-between items-center gap-2 md:gap-4 overflow-x-auto hide-scrollbar">
+          {/* Logos Row */}
+          <div className="w-full lg:w-3/4 overflow-hidden mx-auto">
+            <motion.div 
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={{
+                hidden: {},
+                visible: { transition: { staggerChildren: 0.1, delayChildren: 0.5 } }
+              }}
+              className="flex flex-wrap justify-center items-center gap-6 md:gap-10 lg:gap-16"
+            >
               {pressLogos.map((logo, idx) => (
-                <div key={idx} className="flex-shrink-0 w-24 md:w-28 flex justify-center items-center px-1">
-                  <div className="relative w-full aspect-[2.57] flex items-center justify-center">
-                    <img 
-                      src={logo} 
-                      alt="Press Logo" 
-                      className="max-w-full max-h-full object-contain" 
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
+                <motion.div 
+                  key={idx} 
+                  variants={{
+                    hidden: { opacity: 0, y: 10 },
+                    visible: { opacity: 1, y: 0 }
+                  }}
+                  className="flex-shrink-0 w-20 md:w-28 flex justify-center items-center opacity-60 hover:opacity-100 transition-opacity duration-300"
+                >
+                  <img 
+                    src={logo} 
+                    alt="Press Logo" 
+                    className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300" 
+                    loading="lazy"
+                  />
+                </motion.div>
               ))}
-            </div>
+            </motion.div>
           </div>
           
         </div>
