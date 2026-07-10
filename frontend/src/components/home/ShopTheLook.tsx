@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { motion } from 'framer-motion';
 import { Navigation } from 'swiper/modules';
 import type { Swiper as SwiperType } from 'swiper';
 import ProductCard from '../ProductCard';
@@ -26,15 +27,21 @@ const ShopTheLook: React.FC<ShopTheLookProps> = ({ products = [] }) => {
   };
 
   return (
-    <section className="bg-white py-[40px] md:py-[50px] overflow-hidden">
-      <div className="container mx-auto px-4 md:px-8">
+    <section className="bg-white py-16 md:py-24 overflow-hidden border-y border-gray-100">
+      <div className="container mx-auto px-4 md:px-8 max-w-[1400px]">
         
         {/* Authentic Flex Row Reverse Layout */}
-        <div className="flex flex-col lg:flex-row-reverse -mx-4 items-center">
+        <div className="flex flex-col lg:flex-row-reverse -mx-4 items-center gap-y-12">
           
           {/* Right Side (Image + Hotspots) - Visually on Right due to flex-row-reverse */}
-          <div className="w-full lg:w-1/2 px-4 mb-10 lg:mb-0">
-            <div className="relative w-full aspect-square overflow-hidden bg-gray-50">
+          <motion.div 
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="w-full lg:w-1/2 px-4"
+          >
+            <div className="relative w-full aspect-square overflow-hidden bg-gray-50 max-w-[650px] mx-auto">
               <img 
                 src="https://beautina-cosmetic.myshopify.com/cdn/shop/files/ChatGPT_Image_Mar_11_2026_10_46_49_AM.png?v=1773206223&width=1024" 
                 alt="Shop The Look" 
@@ -89,23 +96,29 @@ const ShopTheLook: React.FC<ShopTheLookProps> = ({ products = [] }) => {
 
               </ul>
             </div>
-          </div>
+          </motion.div>
           
           {/* Left Side (Text + Slider) - Visually on Left */}
-          <div className="w-full lg:w-1/2 px-4 flex items-center">
-            <div className="w-full max-w-md mx-auto py-5 lg:py-0">
+          <motion.div 
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="w-full lg:w-1/2 px-4 flex items-center justify-center lg:justify-end"
+          >
+            <div className="w-full max-w-md mx-auto lg:mr-16">
               
-              <div className="text-center mb-10">
-                <div className="font-body text-xs text-brand-muted uppercase tracking-[0.2em] mb-2">
+              <div className="text-center mb-12">
+                <div className="font-sans text-[10px] md:text-[11px] font-semibold text-gray-500 uppercase tracking-[0.25em] mb-4">
                   product bundle
                 </div>
-                <h3 className="font-heading text-3xl md:text-[40px] text-brand-dark">
-                  <span>Favorite Skin & hair Grow</span>
+                <h3 className="font-serif text-3xl md:text-[40px] text-[#111111] font-light leading-tight">
+                  Favorite Skin & hair Grow
                 </h3>
               </div>
 
               {/* Swiper Column */}
-            <div className="w-full md:w-[45%] lg:w-[40%] flex flex-col justify-center max-w-[400px] mx-auto md:mx-0">
+            <div className="w-full flex flex-col justify-center max-w-[350px] mx-auto relative group">
               <Swiper
                 modules={[Navigation]}
                 navigation={{
@@ -137,16 +150,16 @@ const ShopTheLook: React.FC<ShopTheLookProps> = ({ products = [] }) => {
               </Swiper>
                 
                 {/* Custom Navigation Arrows */}
-                <button className="swiper-button-prev-look absolute left-0 top-[40%] -translate-y-1/2 -translate-x-4 z-10 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center text-brand-dark opacity-0 group-hover:opacity-100 transition-opacity">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7"/></svg>
+                <button className="shop-prev absolute left-0 top-1/2 -translate-y-1/2 -translate-x-5 z-10 w-10 h-10 bg-white rounded-full shadow-[0_4px_12px_rgba(0,0,0,0.1)] flex items-center justify-center text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 disabled:opacity-50">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1"><path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7"/></svg>
                 </button>
-                <button className="swiper-button-next-look absolute right-0 top-[40%] -translate-y-1/2 translate-x-4 z-10 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center text-brand-dark opacity-0 group-hover:opacity-100 transition-opacity">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/></svg>
+                <button className="shop-next absolute right-0 top-1/2 -translate-y-1/2 translate-x-5 z-10 w-10 h-10 bg-white rounded-full shadow-[0_4px_12px_rgba(0,0,0,0.1)] flex items-center justify-center text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 disabled:opacity-50">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1"><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/></svg>
                 </button>
               </div>
 
             </div>
-          </div>
+          </motion.div>
           
         </div>
       </div>
