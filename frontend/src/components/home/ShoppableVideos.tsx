@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
+import { motion, AnimatePresence } from 'framer-motion';
 import ProductCard from '../ProductCard';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -66,12 +67,24 @@ const ShoppableVideos: React.FC<ShoppableVideosProps> = ({ products = [] }) => {
   };
 
   return (
-    <section className="bg-transparent pt-0 pb-[60px] relative px-4 max-w-[1600px] mx-auto">
-      <h2 className="text-center mb-10 text-[28px] md:text-[36px] font-medium tracking-[-0.02em] text-black">
+    <section className="bg-white py-16 md:py-24 relative px-4 max-w-[1600px] mx-auto border-y border-gray-100">
+      <motion.h2 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="text-center mb-10 md:mb-14 font-serif text-3xl md:text-[40px] text-[#111111] font-light"
+      >
         Live Result
-      </h2>
+      </motion.h2>
       
-      <div className="relative px-5 group">
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        viewport={{ once: true }}
+        className="relative px-5 group"
+      >
         <Swiper
           modules={[Navigation]}
           navigation={{
@@ -122,16 +135,16 @@ const ShoppableVideos: React.FC<ShoppableVideosProps> = ({ products = [] }) => {
                   </div>
                   
                   {/* Product Info */}
-                  <div className="flex flex-col text-left px-2.5 pt-[30px] pb-[15px] relative z-5">
-                    <div className="text-[13px] font-normal mb-2 text-black line-clamp-2 min-h-[36px] capitalize tracking-[0.5px]">
+                  <div className="flex flex-col text-left px-3 pt-6 pb-4 relative z-5">
+                    <div className="text-[12px] md:text-[13px] font-sans font-medium mb-1.5 text-[#111111] line-clamp-2 min-h-[36px] capitalize tracking-wide">
                       {product.title}
                     </div>
-                    <div className="text-[14px] text-black font-semibold mb-3">
+                    <div className="text-[13px] md:text-[14px] text-gray-500 font-sans mb-4">
                       {formatPrice(product.price)}
                     </div>
                     <button 
                       onClick={() => openModal(index)}
-                      className="bg-[#b8c2f2] text-black text-center p-3 rounded-[6px] text-[13px] font-semibold hover:bg-black hover:text-white transition-colors border-none cursor-pointer"
+                      className="w-full bg-[#f8f8f8] text-[#111111] font-sans text-[11px] uppercase tracking-widest font-semibold p-3 rounded-none hover:bg-[#111111] hover:text-white transition-colors duration-300 border border-transparent hover:border-[#111111]"
                     >
                       Shop now
                     </button>
@@ -144,53 +157,66 @@ const ShoppableVideos: React.FC<ShoppableVideosProps> = ({ products = [] }) => {
         </Swiper>
 
         {/* Custom Navigation Arrows */}
-        <button className="swiper-button-prev-video absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 z-10 w-10 h-10 bg-white rounded-full shadow-[0_4px_12px_rgba(0,0,0,0.15)] flex items-center justify-center text-black">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7"/></svg>
+        <button className="swiper-button-prev-video absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 z-10 w-10 h-10 bg-white rounded-full shadow-[0_4px_12px_rgba(0,0,0,0.1)] flex items-center justify-center text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1"><path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7"/></svg>
         </button>
-        <button className="swiper-button-next-video absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 z-10 w-10 h-10 bg-white rounded-full shadow-[0_4px_12px_rgba(0,0,0,0.15)] flex items-center justify-center text-black">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/></svg>
+        <button className="swiper-button-next-video absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 z-10 w-10 h-10 bg-white rounded-full shadow-[0_4px_12px_rgba(0,0,0,0.1)] flex items-center justify-center text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1"><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/></svg>
         </button>
-      </div>
+      </motion.div>
 
       {/* Shoppable Modal Popup */}
-      {modalOpen && (
-        <div className="fixed inset-0 bg-black/85 z-[9999] flex items-center justify-center backdrop-blur-sm p-4 md:p-10 transition-opacity">
-          
-          <button 
-            onClick={closeModal}
-            className="absolute top-5 right-5 md:right-8 w-[50px] h-[50px] flex items-center justify-center bg-white/40 text-white text-[36px] rounded-[14px] z-[10005] cursor-pointer hover:bg-white/60 transition-colors"
+      <AnimatePresence>
+        {modalOpen && (
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="fixed inset-0 bg-black/80 z-[9999] flex items-center justify-center backdrop-blur-sm p-4 md:p-10"
           >
-            &times;
-          </button>
-          
-          <div className="w-full max-w-[900px] bg-white rounded-[20px] overflow-hidden flex flex-col md:flex-row shadow-2xl relative z-[10000] animate-in fade-in zoom-in-95 duration-300">
+            <button 
+              onClick={closeModal}
+              className="absolute top-5 right-5 md:top-8 md:right-8 w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-white/20 text-white rounded-full z-[10005] cursor-pointer transition-colors"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
             
-            {/* Modal Video (Left side) */}
-            <div className="w-full md:w-1/2 relative bg-black flex items-center justify-center aspect-[9/16] md:aspect-auto md:h-[600px]">
-              <video 
-                src={shopVideos[activeVideoIndex]?.videoSrc} 
-                poster={shopVideos[activeVideoIndex]?.poster} 
-                className="absolute inset-0 w-full h-full object-cover"
-                autoPlay 
-                muted 
-                loop 
-                playsInline 
-              />
-            </div>
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.95, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 20 }}
+              transition={{ duration: 0.4, type: "spring", stiffness: 300, damping: 30 }}
+              className="w-full max-w-[900px] bg-white rounded-lg overflow-hidden flex flex-col md:flex-row shadow-2xl relative z-[10000]"
+            >
+              
+              {/* Modal Video (Left side) */}
+              <div className="w-full md:w-1/2 relative bg-black flex items-center justify-center aspect-[9/16] md:aspect-auto md:h-[600px]">
+                <video 
+                  src={shopVideos[activeVideoIndex]?.videoSrc} 
+                  poster={shopVideos[activeVideoIndex]?.poster} 
+                  className="absolute inset-0 w-full h-full object-cover"
+                  autoPlay 
+                  muted 
+                  loop 
+                  playsInline 
+                />
+              </div>
 
-            {/* Modal Product (Right side) */}
-            <div className="w-full md:w-1/2 p-6 md:p-10 bg-white flex flex-col justify-center overflow-y-auto max-h-[50vh] md:max-h-full">
-              {shoppableProducts[activeVideoIndex % Math.max(shoppableProducts.length, 1)] && (
-                <div className="w-full max-w-sm mx-auto">
-                  <h4 className="text-2xl font-heading mb-6 border-b pb-4">Featured Product</h4>
-                  <ProductCard product={shoppableProducts[activeVideoIndex % Math.max(shoppableProducts.length, 1)]} />
-                </div>
-              )}
-            </div>
-            
-          </div>
-        </div>
-      )}
+              {/* Modal Product (Right side) */}
+              <div className="w-full md:w-1/2 p-6 md:p-12 bg-white flex flex-col justify-center overflow-y-auto max-h-[50vh] md:max-h-full">
+                {shoppableProducts[activeVideoIndex % Math.max(shoppableProducts.length, 1)] && (
+                  <div className="w-full max-w-sm mx-auto">
+                    <h4 className="font-serif text-2xl font-light mb-8 pb-4 border-b border-gray-100 text-[#111111]">Featured Product</h4>
+                    <ProductCard product={shoppableProducts[activeVideoIndex % Math.max(shoppableProducts.length, 1)]} />
+                  </div>
+                )}
+              </div>
+              
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
     </section>
   );
