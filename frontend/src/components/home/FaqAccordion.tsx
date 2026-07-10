@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Plus, Minus } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const faqs = [
   {
@@ -24,66 +25,93 @@ const FaqAccordion = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="py-[40px] md:py-[50px] bg-white">
+    <section className="py-16 md:py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-4 md:px-8">
         {/* Title Area */}
-        <div className="text-center mb-10 md:mb-12">
-          <div className="font-body text-[11px] uppercase tracking-[0.2em] text-brand-dark mb-2">
-            Sub Title Top
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="text-center mb-12 md:mb-16"
+        >
+          <div className="font-sans text-[10px] md:text-[11px] uppercase tracking-[0.25em] text-gray-500 mb-4 font-semibold">
+            FAQ
           </div>
-          <h3 className="font-heading text-3xl md:text-4xl text-brand-dark">
+          <h3 className="font-serif text-3xl md:text-4xl lg:text-[44px] text-[#111111] font-light leading-tight max-w-2xl mx-auto">
             Time to achieve more with less
           </h3>
-        </div>
+        </motion.div>
 
         {/* Content Area */}
         <div className="max-w-[1140px] mx-auto">
-          <div className="flex flex-col md:flex-row gap-8 lg:gap-0 lg:w-3/4 mx-auto">
+          <div className="flex flex-col md:flex-row gap-10 lg:gap-16 lg:w-4/5 mx-auto items-center">
             
             {/* Left: FAQs */}
-            <div className="w-full md:w-1/2 md:pr-8 lg:pr-12">
-              <div className="border-t border-[#ebebeb]">
+            <div className="w-full md:w-1/2">
+              <div className="border-t border-gray-200">
                 {faqs.map((faq, index) => (
-                  <div key={index} className="border-b border-[#ebebeb]">
+                  <motion.div 
+                    key={index} 
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                    className="border-b border-gray-200"
+                  >
                     <button
-                      className="w-full relative py-5 flex justify-between items-center text-left focus:outline-none cursor-pointer pr-12 group"
+                      className="w-full relative py-5 md:py-6 flex justify-between items-center text-left focus:outline-none cursor-pointer pr-12 group transition-colors hover:text-black"
                       onClick={() => setOpenIndex(openIndex === index ? null : index)}
                       aria-expanded={openIndex === index}
                     >
-                      <span className="font-body text-[15px] font-medium text-[#111111]">
+                      <span className={`font-sans text-[14px] md:text-[15px] font-medium transition-colors ${openIndex === index ? 'text-black' : 'text-gray-600'}`}>
                         {faq.question}
                       </span>
-                      <span className="absolute right-0 top-[10px] w-10 h-10 flex items-center justify-center text-brand-dark transition-transform duration-300">
+                      <span className="absolute right-0 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center text-black">
                         {openIndex === index
-                          ? <Minus size={16} strokeWidth={1.5} />
-                          : <Plus size={16} strokeWidth={1.5} />
+                          ? <Minus size={18} strokeWidth={1} />
+                          : <Plus size={18} strokeWidth={1} />
                         }
                       </span>
                     </button>
-                    <div
-                      className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                        openIndex === index ? 'max-h-96 opacity-100 pb-6' : 'max-h-0 opacity-0 pb-0'
-                      }`}
-                    >
-                      <p className="font-body text-[14px] text-gray-600 leading-[1.6]">
-                        {faq.answer}
-                      </p>
-                    </div>
-                  </div>
+                    <AnimatePresence>
+                      {openIndex === index && (
+                        <motion.div
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: 'auto', opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          transition={{ duration: 0.3, ease: "easeInOut" }}
+                          className="overflow-hidden"
+                        >
+                          <div className="pb-6 pr-6">
+                            <p className="font-sans text-[13px] md:text-[14px] text-gray-500 leading-relaxed font-light">
+                              {faq.answer}
+                            </p>
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </motion.div>
                 ))}
               </div>
             </div>
 
             {/* Right: Image */}
             <div className="w-full md:w-1/2">
-              <div className="relative w-full aspect-square overflow-hidden">
+              <motion.div 
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+                viewport={{ once: true }}
+                className="relative w-full aspect-[4/5] overflow-hidden"
+              >
                 <img 
                   src="https://beautina-cosmetic.myshopify.com/cdn/shop/files/collection-tab-1.jpg?v=1773124924&width=1080" 
                   alt="FAQ Image" 
                   className="absolute inset-0 w-full h-full object-cover"
                   loading="lazy"
                 />
-              </div>
+              </motion.div>
             </div>
             
           </div>
