@@ -36,9 +36,9 @@ const ShoppableVideos: React.FC<ShoppableVideosProps> = ({ products = [] }) => {
   const [activeVideoIndex, setActiveVideoIndex] = useState(0);
 
   const formatPrice = (price: number) => {
-    return new Intl.NumberFormat('en-IN', {
+    return new Intl.NumberFormat('en-US', {
       style: 'currency',
-      currency: 'INR',
+      currency: 'USD',
       minimumFractionDigits: 2,
     }).format(price);
   };
@@ -118,10 +118,10 @@ const ShoppableVideos: React.FC<ShoppableVideosProps> = ({ products = [] }) => {
                       src={video.videoSrc} 
                       poster={video.poster} 
                       className="shoppable-video absolute top-0 left-0 w-full h-full object-cover rounded-t-[14px]" 
-                      autoPlay 
-                      muted 
-                      loop 
-                      playsInline 
+                      autoPlay={true}
+                      muted={true}
+                      loop={true}
+                      playsInline={true}
                     />
                     
                     {/* Floating Product Badge */}
@@ -196,10 +196,10 @@ const ShoppableVideos: React.FC<ShoppableVideosProps> = ({ products = [] }) => {
                   src={shopVideos[activeVideoIndex]?.videoSrc} 
                   poster={shopVideos[activeVideoIndex]?.poster} 
                   className="absolute inset-0 w-full h-full object-cover"
-                  autoPlay 
-                  muted 
-                  loop 
-                  playsInline 
+                  autoPlay={true}
+                  muted={true}
+                  loop={true}
+                  playsInline={true}
                 />
               </div>
 
