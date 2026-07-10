@@ -13,13 +13,6 @@ const CompareIcon = () => (
   </svg>
 );
 
-const EyeIcon = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="transition-transform group-hover:scale-110">
-    <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-  </svg>
-);
-
 interface ProductCardProps {
   product: any;
   onQuickView?: (product: any) => void;
@@ -66,18 +59,20 @@ const ProductCard = ({ product, onQuickView }: ProductCardProps) => {
           >
             <CompareIcon />
           </button>
-          <button 
-            className="w-9 h-9 bg-white rounded-full flex items-center justify-center text-[#111111] hover:bg-[#111111] hover:text-white transition-colors shadow-sm"
-            onClick={() => onQuickView && onQuickView(product)}
-            aria-label="Quick View"
-          >
-            <EyeIcon />
-          </button>
         </div>
 
-        {/* Add to Cart Overlay */}
-        <div className="absolute bottom-4 left-4 right-4 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 z-20">
-          <button className="w-full bg-white text-[#111111] font-sans text-[12px] font-semibold uppercase tracking-widest py-3 hover:bg-[#111111] hover:text-white transition-colors text-center border border-transparent shadow-sm">
+        {/* Action Buttons Overlay */}
+        <div className="absolute bottom-3 left-3 right-3 flex gap-2 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 z-20">
+          <button 
+            className="flex-1 bg-white text-[#111111] font-sans text-[11px] font-semibold uppercase tracking-widest py-2.5 hover:bg-[#111111] hover:text-white transition-colors text-center border border-transparent shadow-sm"
+            onClick={(e) => {
+              e.preventDefault();
+              if(onQuickView) onQuickView(product);
+            }}
+          >
+            Quick Shop
+          </button>
+          <button className="flex-1 bg-white text-[#111111] font-sans text-[11px] font-semibold uppercase tracking-widest py-2.5 hover:bg-[#111111] hover:text-white transition-colors text-center border border-transparent shadow-sm">
             Add to cart
           </button>
         </div>
@@ -95,16 +90,18 @@ const ProductCard = ({ product, onQuickView }: ProductCardProps) => {
         <div className="flex items-center justify-center gap-3">
           {compareAtPrice ? (
             <>
-              <span className="font-sans text-[15px] font-medium text-[#111111]">
-                Rs. {price.toLocaleString('en-IN')}.00
+              <span className="font-heading text-lg font-medium tracking-wide">
+                ${price.toLocaleString('en-US')}.00
               </span>
-              <span className="font-sans text-[15px] text-gray-400 line-through">
-                Rs. {compareAtPrice.toLocaleString('en-IN')}.00
-              </span>
+              {compareAtPrice && (
+                <span className="font-body text-sm text-brand-muted line-through">
+                ${compareAtPrice.toLocaleString('en-US')}.00
+                </span>
+              )}
             </>
           ) : (
-            <span className="font-sans text-[15px] font-medium text-[#111111]">
-              Rs. {price.toLocaleString('en-IN')}.00
+            <span className="font-heading text-lg font-medium tracking-wide">
+              ${price.toLocaleString('en-US')}.00
             </span>
           )}
         </div>
