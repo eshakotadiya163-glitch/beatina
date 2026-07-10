@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
+import { motion } from 'framer-motion';
 
 const InteractiveImage = () => {
   const containerRef = useRef<HTMLElement>(null);
@@ -36,23 +37,50 @@ const InteractiveImage = () => {
       className="relative min-h-[500px] lg:min-h-screen bg-white overflow-hidden flex justify-center items-center"
     >
       {/* Centered Text */}
-      <div className="relative z-20 text-center px-4 max-w-[90%] lg:max-w-[34vw] mx-auto">
-        <div className="font-body text-[11px] uppercase tracking-[0.2em] mb-4 text-brand-dark">
-          Our Hand-picked
-        </div>
-        <h2 className="font-heading text-4xl md:text-5xl lg:text-[56px] leading-[1.1] text-brand-dark mb-4">
-          Designed to make you feel good.
-        </h2>
-        <p className="font-body text-sm md:text-base text-gray-600 mb-8 leading-relaxed">
-          Our thoughtfully curated beauty essentials are designed to enhance your natural glow, boost confidence, and make every day feel special.
-        </p>
-        <Link 
-          to="/shop" 
-          className="inline-block bg-brand-dark text-white font-body text-[13px] uppercase tracking-[0.2em] px-10 py-4 hover:bg-black transition-colors"
+      <motion.div 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+        className="relative z-20 text-center px-4 max-w-[90%] lg:max-w-[34vw] mx-auto flex flex-col items-center"
+      >
+        <motion.div 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="font-sans text-[10px] md:text-[11px] font-semibold uppercase tracking-[0.25em] mb-4 text-gray-800"
         >
-          discover now
-        </Link>
-      </div>
+          Our Hand-picked
+        </motion.div>
+        <motion.h2 
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="font-serif text-[40px] md:text-5xl lg:text-[64px] leading-[1.1] text-[#111111] mb-6 font-light"
+        >
+          Designed to make you feel good.
+        </motion.h2>
+        <motion.p 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="font-sans text-[14px] md:text-[15px] text-gray-500 mb-8 leading-relaxed max-w-md font-light"
+        >
+          Our thoughtfully curated beauty essentials are designed to enhance your natural glow, boost confidence, and make every day feel special.
+        </motion.p>
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.5 }}
+        >
+          <Link 
+            to="/shop" 
+            className="group inline-flex items-center justify-center bg-[#111111] text-white font-sans text-[11px] md:text-[12px] uppercase tracking-[0.2em] font-semibold px-10 py-[15px] border border-[#111111] transition-all duration-300 hover:bg-white hover:text-[#111111]"
+          >
+            discover now
+          </Link>
+        </motion.div>
+      </motion.div>
 
       {/* Floating Parallax Images */}
       <img
