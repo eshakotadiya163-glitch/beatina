@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade, Navigation } from 'swiper/modules';
+import { motion } from 'framer-motion';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
@@ -58,63 +59,49 @@ const HeroBanner = () => {
               </picture>
 
               {/* Content Container */}
-              <div className="absolute inset-0 z-20 flex flex-col justify-center items-center w-full" style={{ padding: '0 50px' }}>
-                <div className="w-full flex flex-col items-center text-center">
-                  <ul className="list-none p-0 m-0">
-                    <li style={{ marginBottom: '16px' }}>
-                      <p className="m-0 uppercase" style={{ 
-                        color: '#ffffff', 
-                        fontFamily: 'var(--g-font-2)', 
-                        fontSize: '13px', 
-                        fontWeight: 500, 
-                        letterSpacing: '0.2em' 
-                      }}>
+              <div className="absolute inset-0 z-20 flex flex-col justify-center items-center w-full px-4 md:px-12">
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
+                  className="w-full flex flex-col items-center text-center max-w-4xl mx-auto"
+                >
+                  <ul className="list-none p-0 m-0 w-full flex flex-col items-center">
+                    <motion.li 
+                      initial={{ opacity: 0, y: 15 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+                      className="mb-3 md:mb-5"
+                    >
+                      <p className="m-0 uppercase tracking-[0.2em] text-xs md:text-sm font-medium text-white/90 font-sans">
                         {slide.label}
                       </p>
-                    </li>
-                    <li style={{ marginBottom: '24px' }}>
-                      <h2 className="m-0 whitespace-pre-line" style={{ 
-                        color: '#ffffff', 
-                        fontFamily: 'var(--g-font-1)', 
-                        fontSize: '60px', 
-                        fontWeight: 400, 
-                        lineHeight: 1.1 
-                      }}>
+                    </motion.li>
+                    <motion.li 
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+                      className="mb-8 md:mb-10"
+                    >
+                      <h2 className="m-0 whitespace-pre-line text-[42px] md:text-[64px] lg:text-[76px] leading-[1.05] font-serif font-light text-white drop-shadow-sm">
                         {slide.title}
                       </h2>
-                    </li>
+                    </motion.li>
                   </ul>
-                  <div className="flex justify-center" style={{ paddingBottom: '4px' }}>
+                  <motion.div 
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
+                    className="flex justify-center"
+                  >
                     <Link
                       to={slide.link}
-                      className="inline-flex items-center justify-center transition-colors duration-400"
-                      style={{
-                        backgroundColor: '#ffffff',
-                        color: '#000000',
-                        fontFamily: 'var(--g-font-2)',
-                        fontSize: '11px',
-                        fontWeight: 600,
-                        textTransform: 'uppercase',
-                        letterSpacing: '0.2em',
-                        padding: '13px 40px',
-                        border: '1px solid #ffffff',
-                        textDecoration: 'none'
-                      }}
-                      onMouseEnter={(e) => {
-                        e.currentTarget.style.backgroundColor = '#000000';
-                        e.currentTarget.style.color = '#ffffff';
-                        e.currentTarget.style.borderColor = '#000000';
-                      }}
-                      onMouseLeave={(e) => {
-                        e.currentTarget.style.backgroundColor = '#ffffff';
-                        e.currentTarget.style.color = '#000000';
-                        e.currentTarget.style.borderColor = '#ffffff';
-                      }}
+                      className="inline-flex items-center justify-center bg-white text-black text-[11px] md:text-xs font-semibold uppercase tracking-[0.2em] px-8 md:px-10 py-[14px] border border-white transition-all duration-500 ease-in-out hover:bg-black hover:text-white hover:border-black"
                     >
                       {slide.cta}
                     </Link>
-                  </div>
-                </div>
+                  </motion.div>
+                </motion.div>
               </div>
             </div>
           </SwiperSlide>
