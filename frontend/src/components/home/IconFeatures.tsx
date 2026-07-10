@@ -1,6 +1,8 @@
-import { useEffect, useRef } from 'react';
-
-/* ─── Exact SVG paths from Beautina source ─────────────────────────── */
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+import { motion } from 'framer-motion';
+import 'swiper/css';
+import 'swiper/css/pagination';
 const SVG_SHIPPING = `<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M353 762.402C336.17 762.382 319.84 762.431 303.511 762.324C287.322 762.218 274.73 749.468 274.696 733.328C274.661 716.953 287.29 703.877 303.57 703.717C319.564 703.559 335.562 703.666 351.558 703.631C353.365 703.627 355.228 703.966 357.604 702.734C340.747 659.118 339.371 614.855 354.65 569.931C347.722 568.648 341.362 567.67 335.095 566.274C312.602 561.266 291.305 553.367 272.931 539.035C261.462 530.089 252.811 519.145 250.654 504.149C248.321 487.929 253.749 473.873 263.349 461.334C283.931 434.449 311.517 417.194 342.659 405.184C346.734 403.612 349.612 401.541 352.309 398.09C362.098 385.566 373.988 375.106 386.12 364.895C420.795 335.71 459.894 314.203 502.11 298.235C518.145 292.17 534.515 286.907 551.978 286.752C561.234 286.67 569.934 288.286 576.698 295.347C578.431 297.155 580.216 296.489 582.213 295.984C592.551 293.369 602.917 291.092 613.73 291.687C627.503 292.446 636.594 298.572 639.801 309.596C641.821 316.537 640.329 323.085 637.753 329.546C633.971 339.029 627.429 346.61 620.696 354.005C600.652 376.019 576.82 393.236 551.474 408.561C527.018 423.349 501.322 435.485 474.539 445.395C471.632 446.47 468.491 447.243 465.808 449.832C470.135 460.061 472.514 470.832 472.629 482.389C479.964 481.926 486.738 481.415 493.521 481.086C514.683 480.062 535.805 481.098 556.927 482.326C576.866 483.486 596.697 485.64 616.422 488.729C651.126 494.165 685.075 502.26 716.109 519.466C755.82 541.484 782.932 573.422 792.436 618.712C794.466 628.386 791.837 637.93 790.066 647.345C780.806 696.571 752.592 731.015 707.378 751.734C692.085 758.742 675.812 762.297 658.929 762.309C557.119 762.381 455.31 762.379 353 762.402Z" fill="black"/>
 <path d="M346.191 475.445C341.216 461.562 348.429 450.501 361.961 450.641C370.447 450.728 376.378 455.706 378.363 464.408C380.128 472.145 376.894 479.782 370.454 483.083C363.26 486.771 353.634 485.035 348.594 479.083C347.743 478.078 347.108 476.891 346.191 475.445Z" fill="black"/>
@@ -28,248 +30,69 @@ const features = [
 
 /* ─────────────────────────────────────────────────────────────────────
    IconFeatures — pixel-perfect recreation of Beautina's service.liquid
-   
-   Original CSS extracted:
-     section:  background-color: #eeffec; padding: 0 (desktop)
-               padding: 40px 0 (mobile ≤750px)
-     container: Bootstrap container (max-width 1140px @ ≥1200px,
-                padding: 0 15px, margin: auto)
-     row:       display:flex; flex-wrap:wrap; margin: 0 -15px
-     col:       flex: 1; padding: 0 15px; max-width: 100%
-     media-body: flex: 1; py-lg-5 = padding-top/bottom: 3rem (≥992px)
-     iconx8 svg: width: 100px; height: 100px; stroke:currentColor;
-                 fill: none; stroke-width: 2px; color: #000
-     h5.h6:     font-size: 1rem; font-weight: 600; line-height: 1.2;
-                margin-top: 0; margin-bottom: 0.25rem; color: #000
-     desc div:  color: #5c6978
-     mobile:    slick carousel, 1 slide, dots shown (dots-negative class)
    ──────────────────────────────────────────────────────────────────── */
 const IconFeatures = () => {
-  const sliderRef = useRef<HTMLDivElement>(null);
-  const dotsRef   = useRef<HTMLDivElement>(null);
-  const currentSlide = useRef(0);
-
-  // Simple manual mobile-only slider (mirrors Shopify's slick init)
-  useEffect(() => {
-    const slider = sliderRef.current;
-    const dotsEl = dotsRef.current;
-    if (!slider || !dotsEl) return;
-
-    const slides = slider.querySelectorAll<HTMLDivElement>('.sv-service-item');
-    const total  = slides.length;
-    if (total === 0) return;
-
-    // Build dots
-    const dots: HTMLButtonElement[] = [];
-    slides.forEach((_, i) => {
-      const btn = document.createElement('button');
-      btn.className = 'sv-dot' + (i === 0 ? ' active' : '');
-      btn.setAttribute('type', 'button');
-      btn.addEventListener('click', () => goTo(i));
-      dotsEl.appendChild(btn);
-      dots.push(btn);
-    });
-
-    const goTo = (idx: number) => {
-      currentSlide.current = idx;
-      slides.forEach((s, i) => {
-        (s as HTMLElement).style.transform = `translateX(${(i - idx) * 100}%)`;
-        (s as HTMLElement).style.opacity   = i === idx ? '1' : '0';
-      });
-      dots.forEach((d, i) => d.classList.toggle('active', i === idx));
-    };
-
-    // Initial positions
-    slides.forEach((s, i) => {
-      (s as HTMLElement).style.position  = 'absolute';
-      (s as HTMLElement).style.width     = '100%';
-      (s as HTMLElement).style.transition = 'transform 0.4s ease, opacity 0.4s ease';
-      (s as HTMLElement).style.transform = `translateX(${i * 100}%)`;
-      (s as HTMLElement).style.opacity   = i === 0 ? '1' : '0';
-    });
-
-    // Touch swipe support
-    let startX = 0;
-    slider.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
-    slider.addEventListener('touchend', e => {
-      const diff = startX - e.changedTouches[0].clientX;
-      if (Math.abs(diff) > 40) {
-        const next = diff > 0
-          ? Math.min(currentSlide.current + 1, total - 1)
-          : Math.max(currentSlide.current - 1, 0);
-        goTo(next);
-      }
-    });
-
-    return () => { dotsEl.innerHTML = ''; };
-  }, []);
-
   return (
     <>
-      {/* ── Exact styles matching Beautina's service.liquid CSS ─────── */}
       <style>{`
-        /* Section */
-        .sv-section {
-          background-color: #eeffec;
-          padding: 0;
-          margin: 0;
-        }
-        @media (max-width: 750px) {
-          .sv-section { padding: 40px 0; }
-        }
-
-        /* Bootstrap-compatible container */
-        .sv-container {
-          width: 100%;
-          padding-right: 15px;
-          padding-left: 15px;
-          margin-right: auto;
-          margin-left: auto;
-        }
-        @media (min-width: 1200px) { .sv-container { max-width: 1140px; } }
-        @media (min-width: 1550px) { .sv-container { max-width: 1550px; } }
-
-        /* Bootstrap row */
-        .sv-row {
-          display: flex;
-          flex-wrap: wrap;
-          margin-right: -15px;
-          margin-left: -15px;
-        }
-
-        /* Bootstrap col (flex-grow) */
-        .sv-col {
-          position: relative;
-          width: 100%;
-          padding-right: 15px;
-          padding-left: 15px;
-          flex-basis: 0;
-          flex-grow: 1;
-          max-width: 100%;
-        }
-
-        /* media / service-2: text-center */
-        .sv-media {
-          display: flex;
-          align-items: flex-start;
-        }
-        .sv-media-body {
-          flex: 1;
-          text-align: center;
-        }
-
-        /* py-lg-5 = padding-top / bottom 3rem on ≥992px */
-        @media (min-width: 992px) {
-          .sv-media-body {
-            padding-top: 3rem;
-            padding-bottom: 3rem;
-          }
-        }
-
-        /* Icon: mb-3 = margin-bottom 1rem */
-        .sv-iconx8 {
-          margin-bottom: 1rem;
-          color: #000000;
-          display: inline-flex;
-        }
-        .sv-iconx8 svg {
-          width: 100px;
-          height: 100px;
-          font-size: 100px;
-          stroke: currentColor;
-          fill: none;
-          stroke-width: 2px;
-        }
-
-        /* h5.h6: font-size 1rem, weight 600, line-height 1.2, mt-0 mb-1 */
-        .sv-title {
-          margin-top: 0;
-          margin-bottom: 0.25rem;
-          font-size: 1rem;
-          font-weight: 600;
-          line-height: 1.2;
-          color: #000000;
-        }
-
-        /* Description */
-        .sv-desc {
-          color: #5c6978;
-        }
-
-        /* ── Mobile slider (mirrors slick, ≤750px) ──────────────────── */
-        .sv-slider-wrapper {
-          position: relative;
-          overflow: hidden;
-        }
-        @media (min-width: 751px) {
-          /* On desktop the slider wrapper becomes a normal flex row */
-          .sv-slider-wrapper { overflow: visible; }
-          .sv-service-item {
-            position: static !important;
-            transform: none !important;
-            opacity: 1 !important;
-          }
-        }
-        @media (max-width: 750px) {
-          .sv-slider-wrapper { min-height: 200px; }
-        }
-
-        /* Dots (dots-negative class in original) */
-        .sv-dots {
-          display: none;
-          text-align: center;
-          margin-top: 8px;
-        }
-        @media (max-width: 750px) { .sv-dots { display: block; } }
-        .sv-dot {
-          display: inline-block;
-          width: 10px;
-          height: 10px;
-          margin: 0 4px;
+        /* Minimal styling required for Swiper pagination */
+        .sv-dots-custom .swiper-pagination-bullet {
           background: rgba(0,0,0,0.3);
-          border-radius: 50%;
-          cursor: pointer;
-          border: none;
-          padding: 0;
-          vertical-align: middle;
-          transition: background 0.2s;
+          opacity: 1;
+          transition: background 0.3s;
         }
-        .sv-dot.active { background: rgba(0,0,0,0.9); }
+        .sv-dots-custom .swiper-pagination-bullet-active {
+          background: rgba(0,0,0,0.9);
+        }
       `}</style>
 
-      <section className="sv-section">
-        <div className="sv-container">
-          {/* section-block / section-heading removed — section has no heading */}
-          <div className="sv-slider-wrapper sv-row mb-0" ref={sliderRef}>
+      <section className="bg-[#eeffec] py-10 md:py-20">
+        <div className="container mx-auto px-4 max-w-[1400px]">
+          
+          {/* Desktop Layout (hidden on mobile) */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="hidden md:flex flex-wrap -mx-4 justify-center"
+          >
             {features.map((feat, i) => (
-              <div
-                key={i}
-                className="sv-col sv-service-item"
-                data-aos="fade-up"
-                data-aos-delay={String((i + 1) * 100)}
-              >
-                <div className="sv-media sv-service-2 text-center">
-                  <div
-                    className="sv-media-body"
-                    style={{ backgroundColor: 'rgba(0,0,0,0)' }}
-                  >
-                    {/* Icon — iconx8 + mb-3 */}
-                    <div
-                      className="sv-iconx8"
-                      dangerouslySetInnerHTML={{ __html: feat.svg }}
-                    />
-                    {/* h5.h6 — mt-0 mb-1 */}
-                    <h5 className="sv-title">{feat.title}</h5>
-                    {/* Description */}
-                    <div className="sv-desc">{feat.desc}</div>
-                  </div>
-                </div>
+              <div key={i} className="w-full md:w-1/3 px-4 flex flex-col items-center text-center">
+                <div 
+                  className="mb-4 text-black [&>svg]:w-[100px] [&>svg]:h-[100px] [&>svg]:stroke-current [&>svg]:stroke-2 [&>svg]:fill-none"
+                  dangerouslySetInnerHTML={{ __html: feat.svg }}
+                />
+                <h5 className="font-serif text-[16px] font-medium text-black mb-1 leading-[1.2]">{feat.title}</h5>
+                <div className="text-[#5c6978] font-sans text-[15px]">{feat.desc}</div>
               </div>
             ))}
+          </motion.div>
+
+          {/* Mobile Layout (Swiper slider) */}
+          <div className="md:hidden sv-dots-custom">
+            <Swiper
+              modules={[Pagination]}
+              slidesPerView={1}
+              spaceBetween={20}
+              pagination={{ clickable: true }}
+              className="pb-10"
+            >
+              {features.map((feat, i) => (
+                <SwiperSlide key={i}>
+                  <div className="flex flex-col items-center text-center px-4">
+                    <div 
+                      className="mb-4 text-black [&>svg]:w-[100px] [&>svg]:h-[100px] [&>svg]:stroke-current [&>svg]:stroke-2 [&>svg]:fill-none"
+                      dangerouslySetInnerHTML={{ __html: feat.svg }}
+                    />
+                    <h5 className="font-serif text-[16px] font-medium text-black mb-1 leading-[1.2]">{feat.title}</h5>
+                    <div className="text-[#5c6978] font-sans text-[15px]">{feat.desc}</div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
 
-          {/* Dots — only visible on mobile */}
-          <div className="sv-dots" ref={dotsRef} />
         </div>
       </section>
     </>
