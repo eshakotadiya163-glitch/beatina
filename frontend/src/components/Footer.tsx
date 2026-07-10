@@ -59,22 +59,22 @@ const socials = [
 
 const Footer = () => {
   return (
-    <footer className="bg-[#eeffec] text-black">
+    <footer className="bg-[#eeffec] text-[#111111] pt-16 md:pt-24 pb-6 border-t border-[#e2f0df]">
       {/* Main footer */}
-      <div className="max-w-[1140px] mx-auto px-4 md:px-[15px] pt-[64px] pb-[0px]">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px]">
+      <div className="max-w-[1400px] mx-auto px-4 md:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 md:gap-8 lg:gap-12 pb-16">
           {/* About Us */}
-          <div className="mb-8 lg:mb-0">
-            <h4 className="font-heading text-[16px] text-black font-semibold mb-5">About us</h4>
-            <div className="font-body text-sm text-black leading-relaxed">
+          <div className="lg:col-span-3">
+            <h4 className="font-serif text-lg text-[#111111] font-medium mb-6">About us</h4>
+            <div className="font-sans text-[15px] text-[#444444] leading-relaxed">
               <p>Beautina is an exclusive brand that makes beauty product.</p>
             </div>
           </div>
 
           {/* Nav columns */}
           {footerSections.map((section) => (
-            <div key={section.title} className="mb-8 lg:mb-0">
-              <h4 className="font-heading text-[16px] text-black font-semibold mb-5">
+            <div key={section.title} className="lg:col-span-2">
+              <h4 className="font-serif text-lg text-[#111111] font-medium mb-6">
                 {section.title}
               </h4>
               <ul className="flex flex-col gap-3 m-0 p-0 list-none">
@@ -82,7 +82,7 @@ const Footer = () => {
                   <li key={link.label}>
                     <Link
                       to={link.to}
-                      className="font-body text-sm text-black hover:opacity-75 transition-opacity"
+                      className="font-sans text-[15px] text-[#444444] hover:text-[#111111] transition-colors duration-300"
                     >
                       {link.label}
                     </Link>
@@ -93,30 +93,30 @@ const Footer = () => {
           ))}
 
           {/* Newsletter & Socials */}
-          <div className="mb-8 lg:mb-0">
-            <h4 className="font-heading text-[16px] text-black font-semibold mb-5">
+          <div className="lg:col-span-5 lg:pl-10">
+            <h4 className="font-serif text-lg text-[#111111] font-medium mb-4">
               Sign up & save 15%
             </h4>
-            <div className="font-body text-sm text-black mb-3">
+            <div className="font-sans text-[15px] text-[#444444] mb-6">
               <p>Get a 15% discount on your first order.</p>
             </div>
             
-            <form className="mb-6 flex flex-col items-start w-full">
+            <form className="mb-8 relative w-full group">
               <input
                 type="email"
                 placeholder="Your email"
                 required
-                className="w-full bg-transparent border-b border-black text-black placeholder-black/60 px-0 py-2 text-sm font-body focus:outline-none mb-3"
+                className="w-full bg-transparent border-b border-[#111111]/30 text-[#111111] placeholder-[#111111]/50 px-0 py-3 text-[15px] font-sans focus:outline-none focus:border-[#111111] transition-colors"
               />
               <button
                 type="submit"
-                className="bg-black text-white font-body text-sm px-6 py-2.5 hover:bg-black/80 transition-colors whitespace-nowrap rounded-[4px]"
+                className="absolute right-0 top-1/2 -translate-y-1/2 text-[#111111] font-sans text-[13px] font-medium uppercase tracking-widest hover:text-gray-500 transition-colors"
               >
                 Subscribe
               </button>
             </form>
 
-            <div className="flex gap-4">
+            <div className="flex gap-5">
               {socials.map((s) => (
                 <a
                   key={s.name}
@@ -124,7 +124,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={s.name}
-                  className="text-black hover:opacity-75 transition-opacity"
+                  className="text-[#111111] hover:opacity-60 transition-opacity"
                 >
                   {s.icon}
                 </a>
@@ -132,13 +132,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Bottom bar */}
-      <div className="border-t border-transparent mt-12 py-5 bg-[#eeffec]">
-        <div className="max-w-[1140px] mx-auto px-4 md:px-[15px] flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="font-body text-sm text-black m-0">
-            © {new Date().getFullYear()}, <Link to="/" className="text-black hover:opacity-75">Beautina cosmetic</Link>. <a href="https://www.shopify.com" className="text-black hover:opacity-75">Powered by Shopify</a>
+        {/* Bottom bar */}
+        <div className="border-t border-[#111111]/10 pt-8 mt-2 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="font-sans text-[14px] text-[#444444] m-0">
+            © {new Date().getFullYear()}, <Link to="/" className="text-[#111111] hover:underline underline-offset-4">Beautina cosmetic</Link>. <a href="https://www.shopify.com" className="text-[#111111] hover:underline underline-offset-4">Powered by Shopify</a>
           </p>
         </div>
       </div>
