@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 
 const marqueeItems = [
   {
@@ -37,46 +38,33 @@ const allItems = [...marqueeItems, ...marqueeItems, ...marqueeItems, ...marqueeI
 
 const MarqueeBanner = () => {
   return (
-    <section className="w-full overflow-hidden" style={{ backgroundColor: '#ffffff', padding: '20px 0', margin: 0 }}>
-      <div className="flex w-full overflow-hidden">
+    <section className="w-full overflow-hidden bg-white py-8 md:py-12 border-b border-gray-100">
+      <div className="flex w-full overflow-hidden group">
         <div
-          className="flex w-max animate-marquee"
-          style={{ animationDuration: '20s', gap: '35px' }}
+          className="flex w-max animate-marquee gap-8 md:gap-12 group-hover:[animation-play-state:paused] transition-all duration-300"
         >
           {allItems.map((item, index) => (
-            <a
+            <Link
               key={index}
-              href={item.href}
-              className="flex-shrink-0 text-center"
-              style={{ minWidth: '140px', textDecoration: 'none', color: 'inherit' }}
+              to={item.href}
+              className="flex-shrink-0 text-center flex flex-col items-center min-w-[120px] md:min-w-[140px] group/item"
             >
               <div
-                className="inline-flex items-center justify-center"
-                style={{
-                  padding: '1px',
-                  borderRadius: '50%',
-                }}
+                className="inline-flex items-center justify-center p-1 rounded-full border border-transparent transition-all duration-300 group-hover/item:border-gray-200 group-hover/item:shadow-sm"
               >
                 <img
                   src={item.image}
                   alt={item.label}
-                  className="object-cover rounded-full"
-                  style={{ width: '100px', height: '100px', display: 'block' }}
+                  className="object-cover rounded-full w-[90px] h-[90px] md:w-[110px] md:h-[110px] transition-transform duration-500 ease-out group-hover/item:scale-105"
                   loading="lazy"
                 />
               </div>
               <h6
-                style={{
-                  color: '#000000',
-                  paddingTop: '8px',
-                  margin: 0,
-                  fontSize: '13px',
-                  fontWeight: 400
-                }}
+                className="text-black/80 pt-3 md:pt-4 text-xs md:text-sm font-medium tracking-wide transition-colors duration-300 group-hover/item:text-black"
               >
                 {item.label}
               </h6>
-            </a>
+            </Link>
           ))}
         </div>
       </div>
