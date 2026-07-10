@@ -1,4 +1,5 @@
 import { useState, useMemo } from 'react';
+import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import ProductCard from '../ProductCard';
@@ -21,37 +22,42 @@ const NewArrivalsTab: React.FC<NewArrivalsTabProps> = ({ products }) => {
   }, [products, activeTab]);
 
   return (
-    <section className="bg-white overflow-hidden" style={{ padding: '50px 0px 50px 0px' }}>
-      <div className="mx-auto" style={{ maxWidth: '1550px', padding: '0 15px' }}>
+    <section className="bg-white overflow-hidden py-16 md:py-24">
+      <div className="mx-auto max-w-[1550px] px-4 sm:px-6 lg:px-8">
         
         {/* Centered Heading & Subtitle */}
-        <h3 className="font-heading text-center" style={{ fontSize: '30px', fontWeight: 400, marginBottom: '8px', lineHeight: 1.2 }}>
-          <span>New Arrivals</span>
-        </h3>
-        <div className="text-center" style={{ fontFamily: 'var(--g-font-2)', fontSize: '15px', color: '#777777', marginBottom: '48px' }}>
-          Traditional divides between personal and professional space.
-        </div>
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center mb-10 md:mb-14"
+        >
+          <h3 className="font-serif text-3xl md:text-4xl font-light leading-tight mb-3 text-black">
+            New Arrivals
+          </h3>
+          <p className="font-sans text-[15px] text-gray-500 max-w-2xl mx-auto">
+            Traditional divides between personal and professional space.
+          </p>
+        </motion.div>
 
         {/* Tabs */}
-        <div className="text-center" style={{ marginTop: '-24px', marginBottom: '48px' }}>
-          <div className="inline-flex justify-center" style={{ gap: '16px' }}>
+        <div className="text-center mb-12">
+          <div className="inline-flex justify-center flex-wrap gap-4 md:gap-8">
             {tabs.map((tab) => (
               <button 
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className="relative transition-colors"
-                style={{
-                  fontSize: '20px',
-                  fontWeight: 500,
-                  padding: '8px 16px',
-                  color: activeTab === tab ? '#000000' : '#777777',
-                  border: 'none',
-                  backgroundColor: 'transparent'
-                }}
+                className={`relative px-2 py-2 text-lg md:text-[20px] transition-colors duration-300 ${
+                  activeTab === tab ? 'text-black font-medium' : 'text-gray-400 font-normal hover:text-gray-600'
+                }`}
               >
                 {tab}
                 {activeTab === tab && (
-                  <span className="absolute left-[16px] right-[16px] bottom-0" style={{ height: '2px', backgroundColor: '#000000' }}></span>
+                  <motion.span 
+                    layoutId="activeTabUnderline"
+                    className="absolute left-0 right-0 bottom-0 h-[2px] bg-black"
+                  />
                 )}
               </button>
             ))}
