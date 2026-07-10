@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const articles = [
   {
@@ -27,21 +28,52 @@ const articles = [
   }
 ];
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2
+    }
+  }
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+};
+
 const BlogPreview = () => {
   return (
-    <section className="py-[40px] md:py-[50px] bg-white overflow-hidden">
-      <div className="container mx-auto px-4 md:px-8">
-        <div className="subtop text-center text-xs text-brand-muted uppercase tracking-[0.2em] mb-2">
-          Sub Title Top
-        </div>
-        <h2 className="font-heading text-3xl md:text-[40px] text-brand-dark mb-12 text-center">
-          Journal
-        </h2>
+    <section className="bg-white py-16 md:py-24 border-y border-gray-100 overflow-hidden">
+      <div className="container mx-auto px-4 max-w-[1400px]">
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-[30px]">
+        {/* Section Heading */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center mb-10 md:mb-14"
+        >
+          <div className="text-[10px] md:text-[11px] font-semibold tracking-[0.25em] uppercase text-gray-500 mb-4 font-sans">
+            Sub Title Top
+          </div>
+          <h2 className="text-3xl md:text-[40px] font-light text-[#111111] font-serif leading-tight">
+            Journal
+          </h2>
+        </motion.div>
+        
+        <motion.div 
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10"
+        >
           {articles.map((article, index) => (
-            <div key={index} className="group cursor-pointer">
-              <div className="relative overflow-hidden mb-6 aspect-square md:aspect-[4/3]">
+            <motion.div key={index} variants={itemVariants} className="group cursor-pointer flex flex-col h-full">
+              <div className="relative overflow-hidden mb-6 aspect-[4/3] rounded-sm">
                 <img 
                   src={article.image} 
                   alt={article.title} 
@@ -49,23 +81,27 @@ const BlogPreview = () => {
                   loading="lazy"
                 />
               </div>
-              <div className="flex items-center text-xs text-brand-muted mb-3 font-body">
-                <span>{article.date}</span>
-                <span className="mx-2">•</span>
-                <span>{article.comments} comments</span>
+              <div className="flex flex-col flex-grow">
+                <div className="flex items-center text-[12px] md:text-[13px] text-gray-500 mb-3 font-sans tracking-wide">
+                  <span>{article.date}</span>
+                  <span className="mx-2 text-gray-300">•</span>
+                  <span>{article.comments} comments</span>
+                </div>
+                <h3 className="font-serif text-xl md:text-[22px] font-medium text-[#111111] mb-3 group-hover:text-gray-500 transition-colors leading-[1.3] line-clamp-2">
+                  <Link to={article.link}>{article.title}</Link>
+                </h3>
+                <p className="font-sans text-[14px] md:text-[15px] text-gray-500 mb-6 line-clamp-3 leading-relaxed flex-grow">
+                  {article.excerpt}
+                </p>
+                <div className="mt-auto pt-2">
+                  <Link to={article.link} className="inline-block border-b border-[#111111] pb-1 text-[11px] uppercase tracking-[0.2em] font-semibold text-[#111111] hover:text-gray-500 hover:border-gray-500 transition-colors duration-300">
+                    More Details
+                  </Link>
+                </div>
               </div>
-              <h3 className="font-heading text-xl md:text-2xl text-brand-dark mb-3 group-hover:text-gray-600 transition-colors">
-                <Link to={article.link}>{article.title}</Link>
-              </h3>
-              <p className="font-body text-sm text-brand-muted mb-4 line-clamp-3">
-                {article.excerpt}
-              </p>
-              <Link to={article.link} className="inline-block border-b border-brand-dark pb-1 text-xs uppercase tracking-widest font-semibold hover:text-gray-500 hover:border-gray-500 transition-colors">
-                More Details
-              </Link>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
