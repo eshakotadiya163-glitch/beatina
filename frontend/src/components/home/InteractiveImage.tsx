@@ -84,13 +84,6 @@ const InteractiveImage = () => {
 
       {/* Floating Parallax Images */}
       <img
-        ref={(el) => { imagesRef.current[0] = el; }}
-        src="/assets/migrated/20_gallery-image-1.jpg"
-        alt=""
-        data-speed="0.15"
-        className="absolute top-[7vw] left-[4vw] w-[25vw] h-[30vw] md:w-[16vw] md:h-[20vw] object-cover transition-transform duration-75 ease-out z-10 opacity-70 md:opacity-100"
-      />
-      <img
         ref={(el) => { imagesRef.current[1] = el; }}
         src="/assets/migrated/22_gallery-5-v2.webp"
         alt=""
@@ -99,11 +92,23 @@ const InteractiveImage = () => {
       />
       <img
         ref={(el) => { imagesRef.current[2] = el; }}
-        src="/assets/migrated/23_fleur-kaan-w4Dj3MshHQ0-unsplash.jpg"
+        src="/assets/migrated/49_b12_720x_301f00ae-898e-41d1-b635-14ec61052c17.webp"
         alt=""
         data-speed="0.15"
-        className="absolute bottom-[-4vw] left-[-3vw] w-[25vw] h-[30vw] md:w-[16vw] md:h-[20vw] object-cover transition-transform duration-75 ease-out z-10 opacity-70 md:opacity-100"
+        className="absolute bottom-[10vw] right-[5vw] w-[35vw] h-[25vw] md:w-[22vw] md:h-[15vw] object-cover transition-transform duration-75 ease-out z-10 opacity-60 md:opacity-100"
       />
+      
+      {/* Absolute image container to limit bounds of the main image */}
+      <div className="absolute inset-4 md:inset-[5vw] lg:inset-[8vw] z-0 pointer-events-none rounded-[40px] overflow-hidden">
+        {/* Main Background Image - Now placed absolutely */}
+        <img 
+          ref={(el) => { imagesRef.current[0] = el; }}
+          src="/assets/migrated/50_about-img-2.webp"
+          alt="Beauty routine" 
+          className="absolute inset-0 w-full h-full object-cover rounded-none md:rounded-[40px] scale-110"
+          data-speed="0.2"
+        />
+      </div>
       <img
         ref={(el) => { imagesRef.current[3] = el; }}
         src="/assets/migrated/24_3.11_a206c225-bd03-40da-8e5f-e3a3e160e25a.webp"

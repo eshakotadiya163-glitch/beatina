@@ -7,10 +7,10 @@ import 'swiper/css/pagination';
 
 const quotes = [
   {
-    text: "Did I drink enough water? No. Does my skin feel hydrated? No, but it’s softer, plumper, and dewier than ever!",
     id: 1,
-    name: "SARAH JENKINS",
-    imgSrc: "/assets/migrated/23_fleur-kaan-w4Dj3MshHQ0-unsplash.jpg",
+    text: "A perfect blend of luxury and natural radiance. The textures are incredibly lightweight yet deeply nourishing.",
+    name: "EMMA S.",
+    imgSrc: "/assets/migrated/21_about-img-3.webp",
     rating: 5,
   },
   {
