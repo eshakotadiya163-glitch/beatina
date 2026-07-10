@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
 import type { MouseEvent, TouchEvent } from 'react';
+import { motion } from 'framer-motion';
 
 const BeforeAfterSection = () => {
   const [sliderPosition, setSliderPosition] = useState(50);
@@ -22,25 +23,37 @@ const BeforeAfterSection = () => {
   };
 
   return (
-    <section className="bg-white py-[40px] md:py-[50px] overflow-hidden">
+    <section className="bg-white py-16 md:py-24 overflow-hidden border-y border-gray-100">
       <div className="container mx-auto px-4 md:px-8 text-center">
         
-        {/* Section Heading exactly matching authentic structure */}
-        <div className="font-body text-xs text-brand-muted uppercase tracking-[0.2em] mb-2">
-          Wear it four way
-        </div>
-        
-        <h3 className="font-heading text-3xl md:text-[40px] text-brand-dark mb-2">
-          <span>The balance of high-performance</span>
-        </h3>
-        
-        <div className="font-body text-brand-muted max-w-3xl mx-auto mb-10 text-[15px] leading-relaxed">
-          Experience the perfect blend of advanced formulas and skin-loving ingredients, delivering powerful results while maintaining harmony for a healthy, radiant complexion.
-        </div>
+        {/* Section Heading */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="mb-10 md:mb-14"
+        >
+          <div className="font-sans text-[10px] md:text-[11px] font-semibold text-gray-500 uppercase tracking-[0.25em] mb-4">
+            Wear it four way
+          </div>
+          
+          <h3 className="font-serif text-3xl md:text-[44px] text-[#111111] font-light mb-4 leading-tight">
+            The balance of high-performance
+          </h3>
+          
+          <p className="font-sans text-gray-500 max-w-3xl mx-auto text-[14px] md:text-[15px] leading-relaxed font-light">
+            Experience the perfect blend of advanced formulas and skin-loving ingredients, delivering powerful results while maintaining harmony for a healthy, radiant complexion.
+          </p>
+        </motion.div>
 
-        <div 
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true }}
           ref={containerRef}
-          className="relative w-full aspect-[4/3] md:aspect-[16/9] overflow-hidden rounded-sm cursor-ew-resize select-none"
+          className="relative w-full aspect-[4/3] md:aspect-[16/9] lg:max-w-[1200px] mx-auto overflow-hidden rounded-sm cursor-ew-resize select-none shadow-sm"
           onMouseMove={handleMouseMove}
           onTouchMove={handleTouchMove}
           onMouseDown={(e) => handleMove(e.clientX)}
@@ -68,24 +81,24 @@ const BeforeAfterSection = () => {
 
           {/* Slider Handle */}
           <div 
-            className="absolute top-0 bottom-0 w-[2px] bg-black/50 cursor-ew-resize pointer-events-none transition-opacity duration-300"
+            className="absolute top-0 bottom-0 w-[1px] bg-white cursor-ew-resize pointer-events-none transition-opacity duration-300"
             style={{ left: `${sliderPosition}%`, transform: 'translateX(-50%)' }}
           >
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white/90 rounded-full flex items-center justify-center shadow-md">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="1.5">
-                <path d="M15 18l-6-6 6-6" strokeLinecap="square" strokeLinejoin="miter" transform="translate(-4, 0)"/>
-                <path d="M9 18l6-6-6-6" strokeLinecap="square" strokeLinejoin="miter" transform="translate(4, 0)"/>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-[0_4px_12px_rgba(0,0,0,0.1)] text-black">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
+                <path d="M15 18l-6-6 6-6" strokeLinecap="round" strokeLinejoin="round" transform="translate(-4, 0)"/>
+                <path d="M9 18l6-6-6-6" strokeLinecap="round" strokeLinejoin="round" transform="translate(4, 0)"/>
               </svg>
             </div>
           </div>
           
-          <div className="absolute top-6 left-6 bg-white/75 px-2 py-2 font-body text-[13px] leading-none text-black rounded-sm z-10 pointer-events-none">
+          <div className="absolute top-4 left-4 md:top-6 md:left-6 bg-white px-3 py-1.5 font-sans text-[11px] md:text-[12px] tracking-wider uppercase font-medium text-black rounded-sm z-10 pointer-events-none shadow-sm">
             Before
           </div>
-          <div className="absolute top-6 right-6 bg-white/75 px-2 py-2 font-body text-[13px] leading-none text-black rounded-sm z-10 pointer-events-none">
+          <div className="absolute top-4 right-4 md:top-6 md:right-6 bg-white px-3 py-1.5 font-sans text-[11px] md:text-[12px] tracking-wider uppercase font-medium text-black rounded-sm z-10 pointer-events-none shadow-sm">
             After
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
