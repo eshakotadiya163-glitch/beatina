@@ -177,7 +177,7 @@ const AdminDashboardPage = () => {
           <div className="space-y-4">
             {lowStockProducts.map((product: any) => (
               <div key={product._id} className="flex items-center p-3 border border-red-100 bg-red-50/30 rounded-sm">
-                <img src={product.images[0]?.url || 'https://via.placeholder.com/40'} alt={product.name} className="w-10 h-12 object-cover mr-3 bg-white" />
+                <img src={product.images[0]?.url || '/assets/migrated/9_b17_540x_aa6b96c0-cd33-460e-8da7-208e8c30f82e.webp'} alt={product.name} className="w-10 h-12 object-cover mr-3 bg-white" />
                 <div className="flex-1">
                   <h4 className="text-sm font-heading line-clamp-1">{product.name}</h4>
                   <p className="text-xs font-body text-red-600 font-medium">{product.countInStock} items left</p>

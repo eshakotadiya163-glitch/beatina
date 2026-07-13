@@ -33,70 +33,71 @@ const slides = [
 
 const HeroBanner = () => {
   return (
-    <section className="relative w-full h-[500px] md:h-[650px] overflow-hidden">
+    <section className="relative w-full h-[85vh] min-h-[600px] max-h-[900px] overflow-hidden">
       <Swiper
         modules={[Autoplay, EffectFade, Navigation]}
         effect="fade"
-        autoplay={false}
+        speed={1500}
+        autoplay={{ delay: 6000, disableOnInteraction: false }}
         navigation={{ nextEl: '.swiper-next-hero', prevEl: '.swiper-prev-hero' }}
-        loop={false}
+        loop={true}
         className="w-full h-full"
       >
-        {slides.map((slide, index) => (
+        {[...slides, ...slides.map(s => ({...s, id: s.id + '-dup'}))].map((slide, index) => (
           <SwiperSlide key={slide.id} style={{ backgroundColor: slide.bgColor }}>
             <div className="relative w-full h-full">
-              {/* Solid Overlay */}
-              <div className="absolute inset-0 z-10 pointer-events-none" style={{ backgroundColor: 'rgba(0,0,0,0.2)' }}></div>
+              {/* Soft Gradient Overlay for Premium Look */}
+              <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-t from-black/60 via-black/20 to-black/10"></div>
               {/* Background Images */}
               <picture className="absolute inset-0 w-full h-full z-0">
                 <source media="(max-width: 768px)" srcSet={slide.mobileImage} />
                 <img
                   src={slide.image}
                   alt={slide.title.replace('\n', ' ')}
-                  className="w-full h-full object-cover object-center scale-in"
+                  className="w-full h-full object-cover object-center scale-in duration-1000"
                   loading={index === 0 ? 'eager' : 'lazy'}
                 />
               </picture>
 
               {/* Content Container */}
-              <div className="absolute inset-0 z-20 flex flex-col justify-center items-center w-full px-4 md:px-12">
+              <div className="absolute inset-0 z-20 flex flex-col justify-center items-center w-full px-4 md:px-12 mt-12">
                 <motion.div 
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, ease: "easeOut" }}
+                  transition={{ duration: 1, ease: "easeOut" }}
                   className="w-full flex flex-col items-center text-center max-w-4xl mx-auto"
                 >
                   <ul className="list-none p-0 m-0 w-full flex flex-col items-center">
                     <motion.li 
                       initial={{ opacity: 0, y: 15 }}
                       whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-                      className="mb-3 md:mb-5"
+                      transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+                      className="mb-4"
                     >
-                      <p className="m-0 uppercase tracking-[0.2em] text-xs md:text-sm font-medium text-white/90 font-sans">
+                      <p className="m-0 uppercase tracking-[0.25em] text-[12px] md:text-[14px] font-medium text-white/90 font-body">
                         {slide.label}
                       </p>
                     </motion.li>
                     <motion.li 
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-                      className="mb-8 md:mb-10"
+                      transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
+                      className="mb-8"
                     >
-                      <h2 className="m-0 whitespace-pre-line text-[42px] md:text-[64px] lg:text-[76px] leading-[1.05] font-serif font-light text-white drop-shadow-sm">
+                      <h2 className="m-0 whitespace-pre-line text-[55px] md:text-[80px] lg:text-[90px] leading-[1.05] font-heading font-light text-white drop-shadow-sm">
                         {slide.title}
                       </h2>
                     </motion.li>
                   </ul>
                   <motion.div 
-                    initial={{ opacity: 0, y: 10 }}
+                    initial={{ opacity: 0, y: 15 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
+                    transition={{ duration: 0.8, delay: 0.7, ease: "easeOut" }}
                     className="flex justify-center"
                   >
                     <Link
                       to={slide.link}
-                      className="inline-flex items-center justify-center bg-white text-black text-[11px] md:text-xs font-semibold uppercase tracking-[0.2em] px-8 md:px-10 py-[14px] border border-white transition-all duration-500 ease-in-out hover:bg-black hover:text-white hover:border-black"
+                      className="inline-flex items-center justify-center bg-white text-black text-[12px] md:text-[13px] tracking-[0.15em] font-medium uppercase px-10 py-[16px] transition-all duration-500 ease-out hover:bg-black hover:text-white rounded-none"
                     >
                       {slide.cta}
                     </Link>

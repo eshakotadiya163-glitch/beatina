@@ -46,7 +46,7 @@ const LoginPage = () => {
             <label className="block text-[10px] uppercase tracking-widest text-brand-muted mb-2 font-medium">Email Address</label>
             <input 
               type="email" 
-              className="w-full border border-brand-border bg-brand-light/30 rounded-none p-3.5 focus:border-brand-dark focus:outline-none transition-colors text-sm text-brand-dark"
+              className="input-luxury"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required 
@@ -60,7 +60,7 @@ const LoginPage = () => {
             </div>
             <input 
               type="password" 
-              className="w-full border border-brand-border bg-brand-light/30 rounded-none p-3.5 focus:border-brand-dark focus:outline-none transition-colors text-sm text-brand-dark"
+              className="input-luxury"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required 
@@ -69,7 +69,7 @@ const LoginPage = () => {
 
           <button 
             type="submit" 
-            className="w-full bg-brand-dark text-white py-4 font-body uppercase tracking-[0.2em] text-xs hover:bg-black transition-colors mt-8"
+            className="btn-primary w-full mt-8 py-4"
             disabled={loginMutation.isPending}
           >
             {loginMutation.isPending ? 'Signing In...' : 'Sign In'}

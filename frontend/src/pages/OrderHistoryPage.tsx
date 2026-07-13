@@ -58,7 +58,7 @@ const OrderHistoryPage = () => {
                     <div>
                       <p className="text-[10px] font-button uppercase tracking-widest text-gray-500 mb-1">Order Placed</p>
                       <p className="font-body text-sm font-medium text-brand-dark">
-                        {new Date(order.createdAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                        {new Date(order.createdAt).toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' })}
                       </p>
                     </div>
                     <div>

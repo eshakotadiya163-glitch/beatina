@@ -110,7 +110,7 @@ const ProfilePage = () => {
                   <label className="block text-xs font-button uppercase tracking-widest text-gray-500 mb-2">First Name</label>
                   <input
                     {...registerProfile('firstName')}
-                    className="w-full border border-gray-200 p-3 font-body text-sm focus:outline-none focus:border-brand-primary transition-colors"
+                    className="input-luxury"
                   />
                   {profileErrors.firstName && <p className="text-red-500 text-xs mt-1 font-body">{profileErrors.firstName.message}</p>}
                 </div>
@@ -118,7 +118,7 @@ const ProfilePage = () => {
                   <label className="block text-xs font-button uppercase tracking-widest text-gray-500 mb-2">Last Name</label>
                   <input
                     {...registerProfile('lastName')}
-                    className="w-full border border-gray-200 p-3 font-body text-sm focus:outline-none focus:border-brand-primary transition-colors"
+                    className="input-luxury"
                   />
                   {profileErrors.lastName && <p className="text-red-500 text-xs mt-1 font-body">{profileErrors.lastName.message}</p>}
                 </div>
@@ -129,7 +129,7 @@ const ProfilePage = () => {
                 <input
                   type="email"
                   {...registerProfile('email')}
-                  className="w-full border border-gray-200 p-3 font-body text-sm focus:outline-none focus:border-brand-primary transition-colors"
+                  className="input-luxury"
                 />
                 {profileErrors.email && <p className="text-red-500 text-xs mt-1 font-body">{profileErrors.email.message}</p>}
               </div>
@@ -137,7 +137,7 @@ const ProfilePage = () => {
               <button
                 type="submit"
                 disabled={updateProfileMutation.isPending}
-                className="bg-brand-dark text-white px-8 py-3 font-button uppercase tracking-widest text-xs hover:bg-brand-primary transition-colors disabled:opacity-70 flex items-center justify-center"
+                className="btn-primary flex items-center justify-center"
               >
                 {updateProfileMutation.isPending ? <Loader2 size={16} className="animate-spin mr-2" /> : null}
                 Save Changes
@@ -155,7 +155,7 @@ const ProfilePage = () => {
                   <input
                     type="password"
                     {...registerPassword('password')}
-                    className="w-full border border-gray-200 p-3 font-body text-sm focus:outline-none focus:border-brand-primary transition-colors"
+                    className="input-luxury"
                   />
                   {passwordErrors.password && <p className="text-red-500 text-xs mt-1 font-body">{passwordErrors.password.message}</p>}
                 </div>
@@ -164,7 +164,7 @@ const ProfilePage = () => {
                   <input
                     type="password"
                     {...registerPassword('confirmPassword')}
-                    className="w-full border border-gray-200 p-3 font-body text-sm focus:outline-none focus:border-brand-primary transition-colors"
+                    className="input-luxury"
                   />
                   {passwordErrors.confirmPassword && <p className="text-red-500 text-xs mt-1 font-body">{passwordErrors.confirmPassword.message}</p>}
                 </div>
@@ -173,7 +173,7 @@ const ProfilePage = () => {
               <button
                 type="submit"
                 disabled={updatePasswordMutation.isPending}
-                className="bg-brand-dark text-white px-8 py-3 font-button uppercase tracking-widest text-xs hover:bg-brand-primary transition-colors disabled:opacity-70 flex items-center justify-center"
+                className="btn-primary flex items-center justify-center"
               >
                 {updatePasswordMutation.isPending ? <Loader2 size={16} className="animate-spin mr-2" /> : null}
                 Update Password

@@ -15,6 +15,7 @@ import couponRoutes from './routes/couponRoutes.js';
 import wishlistRoutes from './routes/wishlistRoutes.js';
 import paymentRoutes from './routes/paymentRoutes.js';
 import dashboardRoutes from './routes/dashboardRoutes.js';
+import cartRoutes from './routes/cartRoutes.js';
 
 dotenv.config();
 
@@ -49,6 +50,7 @@ app.use('/api/coupons', couponRoutes);
 app.use('/api/wishlist', wishlistRoutes);
 app.use('/api/payment', paymentRoutes);
 app.use('/api/dashboard', dashboardRoutes);
+app.use('/api/cart', cartRoutes);
 
 // Basic route
 app.get('/', (req, res) => {

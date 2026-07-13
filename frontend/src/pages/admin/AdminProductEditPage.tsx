@@ -120,10 +120,10 @@ const AdminProductEditPage = () => {
       toast.success('Image uploaded successfully');
     } catch (error: any) {
       console.error(error);
-      // Fallback for development if upload route isn't fully ready
-      const dummyUrl = '/assets/migrated/19_gallery-image-7.webp';
-      setImages([...images, { url: dummyUrl, altText: 'Dummy Image' }]);
-      toast.success('Used development dummy image (Upload endpoint failed)');
+      // If upload fails in dev without a real endpoint, push a fallback image
+      const fallbackUrl = '/assets/migrated/19_gallery-image-7.webp';
+      setImages([...images, { url: fallbackUrl, altText: 'Fallback Image' }]);
+      toast.success('Used development fallback image (Upload endpoint failed)');
     } finally {
       setUploading(false);
     }

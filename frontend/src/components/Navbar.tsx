@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Search, ShoppingBag, Heart, User, ChevronDown, Menu, X } from 'lucide-react';
+import { ChevronDown, Menu, X } from 'lucide-react';
 import AnnouncementBar from './AnnouncementBar';
 import useAuthStore from '../store/authStore';
 import useCartStore from '../store/cartStore';
@@ -119,40 +119,47 @@ const Navbar = () => {
                 <img 
                   src="/assets/migrated/53_Beautina_1.png" 
                   alt="Beautina" 
-                  className="h-[45px] max-w-full object-contain"
+                  className="w-[170px] object-contain"
                 />
               </Link>
             </div>
 
             {/* Right: Icons + Text */}
-            <div className="flex items-center justify-end gap-5 flex-1">
-              <button className="hidden lg:flex items-center group text-brand-dark hover:text-brand-accent transition-colors">
-                <span className="font-body text-[13px] uppercase tracking-widest mr-2">Search</span>
-                <Search size={22} className="stroke-[1.5]" />
+            <div className="flex items-center justify-end gap-5 flex-1 text-brand-dark">
+              <button className="hidden lg:flex items-center group hover:text-gray-500 transition-colors">
+                <span className="font-body text-[13px] uppercase mr-2" style={{letterSpacing: '0px'}}>Search</span>
+                <svg aria-hidden="true" fill="none" focusable="false" width="24" viewBox="0 0 24 24">
+                  <path d="M10.364 3a7.364 7.364 0 1 0 0 14.727 7.364 7.364 0 0 0 0-14.727Z" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10"></path>
+                  <path d="M15.857 15.858 21 21.001" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round"></path>
+                </svg>
               </button>
               
-              <Link to={user ? '/profile' : '/login'} className="hidden lg:flex items-center group text-brand-dark hover:text-brand-accent transition-colors cursor-pointer">
-                <span className="font-body text-[13px] uppercase tracking-widest mr-2">Login</span>
-                <User size={22} className="stroke-[1.5]" />
+              <Link to={user ? '/profile' : '/login'} className="hidden lg:flex items-center group hover:text-gray-500 transition-colors cursor-pointer">
+                <span className="font-body text-[13px] uppercase mr-2" style={{letterSpacing: '0px'}}>Login</span>
+                <svg aria-hidden="true" fill="none" focusable="false" width="24" viewBox="0 0 24 24">
+                  <path d="M16.125 8.75c-.184 2.478-2.063 4.5-4.125 4.5s-3.944-2.021-4.125-4.5c-.187-2.578 1.64-4.5 4.125-4.5 2.484 0 4.313 1.969 4.125 4.5Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
+                  <path d="M3.017 20.747C3.783 16.5 7.922 14.25 12 14.25s8.217 2.25 8.984 6.497" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10"></path>
+                </svg>
               </Link>
 
-              <Link to="/wishlist" className="hidden lg:flex items-center group text-brand-dark hover:text-brand-accent transition-colors relative">
-                <span className="font-body text-[13px] uppercase tracking-widest mr-2">Wishlist</span>
-                <Heart size={22} className="stroke-[1.5]" />
-                <span className="absolute -top-1 -right-2 bg-brand-dark text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full font-body">
-                  0
-                </span>
+              <Link to="/wishlist" className="hidden lg:flex items-center group hover:text-gray-500 transition-colors relative">
+                <span className="font-body text-[13px] uppercase mr-2" style={{letterSpacing: '0px'}}>Wishlist</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.5429 4C13.4999 4 12 6.99984 12 6.99984C12 6.99984 10.5001 4 7.45712 4C4.98412 4 3.02579 6.06895 3.00048 8.53772C2.94892 13.6623 7.06573 17.3066 11.5782 20.3693C11.7026 20.4539 11.8495 20.4992 12 20.4992C12.1505 20.4992 12.2975 20.4539 12.4219 20.3693C16.9338 17.3066 21.0506 13.6623 20.9995 8.53772C20.9742 6.06895 19.0159 4 16.5429 4Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </Link>
 
               <button 
-                className="flex items-center group text-brand-dark hover:text-brand-accent transition-colors relative"
+                className="flex items-center group hover:text-gray-500 transition-colors relative"
                 onClick={() => {}}
               >
-                <span className="hidden lg:inline-block font-body text-[13px] uppercase tracking-widest mr-2">Cart</span>
-                <ShoppingBag size={22} className="stroke-[1.5]" />
-                <span className="absolute -top-1 -right-2 bg-brand-dark text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full font-body">
-                  {cartItems.length}
-                </span>
+                <span className="hidden lg:inline-block font-body text-[13px] uppercase mr-2" style={{letterSpacing: '0px'}}>Cart</span>
+                <svg aria-hidden="true" fill="none" focusable="false" width="24" viewBox="0 0 24 24">
+                  <path d="M10 7h13l-4 9H7.5L5 3H1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
+                  <circle cx="9" cy="20" r="1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></circle>
+                  <circle cx="17" cy="20" r="1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></circle>
+                </svg>
+                <span className="font-body text-[14px] ml-1">{cartItems.length}</span>
               </button>
             </div>
           </div>

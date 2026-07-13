@@ -25,7 +25,7 @@ const AnnouncementBar = () => {
           {/* Center: Message */}
           <div className="flex-1 flex justify-center items-center gap-1">
             <span className="font-body text-[14px] text-[#000000]">
-              ✌🏼 Free Express Shipping on orders $970.05!
+              ✌🏼 Free Express Shipping on orders ₹970.05!
             </span>
             <Link to="/collections/all" className="font-body text-[14px] text-[#000000] underline hover:opacity-80 transition-opacity ml-1">
               Shop now
@@ -39,7 +39,7 @@ const AnnouncementBar = () => {
               <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
             </div>
             <div className="flex items-center gap-1 cursor-pointer hover:text-brand-accent transition-colors">
-              <span>USD</span>
+              <span>India (INR ₹)</span>
               <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
             </div>
           </div>

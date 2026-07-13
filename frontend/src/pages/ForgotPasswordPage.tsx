@@ -59,7 +59,7 @@ const ForgotPasswordPage = () => {
               <input
                 type="email"
                 {...register('email')}
-                className="w-full border border-gray-200 p-3 font-body text-sm focus:outline-none focus:border-brand-primary transition-colors"
+                className="input-luxury"
                 placeholder="you@example.com"
               />
               {errors.email && <p className="text-red-500 text-xs mt-1 font-body">{errors.email.message}</p>}
@@ -68,7 +68,7 @@ const ForgotPasswordPage = () => {
             <button
               type="submit"
               disabled={forgotPasswordMutation.isPending}
-              className="w-full bg-brand-dark text-white px-8 py-3 font-button uppercase tracking-widest text-xs hover:bg-brand-primary transition-colors disabled:opacity-70 flex items-center justify-center"
+              className="btn-primary w-full flex items-center justify-center"
             >
               {forgotPasswordMutation.isPending ? <Loader2 size={16} className="animate-spin mr-2" /> : null}
               Send Reset Link

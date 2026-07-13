@@ -168,9 +168,9 @@ const SearchPage = () => {
                   </h3>
                   <div className="space-y-3 font-body text-sm text-brand-muted">
                     {[
-                      { label: 'Under $20', min: 0, max: 20 },
-                      { label: '$20 - $50', min: 20, max: 50 },
-                      { label: 'Over $50', min: 50, max: 1000 }
+                      { label: 'Under ₹20', min: 0, max: 20 },
+                      { label: '₹20 - ₹50', min: 20, max: 50 },
+                      { label: 'Over ₹50', min: 50, max: 1000 }
                     ].map(range => (
                       <label key={range.label} className="flex items-center cursor-pointer group">
                         <input 

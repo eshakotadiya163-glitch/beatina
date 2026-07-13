@@ -20,12 +20,12 @@ const MegaMenu = () => {
   const megaMenuContent = {
     makeup: {
       left: ['Face', 'Eyes', 'Lips', 'Nails', 'Tools & Brushes', 'Top Brands'],
-      rightImage: '/assets/migrated/52_s2_1512x_98eb4d02-1fb4-4572-912e-640bff0b5a70.jpg',
+      rightImage: '/assets/products/product-28/main.png',
       rightText: 'New Arrivals in Makeup'
     },
     skin: {
       left: ['Cleansers', 'Moisturizers', 'Serums & Essences', 'Masks', 'Eye Care', 'Sun Care'],
-      rightImage: '/assets/migrated/6_gallery-3-v2.webp',
+      rightImage: '/assets/products/niacinamide-alternative-serum/main.png',
       rightText: 'Discover Skin Minimalism'
     }
     // ... add others as needed
@@ -71,7 +71,7 @@ const MegaMenu = () => {
                   <div className="col-span-2 flex justify-end">
                     <Link to="/shop" className="relative group block w-full max-w-sm overflow-hidden rounded">
                        <img 
-                        src={megaMenuContent[category.id as keyof typeof megaMenuContent]?.rightImage || '/assets/migrated/19_gallery-image-7.webp'}
+                        src={megaMenuContent[category.id as keyof typeof megaMenuContent]?.rightImage || '/assets/products/product-29/main.png'}
                         alt="Promo" 
                         className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" 
                       />

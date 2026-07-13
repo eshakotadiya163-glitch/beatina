@@ -1,5 +1,5 @@
 import { Outlet, Link, useLocation, useNavigate } from 'react-router-dom';
-import { LayoutDashboard, Package, ShoppingCart, Users, Tag, Ticket, Settings, LogOut } from 'lucide-react';
+import { LayoutDashboard, Package, ShoppingCart, Users, Tag, Ticket, Settings, LogOut, MessageSquare } from 'lucide-react';
 import useAuthStore from '../store/authStore';
 
 const AdminLayout = () => {
@@ -19,6 +19,7 @@ const AdminLayout = () => {
     { name: 'Customers', path: '/admin/users', icon: <Users size={20} /> },
     { name: 'Categories', path: '/admin/categories', icon: <Tag size={20} /> },
     { name: 'Coupons', path: '/admin/coupons', icon: <Ticket size={20} /> },
+    { name: 'Reviews', path: '/admin/reviews', icon: <MessageSquare size={20} /> },
   ];
 
   if (!user || !user.isAdmin) {

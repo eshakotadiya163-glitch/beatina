@@ -33,10 +33,10 @@ const NewArrivalsTab: React.FC<NewArrivalsTabProps> = ({ products }) => {
           viewport={{ once: true }}
           className="text-center mb-10 md:mb-14"
         >
-          <h3 className="font-serif text-3xl md:text-4xl font-light leading-tight mb-3 text-black">
+          <h3 className="font-heading text-3xl md:text-4xl font-light leading-tight mb-3 text-black">
             New Arrivals
           </h3>
-          <p className="font-sans text-[15px] text-gray-500 max-w-2xl mx-auto">
+          <p className="font-body text-[15px] text-brand-muted max-w-2xl mx-auto">
             Traditional divides between personal and professional space.
           </p>
         </motion.div>

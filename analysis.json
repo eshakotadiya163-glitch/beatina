@@ -1,0 +1,74 @@
+{
+  "homeInfo": {
+    "bodyStyles": {
+      "fontFamily": "Figtree, sans-serif",
+      "color": "rgb(34, 34, 34)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "padding": "0px",
+      "margin": "0px",
+      "borderRadius": "0px"
+    },
+    "h1Styles": {
+      "fontFamily": "Fraunces, serif",
+      "color": "rgb(34, 34, 34)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "fontSize": "32px",
+      "padding": "0px",
+      "margin": "0px",
+      "borderRadius": "0px"
+    },
+    "h2Styles": {
+      "fontFamily": "Fraunces, serif",
+      "color": "rgba(34, 34, 34, 0.6)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "fontSize": "11.2px",
+      "padding": "0px",
+      "margin": "0px 0px 8px",
+      "borderRadius": "0px"
+    },
+    "btnStyles": {
+      "fontFamily": "Figtree, sans-serif",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "fontSize": "14px",
+      "padding": "0px",
+      "margin": "0px",
+      "borderRadius": "0px"
+    },
+    "fonts": [
+      "\"Times New Roman\"",
+      "Figtree, sans-serif",
+      "icomoon",
+      "Fraunces, serif",
+      "Epilogue, sans-serif"
+    ],
+    "bgColors": [
+      "rgb(255, 255, 255)",
+      "rgb(184, 194, 242)",
+      "rgb(244, 244, 244)",
+      "rgb(0, 0, 0)",
+      "rgb(232, 207, 196)",
+      "rgb(34, 34, 34)",
+      "rgba(34, 34, 34, 0.05)",
+      "rgba(0, 0, 0, 0.5)",
+      "rgb(248, 245, 240)",
+      "rgb(12, 35, 44)",
+      "rgba(0, 0, 0, 0.45)",
+      "rgb(249, 249, 249)"
+    ],
+    "textColors": [
+      "rgb(0, 0, 0)",
+      "rgb(34, 34, 34)",
+      "rgb(51, 51, 51)",
+      "rgba(34, 34, 34, 0.6)",
+      "rgba(34, 34, 34, 0.7)",
+      "rgb(255, 255, 255)",
+      "rgb(153, 153, 153)",
+      "rgb(26, 26, 26)",
+      "rgb(136, 136, 136)",
+      "rgb(12, 35, 44)"
+    ],
+    "html": "\n    \n    <img width=\"99998\" height=\"99999\" alt=\"index\" style=\"pointer-events: none; position: absolute; top: 0; left: 0; width: 99vw; height: 99vh; max-width: 99vw; max-height: 99vh;\" src=\"data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSI5OTk5OXB4IiBoZWlnaHQ9Ijk5OTk5cHgiIHZpZXdCb3g9IjAgMCA5OTk5OSA5OTk5OSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZyBzdHJva2U9Im5vbmUiIGZpbGw9Im5vbmUiIGZpbGwtb3BhY2l0eT0iMCI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9Ijk5OTk5IiBoZWlnaHQ9Ijk5OTk5Ij48L3JlY3Q+IDwvZz4gPC9zdmc+\"><!-- BEGIN sections: header-group -->\n<div id=\"shopify-section-sections--21198435680356__announcement-bar\" class=\"shopify-section shopify-section-group-header-group header-announcement\"><style>\n    .announcement-bar{\n    padding: 0.6rem 0;\n    background:#b8c2f2 ;\n    }\n    #announcement-topbar{\n        \n        --color-body-text : #000000;\n        --color-body-text-rgb: 0, 0,  0 ;\n      \n      --g-font-size : 14px;\n      color:var(--color-body-text);\n      font-size:var(--g-font-size);\n    }\n    #announcement-topbar .list-inline-item:not(:last-child){\n        margin-right: 1.5rem;\n    }\n    #announcement-topbar .social-icons li a{\n        color:var(--color-body-text);\n    }\n    #announcement-topbar .site-header__link{\n        color:var(--color-body-text);\n    }\n    #announcement-topbar #HeaderCountryForm .localization-form__select,\n    #announcement-topbar #HeaderLanguageForm .localization-form__select{\n        color:var(--color-body-text);\n        font-size: var(--g-font-size);\n        font-weight: var(--g-font-weight-body);\n        text-transform:inherit;\n    }\n    #announcement-topbar .col-right .topbar-block{\n        padding-right: 2.5rem;\n    }\n    #announcement-topbar .col-right .topbar-block:last-child{\n        padding-right: 0rem;\n    }\n    #announcement-topbar .disclosure__list-wrapper{\n        z-index: 9999;\n        --color-body-text-rgb: 34"
+  }
+}

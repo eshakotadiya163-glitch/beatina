@@ -40,7 +40,7 @@ const getPolicyContent = (path: string) => {
           
           <h3>Domestic Shipping Rates and Estimates</h3>
           <p>For calculated shipping rates: Shipping charges for your order will be calculated and displayed at checkout.</p>
-          <p>We offer free standard shipping on all orders over $50.</p>
+          <p>We offer free standard shipping on all orders over ₹50.</p>
         `
       };
     case '/returns':

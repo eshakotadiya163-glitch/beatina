@@ -6,19 +6,45 @@ import { Star, Truck, ShieldCheck, Plus, Minus, ArrowRight } from 'lucide-react'
 import { useInView } from 'react-intersection-observer';
 import InnerImageZoom from 'react-inner-image-zoom';
 import 'react-inner-image-zoom/lib/styles.min.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Thumbs, Pagination } from 'swiper/modules';
+import type { Swiper as SwiperType } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
+import 'swiper/css/pagination';
 import { motion, AnimatePresence } from 'framer-motion';
 import ProductCard from '../components/ProductCard';
+import useCartStore from '../store/cartStore';
+import toast from 'react-hot-toast';
 
 const ProductDetailsPage = () => {
   const { id } = useParams();
   const [activeTab, setActiveTab] = useState<'description' | 'ingredients' | 'howToUse'>('description');
   const [qty, setQty] = useState(1);
   const [activeImage, setActiveImage] = useState(0);
+  const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
+  const [selectedVariant, setSelectedVariant] = useState('Standard');
+  const { addItem, setIsOpen } = useCartStore();
   
   const { ref: addToCartRef, inView: isAddToCartVisible } = useInView({
     threshold: 0,
     rootMargin: "-100px 0px 0px 0px",
   });
+
+  const addToCartHandler = () => {
+    if (!product) return;
+    addItem({
+      _id: product._id,
+      name: product.name,
+      image: product.images?.[0]?.url || '',
+      price: product.price,
+      qty,
+      countInStock: product.countInStock || 0
+    });
+    toast.success('Added to bag');
+    setIsOpen(true);
+  };
 
   const { data: product, isLoading, error } = useQuery({
     queryKey: ['product', id],
@@ -40,13 +66,14 @@ const ProductDetailsPage = () => {
   }, [product]);
 
   // Fetch Related Products (same category)
+  const categoryId = product?.category?._id || product?.category;
   const { data: relatedData } = useQuery({
-    queryKey: ['products', 'related', product?.category],
+    queryKey: ['products', 'related', categoryId],
     queryFn: async () => {
-      const { data } = await api.get(`/products?category=${product?.category}`);
+      const { data } = await api.get(`/products?category=${categoryId}&limit=8`);
       return data;
     },
-    enabled: !!product?.category,
+    enabled: !!categoryId,
   });
 
   // Fetch Recently Viewed Products
@@ -83,7 +110,7 @@ const ProductDetailsPage = () => {
                 <img src={productImages[0]} alt={product.name} className="w-12 h-16 object-cover hidden sm:block bg-brand-light" />
                 <div>
                   <h3 className="font-heading text-sm text-brand-dark line-clamp-1">{product.name}</h3>
-                  <span className="font-body text-brand-muted text-sm">${product.price.toFixed(2)}</span>
+                  <span className="font-body text-brand-muted text-sm">₹{product.price.toFixed(2)}</span>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -92,7 +119,10 @@ const ProductDetailsPage = () => {
                   <div className="px-3 py-2 font-body text-sm text-brand-dark border-l border-r border-brand-border flex items-center min-w-[40px] justify-center">{qty}</div>
                   <button onClick={() => setQty(Math.min(product.countInStock || 10, qty + 1))} className="px-3 py-2 text-brand-dark hover:bg-brand-light transition-colors"><Plus size={14} /></button>
                 </div>
-                <button className="bg-brand-dark text-white font-body uppercase tracking-[0.2em] text-xs px-8 py-3 hover:bg-black transition-colors">
+                <button 
+                  onClick={addToCartHandler}
+                  className="bg-brand-dark text-white font-body uppercase tracking-[0.2em] text-xs px-8 py-3 hover:bg-black transition-colors"
+                >
                   Add to Bag
                 </button>
               </div>
@@ -117,44 +147,82 @@ const ProductDetailsPage = () => {
           
           {/* Left: Image Gallery */}
           <div className="w-full lg:w-1/2">
-            <div className="sticky top-32 flex gap-4 h-[60vh] md:h-[75vh]">
-              {/* Thumbnails */}
-              <div className="hidden md:flex flex-col gap-3 w-20 overflow-y-auto custom-scrollbar pr-1">
+            <div className="sticky top-32 flex flex-col md:flex-row gap-4">
+              
+              {/* Desktop Thumbnails */}
+              <div className="hidden md:block w-20 flex-shrink-0 h-[60vh] md:h-[75vh]">
+                <Swiper
+                  onSwiper={setThumbsSwiper}
+                  direction="vertical"
+                  spaceBetween={12}
+                  slidesPerView="auto"
+                  watchSlidesProgress={true}
+                  modules={[Navigation, Thumbs]}
+                  className="h-full custom-scrollbar"
+                >
+                  {productImages.map((img: string, idx: number) => (
+                    <SwiperSlide key={idx} className="!h-auto !aspect-[3/4] cursor-pointer">
+                      <div className={`w-full h-full border overflow-hidden transition-opacity bg-brand-light ${activeImage === idx ? 'border-brand-dark opacity-100' : 'border-transparent opacity-60 hover:opacity-100'}`}>
+                        <img src={img} alt={`Thumbnail ${idx}`} className="w-full h-full object-cover mix-blend-multiply" />
+                      </div>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
+
+              {/* Main Image Slider */}
+              <div className="flex-1 bg-brand-light overflow-hidden relative group border border-brand-border/50 h-[50vh] md:h-[75vh] w-full">
+                <Swiper
+                  modules={[Navigation, Thumbs, Pagination]}
+                  navigation={{
+                    prevEl: '.swiper-button-prev',
+                    nextEl: '.swiper-button-next',
+                  }}
+                  pagination={{ clickable: true, el: '.swiper-pagination-mobile' }}
+                  thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
+                  onSlideChange={(swiper) => setActiveImage(swiper.activeIndex)}
+                  className="h-full w-full"
+                >
+                  {productImages.map((img: string, idx: number) => (
+                    <SwiperSlide key={idx} className="h-full w-full">
+                      <InnerImageZoom 
+                        src={img} 
+                        zoomSrc={img} 
+                        className="w-full h-full object-cover mix-blend-multiply"
+                        zoomType="hover"
+                        zoomPreload={true}
+                        hideHint={true}
+                      />
+                    </SwiperSlide>
+                  ))}
+                  
+                  {/* Custom Navigation Arrows */}
+                  <div className="swiper-button-prev !text-brand-dark !left-4 opacity-0 group-hover:opacity-100 transition-opacity after:!text-xl hidden md:flex w-10 h-10 bg-white items-center justify-center rounded-full shadow-md hover:bg-brand-dark hover:!text-white"></div>
+                  <div className="swiper-button-next !text-brand-dark !right-4 opacity-0 group-hover:opacity-100 transition-opacity after:!text-xl hidden md:flex w-10 h-10 bg-white items-center justify-center rounded-full shadow-md hover:bg-brand-dark hover:!text-white"></div>
+                </Swiper>
+              </div>
+
+              {/* Mobile Thumbnails (Pagination dots below main image) */}
+              <div className="md:hidden mt-4">
+                 <div className="swiper-pagination-mobile flex justify-center gap-2"></div>
+              </div>
+              
+              {/* Optional Mobile Image Thumbnails if they prefer clicks over dots */}
+              <div className="flex md:hidden gap-3 overflow-x-auto mt-2 no-scrollbar">
                 {productImages.map((img: string, idx: number) => (
                   <button 
                     key={idx} 
-                    onClick={() => setActiveImage(idx)}
-                    className={`border ${activeImage === idx ? 'border-brand-dark' : 'border-transparent'} overflow-hidden aspect-[3/4] flex-shrink-0 transition-opacity bg-brand-light ${activeImage === idx ? 'opacity-100' : 'opacity-60 hover:opacity-100'}`}
+                    onClick={() => {
+                      const swiperEl = document.querySelector('.flex-1 .swiper') as any;
+                      if (swiperEl && swiperEl.swiper) swiperEl.swiper.slideTo(idx);
+                    }}
+                    className={`border ${activeImage === idx ? 'border-brand-dark' : 'border-transparent'} w-16 aspect-[3/4] flex-shrink-0 bg-brand-light`}
                   >
                     <img src={img} alt={`Thumbnail ${idx}`} className="w-full h-full object-cover mix-blend-multiply" />
                   </button>
                 ))}
               </div>
               
-              {/* Main Image */}
-              <div className="flex-1 bg-brand-light overflow-hidden relative group border border-brand-border/50">
-                <InnerImageZoom 
-                  src={productImages[activeImage] || ''} 
-                  zoomSrc={productImages[activeImage] || ''} 
-                  className="w-full h-full object-cover mix-blend-multiply"
-                  zoomType="hover"
-                  zoomPreload={true}
-                  hideHint={true}
-                />
-              </div>
-            </div>
-            
-            {/* Mobile Thumbnails */}
-            <div className="flex md:hidden gap-3 overflow-x-auto mt-4 no-scrollbar">
-              {productImages.map((img: string, idx: number) => (
-                <button 
-                  key={idx} 
-                  onClick={() => setActiveImage(idx)}
-                  className={`border ${activeImage === idx ? 'border-brand-dark' : 'border-transparent'} w-20 aspect-[3/4] flex-shrink-0 bg-brand-light`}
-                >
-                  <img src={img} alt={`Thumbnail ${idx}`} className="w-full h-full object-cover mix-blend-multiply" />
-                </button>
-              ))}
             </div>
           </div>
 
@@ -174,14 +242,33 @@ const ProductDetailsPage = () => {
 
             <div className="mb-8 border-b border-brand-border pb-8">
                <div className="flex items-end gap-3 mb-2">
-                 <span className="text-2xl font-body text-brand-dark">${product.price.toFixed(2)}</span>
+                 <span className="text-2xl font-body text-brand-dark">₹{product.price.toFixed(2)}</span>
                  {product.compareAtPrice && product.compareAtPrice > product.price && (
-                   <span className="text-sm font-body text-brand-muted line-through mb-1">${product.compareAtPrice.toFixed(2)}</span>
+                   <span className="text-sm font-body text-brand-muted line-through mb-1">₹{product.compareAtPrice.toFixed(2)}</span>
                  )}
                </div>
                <p className="text-xs font-body text-brand-muted mt-2">
-                 Taxes included. Free shipping on orders over $500.
+                 Taxes included. Free shipping on orders over ₹500.
                </p>
+            </div>
+
+            {/* Variants */}
+            <div className="mb-8">
+              <div className="flex justify-between items-center mb-3">
+                <span className="font-heading text-sm uppercase tracking-widest text-brand-dark">Select Size</span>
+                <span className="font-body text-xs text-brand-muted cursor-pointer hover:text-brand-dark transition-colors">Size Guide</span>
+              </div>
+              <div className="flex gap-3">
+                {['Travel Size', 'Standard', 'Value Size'].map(variant => (
+                  <button 
+                    key={variant}
+                    onClick={() => setSelectedVariant(variant)}
+                    className={`flex-1 py-3 font-body text-xs uppercase tracking-widest border transition-colors ${selectedVariant === variant ? 'border-brand-dark bg-brand-dark text-white' : 'border-brand-border bg-white text-brand-dark hover:border-brand-dark'}`}
+                  >
+                    {variant}
+                  </button>
+                ))}
+              </div>
             </div>
 
             {/* Actions */}
@@ -192,62 +279,56 @@ const ProductDetailsPage = () => {
                   <div className="flex-1 py-3 font-body text-sm text-brand-dark border-l border-r border-brand-border flex justify-center items-center">{qty}</div>
                   <button onClick={() => setQty(Math.min(product.countInStock || 10, qty + 1))} className="flex-1 py-3 text-brand-dark hover:bg-brand-light flex justify-center items-center transition-colors"><Plus size={14} /></button>
                 </div>
-                <button className="flex-1 bg-brand-dark text-white font-body uppercase tracking-[0.2em] text-xs hover:bg-black transition-colors">
+                <button 
+                  onClick={addToCartHandler}
+                  className="flex-1 bg-brand-dark text-white font-body uppercase tracking-[0.2em] text-xs hover:bg-black transition-colors"
+                >
                   Add to Bag
                 </button>
               </div>
-              <button className="w-full bg-brand-light border border-brand-border text-brand-dark py-4 font-body uppercase tracking-[0.2em] text-xs hover:bg-brand-border/50 transition-colors">
-                Buy it now
-              </button>
             </div>
 
-            {/* Description Accordions */}
-            <div className="border-t border-brand-border divide-y divide-brand-border">
-              {/* Description */}
-              <div className="py-2">
-                <button className="flex justify-between items-center w-full text-left font-heading text-lg text-brand-dark py-4" onClick={() => setActiveTab(activeTab === 'description' ? '' as any : 'description')}>
-                  Description
-                  {activeTab === 'description' ? <Minus size={16} className="text-brand-muted" /> : <Plus size={16} className="text-brand-muted" />}
-                </button>
-                <AnimatePresence>
-                  {activeTab === 'description' && (
-                    <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="overflow-hidden">
-                      <div 
-                        className="py-4 font-body text-sm text-brand-muted leading-relaxed prose prose-sm prose-p:mb-4 max-w-none"
-                        dangerouslySetInnerHTML={{ __html: product.description }}
+            {/* Horizontal Tabs */}
+            <div className="mt-8">
+              <div className="flex border-b border-brand-border">
+                {[
+                  { id: 'description', label: 'Description' },
+                  { id: 'ingredients', label: 'Ingredients' },
+                  { id: 'howToUse', label: 'How to Use' }
+                ].map(tab => (
+                  <button 
+                    key={tab.id}
+                    onClick={() => setActiveTab(tab.id as any)}
+                    className={`flex-1 py-4 font-heading text-sm uppercase tracking-widest text-center transition-colors relative ${activeTab === tab.id ? 'text-brand-dark' : 'text-brand-muted hover:text-brand-dark'}`}
+                  >
+                    {tab.label}
+                    {activeTab === tab.id && (
+                      <motion.div 
+                        layoutId="activeTab" 
+                        className="absolute bottom-0 left-0 right-0 h-[2px] bg-brand-dark" 
                       />
+                    )}
+                  </button>
+                ))}
+              </div>
+              
+              <div className="py-6 min-h-[150px]">
+                <AnimatePresence mode="wait">
+                  {activeTab === 'description' && (
+                    <motion.div key="desc" initial={{ opacity: 0, y: 5 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -5 }}>
+                      <div className="font-body text-sm text-brand-muted leading-relaxed prose prose-sm prose-p:mb-4 max-w-none" dangerouslySetInnerHTML={{ __html: product.description }} />
                     </motion.div>
                   )}
-                </AnimatePresence>
-              </div>
-
-              {/* Ingredients */}
-              <div className="py-2">
-                <button className="flex justify-between items-center w-full text-left font-heading text-lg text-brand-dark py-4" onClick={() => setActiveTab(activeTab === 'ingredients' ? '' as any : 'ingredients')}>
-                  Ingredients
-                  {activeTab === 'ingredients' ? <Minus size={16} className="text-brand-muted" /> : <Plus size={16} className="text-brand-muted" />}
-                </button>
-                <AnimatePresence>
                   {activeTab === 'ingredients' && (
-                    <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="overflow-hidden">
-                      <div className="py-4 font-body text-sm text-brand-muted leading-relaxed">
+                    <motion.div key="ingr" initial={{ opacity: 0, y: 5 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -5 }}>
+                      <div className="font-body text-sm text-brand-muted leading-relaxed">
                         <p>{product.ingredients || "Carefully sourced natural and organic ingredients. Formulated without parabens, phthalates, sulfates, or synthetic fragrances."}</p>
                       </div>
                     </motion.div>
                   )}
-                </AnimatePresence>
-              </div>
-
-              {/* How to Use */}
-              <div className="py-2">
-                <button className="flex justify-between items-center w-full text-left font-heading text-lg text-brand-dark py-4" onClick={() => setActiveTab(activeTab === 'howToUse' ? '' as any : 'howToUse')}>
-                  How to Use
-                  {activeTab === 'howToUse' ? <Minus size={16} className="text-brand-muted" /> : <Plus size={16} className="text-brand-muted" />}
-                </button>
-                <AnimatePresence>
                   {activeTab === 'howToUse' && (
-                    <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="overflow-hidden">
-                      <div className="py-4 font-body text-sm text-brand-muted leading-relaxed">
+                    <motion.div key="how" initial={{ opacity: 0, y: 5 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -5 }}>
+                      <div className="font-body text-sm text-brand-muted leading-relaxed">
                         <p>{product.howToUse || "Apply a small amount to clean, dry skin. Massage gently in upward circular motions until fully absorbed. Use daily for best results."}</p>
                       </div>
                     </motion.div>

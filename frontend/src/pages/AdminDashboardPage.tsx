@@ -62,7 +62,7 @@ const AdminDashboardPage = () => {
                   <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
                     <div className="p-6 border border-brand-secondary bg-brand-secondary/10 rounded-sm">
                       <p className="text-xs uppercase tracking-widest text-gray-500 mb-2 font-body">Total Sales</p>
-                      <p className="text-3xl font-heading text-brand-dark">$12,450</p>
+                      <p className="text-3xl font-heading text-brand-dark">₹12,450</p>
                     </div>
                     <div className="p-6 border border-brand-secondary bg-brand-secondary/10 rounded-sm">
                       <p className="text-xs uppercase tracking-widest text-gray-500 mb-2 font-body">Orders</p>
@@ -107,13 +107,13 @@ const AdminDashboardPage = () => {
                         {/* Mock Rows */}
                         <tr>
                           <td className="p-4">Luminous Hydration Serum</td>
-                          <td className="p-4">$85.00</td>
+                          <td className="p-4">₹85.00</td>
                           <td className="p-4">50</td>
                           <td className="p-4 text-brand-primary cursor-pointer">Edit</td>
                         </tr>
                         <tr>
                           <td className="p-4">Velvet Rose Body Butter</td>
-                          <td className="p-4">$65.00</td>
+                          <td className="p-4">₹65.00</td>
                           <td className="p-4">30</td>
                           <td className="p-4 text-brand-primary cursor-pointer">Edit</td>
                         </tr>

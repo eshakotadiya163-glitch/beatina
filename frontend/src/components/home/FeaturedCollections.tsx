@@ -17,16 +17,16 @@ const FeaturedCollections = () => {
   });
 
   return (
-    <section className="py-[40px] md:py-[50px] bg-white overflow-hidden">
+    <section className="py-16 md:py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-4 md:px-8">
-        <div className="mb-10 text-center">
-          <p className="font-body text-[13px] text-brand-muted uppercase tracking-[0.2em] mb-2">
+        <div className="mb-14 text-center">
+          <p className="font-body text-[10px] text-brand-muted uppercase tracking-[0.25em] mb-3">
             Luxury Essentials
           </p>
-          <h3 className="font-heading text-3xl md:text-[40px] text-brand-dark mb-4">
+          <h3 className="font-heading text-3xl md:text-[44px] font-light text-brand-dark mb-5 leading-tight">
             Must-Have Beauty
           </h3>
-          <p className="font-body text-brand-muted max-w-2xl mx-auto">
+          <p className="font-body text-[15px] text-brand-muted max-w-2xl mx-auto leading-relaxed">
             Elevate your beauty routine with our curated selection of premium skincare and makeup essentials.
           </p>
         </div>

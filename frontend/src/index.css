@@ -97,6 +97,21 @@
   /* No scrollbar utility */
   .no-scrollbar::-webkit-scrollbar { display: none; }
   .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+  /* Responsive Container Validation */
+  .container {
+    @apply w-full mx-auto px-5; /* ~375px baseline padding */
+  }
+  @media (min-width: 768px) {
+    .container {
+      @apply px-8; /* 768px padding */
+    }
+  }
+  @media (min-width: 1024px) {
+    .container {
+      @apply px-12; /* 1024px padding */
+    }
+  }
 }
 
 @layer utilities {

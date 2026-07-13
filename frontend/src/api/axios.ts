@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api', // Backend URL
+  baseURL: '/api', // Proxied through Vite dev server → http://localhost:5000/api
   withCredentials: true, // Important for sending/receiving cookies (JWT)
 });
 

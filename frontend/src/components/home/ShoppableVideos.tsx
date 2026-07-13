@@ -36,7 +36,7 @@ const ShoppableVideos: React.FC<ShoppableVideosProps> = ({ products = [] }) => {
   const [activeVideoIndex, setActiveVideoIndex] = useState(0);
 
   const formatPrice = (price: number) => {
-    return new Intl.NumberFormat('en-US', {
+    return new Intl.NumberFormat('en-IN', {
       style: 'currency',
       currency: 'USD',
       minimumFractionDigits: 2,

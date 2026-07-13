@@ -23,7 +23,7 @@ const SVG_PAYMENT = `<svg width="1024" height="1024" viewBox="0 0 1024 1024" fil
 
 /* ─── Feature data (exact from Beautina) ───────────────────────────── */
 const features = [
-  { svg: SVG_SHIPPING,  title: 'Worldwide Shipping',  desc: 'Get free shipping on orders of $100 or more' },
+  { svg: SVG_SHIPPING,  title: 'Worldwide Shipping',  desc: 'Get free shipping on orders of ₹100 or more' },
   { svg: SVG_CUSTOMER,  title: 'Customer service',    desc: 'Be rewarded every time' },
   { svg: SVG_PAYMENT,   title: 'Secure payment',      desc: 'Your payment information is processed securely' },
 ];

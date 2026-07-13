@@ -68,7 +68,7 @@ const OrderDetailsPage = () => {
                   </div>
                   <div>
                     <h3 className="font-heading text-brand-dark text-base">Order Placed</h3>
-                    <p className="font-body text-sm text-gray-500">{new Date(order.createdAt).toLocaleString('en-US', { dateStyle: 'medium', timeStyle: 'short' })}</p>
+                    <p className="font-body text-sm text-gray-500">{new Date(order.createdAt).toLocaleString('en-IN', { dateStyle: 'medium', timeStyle: 'short' })}</p>
                   </div>
                 </div>
 
@@ -79,7 +79,7 @@ const OrderDetailsPage = () => {
                   <div>
                     <h3 className="font-heading text-brand-dark text-base">Payment Confirmed</h3>
                     {order.isPaid ? (
-                      <p className="font-body text-sm text-gray-500">{new Date(order.paidAt).toLocaleString('en-US', { dateStyle: 'medium', timeStyle: 'short' })}</p>
+                      <p className="font-body text-sm text-gray-500">{new Date(order.paidAt).toLocaleString('en-IN', { dateStyle: 'medium', timeStyle: 'short' })}</p>
                     ) : (
                       <p className="font-body text-sm text-yellow-600">Pending Payment</p>
                     )}
@@ -109,7 +109,7 @@ const OrderDetailsPage = () => {
                   <div>
                     <h3 className="font-heading text-brand-dark text-base">Delivered</h3>
                     {order.isDelivered ? (
-                      <p className="font-body text-sm text-gray-500">{new Date(order.deliveredAt).toLocaleString('en-US', { dateStyle: 'medium', timeStyle: 'short' })}</p>
+                      <p className="font-body text-sm text-gray-500">{new Date(order.deliveredAt).toLocaleString('en-IN', { dateStyle: 'medium', timeStyle: 'short' })}</p>
                     ) : (
                       <p className="font-body text-sm text-gray-400">Estimated delivery within 3-5 business days</p>
                     )}

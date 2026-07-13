@@ -54,7 +54,7 @@ const RegisterPage = () => {
               <label className="block text-[10px] uppercase tracking-widest text-brand-muted mb-2 font-medium">First Name</label>
               <input 
                 type="text" 
-                className="w-full border border-brand-border bg-brand-light/30 rounded-none p-3.5 focus:border-brand-dark focus:outline-none transition-colors text-sm text-brand-dark"
+                className="input-luxury"
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
                 required 
@@ -64,7 +64,7 @@ const RegisterPage = () => {
               <label className="block text-[10px] uppercase tracking-widest text-brand-muted mb-2 font-medium">Last Name</label>
               <input 
                 type="text" 
-                className="w-full border border-brand-border bg-brand-light/30 rounded-none p-3.5 focus:border-brand-dark focus:outline-none transition-colors text-sm text-brand-dark"
+                className="input-luxury"
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
                 required 
@@ -76,7 +76,7 @@ const RegisterPage = () => {
             <label className="block text-[10px] uppercase tracking-widest text-brand-muted mb-2 font-medium">Email Address</label>
             <input 
               type="email" 
-              className="w-full border border-brand-border bg-brand-light/30 rounded-none p-3.5 focus:border-brand-dark focus:outline-none transition-colors text-sm text-brand-dark"
+              className="input-luxury"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required 
@@ -87,7 +87,7 @@ const RegisterPage = () => {
             <label className="block text-[10px] uppercase tracking-widest text-brand-muted mb-2 font-medium">Password</label>
             <input 
               type="password" 
-              className="w-full border border-brand-border bg-brand-light/30 rounded-none p-3.5 focus:border-brand-dark focus:outline-none transition-colors text-sm text-brand-dark"
+              className="input-luxury"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required 
@@ -98,7 +98,7 @@ const RegisterPage = () => {
             <label className="block text-[10px] uppercase tracking-widest text-brand-muted mb-2 font-medium">Confirm Password</label>
             <input 
               type="password" 
-              className="w-full border border-brand-border bg-brand-light/30 rounded-none p-3.5 focus:border-brand-dark focus:outline-none transition-colors text-sm text-brand-dark"
+              className="input-luxury"
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
               required 
@@ -107,7 +107,7 @@ const RegisterPage = () => {
 
           <button 
             type="submit" 
-            className="w-full bg-brand-dark text-white py-4 font-body uppercase tracking-[0.2em] text-xs hover:bg-black transition-colors mt-8"
+            className="btn-primary w-full mt-8 py-4"
             disabled={registerMutation.isPending}
           >
             {registerMutation.isPending ? 'Creating Account...' : 'Create Account'}

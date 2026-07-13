@@ -87,6 +87,19 @@ const productSchema = mongoose.Schema(
     tabCategory: {
       type: String
     },
+    sku: {
+      type: String,
+    },
+    tags: [String],
+    hoverImage: {
+      type: String,
+    },
+    variants: [
+      {
+        name: String,
+        options: [String]
+      }
+    ],
     reviews: [reviewSchema],
   },
   {
