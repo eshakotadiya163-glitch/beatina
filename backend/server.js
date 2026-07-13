@@ -29,15 +29,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(cors({
-  origin: function (origin, callback) {
-    if (!origin || origin.startsWith('http://localhost:')) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
+  origin: [
+    "http://localhost:5173",
+    "https://YOUR_FRONTEND_URL.vercel.app"
+  ],
   credentials: true
 }));
+ 
 app.use(helmet());
 app.use(morgan('dev'));
 
