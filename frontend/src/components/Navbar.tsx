@@ -50,7 +50,7 @@ const Navbar = () => {
           name: p.name,
           href: `/product/${p.slug || p._id}`
         })),
-        promoImg: '/assets/migrated/52_s2_1512x_98eb4d02-1fb4-4572-912e-640bff0b5a70.jpg',
+        promoImg: '/images/migrated/52_s2_1512x_98eb4d02-1fb4-4572-912e-640bff0b5a70.jpg',
       },
     },
     {
@@ -117,7 +117,7 @@ const Navbar = () => {
             <div className="absolute left-1/2 -translate-x-1/2">
               <Link to="/" className="flex items-center">
                 <img 
-                  src="/assets/migrated/53_Beautina_1.png" 
+                  src="/images/migrated/53_Beautina_1.png" 
                   alt="Beautina" 
                   className="w-[170px] object-contain"
                 />

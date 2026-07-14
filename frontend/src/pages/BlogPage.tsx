@@ -3,12 +3,12 @@ import { ArrowRight } from 'lucide-react';
 
 const BlogPage = () => {
   const posts = [
-    { id: 1, title: "The Art of Skin Minimalism", category: "Skincare", img: "/assets/migrated/18_gallery-2-v2.webp", date: "Oct 12, 2023", excerpt: "Discover the secrets to effortless beauty with our comprehensive guide to stripping back your routine." },
-    { id: 2, title: "Discover Our Anti-Age Recovery Ritual", category: "Rituals", img: "/assets/migrated/1_home-before_1.jpg", date: "Sep 28, 2023", excerpt: "Gentle yet effective. Learn how our signature recovery treatment is taking the beauty world by storm." },
-    { id: 3, title: "A Guide to Sustainable Beauty", category: "Sustainability", img: "/assets/migrated/19_gallery-image-7.webp", date: "Sep 15, 2023", excerpt: "How to build an eco-friendly vanity without compromising on luxury or efficacy." },
-    { id: 4, title: "Essential Hydration for Every Season", category: "Skincare", img: "/assets/migrated/21_about-img-3.webp", date: "Aug 02, 2023", excerpt: "Stay protected while glowing. Our top picks for lightweight, non-greasy hydration." },
-    { id: 5, title: "Mastering the Night Cleansing Ritual", category: "Rituals", img: "/assets/migrated/20_gallery-image-1.jpg", date: "Jul 18, 2023", excerpt: "Why washing your face once might not be enough. Mastering the ultimate cleansing ritual." },
-    { id: 6, title: "The Science Behind Superseed Oil", category: "Ingredients", img: "/assets/migrated/57_1-superseed-age-recovery-oil-30ml-A2603.jpg", date: "Jun 05, 2023", excerpt: "Navigate the world of botanical oils to find a treatment that perfectly balances your skin." },
+    { id: 1, title: "The Art of Skin Minimalism", category: "Skincare", img: "/images/migrated/18_gallery-2-v2.webp", date: "Oct 12, 2023", excerpt: "Discover the secrets to effortless beauty with our comprehensive guide to stripping back your routine." },
+    { id: 2, title: "Discover Our Anti-Age Recovery Ritual", category: "Rituals", img: "/images/migrated/1_home-before_1.jpg", date: "Sep 28, 2023", excerpt: "Gentle yet effective. Learn how our signature recovery treatment is taking the beauty world by storm." },
+    { id: 3, title: "A Guide to Sustainable Beauty", category: "Sustainability", img: "/images/migrated/19_gallery-image-7.webp", date: "Sep 15, 2023", excerpt: "How to build an eco-friendly vanity without compromising on luxury or efficacy." },
+    { id: 4, title: "Essential Hydration for Every Season", category: "Skincare", img: "/images/migrated/21_about-img-3.webp", date: "Aug 02, 2023", excerpt: "Stay protected while glowing. Our top picks for lightweight, non-greasy hydration." },
+    { id: 5, title: "Mastering the Night Cleansing Ritual", category: "Rituals", img: "/images/migrated/20_gallery-image-1.jpg", date: "Jul 18, 2023", excerpt: "Why washing your face once might not be enough. Mastering the ultimate cleansing ritual." },
+    { id: 6, title: "The Science Behind Superseed Oil", category: "Ingredients", img: "/images/migrated/57_1-superseed-age-recovery-oil-30ml-A2603.jpg", date: "Jun 05, 2023", excerpt: "Navigate the world of botanical oils to find a treatment that perfectly balances your skin." },
   ];
 
   return (

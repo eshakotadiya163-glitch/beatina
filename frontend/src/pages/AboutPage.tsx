@@ -22,7 +22,7 @@ const AboutPage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="relative aspect-square md:aspect-[4/5] overflow-hidden">
             <img 
-              src="/assets/migrated/21_about-img-3.webp" 
+              src="/images/migrated/21_about-img-3.webp" 
               alt="About Beautina" 
               className="absolute inset-0 w-full h-full object-cover"
             />
@@ -54,7 +54,7 @@ const AboutPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div>
               <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center border border-white/20 rounded-full">
-                <img src="/assets/migrated/54_Icon_2.png" alt="Organic" className="w-8 h-8 invert brightness-0" />
+                <img src="/images/migrated/54_Icon_2.png" alt="Organic" className="w-8 h-8 invert brightness-0" />
               </div>
               <h3 className="font-heading text-xl mb-3 tracking-wide">100% Organic</h3>
               <p className="font-body text-xs text-white/70 leading-relaxed">
@@ -64,7 +64,7 @@ const AboutPage = () => {
             
             <div>
               <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center border border-white/20 rounded-full">
-                <img src="/assets/migrated/55_Icon_4.png" alt="Cruelty Free" className="w-8 h-8 invert brightness-0" />
+                <img src="/images/migrated/55_Icon_4.png" alt="Cruelty Free" className="w-8 h-8 invert brightness-0" />
               </div>
               <h3 className="font-heading text-xl mb-3 tracking-wide">Cruelty Free</h3>
               <p className="font-body text-xs text-white/70 leading-relaxed">
@@ -74,7 +74,7 @@ const AboutPage = () => {
             
             <div>
               <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center border border-white/20 rounded-full">
-                <img src="/assets/migrated/56_Icon_3.png" alt="Dermatologist Tested" className="w-8 h-8 invert brightness-0" />
+                <img src="/images/migrated/56_Icon_3.png" alt="Dermatologist Tested" className="w-8 h-8 invert brightness-0" />
               </div>
               <h3 className="font-heading text-xl mb-3 tracking-wide">Dermatologist Tested</h3>
               <p className="font-body text-xs text-white/70 leading-relaxed">
@@ -103,7 +103,7 @@ const AboutPage = () => {
           </div>
           <div className="order-1 md:order-2 relative aspect-[4/3] overflow-hidden">
             <img 
-              src="/assets/migrated/18_gallery-2-v2.webp" 
+              src="/images/migrated/18_gallery-2-v2.webp" 
               alt="Crafting Beautina" 
               className="absolute inset-0 w-full h-full object-cover"
             />

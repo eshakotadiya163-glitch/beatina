@@ -85,14 +85,14 @@ const InteractiveImage = () => {
       {/* Floating Parallax Images */}
       <img
         ref={(el) => { imagesRef.current[1] = el; }}
-        src="/assets/migrated/22_gallery-5-v2.webp"
+        src="/images/migrated/22_gallery-5-v2.webp"
         alt=""
         data-speed="0.1"
         className="absolute top-[18vw] left-[7vw] w-[25vw] h-[30vw] md:w-[16vw] md:h-[20vw] object-cover transition-transform duration-75 ease-out z-10 opacity-70 md:opacity-100"
       />
       <img
         ref={(el) => { imagesRef.current[2] = el; }}
-        src="/assets/migrated/49_b12_720x_301f00ae-898e-41d1-b635-14ec61052c17.webp"
+        src="/images/migrated/49_b12_720x_301f00ae-898e-41d1-b635-14ec61052c17.webp"
         alt=""
         data-speed="0.15"
         className="absolute bottom-[10vw] right-[5vw] w-[35vw] h-[25vw] md:w-[22vw] md:h-[15vw] object-cover transition-transform duration-75 ease-out z-10 opacity-60 md:opacity-100"
@@ -103,7 +103,7 @@ const InteractiveImage = () => {
         {/* Main Background Image - Now placed absolutely */}
         <img 
           ref={(el) => { imagesRef.current[0] = el; }}
-          src="/assets/migrated/50_about-img-2.webp"
+          src="/images/migrated/50_about-img-2.webp"
           alt="Beauty routine" 
           className="absolute inset-0 w-full h-full object-cover rounded-none md:rounded-[40px] scale-110"
           data-speed="0.2"
@@ -111,28 +111,28 @@ const InteractiveImage = () => {
       </div>
       <img
         ref={(el) => { imagesRef.current[3] = el; }}
-        src="/assets/migrated/24_3.11_a206c225-bd03-40da-8e5f-e3a3e160e25a.webp"
+        src="/images/migrated/24_3.11_a206c225-bd03-40da-8e5f-e3a3e160e25a.webp"
         alt=""
         data-speed="0.2"
         className="absolute bottom-[-10vw] left-[45vw] w-[25vw] h-[30vw] md:w-[16vw] md:h-[20vw] object-cover transition-transform duration-75 ease-out z-10 opacity-70 md:opacity-100"
       />
       <img
         ref={(el) => { imagesRef.current[4] = el; }}
-        src="/assets/migrated/18_gallery-2-v2.webp"
+        src="/images/migrated/18_gallery-2-v2.webp"
         alt=""
         data-speed="0.25"
         className="absolute top-[24vw] right-[9vw] w-[25vw] h-[30vw] md:w-[16vw] md:h-[20vw] object-cover transition-transform duration-75 ease-out z-10 opacity-70 md:opacity-100"
       />
       <img
         ref={(el) => { imagesRef.current[5] = el; }}
-        src="/assets/migrated/19_gallery-image-7.webp"
+        src="/images/migrated/19_gallery-image-7.webp"
         alt=""
         data-speed="0.3"
         className="absolute top-[15vw] right-[0vw] w-[25vw] h-[30vw] md:w-[16vw] md:h-[20vw] object-cover transition-transform duration-75 ease-out z-10 opacity-70 md:opacity-100"
       />
       <img
         ref={(el) => { imagesRef.current[6] = el; }}
-        src="/assets/migrated/25_gallery-image-5.webp"
+        src="/images/migrated/25_gallery-image-5.webp"
         alt=""
         data-speed="0.35"
         className="absolute top-[-10vw] right-[22vw] w-[25vw] h-[30vw] md:w-[16vw] md:h-[20vw] object-cover transition-transform duration-75 ease-out z-10 opacity-70 md:opacity-100"

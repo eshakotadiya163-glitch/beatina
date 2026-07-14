@@ -121,7 +121,7 @@ const AdminProductEditPage = () => {
     } catch (error: any) {
       console.error(error);
       // If upload fails in dev without a real endpoint, push a fallback image
-      const fallbackUrl = '/assets/migrated/19_gallery-image-7.webp';
+      const fallbackUrl = '/images/migrated/19_gallery-image-7.webp';
       setImages([...images, { url: fallbackUrl, altText: 'Fallback Image' }]);
       toast.success('Used development fallback image (Upload endpoint failed)');
     } finally {

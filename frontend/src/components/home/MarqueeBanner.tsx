@@ -2,32 +2,32 @@ import { Link } from 'react-router-dom';
 
 const marqueeItems = [
   {
-    image: "/assets/migrated/29_5-omega-and-vitamin-e-oil-for-face-A2281.jpg",
+    image: "/images/migrated/29_5-omega-and-vitamin-e-oil-for-face-A2281.jpg",
     label: "Skin Care",
     href: "/collections/skincare"
   },
   {
-    image: "/assets/migrated/30_5-madara-sos-skincare-A3021.jpg",
+    image: "/images/migrated/30_5-madara-sos-skincare-A3021.jpg",
     label: "Makeup",
     href: "/collections/moisture-cream"
   },
   {
-    image: "/assets/migrated/6_gallery-3-v2.webp",
+    image: "/images/migrated/6_gallery-3-v2.webp",
     label: "Best Sellers",
     href: "/collections/accessories"
   },
   {
-    image: "/assets/migrated/31_2-nourish-and-repair-hair-care-A4051.jpg",
+    image: "/images/migrated/31_2-nourish-and-repair-hair-care-A4051.jpg",
     label: "Body Care",
     href: "/collections/serum-cream"
   },
   {
-    image: "/assets/migrated/32_6-madara-his-collection-A5003.jpg",
+    image: "/images/migrated/32_6-madara-his-collection-A5003.jpg",
     label: "Face Care",
     href: "/collections/skincare"
   },
   {
-    image: "/assets/migrated/33_4_madara-cosmetics-grow-volume-shampoo-conditioner-boost-scalp-treatment-set.jpg",
+    image: "/images/migrated/33_4_madara-cosmetics-grow-volume-shampoo-conditioner-boost-scalp-treatment-set.jpg",
     label: "Hair Care",
     href: "/collections/hair-care"
   },

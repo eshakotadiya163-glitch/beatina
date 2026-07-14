@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 
 const pressLogos = [
-  "/assets/migrated/35_brand-martha-stewart.webp",
-  "/assets/migrated/36_brand-bustle.webp",
-  "/assets/migrated/37_brand-elite-daily.webp",
-  "/assets/migrated/38_brand-elle.webp",
-  "/assets/migrated/39_brand-vogue.webp"
+  "/images/migrated/35_brand-martha-stewart.webp",
+  "/images/migrated/36_brand-bustle.webp",
+  "/images/migrated/37_brand-elite-daily.webp",
+  "/images/migrated/38_brand-elle.webp",
+  "/images/migrated/39_brand-vogue.webp"
 ];
 
 const PressTestimonials = () => {

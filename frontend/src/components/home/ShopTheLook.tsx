@@ -43,7 +43,7 @@ const ShopTheLook: React.FC<ShopTheLookProps> = ({ products = [] }) => {
           >
             <div className="relative w-full aspect-square overflow-hidden bg-gray-50 max-w-[650px] mx-auto">
               <img 
-                src="/assets/migrated/48_ChatGPT_Image_Mar_11_2026_10_46_49_AM.png" 
+                src="/images/migrated/48_ChatGPT_Image_Mar_11_2026_10_46_49_AM.png" 
                 alt="Shop The Look" 
                 className="absolute inset-0 w-full h-full object-cover"
                 loading="lazy"

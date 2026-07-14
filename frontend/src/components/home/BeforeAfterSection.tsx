@@ -60,7 +60,7 @@ const BeforeAfterSection = () => {
         >
           {/* After Image (Background) */}
           <img 
-            src="/assets/migrated/0_home-after_1.jpg" 
+            src="/images/migrated/0_home-after_1.jpg" 
             alt="After" 
             className="absolute inset-0 w-full h-full object-cover pointer-events-none"
             loading="lazy"
@@ -72,7 +72,7 @@ const BeforeAfterSection = () => {
             style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
           >
             <img 
-              src="/assets/migrated/1_home-before_1.jpg" 
+              src="/images/migrated/1_home-before_1.jpg" 
               alt="Before" 
               className="absolute inset-0 w-full h-full object-cover max-w-none pointer-events-none"
               style={{ width: '100%', height: '100%' }}

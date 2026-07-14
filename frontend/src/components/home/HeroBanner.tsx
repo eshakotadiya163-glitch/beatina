@@ -9,8 +9,8 @@ import 'swiper/css/navigation';
 const slides = [
   {
     id: 'slide-1',
-    image: '/assets/migrated/11_2.png',
-    mobileImage: '/assets/migrated/12_s31_900x_8f09b4d4-6d08-410a-b6c2-5f291c6eb648.webp',
+    image: '/images/migrated/11_2.png',
+    mobileImage: '/images/migrated/12_s31_900x_8f09b4d4-6d08-410a-b6c2-5f291c6eb648.webp',
     bgColor: '#3190ae',
     label: 'New Skincare Arrival',
     title: "Skin's Natural\nRadiance.",
@@ -20,8 +20,8 @@ const slides = [
   },
   {
     id: 'slide-2',
-    image: '/assets/migrated/13_1.png',
-    mobileImage: '/assets/migrated/14_s32_900x_8acd0d58-b6ff-42e4-9796-69f7e92d8ef7.jpg',
+    image: '/images/migrated/13_1.png',
+    mobileImage: '/images/migrated/14_s32_900x_8acd0d58-b6ff-42e4-9796-69f7e92d8ef7.jpg',
     bgColor: '#858961',
     label: 'Nighttime Ritual',
     title: 'Glow While\nYou Sleep.',

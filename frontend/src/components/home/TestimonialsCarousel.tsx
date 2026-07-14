@@ -10,28 +10,28 @@ const quotes = [
     id: 1,
     text: "A perfect blend of luxury and natural radiance. The textures are incredibly lightweight yet deeply nourishing.",
     name: "EMMA S.",
-    imgSrc: "/assets/migrated/21_about-img-3.webp",
+    imgSrc: "/images/migrated/21_about-img-3.webp",
     rating: 5,
   },
   {
     text: "My skin has never felt this soft! Was it magic? No. Did it work wonders? No, but I’m glowing like never before!",
     id: 2,
     name: "EMILY R.",
-    imgSrc: "/assets/migrated/3_home-after_4fcfbfed-535d-4e65-8f9f-1fe66b041eff.jpg",
+    imgSrc: "/images/migrated/3_home-after_4fcfbfed-535d-4e65-8f9f-1fe66b041eff.jpg",
     rating: 5,
   },
   {
     text: "Did I apply a filter? No. Does my skin look flawless? No, but this glow is giving effortlessly airbrushed vibes!",
     id: 3,
     name: "JESSICA T.",
-    imgSrc: "/assets/migrated/0_home-after_1.jpg",
+    imgSrc: "/images/migrated/0_home-after_1.jpg",
     rating: 5,
   },
   {
     text: "Great product and excellent customer service.",
     id: 4,
     name: "MICHELLE W.",
-    imgSrc: "/assets/migrated/22_gallery-5-v2.webp",
+    imgSrc: "/images/migrated/22_gallery-5-v2.webp",
     rating: 5,
   }
 ];

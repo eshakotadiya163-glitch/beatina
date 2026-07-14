@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 const Instagram = (props: any) => <svg width={props.size || 24} height={props.size || 24} viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth={props.strokeWidth || 2} className={props.className} {...props}><rect x='2' y='2' width='20' height='20' rx='5' ry='5'/><path d='M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z'/><line x1='17.5' y1='6.5' x2='17.51' y2='6.5'/></svg>;
 
 const images = [
-  "/assets/migrated/18_gallery-2-v2.webp",
-  "/assets/migrated/19_gallery-image-7.webp",
-  "/assets/migrated/20_gallery-image-1.jpg",
-  "/assets/migrated/22_gallery-5-v2.webp",
-  "/assets/migrated/25_gallery-image-5.webp",
-  "/assets/migrated/6_gallery-3-v2.webp"
+  "/images/migrated/18_gallery-2-v2.webp",
+  "/images/migrated/19_gallery-image-7.webp",
+  "/images/migrated/20_gallery-image-1.jpg",
+  "/images/migrated/22_gallery-5-v2.webp",
+  "/images/migrated/25_gallery-image-5.webp",
+  "/images/migrated/6_gallery-3-v2.webp"
 ];
 
 const containerVariants = {

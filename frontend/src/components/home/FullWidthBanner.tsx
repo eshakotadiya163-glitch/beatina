@@ -9,7 +9,7 @@ const FullWidthBanner = () => {
         {/* Left panel - Hair Care banner */}
         <div className="relative w-full md:w-1/2 aspect-[4/3] md:aspect-auto md:min-h-[500px] overflow-hidden group">
           <img
-            src="/assets/migrated/5_custom-banner-2.jpg"
+            src="/images/migrated/5_custom-banner-2.jpg"
             alt="Hair Care"
             className="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-1000"
             loading="lazy"
@@ -32,7 +32,7 @@ const FullWidthBanner = () => {
         {/* Right panel - SkinCare banner */}
         <div className="relative w-full md:w-1/2 aspect-[4/3] md:aspect-auto md:min-h-[500px] overflow-hidden group">
           <img
-            src="/assets/migrated/7_2-anti-age-recovery-treatment-A2603.jpg"
+            src="/images/migrated/7_2-anti-age-recovery-treatment-A2603.jpg"
             alt="SkinCare"
             className="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-1000"
             loading="lazy"

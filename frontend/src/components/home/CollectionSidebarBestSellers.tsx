@@ -5,10 +5,10 @@ import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import ProductCard from '../ProductCard';
 
 const collections = [
-  { name: 'Hair Care', handle: 'hair-care', img: '/assets/migrated/5_custom-banner-2.jpg', count: 11 },
-  { name: 'Accessories', handle: 'accessories', img: '/assets/migrated/6_gallery-3-v2.webp', count: 8 },
-  { name: 'SkinCare', handle: 'skincare', img: '/assets/migrated/7_2-anti-age-recovery-treatment-A2603.jpg', count: 15 },
-  { name: 'Moisture Cream', handle: 'moisture-cream', img: '/assets/migrated/8_4-replenishing-night-cream-A3062.jpg', count: 6 },
+  { name: 'Hair Care', handle: 'hair-care', img: '/images/migrated/5_custom-banner-2.jpg', count: 11 },
+  { name: 'Accessories', handle: 'accessories', img: '/images/migrated/6_gallery-3-v2.webp', count: 8 },
+  { name: 'SkinCare', handle: 'skincare', img: '/images/migrated/7_2-anti-age-recovery-treatment-A2603.jpg', count: 15 },
+  { name: 'Moisture Cream', handle: 'moisture-cream', img: '/images/migrated/8_4-replenishing-night-cream-A3062.jpg', count: 6 },
 ];
 
 const CollectionSidebarBestSellers = () => {
@@ -65,7 +65,7 @@ const CollectionSidebarBestSellers = () => {
             {/* Banner Image inside sidebar */}
             <div className="relative mt-8 group overflow-hidden bg-brand-dark h-[380px]">
               <img 
-                src="/assets/migrated/9_b17_540x_aa6b96c0-cd33-460e-8da7-208e8c30f82e.webp" 
+                src="/images/migrated/9_b17_540x_aa6b96c0-cd33-460e-8da7-208e8c30f82e.webp" 
                 alt="Hair Care Banner"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80"
               />

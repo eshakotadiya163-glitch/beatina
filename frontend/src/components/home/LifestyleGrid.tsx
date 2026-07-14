@@ -3,26 +3,26 @@ import { Link } from 'react-router-dom';
 
 const items = [
   {
-    bgImage: '/assets/migrated/19_gallery-image-7.webp',
-    productImage: '/assets/migrated/8_4-replenishing-night-cream-A3062.jpg',
+    bgImage: '/images/migrated/19_gallery-image-7.webp',
+    productImage: '/images/migrated/8_4-replenishing-night-cream-A3062.jpg',
     title: 'Day Cream',
     link: '/product/moisture-day-cream'
   },
   {
-    bgImage: '/assets/migrated/18_gallery-2-v2.webp',
-    productImage: '/assets/migrated/26_luminous-perfecting-concealer_1.jpg',
+    bgImage: '/images/migrated/18_gallery-2-v2.webp',
+    productImage: '/images/migrated/26_luminous-perfecting-concealer_1.jpg',
     title: 'Luminous Perfecting Concealer',
     link: '/product/luminous-perfecting-concealer'
   },
   {
-    bgImage: '/assets/migrated/20_gallery-image-1.jpg',
-    productImage: '/assets/migrated/27_intense-glow-concentrate.jpg',
+    bgImage: '/images/migrated/20_gallery-image-1.jpg',
+    productImage: '/images/migrated/27_intense-glow-concentrate.jpg',
     title: 'Intense Glow Concentrate',
     link: '/product/intense-glow-concentrate'
   },
   {
-    bgImage: '/assets/migrated/21_about-img-3.webp',
-    productImage: '/assets/migrated/28_superseed-age-recovery-organic-facial-oil.jpg',
+    bgImage: '/images/migrated/21_about-img-3.webp',
+    productImage: '/images/migrated/28_superseed-age-recovery-organic-facial-oil.jpg',
     title: 'Age Recovery Facial Oil',
     link: '/product/superseed-age-recovery-organic-facial-oil'
   }
