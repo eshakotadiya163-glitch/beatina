@@ -70,8 +70,8 @@ const CartDrawer = () => {
             </div>
           ) : (
             <div className="space-y-6">
-              {cartItems.map((item) => (
-                <div key={item._id} className="flex gap-4">
+              {cartItems.map((item, idx) => (
+                <div key={`${item._id}-${item.variantKey || idx}`} className="flex gap-4">
                   <div className="w-20 h-24 bg-gray-50 flex-shrink-0">
                     <img src={item.image} alt={item.name} className="w-full h-full object-cover mix-blend-multiply" />
                   </div>
@@ -83,7 +83,7 @@ const CartDrawer = () => {
                         </Link>
                         <p className="font-body text-brand-dark font-medium mt-1">₹{item.price.toLocaleString('en-IN')}</p>
                       </div>
-                      <button onClick={() => removeItem(item._id)} className="text-gray-400 hover:text-red-500">
+                      <button onClick={() => removeItem(item._id, item.variantKey)} className="text-gray-400 hover:text-red-500">
                         <Trash2 size={16} />
                       </button>
                     </div>
@@ -116,18 +116,31 @@ const CartDrawer = () => {
         {cartItems.length > 0 && (
           <div className="p-6 border-t border-gray-100 bg-white">
             <div className="flex justify-between items-center mb-6">
-              <span className="font-heading text-lg text-gray-600">Subtotal</span>
-              <span className="font-heading text-2xl text-brand-dark font-semibold">₹{total.toLocaleString('en-IN')}</span>
+              <span className="font-serif text-[18px] text-[#111] font-[400]">Total:</span>
+              <span className="font-body text-[18px] text-[#111] font-semibold">₹{total.toLocaleString('en-IN')}</span>
             </div>
-            <p className="font-body text-xs text-gray-500 text-center mb-4">
+            <p className="font-body text-[14px] text-[#555] mb-4 text-center">
               Taxes and shipping calculated at checkout
             </p>
-            <button 
-              onClick={handleCheckout}
-              className="w-full bg-brand-dark text-white py-4 font-button uppercase tracking-widest text-sm hover:bg-brand-primary transition-colors"
-            >
-              Checkout
-            </button>
+            <div className="flex flex-col w-full gap-4">
+              <div className="flex items-start gap-2 mb-2">
+                <input type="checkbox" id="agree_checkout" className="mt-1" />
+                <label htmlFor="agree_checkout" className="font-body text-[14px] text-[#555]">
+                  I agree with the <a href="#" className="underline">terms and conditions</a>
+                </label>
+              </div>
+              <button 
+                onClick={handleCheckout}
+                className="w-full bg-[#111111] text-white py-[12px] px-[20px] font-body text-[11px] uppercase tracking-[1px] hover:bg-[#ffb6c1] transition-colors"
+              >
+                Check Out
+              </button>
+              <div className="text-center">
+                <Link to="/cart" onClick={() => setIsOpen(false)} className="font-body text-[14px] text-[#111] underline hover:text-[#ffb6c1] transition-colors">
+                  View Cart
+                </Link>
+              </div>
+            </div>
           </div>
         )}
       </div>

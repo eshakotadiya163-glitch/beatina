@@ -15,6 +15,9 @@ const categorySchema = mongoose.Schema(
     image: {
       type: String,
     },
+    bannerImage: {
+      type: String,
+    },
     description: {
       type: String,
     }

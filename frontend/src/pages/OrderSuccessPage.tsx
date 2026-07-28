@@ -4,7 +4,7 @@ import { CheckCircle } from 'lucide-react';
 
 const OrderSuccessPage = () => {
   return (
-    <div className="pt-32 pb-20 bg-brand-bg min-h-[80vh] flex items-center justify-center">
+    <div className="pt-24 pb-14 bg-brand-bg min-h-[80vh] flex items-center justify-center">
       <div className="container mx-auto px-4 text-center max-w-lg">
         <motion.div
           initial={{ scale: 0 }}

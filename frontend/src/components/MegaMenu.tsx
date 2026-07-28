@@ -1,34 +1,68 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-// Removed unused motion import
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Loader2 } from 'lucide-react';
+import api from '../api/axios';
+import { getImageUrl } from '../utils/imageHelper';
+
+interface Category {
+  _id: string;
+  name: string;
+  slug: string;
+}
+
+interface Product {
+  _id: string;
+  name: string;
+  slug: string;
+  price: number;
+  rating: number;
+  images: { url: string }[];
+}
 
 const MegaMenu = () => {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
+  const [categories, setCategories] = useState<Category[]>([]);
+  const [productsCache, setProductsCache] = useState<Record<string, Product[]>>({});
+  const [loadingCategory, setLoadingCategory] = useState<string | null>(null);
 
-  const categories = [
-    { name: 'Makeup', id: 'makeup', hasMega: true },
-    { name: 'Skin', id: 'skin', hasMega: true },
-    { name: 'Hair', id: 'hair', hasMega: true },
-    { name: 'Bath & Body', id: 'bath-body', hasMega: true },
-    { name: 'Natural', id: 'natural', hasMega: false },
-    { name: 'Fragrance', id: 'fragrance', hasMega: true },
-    { name: 'Health & Wellness', id: 'health', hasMega: false },
-    { name: 'Pop Ups', id: 'popups', hasMega: false },
-  ];
+  useEffect(() => {
+    const fetchCategories = async () => {
+      try {
+        const { data } = await api.get('/categories');
+        setCategories(data);
+      } catch (error) {
+        console.error('Error fetching categories:', error);
+      }
+    };
+    fetchCategories();
+  }, []);
 
-  const megaMenuContent = {
-    makeup: {
-      left: ['Face', 'Eyes', 'Lips', 'Nails', 'Tools & Brushes', 'Top Brands'],
-      rightImage: '/images/products/product-28/main.png',
-      rightText: 'New Arrivals in Makeup'
-    },
-    skin: {
-      left: ['Cleansers', 'Moisturizers', 'Serums & Essences', 'Masks', 'Eye Care', 'Sun Care'],
-      rightImage: '/images/products/niacinamide-alternative-serum/main.png',
-      rightText: 'Discover Skin Minimalism'
+  const handleMouseEnter = async (categorySlug: string) => {
+    setActiveMenu(categorySlug);
+    
+    // Only fetch if not cached
+    if (!productsCache[categorySlug]) {
+      setLoadingCategory(categorySlug);
+      try {
+        const { data } = await api.get(`/products/category/${categorySlug}?limit=4`);
+        setProductsCache(prev => ({
+          ...prev,
+          [categorySlug]: data.products
+        }));
+      } catch (error) {
+        console.error(`Error fetching products for ${categorySlug}:`, error);
+        setProductsCache(prev => ({
+          ...prev,
+          [categorySlug]: []
+        }));
+      } finally {
+        setLoadingCategory(null);
+      }
     }
-    // ... add others as needed
+  };
+
+  const handleMouseLeave = () => {
+    setActiveMenu(null);
   };
 
   return (
@@ -37,51 +71,51 @@ const MegaMenu = () => {
         <ul className="flex items-center justify-between space-x-6 text-sm font-body font-medium text-brand-dark overflow-x-auto no-scrollbar py-3">
           {categories.map((category) => (
             <li 
-              key={category.id}
+              key={category._id}
               className="flex-shrink-0 cursor-pointer hover:text-brand-primary transition-colors py-2 group"
-              onMouseEnter={() => setActiveMenu(category.hasMega ? category.id : null)}
-              onMouseLeave={() => setActiveMenu(null)}
+              onMouseEnter={() => handleMouseEnter(category.slug)}
+              onMouseLeave={handleMouseLeave}
             >
               <div className="flex items-center">
-                <Link to={`/category/${category.id}`}>{category.name}</Link>
-                {category.hasMega && <ChevronDown size={14} className="ml-1 opacity-50 group-hover:opacity-100" />}
+                <Link to={`/shop/category/${category.slug}`}>{category.name}</Link>
+                <ChevronDown size={14} className="ml-1 opacity-50 group-hover:opacity-100" />
               </div>
 
               {/* Mega Dropdown */}
-              {category.hasMega && activeMenu === category.id && (
-                <div className="absolute top-full left-0 w-full bg-white shadow-lg border-t border-gray-100 p-8 grid grid-cols-4 gap-8 z-50">
-                  <div className="col-span-1">
-                    <h4 className="font-heading text-lg mb-4 text-brand-primary">Shop by Category</h4>
-                    <ul className="space-y-3 font-body text-sm text-gray-600">
-                      {megaMenuContent[category.id as keyof typeof megaMenuContent]?.left.map(item => (
-                        <li key={item}><Link to="/shop" className="hover:text-brand-primary hover:underline">{item}</Link></li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="col-span-1">
-                    <h4 className="font-heading text-lg mb-4 text-brand-primary">Top Brands</h4>
-                    <ul className="space-y-3 font-body text-sm text-gray-600">
-                      <li><Link to="/shop" className="hover:text-brand-primary hover:underline">M.A.C</Link></li>
-                      <li><Link to="/shop" className="hover:text-brand-primary hover:underline">Estée Lauder</Link></li>
-                      <li><Link to="/shop" className="hover:text-brand-primary hover:underline">Clinique</Link></li>
-                      <li><Link to="/shop" className="hover:text-brand-primary hover:underline">Bobbi Brown</Link></li>
-                      <li><Link to="/shop" className="hover:text-brand-primary hover:underline">Huda Beauty</Link></li>
-                    </ul>
-                  </div>
-                  <div className="col-span-2 flex justify-end">
-                    <Link to="/shop" className="relative group block w-full max-w-sm overflow-hidden rounded">
-                       <img 
-                        src={megaMenuContent[category.id as keyof typeof megaMenuContent]?.rightImage || '/images/products/product-29/main.png'}
-                        alt="Promo" 
-                        className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" 
-                      />
-                       <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
-                       <div className="absolute bottom-4 left-4 text-white">
-                         <h5 className="font-heading text-xl">{megaMenuContent[category.id as keyof typeof megaMenuContent]?.rightText || 'Explore Now'}</h5>
-                         <span className="text-xs font-button uppercase tracking-widest mt-2 block group-hover:underline">Shop Collection</span>
-                       </div>
+              {activeMenu === category.slug && (
+                <div className="absolute top-full left-0 w-full bg-white shadow-lg border-t border-gray-100 p-8 z-50 min-h-[300px]">
+                  <div className="flex justify-between items-center mb-6 border-b border-gray-100 pb-2">
+                    <h4 className="font-heading text-2xl text-brand-dark">{category.name} Products</h4>
+                    <Link to={`/shop/category/${category.slug}`} className="text-sm font-body text-brand-primary hover:underline">
+                      View All {category.name}
                     </Link>
                   </div>
+                  
+                  {loadingCategory === category.slug ? (
+                    <div className="flex justify-center items-center h-48 w-full">
+                      <Loader2 className="animate-spin text-brand-primary" size={32} />
+                    </div>
+                  ) : productsCache[category.slug]?.length === 0 ? (
+                    <div className="flex justify-center items-center h-48 w-full font-body text-gray-500">
+                      No Products Found
+                    </div>
+                  ) : (
+                    <div className="grid grid-cols-4 gap-6">
+                      {productsCache[category.slug]?.map(product => (
+                        <Link to={`/product/${product.slug}`} key={product._id} className="group block">
+                          <div className="relative aspect-square bg-[#f7f6f3] rounded overflow-hidden mb-3">
+                            <img 
+                              src={getImageUrl(product)} 
+                              alt={product.name} 
+                              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            />
+                          </div>
+                          <h5 className="font-body text-sm text-brand-dark group-hover:text-brand-primary line-clamp-1">{product.name}</h5>
+                          <span className="font-heading text-brand-primary block mt-1">Rs. {product.price.toFixed(2)}</span>
+                        </Link>
+                      ))}
+                    </div>
+                  )}
                 </div>
               )}
             </li>

@@ -32,7 +32,7 @@ const CountdownBanner = () => {
   }, []);
 
   return (
-    <section className="bg-[#ffebf4] py-12 lg:py-16">
+    <section className="bg-[#ffebf4] py-12 lg:py-12">
       <div className="container-fluid mx-auto px-4 md:px-8 max-w-[1400px]">
         <div className="flex flex-col lg:flex-row items-center">
           
@@ -44,10 +44,10 @@ const CountdownBanner = () => {
             viewport={{ once: true }}
             className="w-full lg:w-5/12 text-center lg:text-left mb-8 lg:mb-0"
           >
-            <h3 className="font-serif text-3xl md:text-[32px] text-[#111111] mb-2 font-light">
+            <h3 className="font-serif text-[28px] md:text-[32px] text-[#111111] mb-2 font-[400]">
               Seasonal Savings Event
             </h3>
-            <div className="font-sans text-[#111111] text-[15px] font-light">
+            <div className="font-body text-[#111111] text-[15px] font-[400]">
               Up to 30% Off on Must-Have Styles !
             </div>
           </motion.div>
@@ -69,10 +69,10 @@ const CountdownBanner = () => {
                     key={unit} 
                     className={`px-4 md:px-6 text-center leading-none ${index !== array.length - 1 ? 'border-r border-black/10' : ''}`}
                   >
-                    <span className="block font-serif text-[32px] md:text-[40px] text-[#111111] mb-1 min-w-[50px] md:min-w-[64px] font-light">
+                    <span className="block font-serif text-[28px] md:text-[36px] text-[#111111] mb-1 min-w-[50px] md:min-w-[64px] font-[400]">
                       {value.toString().padStart(2, '0')}
                     </span>
-                    <span className="block font-sans text-[10px] md:text-xs tracking-[1.5px] md:tracking-[2px] uppercase text-[#111111] font-semibold">
+                    <span className="block font-body text-[10px] md:text-[12px] tracking-[1.5px] md:tracking-[1.7px] uppercase text-[#111111] font-[400]">
                       {unit}
                     </span>
                   </li>
@@ -89,8 +89,8 @@ const CountdownBanner = () => {
               className="mt-2 lg:mt-0"
             >
               <Link 
-                to="/shop" 
-                className="group inline-flex items-center justify-center bg-transparent text-[#111111] font-sans text-[11px] md:text-[12px] uppercase tracking-[0.2em] font-semibold px-10 py-[15px] border border-[#111111] transition-all duration-300 hover:bg-[#111111] hover:text-white"
+                to="/shop/category/all?sort=price-ascending" 
+                className="group inline-flex items-center justify-center bg-transparent text-[#111111] font-body text-[13px] md:text-[14px] font-[500] px-[30px] py-[10px] border-[2px] border-[#111111] transition-all duration-300 hover:bg-[#111111] hover:text-white"
               >
                 Shop now
               </Link>

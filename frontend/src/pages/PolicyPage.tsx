@@ -7,7 +7,7 @@ const getPolicyContent = (path: string) => {
       return {
         title: 'Privacy Policy',
         content: `
-          <p>This Privacy Policy describes how beautinacosmetic.com (the "Site" or "we") collects, uses, and discloses your Personal Information when you visit or make a purchase from the Site.</p>
+          <p>This Privacy Policy describes how the woman companycosmetic.com (the "Site" or "we") collects, uses, and discloses your Personal Information when you visit or make a purchase from the Site.</p>
           
           <h3>Collecting Personal Information</h3>
           <p>When you visit the Site, we collect certain information about your device, your interaction with the Site, and information necessary to process your purchases. We may also collect additional information if you contact us for customer support.</p>
@@ -23,7 +23,7 @@ const getPolicyContent = (path: string) => {
       return {
         title: 'Terms of Service',
         content: `
-          <p>This website is operated by Beautina. Throughout the site, the terms "we", "us" and "our" refer to Beautina. Beautina offers this website, including all information, tools and services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here.</p>
+          <p>This website is operated by The Woman Company. Throughout the site, the terms "we", "us" and "our" refer to The Woman Company. The Woman Company offers this website, including all information, tools and services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here.</p>
           
           <h3>Online Store Terms</h3>
           <p>By agreeing to these Terms of Service, you represent that you are at least the age of majority in your state or province of residence.</p>
@@ -74,8 +74,8 @@ const PolicyPage = () => {
   }, [location.pathname]);
 
   return (
-    <main className="pt-24 pb-20 bg-white min-h-screen">
-      <div className="bg-brand-light py-12 mb-16 text-center">
+    <main className="pt-16 pb-14 bg-white min-h-screen">
+      <div className="bg-brand-light py-12 mb-12 text-center">
         <h1 className="font-heading text-4xl text-brand-dark tracking-wide uppercase">{policy.title}</h1>
         <div className="mt-4 flex items-center justify-center gap-2 font-body text-xs text-brand-muted uppercase tracking-widest">
           <span>Home</span>

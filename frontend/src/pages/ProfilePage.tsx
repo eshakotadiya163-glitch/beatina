@@ -96,7 +96,7 @@ const ProfilePage = () => {
   return (
     <AccountLayout title="My Profile">
       {isLoading ? (
-        <div className="flex justify-center items-center py-20">
+        <div className="flex justify-center items-center py-14">
           <Loader2 className="animate-spin text-brand-primary" size={32} />
         </div>
       ) : (

@@ -1,12 +1,13 @@
-import { X, Star, ShoppingBag } from 'lucide-react';
+import { X, Star } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { getImageUrl } from '../utils/imageHelper';
 
 const QuickViewModal = ({ isOpen, onClose, product }: any) => {
   if (!isOpen || !product) return null;
 
   return (
     <AnimatePresence>
-      <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 mt-16">
+      <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 mt-12">
         {/* Backdrop */}
         <motion.div 
           initial={{ opacity: 0 }}
@@ -33,7 +34,7 @@ const QuickViewModal = ({ isOpen, onClose, product }: any) => {
           {/* Left: Image */}
           <div className="w-full md:w-1/2 h-[300px] md:h-auto bg-gray-50 relative group overflow-hidden">
             <img 
-              src={product.images[0]?.url} 
+              src={getImageUrl(product)} 
               alt={product.name} 
               className="w-full h-full object-cover transition-transform duration-700 hover:scale-125 origin-center cursor-crosshair"
             />
@@ -63,10 +64,10 @@ const QuickViewModal = ({ isOpen, onClose, product }: any) => {
             </p>
 
             <div className="mt-auto space-y-4">
-              <button className="w-full bg-brand-primary text-white py-4 font-button uppercase tracking-widest text-xs font-semibold hover:bg-brand-dark transition-colors shadow-lg shadow-brand-primary/20 flex items-center justify-center">
-                <ShoppingBag size={16} className="mr-2" /> Add to Bag
+              <button className="w-full bg-[#111111] text-white py-[15px] px-[30px] font-body uppercase tracking-[1px] text-[11px] hover:bg-[#ffb6c1] transition-colors flex items-center justify-center">
+                Add to Bag
               </button>
-              <button onClick={onClose} className="w-full bg-white text-brand-dark border border-gray-200 py-4 font-button uppercase tracking-widest text-xs font-semibold hover:bg-gray-50 transition-colors">
+              <button onClick={onClose} className="w-full bg-white text-[#111111] border border-[#111111] py-[15px] px-[30px] font-body uppercase tracking-[1px] text-[11px] hover:bg-[#111111] hover:text-white transition-colors">
                 View Full Details
               </button>
             </div>

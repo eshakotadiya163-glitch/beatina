@@ -6,7 +6,7 @@ const AdminDashboardPage = () => {
   const [activeTab, setActiveTab] = useState('dashboard');
 
   return (
-    <div className="pt-32 pb-20 bg-gray-50 min-h-screen">
+    <div className="pt-24 pb-14 bg-gray-50 min-h-screen">
       <div className="container mx-auto px-4 md:px-8 max-w-7xl">
         <h1 className="text-3xl md:text-4xl font-heading mb-12 text-brand-dark">Admin Portal</h1>
 
@@ -127,7 +127,7 @@ const AdminDashboardPage = () => {
               {activeTab !== 'dashboard' && activeTab !== 'products' && (
                  <div>
                    <h2 className="font-heading text-2xl mb-8 capitalize">{activeTab} Management</h2>
-                   <div className="text-center py-20 text-gray-500 font-body text-sm">
+                   <div className="text-center py-14 text-gray-500 font-body text-sm">
                       {activeTab} management panel placeholder
                    </div>
                  </div>

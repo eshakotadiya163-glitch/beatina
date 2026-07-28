@@ -1,14 +1,20 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { ChevronDown, Menu, X } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import AnnouncementBar from './AnnouncementBar';
 import useAuthStore from '../store/authStore';
 import useCartStore from '../store/cartStore';
+import ProductsMegaMenu from './ProductsMegaMenu';
+import BlogMegaMenu from './BlogMegaMenu';
+import ShopMegaMenu from './ShopMegaMenu';
 
 import { useQuery } from '@tanstack/react-query';
 import api from '../api/axios';
 
 const Navbar = () => {
+  const { user } = useAuthStore();
+  const { cartItems, setIsOpen } = useCartStore();
+  const location = useLocation();
   // Fetch real categories for the Mega Menu
   const { data: categories = [] } = useQuery({
     queryKey: ['categories'],
@@ -25,6 +31,16 @@ const Navbar = () => {
       const { data } = await api.get('/products?limit=10');
       return data.products;
     }
+  });
+
+  const { data: wishlist = [] } = useQuery({
+    queryKey: ['wishlist'],
+    queryFn: async () => {
+      if (!user) return [];
+      const { data } = await api.get('/wishlist');
+      return data;
+    },
+    enabled: !!user
   });
 
   const trendingProducts = productsData?.slice(0, 5) || [];
@@ -57,20 +73,13 @@ const Navbar = () => {
       label: 'Products',
       href: '/shop',
       dropdown: true,
-      simple: [
-        { name: 'All Products', href: '/shop' },
-        { name: 'New Arrivals', href: '/shop?sort=newest' },
-        { name: 'Best Sellers', href: '/shop?sort=rating' },
-      ],
+      productsMega: true,
     },
     {
       label: 'Blog',
       href: '/blog',
       dropdown: true,
-      simple: [
-        { name: 'Skincare Tips', href: '/blog' },
-        { name: 'Hair Care Guide', href: '/blog' },
-      ],
+      blogMega: true,
     },
     { label: 'Contact', href: '/contact' },
   ];
@@ -79,9 +88,6 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const hoverTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const { user } = useAuthStore();
-  const { cartItems } = useCartStore();
-  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 40);
@@ -108,34 +114,77 @@ const Navbar = () => {
 
             {/* Left: Search + Mobile Menu */}
             <div className="flex items-center gap-4 flex-1">
-              <button className="md:hidden text-brand-dark" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-                {isMobileMenuOpen ? <X size={22} strokeWidth={1.5} /> : <Menu size={22} strokeWidth={1.5} />}
+              {/* Mobile Hamburger */}
+              <button className="lg:hidden text-brand-dark flex items-center" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+                {isMobileMenuOpen ? (
+                  <svg aria-hidden="true" fill="none" focusable="false" width="24" className="icon icon-close" viewBox="0 0 24 24">
+                    <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
+                  </svg>
+                ) : (
+                  <svg aria-hidden="true" fill="none" focusable="false" width="24" className="icon icon-hamburger" viewBox="0 0 24 24">
+                    <path d="M1 19h22M1 12h22M1 5h22" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square"></path>
+                  </svg>
+                )}
               </button>
-            </div>
 
-            {/* Middle: Logo */}
-            <div className="absolute left-1/2 -translate-x-1/2">
-              <Link to="/" className="flex items-center">
-                <img 
-                  src="/images/migrated/53_Beautina_1.png" 
-                  alt="Beautina" 
-                  className="w-[170px] object-contain"
-                />
-              </Link>
-            </div>
-
-            {/* Right: Icons + Text */}
-            <div className="flex items-center justify-end gap-5 flex-1 text-brand-dark">
-              <button className="hidden lg:flex items-center group hover:text-gray-500 transition-colors">
-                <span className="font-body text-[13px] uppercase mr-2" style={{letterSpacing: '0px'}}>Search</span>
+              {/* Mobile Search Icon */}
+              <button 
+                className="lg:hidden text-brand-dark flex items-center"
+                onClick={() => {
+                  import('../store/searchStore').then(module => module.default.getState().setIsOpen(true));
+                }}
+              >
                 <svg aria-hidden="true" fill="none" focusable="false" width="24" viewBox="0 0 24 24">
                   <path d="M10.364 3a7.364 7.364 0 1 0 0 14.727 7.364 7.364 0 0 0 0-14.727Z" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10"></path>
                   <path d="M15.857 15.858 21 21.001" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round"></path>
                 </svg>
               </button>
               
+              {/* Desktop Search */}
+              <button 
+                className="hidden lg:flex items-center gap-2 group hover:text-gray-500 transition-colors font-body text-sm font-medium tracking-wide uppercase"
+                onClick={() => {
+                  import('../store/searchStore').then(module => module.default.getState().setIsOpen(true));
+                }}
+              >
+                <span>Search</span>
+                <svg aria-hidden="true" fill="none" focusable="false" width="24" viewBox="0 0 24 24">
+                  <path d="M10.364 3a7.364 7.364 0 1 0 0 14.727 7.364 7.364 0 0 0 0-14.727Z" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10"></path>
+                  <path d="M15.857 15.858 21 21.001" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round"></path>
+                </svg>
+              </button>
+            </div>
+
+            {/* Middle: Logo */}
+            <div className="absolute left-1/2 -translate-x-1/2">
+              <Link to="/" className="flex items-center gap-3">
+                {/* Small Logo Placeholder - Using an elegant floral SVG as a fallback if twc-logo.png isn't saved */}
+                <div className="w-[45px] h-[45px] rounded-full bg-[#fcf9f5] border border-gray-200 flex items-center justify-center overflow-hidden shrink-0">
+                  <img 
+                    src="/images/twc-logo.png" 
+                    alt="TWC" 
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      // Fallback to SVG if image is missing
+                      e.currentTarget.style.display = 'none';
+                      e.currentTarget.nextElementSibling?.classList.remove('hidden');
+                    }}
+                  />
+                  <svg className="hidden w-6 h-6 text-[#111111]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M21 12c0 1.2-4 6-9 6s-9-4.8-9-6c0-1.2 4-6 9-6s9 4.8 9 6Z" />
+                    <circle cx="12" cy="12" r="3" />
+                  </svg>
+                </div>
+                <span className="font-serif text-[20px] md:text-[24px] text-[#000000] tracking-wide m-0 leading-none mt-1 whitespace-nowrap">
+                  The Woman Company
+                </span>
+              </Link>
+            </div>
+
+            {/* Right: Icons + Text */}
+            <div className="flex items-center justify-end gap-[18px] flex-1 text-brand-dark">
+              
               <Link to={user ? '/profile' : '/login'} className="hidden lg:flex items-center group hover:text-gray-500 transition-colors cursor-pointer">
-                <span className="font-body text-[13px] uppercase mr-2" style={{letterSpacing: '0px'}}>Login</span>
                 <svg aria-hidden="true" fill="none" focusable="false" width="24" viewBox="0 0 24 24">
                   <path d="M16.125 8.75c-.184 2.478-2.063 4.5-4.125 4.5s-3.944-2.021-4.125-4.5c-.187-2.578 1.64-4.5 4.125-4.5 2.484 0 4.313 1.969 4.125 4.5Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
                   <path d="M3.017 20.747C3.783 16.5 7.922 14.25 12 14.25s8.217 2.25 8.984 6.497" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10"></path>
@@ -143,150 +192,68 @@ const Navbar = () => {
               </Link>
 
               <Link to="/wishlist" className="hidden lg:flex items-center group hover:text-gray-500 transition-colors relative">
-                <span className="font-body text-[13px] uppercase mr-2" style={{letterSpacing: '0px'}}>Wishlist</span>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M16.5429 4C13.4999 4 12 6.99984 12 6.99984C12 6.99984 10.5001 4 7.45712 4C4.98412 4 3.02579 6.06895 3.00048 8.53772C2.94892 13.6623 7.06573 17.3066 11.5782 20.3693C11.7026 20.4539 11.8495 20.4992 12 20.4992C12.1505 20.4992 12.2975 20.4539 12.4219 20.3693C16.9338 17.3066 21.0506 13.6623 20.9995 8.53772C20.9742 6.06895 19.0159 4 16.5429 4Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
+                <span className="absolute -top-[6px] -right-[8px] bg-black text-white text-[10px] w-[18px] h-[18px] flex items-center justify-center rounded-full leading-none">{wishlist.length}</span>
               </Link>
 
               <button 
-                className="flex items-center group hover:text-gray-500 transition-colors relative"
-                onClick={() => {}}
+                className="flex items-center group hover:text-gray-500 transition-colors relative gap-[6px]"
+                onClick={() => setIsOpen(true)}
               >
-                <span className="hidden lg:inline-block font-body text-[13px] uppercase mr-2" style={{letterSpacing: '0px'}}>Cart</span>
-                <svg aria-hidden="true" fill="none" focusable="false" width="24" viewBox="0 0 24 24">
-                  <path d="M10 7h13l-4 9H7.5L5 3H1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
-                  <circle cx="9" cy="20" r="1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></circle>
-                  <circle cx="17" cy="20" r="1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></circle>
-                </svg>
-                <span className="font-body text-[14px] ml-1">{cartItems.length}</span>
+                <span className="font-body text-[14px] font-medium tracking-wide uppercase hidden lg:block">Cart</span>
+                <div className="relative flex items-center">
+                  <svg aria-hidden="true" fill="none" focusable="false" width="24" viewBox="0 0 24 24">
+                    <path d="M10 7h13l-4 9H7.5L5 3H1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
+                    <circle cx="9" cy="20" r="1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></circle>
+                    <circle cx="17" cy="20" r="1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></circle>
+                  </svg>
+                  <span className="absolute -top-[6px] -right-[10px] bg-black text-white text-[10px] w-[18px] h-[18px] flex items-center justify-center rounded-full leading-none">{cartItems.length}</span>
+                </div>
               </button>
             </div>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex justify-center flex-wrap pb-2">
+          <nav className="hidden lg:flex justify-center flex-wrap pb-4">
             {navLinks.map((link) => {
               const isActive = location.pathname === link.href || (link.href !== '/' && location.pathname.startsWith(link.href));
               
               return (
                 <div
                   key={link.href + link.label}
-                  className="relative h-full mx-2"
+                  className="static h-full mx-[14px]"
                   onMouseEnter={() => link.dropdown ? handleMouseEnter(link.label) : undefined}
                   onMouseLeave={link.dropdown ? handleMouseLeave : undefined}
                 >
                   <Link
                     to={link.href}
-                    className={`flex items-center gap-1 px-[12px] py-[15px] font-body text-[14px] font-semibold text-brand-dark hover:text-brand-dark/70 transition-colors relative group ${openDropdown === link.label ? 'opacity-70' : ''}`}
+                    className={`flex items-center gap-1 px-[8px] py-[8px] font-body text-[13px] uppercase tracking-wider text-black hover:opacity-70 transition-opacity relative group`}
                   >
                     {link.label}
                     {link.dropdown && <ChevronDown size={14} strokeWidth={2} className={`transition-transform duration-200 ${openDropdown === link.label ? 'rotate-180' : ''}`} />}
                     
                     {/* Active Route Underline */}
-                    <span className={`absolute bottom-[10px] left-[12px] w-[calc(100%-24px)] h-[2px] bg-brand-dark transition-transform duration-300 origin-left ${isActive ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`} />
+                    <span className={`absolute bottom-0 left-[8px] w-[calc(100%-16px)] h-[1px] bg-black transition-transform duration-300 origin-left ${isActive ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`} />
                   </Link>
 
                   {/* Mega Menu (Shop) */}
                   {link.mega && openDropdown === link.label && (
-                    <div
-                      className="absolute top-full left-1/2 -translate-x-1/2 w-[900px] bg-white border border-brand-border shadow-xl z-50 p-8"
-                      onMouseEnter={() => handleMouseEnter(link.label)}
-                      onMouseLeave={handleMouseLeave}
-                    >
-                      <div className="grid grid-cols-4 gap-8">
-                        {/* Categories */}
-                        <div>
-                          <p className="font-body text-[10px] uppercase tracking-[0.2em] text-brand-muted mb-4">Category</p>
-                          <div className="flex flex-col gap-3">
-                            {link.mega.categories.map((cat: any) => (
-                              <Link
-                                key={cat.name}
-                                to={cat.href}
-                                className="flex items-center gap-3 group/cat"
-                                onClick={() => setOpenDropdown(null)}
-                              >
-                                <div className="w-10 h-12 overflow-hidden bg-brand-light flex-shrink-0">
-                                  <img src={cat.img} alt={cat.name} className="w-full h-full object-cover" loading="lazy" />
-                                </div>
-                                <span className="font-body text-sm text-brand-dark group-hover/cat:text-brand-accent transition-colors">{cat.name}</span>
-                              </Link>
-                            ))}
-                            <Link to="/shop" className="font-body text-xs text-brand-dark underline mt-1" onClick={() => setOpenDropdown(null)}>
-                              Shop all
-                            </Link>
-                          </div>
-                        </div>
-
-                        {/* Trending Now */}
-                        <div>
-                          <p className="font-body text-[10px] uppercase tracking-[0.2em] text-brand-muted mb-4">Trending Now</p>
-                          <div className="flex flex-col gap-3">
-                            {link.mega.trending.map((item: any) => (
-                              <Link
-                                key={item.name}
-                                to={item.href}
-                                className="font-body text-sm text-brand-dark hover:text-brand-accent transition-colors"
-                                onClick={() => setOpenDropdown(null)}
-                              >
-                                {item.name}
-                              </Link>
-                            ))}
-                          </div>
-                        </div>
-
-                        {/* Best Sellers */}
-                        <div>
-                          <p className="font-body text-[10px] uppercase tracking-[0.2em] text-brand-muted mb-4">Best Sellers</p>
-                          <div className="flex flex-col gap-3">
-                            {link.mega.bestSellers.map((item: any) => (
-                              <Link
-                                key={item.name}
-                                to={item.href}
-                                className="font-body text-sm text-brand-accent hover:underline transition-colors"
-                                onClick={() => setOpenDropdown(null)}
-                              >
-                                {item.name}
-                              </Link>
-                            ))}
-                          </div>
-                        </div>
-
-                        {/* Promo Image */}
-                        <div className="relative aspect-[4/3] overflow-hidden bg-brand-light">
-                          <img
-                            src={link.mega.promoImg}
-                            alt="Shop 20%"
-                            className="w-full h-full object-cover object-center"
-                            loading="lazy"
-                          />
-                          <div className="absolute bottom-0 left-0 right-0 bg-white/80 py-2 text-center">
-                            <span className="font-body text-xs uppercase tracking-[0.2em] text-brand-dark">Shop 20%</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <ShopMegaMenu onClose={() => setOpenDropdown(null)} initialCategories={categories} />
                   )}
 
-                  {/* Simple dropdown (Products, Blog) */}
-                  {link.simple && openDropdown === link.label && (
-                    <div
-                      className="absolute top-full left-0 min-w-[180px] bg-white border border-brand-border shadow-lg z-50 py-2"
-                      onMouseEnter={() => handleMouseEnter(link.label)}
-                      onMouseLeave={handleMouseLeave}
-                    >
-                      {link.simple.map((item) => (
-                        <Link
-                          key={item.name}
-                          to={item.href}
-                          className="block px-5 py-2.5 font-body text-sm text-brand-dark hover:bg-brand-light transition-colors"
-                          onClick={() => setOpenDropdown(null)}
-                        >
-                          {item.name}
-                        </Link>
-                      ))}
-                    </div>
+                  {/* Products Mega Menu */}
+                  {link.productsMega && openDropdown === link.label && (
+                    <ProductsMegaMenu onClose={() => setOpenDropdown(null)} />
                   )}
+
+                  {/* Blog Mega Menu */}
+                  {link.blogMega && openDropdown === link.label && (
+                    <BlogMegaMenu onClose={() => setOpenDropdown(null)} />
+                  )}
+
+
                 </div>
               );
             })}

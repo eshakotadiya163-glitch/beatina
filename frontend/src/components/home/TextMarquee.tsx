@@ -18,7 +18,7 @@ const TextMarquee = () => {
               {items.map((item, index) => (
                 <span 
                   key={index} 
-                  className="px-[3rem] font-heading text-[1.75rem] font-semibold m-0 flex items-center"
+                  className="px-[4rem] font-serif text-[32px] md:text-[40px] font-bold uppercase m-0 flex items-center tracking-wide"
                 >
                   {item}
                 </span>

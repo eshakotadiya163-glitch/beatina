@@ -43,7 +43,7 @@ const ProductTabs = () => {
   const displayed = getFiltered();
 
   return (
-    <section className="py-16 md:py-20 bg-brand-light">
+    <section className="py-12 md:py-14 bg-brand-light">
       <div className="max-w-[1550px] mx-auto px-4 md:px-8">
         {/* Tab Header */}
         <div className="flex items-center justify-between mb-10 flex-wrap gap-4">
@@ -65,7 +65,7 @@ const ProductTabs = () => {
         </div>
 
         {isLoading ? (
-          <div className="flex justify-center py-20">
+          <div className="flex justify-center py-14">
             <Loader2 className="animate-spin text-brand-dark w-6 h-6" />
           </div>
         ) : (
@@ -77,7 +77,7 @@ const ProductTabs = () => {
         )}
 
         <div className="text-center mt-10">
-          <Link to="/shop" className="btn-outline">
+          <Link to="/shop/category/all" className="btn-outline">
             View All Products
           </Link>
         </div>

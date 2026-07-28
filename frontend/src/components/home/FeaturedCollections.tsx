@@ -17,16 +17,16 @@ const FeaturedCollections = () => {
   });
 
   return (
-    <section className="py-16 md:py-24 bg-white overflow-hidden">
+    <section className="py-[50px] bg-white overflow-hidden">
       <div className="container mx-auto px-4 md:px-8">
-        <div className="mb-14 text-center">
-          <p className="font-body text-[10px] text-brand-muted uppercase tracking-[0.25em] mb-3">
+        <div className="mb-[40px] text-center">
+          <p className="font-body text-[12px] md:text-[14px] text-[#555] uppercase tracking-[0.2em] mb-2 font-bold">
             Luxury Essentials
           </p>
-          <h3 className="font-heading text-3xl md:text-[44px] font-light text-brand-dark mb-5 leading-tight">
+          <h3 className="font-serif text-[32px] md:text-[40px] font-bold text-[#000] mb-2">
             Must-Have Beauty
           </h3>
-          <p className="font-body text-[15px] text-brand-muted max-w-2xl mx-auto leading-relaxed">
+          <p className="font-body text-[#777] text-[16px] max-w-2xl mx-auto">
             Elevate your beauty routine with our curated selection of premium skincare and makeup essentials.
           </p>
         </div>
@@ -39,7 +39,7 @@ const FeaturedCollections = () => {
               prevEl: '.swiper-button-prev-collections',
             }}
             pagination={{ clickable: true, el: '.swiper-pagination-collections' }}
-            spaceBetween={15}
+            spaceBetween={30}
             slidesPerView={2}
             loop={true}
             breakpoints={{
@@ -50,25 +50,23 @@ const FeaturedCollections = () => {
           >
             {collections.map((collection: any, index: number) => (
               <SwiperSlide key={index}>
-                <div className="text-center group">
-                  <Link to={`/category/${collection.slug}`} className="block mb-4">
+                <div className="text-center group cursor-pointer">
+                  <Link to={`/shop/category/${collection.slug}`} className="block mb-[20px]">
                     <div className="relative w-full overflow-hidden bg-brand-light" style={{ paddingTop: '125.03%' }}>
-                      {collection.image && (
-                        <img 
-                          src={collection.image} 
-                          alt={collection.name} 
-                          className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
-                          loading="lazy"
-                        />
-                      )}
+                      <img 
+                        src={collection.image || '/placeholder.png'} 
+                        alt={collection.name} 
+                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-105 filter grayscale-[20%] hover:grayscale-0"
+                        loading="lazy"
+                      />
                     </div>
                   </Link>
-                  <h4 className="font-heading text-lg md:text-xl text-brand-dark mb-1">
-                    <Link to={`/category/${collection.slug}`} className="hover:text-brand-accent transition-colors">
+                  <h4 className="font-body text-[18px] md:text-[20px] text-[#000] mb-1 font-[600]">
+                    <Link to={`/shop/category/${collection.slug}`} className="hover:text-brand-accent transition-colors">
                       {collection.name}
                     </Link>
                   </h4>
-                  <p className="font-body text-sm text-brand-muted">10 Items</p>
+                  <p className="font-body text-[14px] text-[#999] mb-[40px]">10 Items</p>
                 </div>
               </SwiperSlide>
             ))}

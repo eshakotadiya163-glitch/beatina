@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom';
 
-// Real Beautina Moisture Cream collection banner
+// Real The Woman Company Moisture Cream collection banner
 const TwoColumnBanner = () => {
   return (
-    <section className="py-16 md:py-20 bg-white">
+    <section className="py-12 md:py-14 bg-white">
       <div className="max-w-[1550px] mx-auto px-4 md:px-8">
         <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
           {/* Left: Text block */}
-          <div className="w-full md:w-5/12 flex flex-col justify-center py-8 md:py-16">
+          <div className="w-full md:w-5/12 flex flex-col justify-center py-8 md:py-12">
             <span className="section-label">Featured</span>
             <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-light text-brand-dark mb-6 leading-tight" style={{ letterSpacing: '-0.02em' }}>
               Moisture Cream
@@ -16,7 +16,7 @@ const TwoColumnBanner = () => {
               Deeply nourishing moisture creams powered by organic botanicals to restore skin's natural barrier, leaving it soft, supple and radiant.
             </p>
             <div className="flex gap-4">
-              <Link to="/category/moisture-cream" className="btn-primary">
+              <Link to="/shop/category/skin-care" className="btn-primary">
                 Shop Collection
               </Link>
             </div>

@@ -39,4 +39,38 @@ const admin = (req, res, next) => {
   }
 };
 
-export { protect, admin };
+// Vendor middleware
+const vendor = (req, res, next) => {
+  if (req.user && (req.user.isVendor || req.user.isAdmin)) {
+    next();
+  } else {
+    res.status(401);
+    next(new Error('Not authorized as a vendor'));
+  }
+};
+
+// Role-based middleware
+const requireRole = (...roles) => {
+  return (req, res, next) => {
+    if (req.user && (roles.includes(req.user.role) || req.user.role === 'superadmin')) {
+      next();
+    } else {
+      res.status(403);
+      next(new Error('Access denied: Insufficient role permissions'));
+    }
+  };
+};
+
+// Permission-based middleware
+const requirePermission = (permission) => {
+  return (req, res, next) => {
+    if (req.user && (req.user.role === 'superadmin' || req.user.permissions?.includes(permission))) {
+      next();
+    } else {
+      res.status(403);
+      next(new Error(`Access denied: Requires ${permission} permission`));
+    }
+  };
+};
+
+export { protect, admin, vendor, requireRole, requirePermission };

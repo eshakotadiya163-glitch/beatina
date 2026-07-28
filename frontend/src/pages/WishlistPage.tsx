@@ -5,6 +5,7 @@ import { Trash2, ShoppingBag, Heart, Loader2 } from 'lucide-react';
 import AccountLayout from '../components/AccountLayout';
 import api from '../api/axios';
 import useCartStore from '../store/cartStore';
+import { getImageUrl } from '../utils/imageHelper';
 
 const WishlistPage = () => {
   const queryClient = useQueryClient();
@@ -37,7 +38,7 @@ const WishlistPage = () => {
   return (
     <AccountLayout title="My Wishlist">
       {isLoading ? (
-        <div className="flex justify-center items-center py-20">
+        <div className="flex justify-center items-center py-14">
           <Loader2 className="animate-spin text-brand-primary" size={32} />
         </div>
       ) : !wishlist || wishlist.length === 0 ? (
@@ -47,7 +48,7 @@ const WishlistPage = () => {
           <p className="font-body text-gray-500 mb-8">Save items you love to build your perfect collection.</p>
           <Link
             to="/shop"
-            className="border border-brand-dark px-8 py-3 font-button uppercase tracking-widest text-xs hover:bg-brand-dark hover:text-white transition-colors"
+            className="border border-[#111111] px-[30px] py-[15px] font-body uppercase tracking-[1px] text-[11px] hover:bg-[#111111] hover:text-white transition-colors inline-block"
           >
             Discover Products
           </Link>
@@ -58,7 +59,7 @@ const WishlistPage = () => {
             <div key={product._id} className="group bg-white border border-gray-100 shadow-sm rounded-sm flex flex-col relative overflow-hidden">
               <Link to={`/product/${product._id}`} className="relative aspect-[3/4] block overflow-hidden bg-gray-50">
                 <img 
-                  src={product.images[0]?.url} 
+                  src={getImageUrl(product)} 
                   alt={product.name} 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
                 />
@@ -85,7 +86,7 @@ const WishlistPage = () => {
                   <button
                     onClick={() => handleMoveToCart(product)}
                     disabled={product.countInStock === 0}
-                    className="w-full border border-brand-dark text-brand-dark py-2.5 font-button text-[10px] uppercase tracking-widest hover:bg-brand-dark hover:text-white transition-colors flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full border border-[#111111] text-[#111111] py-[10px] font-body text-[11px] uppercase tracking-[1px] hover:bg-[#111111] hover:text-white transition-colors flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     <ShoppingBag size={14} className="mr-2" />
                     {product.countInStock > 0 ? 'Move to Bag' : 'Out of Stock'}

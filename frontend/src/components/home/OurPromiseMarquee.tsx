@@ -1,4 +1,4 @@
-// Real promise icons from Beautina (from zest-cosmo CDN which they use)
+// Real promise icons from The Woman Company (from zest-cosmo CDN which they use)
 const promises = [
   {
     icon: '/images/migrated/15_highlight-icon-1.webp',
@@ -22,7 +22,7 @@ const promises = [
   },
 ];
 
-// Marquee text matching Beautina's "Time To Achieve More With Less"
+// Marquee text matching The Woman Company's "Time To Achieve More With Less"
 const marqueeText = [
   'TIME TO ACHIEVE MORE WITH LESS',
   '✦',
@@ -42,7 +42,7 @@ const OurPromiseMarquee = () => {
   return (
     <section className="bg-white border-y border-brand-border">
       {/* Promise icons */}
-      <div className="max-w-[1550px] mx-auto px-4 md:px-8 py-14 md:py-16">
+      <div className="max-w-[1550px] mx-auto px-4 md:px-8 py-14 md:py-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
           {promises.map((item, i) => (
             <div key={i} className="flex flex-col items-center text-center group">
@@ -72,7 +72,7 @@ const OurPromiseMarquee = () => {
         </div>
       </div>
 
-      {/* Scrolling Marquee - matches Beautina's "TIME TO ACHIEVE MORE WITH LESS" */}
+      {/* Scrolling Marquee - matches The Woman Company's "TIME TO ACHIEVE MORE WITH LESS" */}
       <div className="overflow-hidden border-t border-brand-border py-5 bg-brand-light">
         <div className="flex whitespace-nowrap" style={{ animation: 'marquee 25s linear infinite' }}>
           {[...marqueeText, ...marqueeText].map((text, i) => (

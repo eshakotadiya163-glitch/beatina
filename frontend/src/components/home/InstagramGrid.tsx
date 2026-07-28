@@ -29,18 +29,23 @@ const itemVariants = {
 const InstagramGrid = () => {
   return (
     <section className="bg-white">
-      <div className="container mx-auto px-4 md:px-8 py-10 md:py-16 text-center">
+      <div className="container mx-auto px-4 md:px-8 py-10 md:py-12 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="inline-flex items-center justify-center gap-3"
+          className="mb-10"
         >
-          <Instagram size={28} strokeWidth={1.5} className="text-[#111111]" />
-          <h2 className="font-serif text-2xl md:text-3xl text-[#111111] font-light">
-            @Beautina
-          </h2>
+          <div className="font-body text-[13px] md:text-[15px] font-[400] text-gray-500 mb-2 capitalize">
+            follow us
+          </div>
+          <h3 className="font-serif text-[28px] md:text-[36px] lg:text-[42px] text-[#111111] font-[400] mb-2 leading-tight">
+            <span>@The Woman Company</span>
+          </h3>
+          <div className="font-body text-[15px] md:text-[16px] text-gray-500 font-[400]">
+            Join our community of beauty enthusiasts on Instagram.
+          </div>
         </motion.div>
       </div>
       
@@ -55,7 +60,7 @@ const InstagramGrid = () => {
           <motion.a 
             key={index} 
             variants={itemVariants}
-            href="https://instagram.com/beautina" 
+            href="https://instagram.com/the woman company" 
             target="_blank" 
             rel="noopener noreferrer"
             className="group relative block aspect-square overflow-hidden"

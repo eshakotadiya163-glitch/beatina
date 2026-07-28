@@ -2,6 +2,7 @@ import User from '../models/User.js';
 import generateToken from '../utils/generateToken.js';
 import crypto from 'crypto';
 import sendEmail from '../utils/sendEmail.js';
+import { adminAuth } from '../config/firebase.js';
 
 // @desc    Auth user & get token
 // @route   POST /api/users/login
@@ -28,6 +29,81 @@ const authUser = async (req, res, next) => {
     }
   } catch (error) {
     next(error);
+  }
+};
+
+// @desc    Auth user via Firebase (Phone OTP / Google / Facebook)
+// @route   POST /api/users/firebase-auth
+// @access  Public
+const firebaseAuth = async (req, res, next) => {
+  try {
+    const { token, firstName, lastName } = req.body;
+    
+    if (!token) {
+      res.status(400);
+      throw new Error('No Firebase token provided');
+    }
+
+    // Verify token with Firebase Admin
+    const decodedToken = await adminAuth.verifyIdToken(token);
+    
+    const phoneNumber = decodedToken.phone_number;
+    const email = decodedToken.email;
+    const displayName = decodedToken.name || '';
+    const photoURL = decodedToken.picture || '';
+
+    let user;
+
+    if (email) {
+      // Google / Facebook / Email login
+      user = await User.findOne({ email });
+
+      if (!user) {
+        // Split displayName into first/last
+        const nameParts = displayName.split(' ');
+        const fName = firstName || nameParts[0] || 'User';
+        const lName = lastName || nameParts.slice(1).join(' ') || '';
+
+        user = await User.create({
+          firstName: fName,
+          lastName: lName,
+          email,
+          photoURL,
+          // Set a random password since they use social login
+          password: crypto.randomBytes(20).toString('hex'),
+        });
+      }
+    } else if (phoneNumber) {
+      // Phone OTP login
+      user = await User.findOne({ phoneNumber });
+
+      if (!user) {
+        user = await User.create({
+          firstName: firstName || 'User',
+          lastName: lastName || '',
+          phoneNumber,
+        });
+      }
+    } else {
+      res.status(400);
+      throw new Error('Token does not contain email or phone number');
+    }
+
+    generateToken(res, user._id);
+
+    res.json({
+      _id: user._id,
+      firstName: user.firstName,
+      lastName: user.lastName,
+      email: user.email,
+      phoneNumber: user.phoneNumber,
+      isAdmin: user.isAdmin,
+    });
+
+  } catch (error) {
+    console.error('Firebase Auth Error:', error);
+    res.status(401);
+    throw new Error('Invalid Firebase token');
   }
 };
 
@@ -404,7 +480,8 @@ const updateUser = async (req, res, next) => {
       user.firstName = req.body.firstName || user.firstName;
       user.lastName = req.body.lastName || user.lastName;
       user.email = req.body.email || user.email;
-      user.isAdmin = Boolean(req.body.isAdmin);
+      user.isAdmin = req.body.isAdmin !== undefined ? Boolean(req.body.isAdmin) : user.isAdmin;
+      user.isVendor = req.body.isVendor !== undefined ? Boolean(req.body.isVendor) : user.isVendor;
 
       const updatedUser = await user.save();
 
@@ -414,6 +491,7 @@ const updateUser = async (req, res, next) => {
         lastName: updatedUser.lastName,
         email: updatedUser.email,
         isAdmin: updatedUser.isAdmin,
+        isVendor: updatedUser.isVendor,
       });
     } else {
       res.status(404);
@@ -463,4 +541,5 @@ export {
   getUserById,
   updateUser,
   deleteUser,
+  firebaseAuth,
 };

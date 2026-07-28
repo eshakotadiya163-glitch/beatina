@@ -13,7 +13,7 @@ const TrackOrderPage = () => {
   };
 
   return (
-    <div className="pt-32 pb-20 bg-brand-bg min-h-[80vh]">
+    <div className="pt-24 pb-14 bg-brand-bg min-h-[80vh]">
       <div className="container mx-auto px-4 max-w-3xl">
         <h1 className="text-3xl font-heading text-center mb-2 text-brand-dark">Track Your Order</h1>
         <p className="text-center text-sm font-body text-gray-500 mb-10 tracking-wide">Enter your order details to see the current status.</p>

@@ -1,0 +1,12 @@
+{
+  "bodyFont": "Figtree, sans-serif",
+  "bodyColor": "rgb(34, 34, 34)",
+  "bodyBackground": "rgb(255, 255, 255)",
+  "h1Font": "Fraunces, serif",
+  "h1Color": "rgb(34, 34, 34)",
+  "h1Transform": "uppercase",
+  "buttonFont": null,
+  "buttonBg": null,
+  "buttonColor": null,
+  "buttonTransform": null
+}

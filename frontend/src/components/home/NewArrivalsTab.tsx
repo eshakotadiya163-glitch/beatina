@@ -22,8 +22,8 @@ const NewArrivalsTab: React.FC<NewArrivalsTabProps> = ({ products }) => {
   }, [products, activeTab]);
 
   return (
-    <section className="bg-white overflow-hidden py-16 md:py-24">
-      <div className="mx-auto max-w-[1550px] px-4 sm:px-6 lg:px-8">
+    <section className="bg-white overflow-hidden py-[50px]">
+      <div className="container mx-auto px-4 md:px-8">
         
         {/* Centered Heading & Subtitle */}
         <motion.div 
@@ -31,41 +31,35 @@ const NewArrivalsTab: React.FC<NewArrivalsTabProps> = ({ products }) => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-10 md:mb-14"
+          className="text-center mb-[40px]"
         >
-          <h3 className="font-heading text-3xl md:text-4xl font-light leading-tight mb-3 text-black">
+          <h3 className="font-serif text-[32px] md:text-[40px] font-bold text-[#000] mb-2">
             New Arrivals
           </h3>
-          <p className="font-body text-[15px] text-brand-muted max-w-2xl mx-auto">
+          <p className="font-body text-[#777] text-[16px] max-w-2xl mx-auto">
             Traditional divides between personal and professional space.
           </p>
         </motion.div>
 
         {/* Tabs */}
-        <div className="text-center mb-12">
-          <div className="inline-flex justify-center flex-wrap gap-4 md:gap-8">
+        <div className="text-center mb-[40px] flex justify-center -mt-4">
+          <div className="inline-flex justify-center gap-6 md:gap-10 border-b border-transparent">
             {tabs.map((tab) => (
               <button 
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`relative px-2 py-2 text-lg md:text-[20px] transition-colors duration-300 ${
-                  activeTab === tab ? 'text-black font-medium' : 'text-gray-400 font-normal hover:text-gray-600'
+                className={`relative px-1 py-2 text-[14px] md:text-[16px] font-[500] transition-colors duration-300 ${
+                  activeTab === tab ? 'text-[#000] border-b-2 border-[#000]' : 'text-[#777] hover:text-[#000]'
                 }`}
               >
                 {tab}
-                {activeTab === tab && (
-                  <motion.span 
-                    layoutId="activeTabUnderline"
-                    className="absolute left-0 right-0 bottom-0 h-[2px] bg-black"
-                  />
-                )}
               </button>
             ))}
           </div>
         </div>
 
         {/* Slider */}
-        <div className="w-full relative group">
+        <div className="w-full relative group/slider">
           {/* We use a key based on activeTab to force Swiper to remount and reset position when tab changes */}
           <Swiper
             key={activeTab}
@@ -95,10 +89,10 @@ const NewArrivalsTab: React.FC<NewArrivalsTabProps> = ({ products }) => {
           </Swiper>
           
           {/* Custom Navigation Arrows */}
-          <button className="swiper-button-prev-arrivals absolute left-0 top-[40%] -translate-y-1/2 -translate-x-4 md:-translate-x-6 z-10 w-10 h-10 bg-white rounded-full shadow-[0_0_10px_rgba(0,0,0,0.1)] flex items-center justify-center text-brand-dark opacity-0 group-hover:opacity-100 transition-opacity disabled:opacity-0 cursor-pointer">
+          <button className="swiper-button-prev-arrivals absolute left-0 top-[40%] -translate-y-1/2 -translate-x-4 md:-translate-x-6 z-10 w-10 h-10 bg-white rounded-full shadow-[0_0_10px_rgba(0,0,0,0.1)] flex items-center justify-center text-brand-dark opacity-0 group-hover/slider:opacity-100 transition-opacity disabled:opacity-0 cursor-pointer">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7"/></svg>
           </button>
-          <button className="swiper-button-next-arrivals absolute right-0 top-[40%] -translate-y-1/2 translate-x-4 md:translate-x-6 z-10 w-10 h-10 bg-white rounded-full shadow-[0_0_10px_rgba(0,0,0,0.1)] flex items-center justify-center text-brand-dark opacity-0 group-hover:opacity-100 transition-opacity disabled:opacity-0 cursor-pointer">
+          <button className="swiper-button-next-arrivals absolute right-0 top-[40%] -translate-y-1/2 translate-x-4 md:translate-x-6 z-10 w-10 h-10 bg-white rounded-full shadow-[0_0_10px_rgba(0,0,0,0.1)] flex items-center justify-center text-brand-dark opacity-0 group-hover/slider:opacity-100 transition-opacity disabled:opacity-0 cursor-pointer">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/></svg>
           </button>
           

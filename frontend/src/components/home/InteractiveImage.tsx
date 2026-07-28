@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 
@@ -73,16 +72,26 @@ const InteractiveImage = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
         >
-          <Link 
-            to="/shop" 
-            className="group inline-flex items-center justify-center bg-[#111111] text-white font-sans text-[11px] md:text-[12px] uppercase tracking-[0.2em] font-semibold px-10 py-[15px] border border-[#111111] transition-all duration-300 hover:bg-white hover:text-[#111111]"
+          <button 
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            className="group inline-flex items-center justify-center bg-[#111111] text-white font-sans text-[11px] md:text-[12px] uppercase tracking-[0.2em] font-semibold px-10 py-[15px] border border-[#111111] transition-all duration-300 hover:bg-white hover:text-[#111111] cursor-pointer"
           >
             discover now
-          </Link>
+          </button>
         </motion.div>
       </motion.div>
 
       {/* Floating Parallax Images */}
+      <img
+        ref={(el) => { imagesRef.current[0] = el; }}
+        src="/images/migrated/20_gallery-image-1.jpg"
+        alt=""
+        data-speed="0.15"
+        className="absolute top-[7vw] left-[4vw] w-[25vw] h-[30vw] md:w-[16vw] md:h-[20vw] object-cover transition-transform duration-75 ease-out z-10 opacity-70 md:opacity-100"
+      />
       <img
         ref={(el) => { imagesRef.current[1] = el; }}
         src="/images/migrated/22_gallery-5-v2.webp"
@@ -92,23 +101,11 @@ const InteractiveImage = () => {
       />
       <img
         ref={(el) => { imagesRef.current[2] = el; }}
-        src="/images/migrated/49_b12_720x_301f00ae-898e-41d1-b635-14ec61052c17.webp"
+        src="/images/migrated/23_fleur-kaan-w4Dj3MshHQ0-unsplash.jpg"
         alt=""
         data-speed="0.15"
-        className="absolute bottom-[10vw] right-[5vw] w-[35vw] h-[25vw] md:w-[22vw] md:h-[15vw] object-cover transition-transform duration-75 ease-out z-10 opacity-60 md:opacity-100"
+        className="absolute bottom-[-4vw] left-[-3vw] w-[25vw] h-[30vw] md:w-[16vw] md:h-[20vw] object-cover transition-transform duration-75 ease-out z-10 opacity-70 md:opacity-100"
       />
-      
-      {/* Absolute image container to limit bounds of the main image */}
-      <div className="absolute inset-4 md:inset-[5vw] lg:inset-[8vw] z-0 pointer-events-none rounded-[40px] overflow-hidden">
-        {/* Main Background Image - Now placed absolutely */}
-        <img 
-          ref={(el) => { imagesRef.current[0] = el; }}
-          src="/images/migrated/50_about-img-2.webp"
-          alt="Beauty routine" 
-          className="absolute inset-0 w-full h-full object-cover rounded-none md:rounded-[40px] scale-110"
-          data-speed="0.2"
-        />
-      </div>
       <img
         ref={(el) => { imagesRef.current[3] = el; }}
         src="/images/migrated/24_3.11_a206c225-bd03-40da-8e5f-e3a3e160e25a.webp"

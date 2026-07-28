@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App.tsx';
-// Exact Beautina fonts: Fraunces (headings) + Figtree (body)
+// Exact The Woman Company fonts: Fraunces (headings) + Figtree (body)
 import '@fontsource/fraunces/400.css';
 import '@fontsource/fraunces/600.css';
 import '@fontsource/fraunces/700.css';

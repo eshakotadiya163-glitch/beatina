@@ -26,7 +26,7 @@ const OrderHistoryPage = () => {
   return (
     <AccountLayout title="Order History">
       {isLoading ? (
-        <div className="flex justify-center items-center py-20">
+        <div className="flex justify-center items-center py-14">
           <Loader2 className="animate-spin text-brand-primary" size={32} />
         </div>
       ) : error ? (

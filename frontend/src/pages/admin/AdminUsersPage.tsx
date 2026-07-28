@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { Search, Loader2, ShieldAlert, ShieldCheck, Trash2, Mail } from 'lucide-react';
+import { Search, Loader2, ShieldAlert, ShieldCheck, Trash2, Mail, Package } from 'lucide-react';
 import { toast } from 'react-hot-toast';
 import api from '../../api/axios';
 
@@ -29,6 +29,23 @@ const AdminUsersPage = () => {
     }
   });
 
+  const updateMutation = useMutation({
+    mutationFn: async ({ id, isVendor }: { id: string, isVendor: boolean }) => {
+      await api.put(`/users/${id}`, { isVendor });
+    },
+    onSuccess: () => {
+      toast.success('User updated');
+      queryClient.invalidateQueries({ queryKey: ['adminUsers'] });
+    },
+    onError: (error: any) => {
+      toast.error(error.response?.data?.message || 'Failed to update user');
+    }
+  });
+
+  const handleToggleVendor = (id: string, currentVendor: boolean) => {
+    updateMutation.mutate({ id, isVendor: !currentVendor });
+  };
+
   const handleDelete = (id: string, isAdmin: boolean) => {
     if (isAdmin) {
       toast.error('Cannot delete an admin user');
@@ -48,7 +65,7 @@ const AdminUsersPage = () => {
   }) || [];
 
   return (
-    <div className="space-y-6 pb-20">
+    <div className="space-y-6 pb-14">
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
         <div>
           <h1 className="text-2xl font-heading text-brand-dark">Customers</h1>
@@ -120,6 +137,11 @@ const AdminUsersPage = () => {
                           <ShieldCheck size={12} />
                           <span>Admin</span>
                         </span>
+                      ) : user.isVendor ? (
+                        <span className="inline-flex items-center space-x-1 px-2 py-1 rounded-sm text-[10px] uppercase font-button tracking-widest bg-blue-100 text-blue-700">
+                          <Package size={12} />
+                          <span>Vendor</span>
+                        </span>
                       ) : (
                         <span className="inline-flex items-center space-x-1 px-2 py-1 rounded-sm text-[10px] uppercase font-button tracking-widest bg-gray-100 text-gray-600">
                           <ShieldAlert size={12} />
@@ -131,14 +153,26 @@ const AdminUsersPage = () => {
                       {new Date(user.createdAt).toLocaleDateString()}
                     </td>
                     <td className="p-4 text-right">
-                      <button 
-                        onClick={() => handleDelete(user._id, user.isAdmin)}
-                        disabled={deleteMutation.isPending || user.isAdmin}
-                        className={`p-2 rounded-sm transition-colors ${user.isAdmin ? 'text-gray-300 cursor-not-allowed' : 'text-gray-400 hover:text-red-600 hover:bg-red-50'}`}
-                        title="Delete User"
-                      >
-                        <Trash2 size={16} />
-                      </button>
+                      <div className="flex justify-end space-x-2">
+                        {!user.isAdmin && (
+                          <button 
+                            onClick={() => handleToggleVendor(user._id, user.isVendor)}
+                            disabled={updateMutation.isPending}
+                            className={`p-2 rounded-sm transition-colors text-gray-400 hover:text-brand-primary hover:bg-brand-primary/10`}
+                            title={user.isVendor ? "Remove Vendor" : "Make Vendor"}
+                          >
+                            <Package size={16} className={user.isVendor ? "text-brand-primary" : ""} />
+                          </button>
+                        )}
+                        <button 
+                          onClick={() => handleDelete(user._id, user.isAdmin)}
+                          disabled={deleteMutation.isPending || user.isAdmin}
+                          className={`p-2 rounded-sm transition-colors ${user.isAdmin ? 'text-gray-300 cursor-not-allowed' : 'text-gray-400 hover:text-red-600 hover:bg-red-50'}`}
+                          title="Delete User"
+                        >
+                          <Trash2 size={16} />
+                        </button>
+                      </div>
                     </td>
                   </tr>
                 ))

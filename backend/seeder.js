@@ -25,14 +25,47 @@ const importData = async () => {
 
     const createdCategories = await Category.insertMany(categories);
 
+    // Helper to find category ID by slug
+    const getCat = (slug) => createdCategories.find(c => c.slug === slug)?._id || createdCategories[0]._id;
+
     // Map products to categories
     const sampleProducts = products.map((product) => {
-      const categoryMatch = createdCategories.find(c => product.slug.includes(c.slug) || (product.slug === 'luminous-hydration-serum' && c.slug === 'skin-care') || (product.slug === 'botanical-repair-shampoo' && c.slug === 'hair-care') || (product.slug === 'velvet-rose-body-butter' && c.slug === 'body-care') || (product.slug === 'midnight-amber-eau-de-parfum' && c.slug === 'fragrance') || (product.slug === 'silk-sleep-mask-pillowcase-set' && c.slug === 'wellness') || (product.slug === 'ultimate-glow-gift-set' && c.slug === 'gift-sets'));
-      
+      const name = product.name.toLowerCase();
+      let categoryId = getCat('skincare'); // default
+
+      // Explicit overrides to exactly match Beautina's "Accessories" setup based on the screenshot
+      if (
+        name.includes('wrinkle') || 
+        name.includes('actives') || 
+        name.includes('peptide') || 
+        name.includes('jelly') || 
+        name.includes('smooth') ||
+        name.includes('collagen') ||
+        product.slug.includes('custom-actives')
+      ) {
+        categoryId = getCat('accessories');
+      } 
+      // Standard semantic matching for the rest
+      else if (name.includes('hair') || name.includes('shampoo') || name.includes('scalp') || name.includes('conditioner')) {
+        categoryId = getCat('hair-care');
+      } 
+      else if (name.includes('serum') || name.includes('oil') || name.includes('concentrate') || name.includes('fluid')) {
+        categoryId = getCat('serum-cream');
+      } 
+      else if (name.includes('moisture') || name.includes('cream') || name.includes('butter') || name.includes('lotion') || name.includes('moisturiser')) {
+        categoryId = getCat('moisture-cream');
+      } 
+      else if (name.includes('concealer') || name.includes('roller') || name.includes('bag') || name.includes('accessory')) {
+        categoryId = getCat('accessories');
+      }
+
+      const mappedReviews = product.reviews ? product.reviews.map(r => ({...r, user: adminUser})) : [];
+
       return { 
         ...product, 
         user: adminUser,
-        category: categoryMatch ? categoryMatch._id : createdCategories[0]._id 
+        reviews: mappedReviews,
+        category: categoryId
       };
     });
 

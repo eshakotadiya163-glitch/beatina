@@ -30,7 +30,7 @@ const items = [
 
 const LifestyleGrid = () => {
   return (
-    <section className="relative py-16 bg-white overflow-hidden">
+    <section className="relative py-12 bg-white overflow-hidden">
       
       {/* Vertical Text on the left edge */}
       <div className="absolute left-0 top-1/2 -translate-y-1/2 flex flex-col items-center gap-12 -rotate-180" style={{ writingMode: 'vertical-rl' }}>

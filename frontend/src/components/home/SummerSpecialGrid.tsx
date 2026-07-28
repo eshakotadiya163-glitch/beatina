@@ -12,23 +12,23 @@ const SummerSpecialGrid = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true, margin: "-50px" }}
-            className="group relative overflow-hidden bg-brand-light h-[450px] md:h-[630px] flex flex-col justify-end items-center text-center p-8 md:p-14"
+            className="group relative overflow-hidden bg-brand-light h-[450px] md:h-[630px] flex flex-col justify-end items-center text-center p-8 md:p-14 cursor-pointer"
           >
             <img 
               src="/images/migrated/49_b12_720x_301f00ae-898e-41d1-b635-14ec61052c17.webp" 
               alt="Focus On Summer Special Care" 
-              className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 ease-out"
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 ease-out hover:scale-110 filter grayscale-[20%] hover:grayscale-0"
               loading="lazy"
             />
             {/* Linear gradient overlay matching the original CSS */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-700"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-100 z-[1]"></div>
             
-            <div className="relative z-10 text-white flex flex-col items-center max-w-[90%] md:max-w-md">
+            <div className="relative z-10 text-white flex flex-col items-center max-w-[90%] md:max-w-[70%]">
               <motion.div 
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="font-sans text-[10px] md:text-[11px] font-semibold uppercase tracking-[0.25em] mb-4 text-white/90"
+                className="font-body text-[12px] md:text-[14px] font-[500] uppercase tracking-[0.2em] mb-4 text-white"
               >
                 NEW ARRIVALS
               </motion.div>
@@ -36,7 +36,7 @@ const SummerSpecialGrid = () => {
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="font-serif text-[32px] md:text-[40px] lg:text-[46px] mb-4 leading-[1.1] font-light"
+                className="font-serif text-[28px] md:text-[36px] lg:text-[42px] mb-4 leading-[1.2] font-[600]"
               >
                 Focus On Summer Special Care
               </motion.h3>
@@ -44,7 +44,7 @@ const SummerSpecialGrid = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="font-sans text-[14px] md:text-[15px] text-white/80 mb-6 leading-relaxed font-light"
+                className="font-body text-[14px] md:text-[16px] text-white/90 mb-6 leading-relaxed"
               >
                 Discover the power of nature with our new collection, crafted to bring out your skin's natural radiance.
               </motion.p>
@@ -54,8 +54,8 @@ const SummerSpecialGrid = () => {
                 transition={{ duration: 0.6, delay: 0.5 }}
                 className="pt-2"
               >
-                <Link to="/category/skincare" className="group/link inline-flex items-center gap-2 font-sans text-[12px] md:text-[13px] uppercase tracking-[0.15em] font-medium text-white transition-all">
-                  <span className="relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[1px] after:bg-white after:origin-right after:transition-transform after:duration-300 group-hover/link:after:origin-left group-hover/link:after:scale-x-0">
+                <Link to="/shop/category/skin-care" className="group/link inline-flex items-center gap-2 font-body text-[12px] md:text-[14px] uppercase tracking-[0.1em] font-[600] text-white transition-all">
+                  <span className="relative pb-1 border-b-[2px] border-white hover:border-transparent transition-colors duration-300">
                     Shop Now
                   </span>
                 </Link>
@@ -69,31 +69,31 @@ const SummerSpecialGrid = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             viewport={{ once: true, margin: "-50px" }}
-            className="group relative overflow-hidden bg-brand-light h-[450px] md:h-[630px] flex flex-col justify-end items-center text-center p-8 md:p-14"
+            className="group relative overflow-hidden bg-brand-light h-[450px] md:h-[630px] flex flex-col justify-end items-center text-center p-8 md:p-14 cursor-pointer"
           >
             <img 
               src="/images/migrated/50_about-img-2.webp" 
               alt="For Naturally Resilient Skin" 
-              className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 ease-out"
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 ease-out hover:scale-110 filter grayscale-[20%] hover:grayscale-0"
               loading="lazy"
             />
             {/* Linear gradient overlay matching the original CSS */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-700"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-100 z-[1]"></div>
             
-            <div className="relative z-10 text-white flex flex-col items-center max-w-[90%] md:max-w-md">
+            <div className="relative z-10 text-white flex flex-col items-center max-w-[90%] md:max-w-[70%]">
               <motion.div 
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="font-sans text-[10px] md:text-[11px] font-semibold uppercase tracking-[0.25em] mb-4 text-white/90"
+                className="font-body text-[12px] md:text-[14px] font-[500] uppercase tracking-[0.2em] mb-4 text-white"
               >
-                New COLLECTION
+                NEW COLLECTION
               </motion.div>
               <motion.h3 
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="font-serif text-[32px] md:text-[40px] lg:text-[46px] mb-4 leading-[1.1] font-light"
+                className="font-serif text-[28px] md:text-[36px] lg:text-[42px] mb-4 leading-[1.2] font-[600]"
               >
                 For Naturally Resilient Skin
               </motion.h3>
@@ -101,7 +101,7 @@ const SummerSpecialGrid = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.5 }}
-                className="font-sans text-[14px] md:text-[15px] text-white/80 mb-6 leading-relaxed font-light"
+                className="font-body text-[14px] md:text-[16px] text-white/90 mb-6 leading-relaxed"
               >
                 Discover the power of nature with our new collection, crafted to bring out your skin's natural radiance.
               </motion.p>
@@ -111,8 +111,8 @@ const SummerSpecialGrid = () => {
                 transition={{ duration: 0.6, delay: 0.6 }}
                 className="pt-2"
               >
-                <Link to="/category/skincare" className="group/link inline-flex items-center gap-2 font-sans text-[12px] md:text-[13px] uppercase tracking-[0.15em] font-medium text-white transition-all">
-                  <span className="relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[1px] after:bg-white after:origin-right after:transition-transform after:duration-300 group-hover/link:after:origin-left group-hover/link:after:scale-x-0">
+                <Link to="/shop/category/serum-cream" className="group/link inline-flex items-center gap-2 font-body text-[12px] md:text-[14px] uppercase tracking-[0.1em] font-[600] text-white transition-all">
+                  <span className="relative pb-1 border-b-[2px] border-white hover:border-transparent transition-colors duration-300">
                     Shop Now
                   </span>
                 </Link>

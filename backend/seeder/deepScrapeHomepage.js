@@ -4,7 +4,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const STORE_URL = 'https://beautina-cosmetic.myshopify.com';
+const STORE_URL = 'https://the woman company-cosmetic.myshopify.com';
 const PASSWORD = '1';
 
 async function deepScrape() {
@@ -208,7 +208,7 @@ async function deepScrape() {
     // Take a full-page screenshot for reference
     await page.setViewport({ width: 1440, height: 900 });
     await page.screenshot({
-      path: path.join(__dirname, 'beautina_screenshot.png'),
+      path: path.join(__dirname, 'the woman company_screenshot.png'),
       fullPage: false,
     });
     console.log('Screenshot saved.');

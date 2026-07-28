@@ -7,8 +7,11 @@ import Product from '../models/Product.js';
 // @access  Private/Admin
 const getDashboardData = async (req, res, next) => {
   try {
-    const totalOrders = await Order.countDocuments();
-    const totalProducts = await Product.countDocuments();
+    const isVendorOnly = req.user.isVendor && !req.user.isAdmin;
+    const productFilter = isVendorOnly ? { vendor: req.user._id } : {};
+
+    const totalOrders = await Order.countDocuments(); // Ideally filter by vendor's products in orders
+    const totalProducts = await Product.countDocuments(productFilter);
     const totalUsers = await User.countDocuments({ role: 'user' });
 
     const orders = await Order.find({});
@@ -60,7 +63,7 @@ const getDashboardData = async (req, res, next) => {
       value: data.count
     }));
 
-    const lowStockProducts = await Product.find({ countInStock: { $lt: 10 } }).select('name countInStock image').limit(5);
+    const lowStockProducts = await Product.find({ countInStock: { $lt: 10 }, ...productFilter }).select('name countInStock image').limit(5);
 
     res.json({
       summary: {

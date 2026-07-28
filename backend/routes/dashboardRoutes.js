@@ -1,9 +1,9 @@
 import express from 'express';
 import { getDashboardData } from '../controllers/dashboardController.js';
-import { protect, admin } from '../middleware/authMiddleware.js';
+import { protect, vendor } from '../middleware/authMiddleware.js';
 
 const router = express.Router();
 
-router.route('/').get(protect, admin, getDashboardData);
+router.route('/').get(protect, vendor, getDashboardData);
 
 export default router;

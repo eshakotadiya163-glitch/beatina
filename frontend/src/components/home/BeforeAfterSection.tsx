@@ -23,7 +23,7 @@ const BeforeAfterSection = () => {
   };
 
   return (
-    <section className="bg-white py-16 md:py-24 overflow-hidden border-y border-gray-100">
+    <section className="bg-white py-12 md:py-16 overflow-hidden border-y border-gray-100">
       <div className="mx-auto max-w-[1550px] px-4 sm:px-6 lg:px-8 text-center">
         
         {/* Section Heading */}
@@ -34,11 +34,11 @@ const BeforeAfterSection = () => {
           viewport={{ once: true }}
           className="mb-10 md:mb-14"
         >
-          <div className="font-sans text-[10px] md:text-[11px] font-semibold text-gray-500 uppercase tracking-[0.25em] mb-4">
+          <div className="font-body text-[13px] md:text-[15px] font-[400] text-gray-500 mb-4">
             Wear it four way
           </div>
           
-          <h3 className="font-serif text-3xl md:text-[44px] text-[#111111] font-light mb-4 leading-tight">
+          <h3 className="font-serif text-[28px] md:text-[36px] lg:text-[42px] text-[#111111] font-[400] mb-4 leading-tight">
             The balance of high-performance
           </h3>
           

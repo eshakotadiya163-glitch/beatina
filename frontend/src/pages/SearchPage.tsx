@@ -71,7 +71,7 @@ const SearchPage = () => {
   };
 
   return (
-    <div className="pt-[116px] pb-20 bg-white min-h-screen">
+    <div className="pt-[116px] pb-14 bg-white min-h-screen">
       
       {quickViewProduct && (
         <QuickViewModal 
@@ -98,7 +98,7 @@ const SearchPage = () => {
 
       <div className="max-w-[1400px] mx-auto px-4 md:px-8">
         {!query ? (
-          <div className="text-center py-24 bg-brand-light border border-brand-border">
+          <div className="text-center py-16 bg-brand-light border border-brand-border">
             <h2 className="text-xl font-heading text-brand-dark uppercase tracking-widest mb-4">What are you looking for?</h2>
             <p className="font-body text-brand-muted">Please enter a search term in the search bar above.</p>
           </div>
@@ -206,12 +206,12 @@ const SearchPage = () => {
                    ))}
                  </div>
               ) : error ? (
-                <div className="text-center py-24 text-red-500 font-body">Error loading search results.</div>
+                <div className="text-center py-16 text-red-500 font-body">Error loading search results.</div>
               ) : data?.pages[0]?.products?.length === 0 ? (
-                 <div className="text-center py-24 bg-brand-light border border-brand-border">
+                 <div className="text-center py-16 bg-brand-light border border-brand-border">
                    <h2 className="text-xl font-heading text-brand-dark mb-4 uppercase tracking-widest">No results found</h2>
                    <p className="font-body text-brand-muted mb-8 text-sm">We couldn't find any products matching "{query}". Try checking your spelling or using more general terms.</p>
-                   <Link to="/shop" className="bg-brand-dark text-white px-10 py-4 font-body uppercase tracking-[0.2em] text-xs hover:bg-black transition-colors inline-block">
+                   <Link to="/shop/category/all" className="bg-brand-dark text-white px-10 py-4 font-body uppercase tracking-[0.2em] text-xs hover:bg-black transition-colors inline-block">
                      Shop All Products
                    </Link>
                  </div>
@@ -227,7 +227,7 @@ const SearchPage = () => {
                     ))}
                   </div>
 
-                  <div ref={ref} className="flex justify-center mt-20 mb-8">
+                  <div ref={ref} className="flex justify-center mt-14 mb-8">
                     {isFetchingNextPage ? (
                       <div className="flex flex-col items-center text-brand-muted">
                         <Loader2 className="animate-spin mb-3 text-brand-dark" size={24} />

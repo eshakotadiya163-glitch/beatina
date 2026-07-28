@@ -7,7 +7,13 @@ import { Plus, Check, Loader2 } from 'lucide-react';
 import api from '../api/axios';
 import useAuthStore from '../store/authStore';
 import useCartStore from '../store/cartStore';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+
+declare global {
+  interface Window {
+    Razorpay: any;
+  }
+}
 
 const addressSchema = z.object({
   street: z.string().min(5, 'Street address is required'),
@@ -23,8 +29,10 @@ const CheckoutPage = () => {
   const [step, setStep] = useState(1);
   const [selectedAddressId, setSelectedAddressId] = useState<string | null>(null);
   const [isAddingNew, setIsAddingNew] = useState(false);
+  const [isProcessing, setIsProcessing] = useState(false);
   const { user } = useAuthStore();
-  const { cartItems } = useCartStore();
+  const { cartItems, clearCart } = useCartStore();
+  const navigate = useNavigate();
 
   const subtotal = cartItems.reduce((acc, item) => acc + item.price * item.qty, 0);
   const isFreeShipping = subtotal > 500;
@@ -64,14 +72,113 @@ const CheckoutPage = () => {
     return profile?.addresses?.find((a: any) => a._id === selectedAddressId);
   };
 
+  const loadRazorpayScript = () => {
+    return new Promise((resolve) => {
+      const script = document.createElement('script');
+      script.src = 'https://checkout.razorpay.com/v1/checkout.js';
+      script.onload = () => {
+        resolve(true);
+      };
+      script.onerror = () => {
+        resolve(false);
+      };
+      document.body.appendChild(script);
+    });
+  };
+
+  const handlePayment = async () => {
+    try {
+      setIsProcessing(true);
+      const res = await loadRazorpayScript();
+
+      if (!res) {
+        alert('Razorpay SDK failed to load. Are you online?');
+        setIsProcessing(false);
+        return;
+      }
+
+      // Create Order
+      const { data: orderData } = await api.post('/payment/razorpay', {
+        amount: total,
+      });
+
+      const options = {
+        key: import.meta.env.VITE_RAZORPAY_KEY_ID || 'rzp_test_dummykey123',
+        amount: orderData.amount,
+        currency: orderData.currency,
+        name: 'The Women Company',
+        description: 'Test Transaction',
+        order_id: orderData.id,
+        handler: async function (response: any) {
+          try {
+            // Verify Payment
+            const verificationData = {
+              razorpay_order_id: response.razorpay_order_id,
+              razorpay_payment_id: response.razorpay_payment_id,
+              razorpay_signature: response.razorpay_signature,
+            };
+
+            await api.post('/payment/razorpay/verify', verificationData);
+
+            // Create Order in DB
+            const orderPayload = {
+              orderItems: cartItems.map((item) => ({
+                name: item.name,
+                qty: item.qty,
+                image: item.image,
+                price: item.price,
+                product: item._id,
+              })),
+              shippingAddress: getSelectedAddress(),
+              paymentMethod: 'Razorpay',
+              itemsPrice: subtotal,
+              shippingPrice: shippingCost,
+              totalPrice: total,
+              isPaid: true,
+              paidAt: new Date().toISOString(),
+              paymentResult: {
+                id: response.razorpay_payment_id,
+                status: 'completed',
+                update_time: new Date().toISOString(),
+                email_address: user?.email,
+              },
+            };
+
+            const { data: finalOrder } = await api.post('/orders', orderPayload);
+            clearCart();
+            navigate(`/order/${finalOrder._id}`);
+          } catch (error) {
+            console.error('Verification/Order Creation failed:', error);
+            alert('Payment verification failed');
+          }
+        },
+        prefill: {
+          name: `${user?.firstName} ${user?.lastName}`,
+          email: user?.email,
+        },
+        theme: {
+          color: '#1a1a1a',
+        },
+      };
+
+      const paymentObject = new window.Razorpay(options);
+      paymentObject.open();
+    } catch (error) {
+      console.error(error);
+      alert('Something went wrong during payment initialization.');
+    } finally {
+      setIsProcessing(false);
+    }
+  };
+
   if (cartItems.length === 0) {
     return (
-      <div className="pt-[116px] pb-20 bg-brand-light min-h-[85vh] flex items-center justify-center">
+      <div className="pt-[116px] pb-14 bg-brand-light min-h-[85vh] flex items-center justify-center">
         <div className="text-center p-8 bg-white border border-brand-border">
           <h2 className="text-2xl font-heading text-brand-dark mb-4">Your cart is empty</h2>
           <p className="text-sm font-body text-brand-muted mb-8 uppercase tracking-widest">Add items to proceed to checkout</p>
-          <Link to="/shop" className="bg-brand-dark text-white px-8 py-4 text-xs font-body uppercase tracking-[0.2em] hover:bg-black transition-colors">
-            Return to Shop
+          <Link to="/shop" className="bg-[#111111] text-white px-[30px] py-[15px] font-body uppercase tracking-[1px] text-[11px] hover:bg-[#ffb6c1] transition-colors inline-block mt-8">
+            Continue Shopping
           </Link>
         </div>
       </div>
@@ -79,7 +186,7 @@ const CheckoutPage = () => {
   }
 
   return (
-    <div className="pt-[116px] pb-20 bg-brand-light min-h-screen">
+    <div className="pt-[116px] pb-14 bg-brand-light min-h-screen">
       <div className="container mx-auto px-4 md:px-8 max-w-6xl py-8">
         
         <div className="text-center border-b border-brand-border pb-6 mb-12">
@@ -136,7 +243,7 @@ const CheckoutPage = () => {
                          type="button" 
                          onClick={handleProceedToPayment}
                          disabled={!selectedAddressId}
-                         className="w-full md:w-auto bg-brand-dark text-white px-10 py-4 font-body uppercase tracking-[0.2em] text-xs hover:bg-black transition-colors mt-8 disabled:opacity-50"
+                         className="w-full md:w-auto bg-[#111111] text-white px-[30px] py-[15px] font-body uppercase tracking-[1px] text-[11px] hover:bg-[#ffb6c1] transition-colors mt-8 disabled:opacity-50"
                        >
                          Deliver Here
                        </button>
@@ -184,8 +291,8 @@ const CheckoutPage = () => {
                         </div>
                         <div className="flex items-center space-x-6 mt-8">
                           <button 
-                            type="submit" 
-                            className="bg-brand-dark text-white px-10 py-4 font-body uppercase tracking-[0.2em] text-xs hover:bg-black transition-colors"
+                            type="submit"
+                            className="bg-[#111111] text-white px-[30px] py-[15px] font-body uppercase tracking-[1px] text-[11px] hover:bg-[#ffb6c1] transition-colors"
                           >
                             Deliver Here
                           </button>
@@ -241,8 +348,13 @@ const CheckoutPage = () => {
                       </label>
                     </div>
 
-                    <button className="w-full bg-brand-dark text-white py-4 font-body uppercase tracking-[0.2em] text-xs hover:bg-black transition-colors">
-                      Pay ₹{total.toLocaleString()} Securely
+                    <button 
+                      onClick={handlePayment}
+                      disabled={isProcessing}
+                      className="w-full bg-[#111111] text-white py-[15px] px-[30px] font-body uppercase tracking-[1px] text-[11px] hover:bg-[#ffb6c1] transition-colors disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center"
+                    >
+                      {isProcessing ? <Loader2 className="animate-spin mr-2" size={16} /> : null}
+                      {isProcessing ? 'Processing...' : `Pay ₹${total.toLocaleString()} Securely`}
                     </button>
                     <p className="text-center text-[10px] text-brand-muted font-body mt-6 uppercase tracking-widest">Safe and secure payments. 100% Authentic products.</p>
                  </div>

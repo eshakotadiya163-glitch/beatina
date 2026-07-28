@@ -19,7 +19,7 @@ const CartPage = () => {
   const total = subtotal + shippingCost + taxCost;
 
   return (
-    <div className="pt-24 pb-32 bg-white min-h-screen">
+    <div className="pt-16 pb-24 bg-white min-h-screen">
       
       {/* Page Header */}
       <div className="bg-brand-light py-12 mb-12 text-center border-b border-brand-border">
@@ -37,7 +37,7 @@ const CartPage = () => {
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-center py-24 bg-brand-light border border-brand-border flex flex-col items-center justify-center rounded-sm"
+            className="text-center py-16 bg-brand-light border border-brand-border flex flex-col items-center justify-center rounded-sm"
           >
             <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm">
               <ShoppingBag size={32} className="text-brand-muted" />
@@ -80,11 +80,11 @@ const CartPage = () => {
                         <div>
                           <div className="flex justify-between items-start">
                             <div>
-                              <p className="text-[10px] text-brand-muted uppercase tracking-widest font-body mb-2">Beautina</p>
+                              <p className="text-[10px] text-brand-muted uppercase tracking-widest font-body mb-2">The Woman Company</p>
                               <Link to={`/product/${item._id}`} className="font-heading text-lg text-brand-dark hover:text-brand-muted transition-colors line-clamp-2 pr-4">{item.name}</Link>
                             </div>
                             <button 
-                              onClick={() => removeItem(item._id)}
+                              onClick={() => removeItem(item._id, item.variantKey)}
                               className="text-brand-muted hover:text-red-500 transition-colors p-2 rounded-full hover:bg-red-50"
                               aria-label="Remove item"
                             >
@@ -140,7 +140,7 @@ const CartPage = () => {
                   <span className="font-body text-3xl text-brand-dark">${total.toFixed(2)}</span>
                 </div>
                 
-                <Link to="/checkout" className="w-full bg-brand-dark text-white text-center py-4 font-body uppercase tracking-[0.2em] text-xs hover:bg-black transition-all block rounded-sm shadow-md hover:shadow-lg transform hover:-translate-y-0.5 duration-200">
+                <Link to="/checkout" className="w-full bg-[#111111] text-white text-center py-[15px] px-[30px] font-body text-[11px] uppercase tracking-[1px] hover:bg-[#ffb6c1] transition-colors block">
                   Proceed to Checkout
                 </Link>
 

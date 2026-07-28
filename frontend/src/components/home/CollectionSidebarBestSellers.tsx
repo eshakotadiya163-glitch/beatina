@@ -32,7 +32,7 @@ const CollectionSidebarBestSellers = () => {
   }, [activeCollection]);
 
   return (
-    <section className="py-16 bg-white border-t border-brand-border/40">
+    <section className="py-12 bg-white border-t border-brand-border/40">
       <div className="max-w-[1600px] mx-auto px-4 xl:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 xl:gap-12">
           
@@ -72,13 +72,13 @@ const CollectionSidebarBestSellers = () => {
               <div className="absolute inset-0 flex flex-col justify-end p-6 bg-gradient-to-t from-black/60 to-transparent">
                 <p className="font-heading text-xs tracking-widest text-white mb-2">{activeCollection.name}</p>
                 <h4 className="font-heading text-3xl text-white mb-6">{activeCollection.name}</h4>
-                <Link to={`/category/${activeCollection.handle}`} className="inline-flex items-center gap-2 bg-white px-6 py-3 font-body text-xs uppercase tracking-wider text-brand-dark hover:bg-brand-light transition-colors w-fit">
+                <Link to={`/shop/category/${activeCollection.handle}`} className="inline-flex items-center gap-2 bg-white px-6 py-3 font-body text-xs uppercase tracking-wider text-brand-dark hover:bg-brand-light transition-colors w-fit">
                   Shop Now <ArrowUpRight size={14} />
                 </Link>
               </div>
             </div>
 
-            <Link to="/shop" className="block w-full bg-brand-dark text-white text-center py-4 font-body text-xs uppercase tracking-[0.15em] hover:bg-black transition-colors mt-4">
+            <Link to="/shop/category/all" className="block w-full bg-brand-dark text-white text-center py-4 font-body text-xs uppercase tracking-[0.15em] hover:bg-black transition-colors mt-4">
               All Products
             </Link>
           </div>
@@ -87,7 +87,7 @@ const CollectionSidebarBestSellers = () => {
           <div className="lg:col-span-3">
             <div className="flex justify-between items-end mb-8 border-b border-brand-border/40 pb-4">
               <h3 className="font-heading text-[11px] uppercase tracking-[0.2em] text-brand-muted">Best Selling</h3>
-              <Link to={`/category/${activeCollection.handle}`} className="flex items-center gap-2 font-body text-[11px] uppercase tracking-[0.1em] text-brand-dark hover:text-brand-accent transition-colors">
+              <Link to={`/shop/category/${activeCollection.handle}`} className="flex items-center gap-2 font-body text-[11px] uppercase tracking-[0.1em] text-brand-dark hover:text-brand-accent transition-colors">
                 {activeCollection.name} ({activeCollection.count}) <ArrowRight size={14} />
               </Link>
             </div>

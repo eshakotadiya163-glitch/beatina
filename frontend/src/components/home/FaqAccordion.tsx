@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     question: '04. Can I modify or cancel my order after placing it?',
-    answer: 'Orders can be modified or canceled within a short window after purchase. Once processed, changes may not be possible. Contact us as soon as possible for assistance.',
+    answer: 'Orders can only be modified or canceled within 24 hours of placement. Please contact our support team immediately to request any changes.',
   },
 ];
 
@@ -25,7 +25,7 @@ const FaqAccordion = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="py-16 md:py-24 bg-white overflow-hidden">
+    <section className="py-12 md:py-16 bg-white overflow-hidden">
       <div className="container mx-auto px-4 md:px-8">
         {/* Title Area */}
         <motion.div 
@@ -33,19 +33,19 @@ const FaqAccordion = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="text-center mb-12 md:mb-16"
+          className="text-center mb-12 md:mb-12"
         >
-          <div className="font-sans text-[10px] md:text-[11px] uppercase tracking-[0.25em] text-gray-500 mb-4 font-semibold">
-            FAQ
+          <div className="font-body text-[13px] md:text-[15px] text-gray-500 mb-4 font-[400]">
+            Sub Title Top
           </div>
-          <h3 className="font-serif text-3xl md:text-4xl lg:text-[44px] text-[#111111] font-light leading-tight max-w-2xl mx-auto">
+          <h3 className="font-serif text-[28px] md:text-[36px] lg:text-[42px] text-[#111111] font-[400] leading-[1.2] max-w-3xl mx-auto">
             Time to achieve more with less
           </h3>
         </motion.div>
 
         {/* Content Area */}
         <div className="max-w-[1140px] mx-auto">
-          <div className="flex flex-col md:flex-row gap-10 lg:gap-16 lg:w-4/5 mx-auto items-center">
+          <div className="flex flex-col md:flex-row gap-10 lg:gap-12 lg:w-4/5 mx-auto items-center">
             
             {/* Left: FAQs */}
             <div className="w-full md:w-1/2">
@@ -64,7 +64,7 @@ const FaqAccordion = () => {
                       onClick={() => setOpenIndex(openIndex === index ? null : index)}
                       aria-expanded={openIndex === index}
                     >
-                      <span className={`font-sans text-[14px] md:text-[15px] font-medium transition-colors ${openIndex === index ? 'text-black' : 'text-gray-600'}`}>
+                      <span className={`font-serif text-[20px] md:text-[26px] leading-[1.3] font-medium transition-colors ${openIndex === index ? 'text-black' : 'text-[#222222]'}`}>
                         {faq.question}
                       </span>
                       <span className="absolute right-0 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center text-black">

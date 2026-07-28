@@ -23,17 +23,42 @@ const userSchema = mongoose.Schema(
     },
     email: {
       type: String,
-      required: true,
+      required: false, // Make optional for phone-only users
+      sparse: true,
+      unique: true,
+    },
+    phoneNumber: {
+      type: String,
+      required: false,
+      sparse: true,
       unique: true,
     },
     password: {
       type: String,
-      required: true,
+      required: false, // Optional for OTP users
     },
     isAdmin: {
       type: Boolean,
       required: true,
       default: false,
+    },
+    isVendor: {
+      type: Boolean,
+      required: true,
+      default: false,
+    },
+    role: {
+      type: String,
+      enum: ['user', 'staff', 'admin', 'superadmin'],
+      default: 'user',
+    },
+    permissions: [{
+      type: String, // e.g., 'manage_leads', 'manage_users'
+    }],
+    staffDetails: {
+      designation: String,
+      department: String,
+      isActive: { type: Boolean, default: true },
     },
     addresses: [addressSchema],
     wishlist: [{
@@ -54,9 +79,9 @@ userSchema.methods.matchPassword = async function (enteredPassword) {
 };
 
 // Encrypt password using bcrypt
-userSchema.pre('save', async function (next) {
+userSchema.pre('save', async function () {
   if (!this.isModified('password')) {
-    next();
+    return;
   }
 
   const salt = await bcrypt.genSalt(10);

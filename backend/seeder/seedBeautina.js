@@ -11,22 +11,22 @@ const __dirname = path.dirname(__filename);
 dotenv.config({ path: path.join(__dirname, '../.env') });
 
 const urls = [
-  'https://beautina-cosmetic.myshopify.com/products/superseed-age-recovery-organic-facial-oil.json',
-  'https://beautina-cosmetic.myshopify.com/products/3-step-hair-care-routine-set.json',
-  'https://beautina-cosmetic.myshopify.com/products/peel-brightening-5-aha-peel-mask.json',
-  'https://beautina-cosmetic.myshopify.com/products/his-face-cream-for-men.json',
-  'https://beautina-cosmetic.myshopify.com/products/sos-hydra-intense-rose-jelly.json',
-  'https://beautina-cosmetic.myshopify.com/products/deep-moisture-day-cream.json',
-  'https://beautina-cosmetic.myshopify.com/products/luminous-perfecting-concealer.json',
-  'https://beautina-cosmetic.myshopify.com/products/vitamin-c-intense-glow-concentrate.json',
-  'https://beautina-cosmetic.myshopify.com/products/acne-spot-roll-on.json',
-  'https://beautina-cosmetic.myshopify.com/products/scalp-peel-serum.json',
-  'https://beautina-cosmetic.myshopify.com/products/deep-moisture-balancing-fluid.json',
-  'https://beautina-cosmetic.myshopify.com/products/boost-3-min-growth-boost-scalp-treatment.json',
-  'https://beautina-cosmetic.myshopify.com/products/deep-moisture-nourish-cream-for-face.json'
+  'https://the woman company-cosmetic.myshopify.com/products/superseed-age-recovery-organic-facial-oil.json',
+  'https://the woman company-cosmetic.myshopify.com/products/3-step-hair-care-routine-set.json',
+  'https://the woman company-cosmetic.myshopify.com/products/peel-brightening-5-aha-peel-mask.json',
+  'https://the woman company-cosmetic.myshopify.com/products/his-face-cream-for-men.json',
+  'https://the woman company-cosmetic.myshopify.com/products/sos-hydra-intense-rose-jelly.json',
+  'https://the woman company-cosmetic.myshopify.com/products/deep-moisture-day-cream.json',
+  'https://the woman company-cosmetic.myshopify.com/products/luminous-perfecting-concealer.json',
+  'https://the woman company-cosmetic.myshopify.com/products/vitamin-c-intense-glow-concentrate.json',
+  'https://the woman company-cosmetic.myshopify.com/products/acne-spot-roll-on.json',
+  'https://the woman company-cosmetic.myshopify.com/products/scalp-peel-serum.json',
+  'https://the woman company-cosmetic.myshopify.com/products/deep-moisture-balancing-fluid.json',
+  'https://the woman company-cosmetic.myshopify.com/products/boost-3-min-growth-boost-scalp-treatment.json',
+  'https://the woman company-cosmetic.myshopify.com/products/deep-moisture-nourish-cream-for-face.json'
 ];
 
-const seedBeautina = async () => {
+const seedThe Woman Company = async () => {
   try {
     await connectDB();
     
@@ -75,7 +75,7 @@ const seedBeautina = async () => {
         const newProduct = {
           name: prod.name,
           slug: prod.slug,
-          brand: 'Beautina',
+          brand: 'The Woman Company',
           category: category._id,
           description: `Luxury ${prod.name} formulated with organic, highly effective ingredients to help your skin stay resilient.`,
           price: prod.price,
@@ -109,4 +109,4 @@ const seedBeautina = async () => {
   }
 };
 
-seedBeautina();
+seedThe Woman Company();

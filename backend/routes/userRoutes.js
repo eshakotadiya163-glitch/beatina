@@ -15,6 +15,7 @@ import {
   getUserById,
   updateUser,
   deleteUser,
+  firebaseAuth,
 } from '../controllers/userController.js';
 import { protect, admin } from '../middleware/authMiddleware.js';
 
@@ -22,6 +23,7 @@ const router = express.Router();
 
 router.route('/').post(registerUser).get(protect, admin, getUsers);
 router.post('/login', authUser);
+router.post('/firebase-auth', firebaseAuth);
 router.post('/logout', logoutUser);
 router.post('/forgot-password', forgotPassword);
 router.put('/reset-password/:token', resetPassword);

@@ -24,7 +24,7 @@ const AccountLayout = ({ children, title }: { children: React.ReactNode, title: 
   }
 
   return (
-    <div className="pt-[116px] pb-24 bg-gray-50 min-h-screen">
+    <div className="pt-[116px] pb-16 bg-gray-50 min-h-screen">
       <div className="container mx-auto px-4 md:px-12">
         <h1 className="text-3xl md:text-4xl font-heading text-brand-dark mb-10 border-b border-gray-200 pb-6">{title}</h1>
         

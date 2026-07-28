@@ -1,6 +1,5 @@
 import { useState, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { motion } from 'framer-motion';
 import { Navigation } from 'swiper/modules';
 import type { Swiper as SwiperType } from 'swiper';
 import ProductCard from '../ProductCard';
@@ -17,7 +16,15 @@ const ShopTheLook: React.FC<ShopTheLookProps> = ({ products = [] }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const swiperRef = useRef<SwiperType | null>(null);
 
-  const trendingProducts = products.filter(p => p.tabCategory === 'Trending');
+  const targetSlugs = [
+    'exfoliating-oil-to-milk-scrub', 
+    'deep-moisture-eye-contour-cream', 
+    'boost-3-min-growth-boost-scalp-treatment'
+  ];
+  const bundleProducts = targetSlugs
+    .map(slug => products.find(p => p.slug === slug))
+    .filter(Boolean);
+  const displayProducts = bundleProducts.length > 0 ? bundleProducts : products.slice(0, 3);
 
   const handleHotspotClick = (index: number) => {
     setActiveIndex(index);
@@ -27,21 +34,15 @@ const ShopTheLook: React.FC<ShopTheLookProps> = ({ products = [] }) => {
   };
 
   return (
-    <section className="bg-white py-16 md:py-24 overflow-hidden border-y border-gray-100">
-      <div className="container mx-auto px-4 md:px-8 max-w-[1400px]">
+    <section className="bg-white py-[40px] md:py-[50px] overflow-hidden">
+      <div className="container mx-auto px-4 md:px-8">
         
         {/* Authentic Flex Row Reverse Layout */}
-        <div className="flex flex-col lg:flex-row-reverse -mx-4 items-center gap-y-12">
+        <div className="flex flex-col lg:flex-row-reverse -mx-4 items-center">
           
           {/* Right Side (Image + Hotspots) - Visually on Right due to flex-row-reverse */}
-          <motion.div 
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="w-full lg:w-1/2 px-4"
-          >
-            <div className="relative w-full aspect-square overflow-hidden bg-gray-50 max-w-[650px] mx-auto">
+          <div className="w-full lg:w-1/2 px-4 mb-10 lg:mb-0">
+            <div className="relative w-full aspect-square overflow-hidden bg-gray-50">
               <img 
                 src="/images/migrated/48_ChatGPT_Image_Mar_11_2026_10_46_49_AM.png" 
                 alt="Shop The Look" 
@@ -52,73 +53,67 @@ const ShopTheLook: React.FC<ShopTheLookProps> = ({ products = [] }) => {
               {/* Authentic Hotspots */}
               <ul className="absolute inset-0 m-0 p-0 list-none pointer-events-none">
                 
-                {/* Hotspot 1 (Red) */}
+                {/* Hotspot 1 (Red on Scrub) */}
                 <li 
                   className="absolute pointer-events-auto"
                   style={{ top: '13%', left: '47%' }}
                 >
                   <button 
                     onClick={() => handleHotspotClick(0)}
-                    className={`relative w-4 h-4 rounded-full flex items-center justify-center transition-transform hover:scale-110 ${activeIndex === 0 ? 'scale-125' : ''}`}
+                    className={`relative w-8 h-8 rounded-full flex items-center justify-center transition-transform hover:scale-110 ${activeIndex === 0 ? 'scale-110' : ''}`}
                   >
-                    <span className="absolute inset-0 rounded-full bg-[rgb(224,11,37)] opacity-40 animate-ping"></span>
+                    <span className="absolute inset-0 rounded-full bg-[rgb(224,11,37)] opacity-20 hover:opacity-30"></span>
                     <span className="relative w-2.5 h-2.5 rounded-full bg-[rgb(224,11,37)] shadow-sm"></span>
                   </button>
                 </li>
 
-                {/* Hotspot 2 (Purple) */}
-                <li 
-                  className="absolute pointer-events-auto"
-                  style={{ top: '48%', left: '70%' }}
-                >
-                  <button 
-                    onClick={() => handleHotspotClick(1)}
-                    className={`relative w-4 h-4 rounded-full flex items-center justify-center transition-transform hover:scale-110 ${activeIndex === 1 ? 'scale-125' : ''}`}
-                  >
-                    <span className="absolute inset-0 rounded-full bg-[rgb(229,206,255)] opacity-40 animate-ping" style={{ animationDelay: '0.2s' }}></span>
-                    <span className="relative w-2.5 h-2.5 rounded-full bg-[rgb(229,206,255)] shadow-sm"></span>
-                  </button>
-                </li>
-
-                {/* Hotspot 3 (Blue) */}
+                {/* Hotspot 2 (Blue on Eye Contour) */}
                 <li 
                   className="absolute pointer-events-auto"
                   style={{ top: '58%', left: '26%' }}
                 >
                   <button 
-                    onClick={() => handleHotspotClick(2)}
-                    className={`relative w-4 h-4 rounded-full flex items-center justify-center transition-transform hover:scale-110 ${activeIndex === 2 ? 'scale-125' : ''}`}
+                    onClick={() => handleHotspotClick(1)}
+                    className={`relative w-8 h-8 rounded-full flex items-center justify-center transition-transform hover:scale-110 ${activeIndex === 1 ? 'scale-110' : ''}`}
                   >
-                    <span className="absolute inset-0 rounded-full bg-[rgb(97,127,255)] opacity-40 animate-ping" style={{ animationDelay: '0.4s' }}></span>
+                    <span className="absolute inset-0 rounded-full bg-[rgb(97,127,255)] opacity-20 hover:opacity-30"></span>
                     <span className="relative w-2.5 h-2.5 rounded-full bg-[rgb(97,127,255)] shadow-sm"></span>
+                  </button>
+                </li>
+
+                {/* Hotspot 3 (Purple on Boost) */}
+                <li 
+                  className="absolute pointer-events-auto"
+                  style={{ top: '48%', left: '70%' }}
+                >
+                  <button 
+                    onClick={() => handleHotspotClick(2)}
+                    className={`relative w-10 h-10 rounded-full flex items-center justify-center transition-transform hover:scale-110 ${activeIndex === 2 ? 'scale-110' : ''}`}
+                  >
+                    <span className="absolute inset-0 rounded-full bg-[rgb(229,206,255)] opacity-20 hover:opacity-30"></span>
+                    <span className="relative w-2.5 h-2.5 rounded-full bg-[rgb(229,206,255)] shadow-sm"></span>
                   </button>
                 </li>
 
               </ul>
             </div>
-          </motion.div>
+          </div>
           
           {/* Left Side (Text + Slider) - Visually on Left */}
-          <motion.div 
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="w-full lg:w-1/2 px-4 flex items-center justify-center lg:justify-end"
-          >
-            <div className="w-full max-w-md mx-auto lg:mr-16">
+          <div className="w-full lg:w-1/2 px-4 flex items-center">
+            <div className="w-full max-w-md mx-auto py-5 lg:py-0">
               
-              <div className="text-center mb-12">
-                <div className="font-sans text-[10px] md:text-[11px] font-semibold text-gray-500 uppercase tracking-[0.25em] mb-4">
+              <div className="text-center mb-8">
+                <div className="font-body text-[13px] md:text-[15px] font-[400] text-gray-500 mb-4 capitalize">
                   product bundle
                 </div>
-                <h3 className="font-serif text-3xl md:text-[40px] text-[#111111] font-light leading-tight">
-                  Favorite Skin & hair Grow
+                <h3 className="font-serif text-[28px] md:text-[36px] lg:text-[42px] text-[#111111] font-[400] leading-[1.2]">
+                  Favorite Skin &amp; hair Grow
                 </h3>
               </div>
 
               {/* Swiper Column */}
-            <div className="w-full flex flex-col justify-center max-w-[350px] mx-auto relative group">
+            <div className="w-full md:w-[65%] lg:w-[65%] flex flex-col justify-center max-w-[450px] mx-auto relative group">
               <Swiper
                 modules={[Navigation]}
                 navigation={{
@@ -134,10 +129,10 @@ const ShopTheLook: React.FC<ShopTheLookProps> = ({ products = [] }) => {
                 onSlideChange={(swiper) => {
                   setActiveIndex(swiper.realIndex);
                 }}
-                className="w-full"
+                className="w-full relative"
               >
-                {trendingProducts.length > 0 ? (
-                  trendingProducts.map((product, index) => (
+                {displayProducts.length > 0 ? (
+                  displayProducts.map((product, index) => (
                     <SwiperSlide key={product._id || index}>
                       <ProductCard product={product} />
                     </SwiperSlide>
@@ -150,16 +145,16 @@ const ShopTheLook: React.FC<ShopTheLookProps> = ({ products = [] }) => {
               </Swiper>
                 
                 {/* Custom Navigation Arrows */}
-                <button className="shop-prev absolute left-0 top-1/2 -translate-y-1/2 -translate-x-5 z-10 w-10 h-10 bg-white rounded-full shadow-[0_4px_12px_rgba(0,0,0,0.1)] flex items-center justify-center text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 disabled:opacity-50">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1"><path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7"/></svg>
+                <button className="shop-prev absolute left-4 top-[35%] md:top-[40%] -translate-y-1/2 z-10 w-10 h-10 bg-white/90 hover:bg-white rounded-full shadow-md flex items-center justify-center text-brand-dark transition-all">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7"/></svg>
                 </button>
-                <button className="shop-next absolute right-0 top-1/2 -translate-y-1/2 translate-x-5 z-10 w-10 h-10 bg-white rounded-full shadow-[0_4px_12px_rgba(0,0,0,0.1)] flex items-center justify-center text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 disabled:opacity-50">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1"><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/></svg>
+                <button className="shop-next absolute right-4 top-[35%] md:top-[40%] -translate-y-1/2 z-10 w-10 h-10 bg-white/90 hover:bg-white rounded-full shadow-md flex items-center justify-center text-brand-dark transition-all">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/></svg>
                 </button>
               </div>
 
             </div>
-          </motion.div>
+          </div>
           
         </div>
       </div>

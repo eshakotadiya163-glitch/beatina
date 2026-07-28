@@ -4,7 +4,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const STORE_URL = 'https://beautina-cosmetic.myshopify.com';
+const STORE_URL = 'https://the woman company-cosmetic.myshopify.com';
 const PASSWORD = '1';
 
 async function scrapeMainContent() {

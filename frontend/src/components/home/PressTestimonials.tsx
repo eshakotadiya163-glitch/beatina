@@ -10,7 +10,7 @@ const pressLogos = [
 
 const PressTestimonials = () => {
   return (
-    <section className="bg-white py-16 md:py-24 border-y border-gray-100">
+    <section className="bg-white py-12 md:py-16 border-y border-gray-100">
       <div className="container mx-auto px-4 md:px-8">
         
         {/* Section Heading */}
@@ -21,7 +21,7 @@ const PressTestimonials = () => {
           viewport={{ once: true }}
           className="text-center mb-10 md:mb-14"
         >
-          <h3 className="font-serif text-3xl md:text-[40px] text-brand-dark font-light">
+          <h3 className="font-serif text-[28px] md:text-[36px] lg:text-[42px] text-brand-dark font-[400]">
             Our Press
           </h3>
         </motion.div>
@@ -64,7 +64,7 @@ const PressTestimonials = () => {
             viewport={{ once: true }}
             className="py-2 mb-10 md:mb-14"
           >
-            <h4 className="font-serif text-xl md:text-3xl lg:text-[32px] text-gray-800 leading-snug max-w-3xl mx-auto font-light italic">
+            <h4 className="font-serif text-xl md:text-3xl lg:text-[32px] text-[#222222] leading-snug max-w-3xl mx-auto font-medium">
               “Glow naturally with skincare that nourishes,<br className="hidden md:block" /> protects, and enhances your beauty.”
             </h4>
           </motion.div>
@@ -79,7 +79,7 @@ const PressTestimonials = () => {
                 hidden: {},
                 visible: { transition: { staggerChildren: 0.1, delayChildren: 0.5 } }
               }}
-              className="flex flex-wrap justify-center items-center gap-6 md:gap-10 lg:gap-16"
+              className="flex flex-wrap justify-center items-center gap-6 md:gap-10 lg:gap-12"
             >
               {pressLogos.map((logo, idx) => (
                 <motion.div 

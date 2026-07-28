@@ -4,7 +4,7 @@ import ProductCard from '../ProductCard';
 import { Loader2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-// Matches Beautina's "Luxury Essentials" / selected highlights section
+// Matches The Woman Company's "Luxury Essentials" / selected highlights section
 const LuxuryEssentials = () => {
   const { data, isLoading } = useQuery({
     queryKey: ['products', 'luxury'],
@@ -17,7 +17,7 @@ const LuxuryEssentials = () => {
   const products = Array.isArray(data) ? data.slice(0, 4) : [];
 
   return (
-    <section className="py-16 md:py-20 bg-brand-light">
+    <section className="py-12 md:py-14 bg-brand-light">
       <div className="max-w-[1550px] mx-auto px-4 md:px-8">
         <div className="flex items-end justify-between mb-10 flex-wrap gap-4">
           <div>
@@ -32,7 +32,7 @@ const LuxuryEssentials = () => {
         </div>
 
         {isLoading ? (
-          <div className="flex justify-center py-20">
+          <div className="flex justify-center py-14">
             <Loader2 className="animate-spin text-brand-dark w-6 h-6" />
           </div>
         ) : (

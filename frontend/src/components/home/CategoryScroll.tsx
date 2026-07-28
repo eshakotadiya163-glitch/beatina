@@ -19,7 +19,7 @@ const CategoryScroll = () => {
           {categories.map((cat: any) => (
             <Link
               key={cat.slug}
-              to={`/category/${cat.slug}`}
+              to={`/shop/category/${cat.slug}`}
               className="group flex flex-col items-center flex-shrink-0 w-[90px] md:w-[120px]"
             >
               {/* Circular Image with NO border, NO shadow */}
@@ -36,7 +36,7 @@ const CategoryScroll = () => {
                 )}
               </div>
               {/* Label: serif font, matching original */}
-              <span className="font-heading text-[14px] md:text-[16px] text-[#222222] transition-colors text-center leading-tight">
+              <span className="font-heading text-[14px] md:text-[16px] font-bold text-[#222222] transition-colors text-center leading-tight">
                 {cat.name}
               </span>
             </Link>

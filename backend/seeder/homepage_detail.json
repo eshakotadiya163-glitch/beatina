@@ -1,32 +1,32 @@
 {
   "logoText": "",
-  "logoImgSrc": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/Beautina_1.png?v=1773124992&width=340",
+  "logoImgSrc": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/The Woman Company_1.png?v=1773124992&width=340",
   "navItems": [
     {
       "text": "Home",
-      "href": "https://beautina-cosmetic.myshopify.com/"
+      "href": "https://the woman company-cosmetic.myshopify.com/"
     },
     {
       "text": "Shop",
-      "href": "https://beautina-cosmetic.myshopify.com/collections"
+      "href": "https://the woman company-cosmetic.myshopify.com/collections"
     },
     {
       "text": "Products",
-      "href": "https://beautina-cosmetic.myshopify.com/collections/all"
+      "href": "https://the woman company-cosmetic.myshopify.com/collections/all"
     },
     {
       "text": "Blog",
-      "href": "https://beautina-cosmetic.myshopify.com/blogs/news"
+      "href": "https://the woman company-cosmetic.myshopify.com/blogs/news"
     },
     {
       "text": "Contact",
-      "href": "https://beautina-cosmetic.myshopify.com/pages/contact"
+      "href": "https://the woman company-cosmetic.myshopify.com/pages/contact"
     }
   ],
   "megaMenu": {
     "categories": {
       "": {
-        "href": "https://beautina-cosmetic.myshopify.com/collections/all",
+        "href": "https://the woman company-cosmetic.myshopify.com/collections/all",
         "img": ""
       }
     }
@@ -55,27 +55,27 @@
         },
         {
           "text": "Tiktok",
-          "href": "https://beautina-cosmetic.myshopify.com/#"
+          "href": "https://the woman company-cosmetic.myshopify.com/#"
         },
         {
           "text": "Shop now",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/all"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/all"
         },
         {
           "text": "Australia   (AUD $)",
-          "href": "https://beautina-cosmetic.myshopify.com/#"
+          "href": "https://the woman company-cosmetic.myshopify.com/#"
         },
         {
           "text": "India   (INR ₹)",
-          "href": "https://beautina-cosmetic.myshopify.com/#"
+          "href": "https://the woman company-cosmetic.myshopify.com/#"
         },
         {
           "text": "Russia   (USD $)",
-          "href": "https://beautina-cosmetic.myshopify.com/#"
+          "href": "https://the woman company-cosmetic.myshopify.com/#"
         },
         {
           "text": "United Arab Emirates   (AED د.إ)",
-          "href": "https://beautina-cosmetic.myshopify.com/#"
+          "href": "https://the woman company-cosmetic.myshopify.com/#"
         }
       ]
     },
@@ -83,47 +83,47 @@
       "type": "shopify-section",
       "heading": "BEST SELLERS",
       "imgCount": 103,
-      "firstImg": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/Beautina_1.png?v=1773124992&width=340",
+      "firstImg": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/The Woman Company_1.png?v=1773124992&width=340",
       "links": [
         {
           "text": "Age Recovery Facial Oil",
-          "href": "https://beautina-cosmetic.myshopify.com/products/superseed-age-recovery-organic-facial-oil"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/superseed-age-recovery-organic-facial-oil"
         },
         {
           "text": "3-Step Hair Care",
-          "href": "https://beautina-cosmetic.myshopify.com/products/3-step-hair-care-routine-set"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/3-step-hair-care-routine-set"
         },
         {
           "text": "Brightening AHA Peel",
-          "href": "https://beautina-cosmetic.myshopify.com/products/peel-brightening-5-aha-peel-mask"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/peel-brightening-5-aha-peel-mask"
         },
         {
           "text": "Face Cream for Men",
-          "href": "https://beautina-cosmetic.myshopify.com/products/his-face-cream-for-men"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/his-face-cream-for-men"
         },
         {
           "text": "Hydra Intense Rose Jelly",
-          "href": "https://beautina-cosmetic.myshopify.com/products/sos-hydra-intense-rose-jelly"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/sos-hydra-intense-rose-jelly"
         },
         {
           "text": "0",
-          "href": "https://beautina-cosmetic.myshopify.com/pages/wishlist"
+          "href": "https://the woman company-cosmetic.myshopify.com/pages/wishlist"
         },
         {
           "text": "SHOP OUR PRODUCTS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/all"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/all"
         },
         {
           "text": "Age Recovery Facial Oil",
-          "href": "https://beautina-cosmetic.myshopify.com/products/superseed-age-recovery-organic-facial-oil"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/superseed-age-recovery-organic-facial-oil"
         },
         {
           "text": "After Shave Serum for Men",
-          "href": "https://beautina-cosmetic.myshopify.com/products/his-after-shave-serum-for-men"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/his-after-shave-serum-for-men"
         },
         {
           "text": "3 Min Growth Boost Scalp Treatment",
-          "href": "https://beautina-cosmetic.myshopify.com/products/boost-3-min-growth-boost-scalp-treatment"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/boost-3-min-growth-boost-scalp-treatment"
         }
       ]
     },
@@ -131,47 +131,47 @@
       "type": "header",
       "heading": "BEST SELLERS",
       "imgCount": 57,
-      "firstImg": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/Beautina_1.png?v=1773124992&width=340",
+      "firstImg": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/The Woman Company_1.png?v=1773124992&width=340",
       "links": [
         {
           "text": "Age Recovery Facial Oil",
-          "href": "https://beautina-cosmetic.myshopify.com/products/superseed-age-recovery-organic-facial-oil"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/superseed-age-recovery-organic-facial-oil"
         },
         {
           "text": "3-Step Hair Care",
-          "href": "https://beautina-cosmetic.myshopify.com/products/3-step-hair-care-routine-set"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/3-step-hair-care-routine-set"
         },
         {
           "text": "Brightening AHA Peel",
-          "href": "https://beautina-cosmetic.myshopify.com/products/peel-brightening-5-aha-peel-mask"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/peel-brightening-5-aha-peel-mask"
         },
         {
           "text": "Face Cream for Men",
-          "href": "https://beautina-cosmetic.myshopify.com/products/his-face-cream-for-men"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/his-face-cream-for-men"
         },
         {
           "text": "Hydra Intense Rose Jelly",
-          "href": "https://beautina-cosmetic.myshopify.com/products/sos-hydra-intense-rose-jelly"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/sos-hydra-intense-rose-jelly"
         },
         {
           "text": "0",
-          "href": "https://beautina-cosmetic.myshopify.com/pages/wishlist"
+          "href": "https://the woman company-cosmetic.myshopify.com/pages/wishlist"
         },
         {
           "text": "SHOP OUR PRODUCTS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/all"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/all"
         },
         {
           "text": "Age Recovery Facial Oil",
-          "href": "https://beautina-cosmetic.myshopify.com/products/superseed-age-recovery-organic-facial-oil"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/superseed-age-recovery-organic-facial-oil"
         },
         {
           "text": "After Shave Serum for Men",
-          "href": "https://beautina-cosmetic.myshopify.com/products/his-after-shave-serum-for-men"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/his-after-shave-serum-for-men"
         },
         {
           "text": "3 Min Growth Boost Scalp Treatment",
-          "href": "https://beautina-cosmetic.myshopify.com/products/boost-3-min-growth-boost-scalp-treatment"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/boost-3-min-growth-boost-scalp-treatment"
         }
       ]
     },
@@ -179,15 +179,15 @@
       "type": "shopify-section",
       "heading": "SKIN'S NATURAL\nRADIANCE.",
       "imgCount": 4,
-      "firstImg": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2.png?v=1773203940&width=3840",
+      "firstImg": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2.png?v=1773203940&width=3840",
       "links": [
         {
           "text": "SHOP SKIN CARE",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/skincare"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/skincare"
         },
         {
           "text": "SHOP SERUMS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/serum-cream"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/serum-cream"
         }
       ]
     },
@@ -195,109 +195,109 @@
       "type": "slideshow-section",
       "heading": "SKIN'S NATURAL\nRADIANCE.",
       "imgCount": 4,
-      "firstImg": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2.png?v=1773203940&width=3840",
+      "firstImg": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2.png?v=1773203940&width=3840",
       "links": [
         {
           "text": "SHOP SKIN CARE",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/skincare"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/skincare"
         },
         {
           "text": "SHOP SERUMS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/serum-cream"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/serum-cream"
         }
       ]
     },
     {
       "type": "shopify-section",
       "imgCount": 24,
-      "firstImg": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/5-omega-and-vitamin-e-oil-for-face-A2281.jpg?v=1773123679&width=200",
+      "firstImg": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/5-omega-and-vitamin-e-oil-for-face-A2281.jpg?v=1773123679&width=200",
       "links": [
         {
           "text": "Skin Care",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/skincare"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/skincare"
         },
         {
           "text": "Makeup",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/moisture-cream"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/moisture-cream"
         },
         {
           "text": "Best Sellers",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/accessories"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/accessories"
         },
         {
           "text": "Body Care",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/serum-cream"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/serum-cream"
         },
         {
           "text": "Face Care",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/skincare"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/skincare"
         },
         {
           "text": "Hair Care",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/hair-care"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/hair-care"
         },
         {
           "text": "Skin Care",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/skincare"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/skincare"
         },
         {
           "text": "Makeup",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/moisture-cream"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/moisture-cream"
         },
         {
           "text": "Best Sellers",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/accessories"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/accessories"
         },
         {
           "text": "Body Care",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/serum-cream"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/serum-cream"
         }
       ]
     },
     {
       "type": "ag-scroll-template--21198444855396__ag-scrolling-promotion",
       "imgCount": 24,
-      "firstImg": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/5-omega-and-vitamin-e-oil-for-face-A2281.jpg?v=1773123679&width=200",
+      "firstImg": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/5-omega-and-vitamin-e-oil-for-face-A2281.jpg?v=1773123679&width=200",
       "links": [
         {
           "text": "Skin Care",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/skincare"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/skincare"
         },
         {
           "text": "Makeup",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/moisture-cream"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/moisture-cream"
         },
         {
           "text": "Best Sellers",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/accessories"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/accessories"
         },
         {
           "text": "Body Care",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/serum-cream"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/serum-cream"
         },
         {
           "text": "Face Care",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/skincare"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/skincare"
         },
         {
           "text": "Hair Care",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/hair-care"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/hair-care"
         },
         {
           "text": "Skin Care",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/skincare"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/skincare"
         },
         {
           "text": "Makeup",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/moisture-cream"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/moisture-cream"
         },
         {
           "text": "Best Sellers",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/accessories"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/accessories"
         },
         {
           "text": "Body Care",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/serum-cream"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/serum-cream"
         }
       ]
     },
@@ -305,94 +305,94 @@
       "type": "shopify-section",
       "heading": "NEW ARRIVALS",
       "imgCount": 106,
-      "firstImg": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-sebum-control-clear-skin-wash-A2004.jpg?v=1773123671&width=720",
+      "firstImg": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-sebum-control-clear-skin-wash-A2004.jpg?v=1773123671&width=720",
       "links": [
         {
           "text": "New Arrivals",
-          "href": "https://beautina-cosmetic.myshopify.com/#prdtab-collection_1"
+          "href": "https://the woman company-cosmetic.myshopify.com/#prdtab-collection_1"
         },
         {
           "text": "Best Sellers",
-          "href": "https://beautina-cosmetic.myshopify.com/#prdtab-collection_2"
+          "href": "https://the woman company-cosmetic.myshopify.com/#prdtab-collection_2"
         },
         {
           "text": "Trending",
-          "href": "https://beautina-cosmetic.myshopify.com/#prdtab-collection_3"
+          "href": "https://the woman company-cosmetic.myshopify.com/#prdtab-collection_3"
         },
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         },
         {
           "text": "Sebum Control Clear Skin Wash",
-          "href": "https://beautina-cosmetic.myshopify.com/products/acne-sebum-control-clear-skin-wash"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/acne-sebum-control-clear-skin-wash"
         },
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         },
         {
           "text": "Custom Actives",
-          "href": "https://beautina-cosmetic.myshopify.com/products/custom-actives"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/custom-actives"
         },
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         },
         {
           "text": "Face Cream For Men",
-          "href": "https://beautina-cosmetic.myshopify.com/products/his-face-cream-for-men"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/his-face-cream-for-men"
         },
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         }
       ]
     },
     {
       "type": "producttab",
       "imgCount": 106,
-      "firstImg": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-sebum-control-clear-skin-wash-A2004.jpg?v=1773123671&width=720",
+      "firstImg": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-sebum-control-clear-skin-wash-A2004.jpg?v=1773123671&width=720",
       "links": [
         {
           "text": "New Arrivals",
-          "href": "https://beautina-cosmetic.myshopify.com/#prdtab-collection_1"
+          "href": "https://the woman company-cosmetic.myshopify.com/#prdtab-collection_1"
         },
         {
           "text": "Best Sellers",
-          "href": "https://beautina-cosmetic.myshopify.com/#prdtab-collection_2"
+          "href": "https://the woman company-cosmetic.myshopify.com/#prdtab-collection_2"
         },
         {
           "text": "Trending",
-          "href": "https://beautina-cosmetic.myshopify.com/#prdtab-collection_3"
+          "href": "https://the woman company-cosmetic.myshopify.com/#prdtab-collection_3"
         },
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         },
         {
           "text": "Sebum Control Clear Skin Wash",
-          "href": "https://beautina-cosmetic.myshopify.com/products/acne-sebum-control-clear-skin-wash"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/acne-sebum-control-clear-skin-wash"
         },
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         },
         {
           "text": "Custom Actives",
-          "href": "https://beautina-cosmetic.myshopify.com/products/custom-actives"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/custom-actives"
         },
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         },
         {
           "text": "Face Cream For Men",
-          "href": "https://beautina-cosmetic.myshopify.com/products/his-face-cream-for-men"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/his-face-cream-for-men"
         },
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         }
       ]
     },
@@ -412,37 +412,37 @@
       "type": "shopify-section",
       "heading": "FOCUS ON SUMMER SPECIAL CARE",
       "imgCount": 2,
-      "firstImg": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/b12_720x_301f00ae-898e-41d1-b635-14ec61052c17.webp?v=1773124923&width=1066",
+      "firstImg": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/b12_720x_301f00ae-898e-41d1-b635-14ec61052c17.webp?v=1773124923&width=1066",
       "links": [
         {
           "text": "SHOP NOW",
-          "href": "https://beautina-cosmetic.myshopify.com/"
+          "href": "https://the woman company-cosmetic.myshopify.com/"
         },
         {
           "text": "SHOP NOW",
-          "href": "https://beautina-cosmetic.myshopify.com/"
+          "href": "https://the woman company-cosmetic.myshopify.com/"
         }
       ]
     },
     {
       "type": "shopify-section",
       "imgCount": 7,
-      "firstImg": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/gallery-image-1.jpg?v=1773124923&width=600",
+      "firstImg": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/gallery-image-1.jpg?v=1773124923&width=600",
       "links": [
         {
           "text": "DISCOVER NOW",
-          "href": "https://beautina-cosmetic.myshopify.com/"
+          "href": "https://the woman company-cosmetic.myshopify.com/"
         }
       ]
     },
     {
       "type": "image-interactive",
       "imgCount": 7,
-      "firstImg": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/gallery-image-1.jpg?v=1773124923&width=600",
+      "firstImg": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/gallery-image-1.jpg?v=1773124923&width=600",
       "links": [
         {
           "text": "DISCOVER NOW",
-          "href": "https://beautina-cosmetic.myshopify.com/"
+          "href": "https://the woman company-cosmetic.myshopify.com/"
         }
       ]
     },
@@ -450,68 +450,68 @@
       "type": "shopify-section",
       "heading": "TIME TO ACHIEVE MORE WITH LESS",
       "imgCount": 1,
-      "firstImg": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/collection-tab-1.jpg?crop=center&height=1&v=1773124924&width=1",
+      "firstImg": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/collection-tab-1.jpg?crop=center&height=1&v=1773124924&width=1",
       "links": []
     },
     {
       "type": "customstyletemplate--21198444855396__faq_accordion_1",
       "heading": "TIME TO ACHIEVE MORE WITH LESS",
       "imgCount": 1,
-      "firstImg": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/collection-tab-1.jpg?crop=center&height=1&v=1773124924&width=1",
+      "firstImg": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/collection-tab-1.jpg?crop=center&height=1&v=1773124924&width=1",
       "links": []
     },
     {
       "type": "shopify-section",
       "heading": "MUST-HAVE BEAUTY",
       "imgCount": 5,
-      "firstImg": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/5-omega-and-vitamin-e-oil-for-face-A2281.jpg?v=1773123679&width=800",
+      "firstImg": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/5-omega-and-vitamin-e-oil-for-face-A2281.jpg?v=1773123679&width=800",
       "links": [
         {
           "text": "SkinCare",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/skincare"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/skincare"
         },
         {
           "text": "Serum & Cream",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/serum-cream"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/serum-cream"
         },
         {
           "text": "Hair Care",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/hair-care"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/hair-care"
         },
         {
           "text": "Accessories",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/accessories"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/accessories"
         },
         {
           "text": "Moisture Cream",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/moisture-cream"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/moisture-cream"
         }
       ]
     },
     {
       "type": "slickCarousels",
       "imgCount": 5,
-      "firstImg": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/5-omega-and-vitamin-e-oil-for-face-A2281.jpg?v=1773123679&width=800",
+      "firstImg": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/5-omega-and-vitamin-e-oil-for-face-A2281.jpg?v=1773123679&width=800",
       "links": [
         {
           "text": "SkinCare",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/skincare"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/skincare"
         },
         {
           "text": "Serum & Cream",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/serum-cream"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/serum-cream"
         },
         {
           "text": "Hair Care",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/hair-care"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/hair-care"
         },
         {
           "text": "Accessories",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/accessories"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/accessories"
         },
         {
           "text": "Moisture Cream",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/moisture-cream"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/moisture-cream"
         }
       ]
     },
@@ -519,115 +519,115 @@
       "type": "shopify-section",
       "heading": "",
       "imgCount": 13,
-      "firstImg": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/brand-bustle.webp?crop=center&height=1&v=1773124923&width=1",
+      "firstImg": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/brand-bustle.webp?crop=center&height=1&v=1773124923&width=1",
       "links": []
     },
     {
       "type": "shopify-section",
       "heading": "THE BALANCE OF HIGH-PERFORMANCE",
       "imgCount": 2,
-      "firstImg": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/home-after_1.jpg?v=1773290459&width=1500",
+      "firstImg": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/home-after_1.jpg?v=1773290459&width=1500",
       "links": []
     },
     {
       "type": "beforeafter",
       "heading": "THE BALANCE OF HIGH-PERFORMANCE",
       "imgCount": 2,
-      "firstImg": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/home-after_1.jpg?v=1773290459&width=1500",
+      "firstImg": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/home-after_1.jpg?v=1773290459&width=1500",
       "links": []
     },
     {
       "type": "shopify-section",
       "heading": "THE ELEGANCE OF EFFORTLESS BEAUTY",
       "imgCount": 36,
-      "firstImg": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-contour-wrinkle-eye-cream-A3343.jpg?v=1773123652&width=720",
+      "firstImg": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-contour-wrinkle-eye-cream-A3343.jpg?v=1773123652&width=720",
       "links": [
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         },
         {
           "text": "Contour Wrinkle Eye Cream",
-          "href": "https://beautina-cosmetic.myshopify.com/products/age-pro-contour-wrinkle-eye-cream"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/age-pro-contour-wrinkle-eye-cream"
         },
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         },
         {
           "text": "Peptide Day Cream",
-          "href": "https://beautina-cosmetic.myshopify.com/products/derma-collagen-peptide-day-cream"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/derma-collagen-peptide-day-cream"
         },
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         },
         {
           "text": "Peptide Night Cream",
-          "href": "https://beautina-cosmetic.myshopify.com/products/derma-collagen-peptide-night-cream"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/derma-collagen-peptide-night-cream"
         },
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         },
         {
           "text": "Age Recovery Facial Oil",
-          "href": "https://beautina-cosmetic.myshopify.com/products/superseed-age-recovery-organic-facial-oil"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/superseed-age-recovery-organic-facial-oil"
         },
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         },
         {
           "text": "Intense Wrinkle Serum",
-          "href": "https://beautina-cosmetic.myshopify.com/products/age-pro-intense-wrinkle-serum"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/age-pro-intense-wrinkle-serum"
         }
       ]
     },
     {
       "type": "productlist",
       "imgCount": 36,
-      "firstImg": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-contour-wrinkle-eye-cream-A3343.jpg?v=1773123652&width=720",
+      "firstImg": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-contour-wrinkle-eye-cream-A3343.jpg?v=1773123652&width=720",
       "links": [
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         },
         {
           "text": "Contour Wrinkle Eye Cream",
-          "href": "https://beautina-cosmetic.myshopify.com/products/age-pro-contour-wrinkle-eye-cream"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/age-pro-contour-wrinkle-eye-cream"
         },
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         },
         {
           "text": "Peptide Day Cream",
-          "href": "https://beautina-cosmetic.myshopify.com/products/derma-collagen-peptide-day-cream"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/derma-collagen-peptide-day-cream"
         },
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         },
         {
           "text": "Peptide Night Cream",
-          "href": "https://beautina-cosmetic.myshopify.com/products/derma-collagen-peptide-night-cream"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/derma-collagen-peptide-night-cream"
         },
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         },
         {
           "text": "Age Recovery Facial Oil",
-          "href": "https://beautina-cosmetic.myshopify.com/products/superseed-age-recovery-organic-facial-oil"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/superseed-age-recovery-organic-facial-oil"
         },
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         },
         {
           "text": "Intense Wrinkle Serum",
-          "href": "https://beautina-cosmetic.myshopify.com/products/age-pro-intense-wrinkle-serum"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/age-pro-intense-wrinkle-serum"
         }
       ]
     },
@@ -639,7 +639,7 @@
       "links": [
         {
           "text": "SHOP NOW",
-          "href": "https://beautina-cosmetic.myshopify.com/"
+          "href": "https://the woman company-cosmetic.myshopify.com/"
         }
       ]
     },
@@ -647,47 +647,47 @@
       "type": "shopify-section",
       "heading": "FAVORITE SKIN & HAIR GROW",
       "imgCount": 11,
-      "firstImg": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/ChatGPT_Image_Mar_11_2026_10_46_49_AM.png?crop=center&height=1&v=1773206223&width=1",
+      "firstImg": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/ChatGPT_Image_Mar_11_2026_10_46_49_AM.png?crop=center&height=1&v=1773206223&width=1",
       "links": [
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         },
         {
           "text": "Eye Contour Cream",
-          "href": "https://beautina-cosmetic.myshopify.com/products/deep-moisture-eye-contour-cream"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/deep-moisture-eye-contour-cream"
         },
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         },
         {
           "text": "Exfoliating Oil-To-Milk Scrub",
-          "href": "https://beautina-cosmetic.myshopify.com/products/exfoliating-oil-to-milk-scrub"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/exfoliating-oil-to-milk-scrub"
         },
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         },
         {
           "text": "3 Min Growth Boost Scalp Treatment",
-          "href": "https://beautina-cosmetic.myshopify.com/products/boost-3-min-growth-boost-scalp-treatment"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/boost-3-min-growth-boost-scalp-treatment"
         },
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         },
         {
           "text": "Eye Contour Cream",
-          "href": "https://beautina-cosmetic.myshopify.com/products/deep-moisture-eye-contour-cream"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/deep-moisture-eye-contour-cream"
         },
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         },
         {
           "text": "Exfoliating Oil-To-Milk Scrub",
-          "href": "https://beautina-cosmetic.myshopify.com/products/exfoliating-oil-to-milk-scrub"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/exfoliating-oil-to-milk-scrub"
         }
       ]
     },
@@ -695,94 +695,94 @@
       "type": "shopthelook",
       "heading": "FAVORITE SKIN & HAIR GROW",
       "imgCount": 11,
-      "firstImg": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/ChatGPT_Image_Mar_11_2026_10_46_49_AM.png?crop=center&height=1&v=1773206223&width=1",
+      "firstImg": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/ChatGPT_Image_Mar_11_2026_10_46_49_AM.png?crop=center&height=1&v=1773206223&width=1",
       "links": [
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         },
         {
           "text": "Eye Contour Cream",
-          "href": "https://beautina-cosmetic.myshopify.com/products/deep-moisture-eye-contour-cream"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/deep-moisture-eye-contour-cream"
         },
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         },
         {
           "text": "Exfoliating Oil-To-Milk Scrub",
-          "href": "https://beautina-cosmetic.myshopify.com/products/exfoliating-oil-to-milk-scrub"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/exfoliating-oil-to-milk-scrub"
         },
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         },
         {
           "text": "3 Min Growth Boost Scalp Treatment",
-          "href": "https://beautina-cosmetic.myshopify.com/products/boost-3-min-growth-boost-scalp-treatment"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/boost-3-min-growth-boost-scalp-treatment"
         },
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         },
         {
           "text": "Eye Contour Cream",
-          "href": "https://beautina-cosmetic.myshopify.com/products/deep-moisture-eye-contour-cream"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/deep-moisture-eye-contour-cream"
         },
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         },
         {
           "text": "Exfoliating Oil-To-Milk Scrub",
-          "href": "https://beautina-cosmetic.myshopify.com/products/exfoliating-oil-to-milk-scrub"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/exfoliating-oil-to-milk-scrub"
         }
       ]
     },
     {
       "type": "slickCarousels",
       "imgCount": 10,
-      "firstImg": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-eye-contour-cream-A2271.jpg?v=1773123678&width=720",
+      "firstImg": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-eye-contour-cream-A2271.jpg?v=1773123678&width=720",
       "links": [
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         },
         {
           "text": "Eye Contour Cream",
-          "href": "https://beautina-cosmetic.myshopify.com/products/deep-moisture-eye-contour-cream"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/deep-moisture-eye-contour-cream"
         },
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         },
         {
           "text": "Exfoliating Oil-To-Milk Scrub",
-          "href": "https://beautina-cosmetic.myshopify.com/products/exfoliating-oil-to-milk-scrub"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/exfoliating-oil-to-milk-scrub"
         },
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         },
         {
           "text": "3 Min Growth Boost Scalp Treatment",
-          "href": "https://beautina-cosmetic.myshopify.com/products/boost-3-min-growth-boost-scalp-treatment"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/boost-3-min-growth-boost-scalp-treatment"
         },
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         },
         {
           "text": "Eye Contour Cream",
-          "href": "https://beautina-cosmetic.myshopify.com/products/deep-moisture-eye-contour-cream"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/deep-moisture-eye-contour-cream"
         },
         {
           "text": "MADARA COSMETICS",
-          "href": "https://beautina-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
+          "href": "https://the woman company-cosmetic.myshopify.com/collections/vendors?filter.p.vendor=Madara%20Cosmetics&q=Madara%20Cosmetics"
         },
         {
           "text": "Exfoliating Oil-To-Milk Scrub",
-          "href": "https://beautina-cosmetic.myshopify.com/products/exfoliating-oil-to-milk-scrub"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/exfoliating-oil-to-milk-scrub"
         }
       ]
     },
@@ -790,39 +790,39 @@
       "type": "shopify-section",
       "heading": "Live Result",
       "imgCount": 16,
-      "firstImg": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/preview_images/b11b019c831543709c9f0852c3d79b21.thumbnail.0000000000_small.jpg?v=1773130279",
+      "firstImg": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/preview_images/b11b019c831543709c9f0852c3d79b21.thumbnail.0000000000_small.jpg?v=1773130279",
       "links": [
         {
           "text": "Add to cart",
-          "href": "https://beautina-cosmetic.myshopify.com/products/deep-moisture-day-cream"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/deep-moisture-day-cream"
         },
         {
           "text": "Add to cart",
-          "href": "https://beautina-cosmetic.myshopify.com/products/luminous-perfecting-concealer"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/luminous-perfecting-concealer"
         },
         {
           "text": "Add to cart",
-          "href": "https://beautina-cosmetic.myshopify.com/products/vitamin-c-intense-glow-concentrate"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/vitamin-c-intense-glow-concentrate"
         },
         {
           "text": "Add to cart",
-          "href": "https://beautina-cosmetic.myshopify.com/products/superseed-age-recovery-organic-facial-oil"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/superseed-age-recovery-organic-facial-oil"
         },
         {
           "text": "Shop Now",
-          "href": "https://beautina-cosmetic.myshopify.com/products/deep-moisture-day-cream"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/deep-moisture-day-cream"
         },
         {
           "text": "Shop Now",
-          "href": "https://beautina-cosmetic.myshopify.com/products/luminous-perfecting-concealer"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/luminous-perfecting-concealer"
         },
         {
           "text": "Shop Now",
-          "href": "https://beautina-cosmetic.myshopify.com/products/vitamin-c-intense-glow-concentrate"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/vitamin-c-intense-glow-concentrate"
         },
         {
           "text": "Shop Now",
-          "href": "https://beautina-cosmetic.myshopify.com/products/superseed-age-recovery-organic-facial-oil"
+          "href": "https://the woman company-cosmetic.myshopify.com/products/superseed-age-recovery-organic-facial-oil"
         }
       ]
     },
@@ -830,133 +830,133 @@
       "type": "shopify-section",
       "heading": "REAL PEOPLE, REAL RESULTS",
       "imgCount": 6,
-      "firstImg": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/gallery-5-v2.webp?v=1773124923&width=720",
+      "firstImg": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/gallery-5-v2.webp?v=1773124923&width=720",
       "links": []
     },
     {
       "type": "slickCarousels",
       "imgCount": 6,
-      "firstImg": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/gallery-5-v2.webp?v=1773124923&width=720",
+      "firstImg": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/gallery-5-v2.webp?v=1773124923&width=720",
       "links": []
     },
     {
       "type": "shopify-section",
       "heading": "JOURNAL",
       "imgCount": 3,
-      "firstImg": "https://beautina-cosmetic.myshopify.com/cdn/shop/articles/b2_1_96db18e7-8cd1-4ac2-95aa-f203226fc675.webp?crop=center&height=1&v=1773147608&width=1",
+      "firstImg": "https://the woman company-cosmetic.myshopify.com/cdn/shop/articles/b2_1_96db18e7-8cd1-4ac2-95aa-f203226fc675.webp?crop=center&height=1&v=1773147608&width=1",
       "links": [
         {
           "text": "ACCESSORIES",
-          "href": "https://beautina-cosmetic.myshopify.com/tagged/accessories"
+          "href": "https://the woman company-cosmetic.myshopify.com/tagged/accessories"
         },
         {
           "text": "TOOLS",
-          "href": "https://beautina-cosmetic.myshopify.com/tagged/tools"
+          "href": "https://the woman company-cosmetic.myshopify.com/tagged/tools"
         },
         {
           "text": "Must-Have Beauty Accessories for Your Daily Routine",
-          "href": "https://beautina-cosmetic.myshopify.com/blogs/news/must-have-beauty-accessories-for-your-daily-routine"
+          "href": "https://the woman company-cosmetic.myshopify.com/blogs/news/must-have-beauty-accessories-for-your-daily-routine"
         },
         {
           "text": "MORE DETAILS",
-          "href": "https://beautina-cosmetic.myshopify.com/blogs/news/must-have-beauty-accessories-for-your-daily-routine"
+          "href": "https://the woman company-cosmetic.myshopify.com/blogs/news/must-have-beauty-accessories-for-your-daily-routine"
         },
         {
           "text": "SERUMS",
-          "href": "https://beautina-cosmetic.myshopify.com/tagged/serums"
+          "href": "https://the woman company-cosmetic.myshopify.com/tagged/serums"
         },
         {
           "text": "Why Face Serums Are a Must-Have in Your Skincare Routine",
-          "href": "https://beautina-cosmetic.myshopify.com/blogs/news/why-face-serums-are-a-must-have-in-your-skincare-routine"
+          "href": "https://the woman company-cosmetic.myshopify.com/blogs/news/why-face-serums-are-a-must-have-in-your-skincare-routine"
         },
         {
           "text": "MORE DETAILS",
-          "href": "https://beautina-cosmetic.myshopify.com/blogs/news/why-face-serums-are-a-must-have-in-your-skincare-routine"
+          "href": "https://the woman company-cosmetic.myshopify.com/blogs/news/why-face-serums-are-a-must-have-in-your-skincare-routine"
         },
         {
           "text": "CREAM",
-          "href": "https://beautina-cosmetic.myshopify.com/tagged/cream"
+          "href": "https://the woman company-cosmetic.myshopify.com/tagged/cream"
         },
         {
           "text": "How Face Creams Help Keep Your Skin Soft and Hydrated",
-          "href": "https://beautina-cosmetic.myshopify.com/blogs/news/how-face-creams-help-keep-your-skin-soft-and-hydrated"
+          "href": "https://the woman company-cosmetic.myshopify.com/blogs/news/how-face-creams-help-keep-your-skin-soft-and-hydrated"
         },
         {
           "text": "MORE DETAILS",
-          "href": "https://beautina-cosmetic.myshopify.com/blogs/news/how-face-creams-help-keep-your-skin-soft-and-hydrated"
+          "href": "https://the woman company-cosmetic.myshopify.com/blogs/news/how-face-creams-help-keep-your-skin-soft-and-hydrated"
         }
       ]
     },
     {
       "type": "slickCarousels",
       "imgCount": 3,
-      "firstImg": "https://beautina-cosmetic.myshopify.com/cdn/shop/articles/b2_1_96db18e7-8cd1-4ac2-95aa-f203226fc675.webp?crop=center&height=1&v=1773147608&width=1",
+      "firstImg": "https://the woman company-cosmetic.myshopify.com/cdn/shop/articles/b2_1_96db18e7-8cd1-4ac2-95aa-f203226fc675.webp?crop=center&height=1&v=1773147608&width=1",
       "links": [
         {
           "text": "ACCESSORIES",
-          "href": "https://beautina-cosmetic.myshopify.com/tagged/accessories"
+          "href": "https://the woman company-cosmetic.myshopify.com/tagged/accessories"
         },
         {
           "text": "TOOLS",
-          "href": "https://beautina-cosmetic.myshopify.com/tagged/tools"
+          "href": "https://the woman company-cosmetic.myshopify.com/tagged/tools"
         },
         {
           "text": "Must-Have Beauty Accessories for Your Daily Routine",
-          "href": "https://beautina-cosmetic.myshopify.com/blogs/news/must-have-beauty-accessories-for-your-daily-routine"
+          "href": "https://the woman company-cosmetic.myshopify.com/blogs/news/must-have-beauty-accessories-for-your-daily-routine"
         },
         {
           "text": "MORE DETAILS",
-          "href": "https://beautina-cosmetic.myshopify.com/blogs/news/must-have-beauty-accessories-for-your-daily-routine"
+          "href": "https://the woman company-cosmetic.myshopify.com/blogs/news/must-have-beauty-accessories-for-your-daily-routine"
         },
         {
           "text": "SERUMS",
-          "href": "https://beautina-cosmetic.myshopify.com/tagged/serums"
+          "href": "https://the woman company-cosmetic.myshopify.com/tagged/serums"
         },
         {
           "text": "Why Face Serums Are a Must-Have in Your Skincare Routine",
-          "href": "https://beautina-cosmetic.myshopify.com/blogs/news/why-face-serums-are-a-must-have-in-your-skincare-routine"
+          "href": "https://the woman company-cosmetic.myshopify.com/blogs/news/why-face-serums-are-a-must-have-in-your-skincare-routine"
         },
         {
           "text": "MORE DETAILS",
-          "href": "https://beautina-cosmetic.myshopify.com/blogs/news/why-face-serums-are-a-must-have-in-your-skincare-routine"
+          "href": "https://the woman company-cosmetic.myshopify.com/blogs/news/why-face-serums-are-a-must-have-in-your-skincare-routine"
         },
         {
           "text": "CREAM",
-          "href": "https://beautina-cosmetic.myshopify.com/tagged/cream"
+          "href": "https://the woman company-cosmetic.myshopify.com/tagged/cream"
         },
         {
           "text": "How Face Creams Help Keep Your Skin Soft and Hydrated",
-          "href": "https://beautina-cosmetic.myshopify.com/blogs/news/how-face-creams-help-keep-your-skin-soft-and-hydrated"
+          "href": "https://the woman company-cosmetic.myshopify.com/blogs/news/how-face-creams-help-keep-your-skin-soft-and-hydrated"
         },
         {
           "text": "MORE DETAILS",
-          "href": "https://beautina-cosmetic.myshopify.com/blogs/news/how-face-creams-help-keep-your-skin-soft-and-hydrated"
+          "href": "https://the woman company-cosmetic.myshopify.com/blogs/news/how-face-creams-help-keep-your-skin-soft-and-hydrated"
         }
       ]
     },
     {
       "type": "shopify-section",
-      "heading": "@BEAUTINA",
+      "heading": "@THE WOMAN COMPANY",
       "imgCount": 6,
-      "firstImg": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/b17_540x_aa6b96c0-cd33-460e-8da7-208e8c30f82e.webp?v=1773124923&width=600",
+      "firstImg": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/b17_540x_aa6b96c0-cd33-460e-8da7-208e8c30f82e.webp?v=1773124923&width=600",
       "links": []
     },
     {
       "type": "slickCarousels",
       "imgCount": 6,
-      "firstImg": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/b17_540x_aa6b96c0-cd33-460e-8da7-208e8c30f82e.webp?v=1773124923&width=600",
+      "firstImg": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/b17_540x_aa6b96c0-cd33-460e-8da7-208e8c30f82e.webp?v=1773124923&width=600",
       "links": []
     },
     {
       "type": "shopify-section",
-      "heading": "Beautina",
+      "heading": "The Woman Company",
       "imgCount": 0,
       "firstImg": "",
       "links": []
     },
     {
       "type": "footer-brand-text-footer-brand-text",
-      "heading": "Beautina",
+      "heading": "The Woman Company",
       "imgCount": 0,
       "firstImg": "",
       "links": []
@@ -1004,33 +1004,33 @@
     "Age Recovery Facial Oil",
     "REAL PEOPLE, REAL RESULTS",
     "JOURNAL",
-    "@BEAUTINA",
-    "Beautina"
+    "@THE WOMAN COMPANY",
+    "The Woman Company"
   ],
   "allButtons": [
     {
       "text": "Age Recovery Facial Oil",
-      "href": "https://beautina-cosmetic.myshopify.com/products/superseed-age-recovery-organic-facial-oil"
+      "href": "https://the woman company-cosmetic.myshopify.com/products/superseed-age-recovery-organic-facial-oil"
     },
     {
       "text": "3-Step Hair Care",
-      "href": "https://beautina-cosmetic.myshopify.com/products/3-step-hair-care-routine-set"
+      "href": "https://the woman company-cosmetic.myshopify.com/products/3-step-hair-care-routine-set"
     },
     {
       "text": "Brightening AHA Peel",
-      "href": "https://beautina-cosmetic.myshopify.com/products/peel-brightening-5-aha-peel-mask"
+      "href": "https://the woman company-cosmetic.myshopify.com/products/peel-brightening-5-aha-peel-mask"
     },
     {
       "text": "Face Cream for Men",
-      "href": "https://beautina-cosmetic.myshopify.com/products/his-face-cream-for-men"
+      "href": "https://the woman company-cosmetic.myshopify.com/products/his-face-cream-for-men"
     },
     {
       "text": "Hydra Intense Rose Jelly",
-      "href": "https://beautina-cosmetic.myshopify.com/products/sos-hydra-intense-rose-jelly"
+      "href": "https://the woman company-cosmetic.myshopify.com/products/sos-hydra-intense-rose-jelly"
     },
     {
       "text": "SHOP OUR PRODUCTS",
-      "href": "https://beautina-cosmetic.myshopify.com/collections/all"
+      "href": "https://the woman company-cosmetic.myshopify.com/collections/all"
     },
     {
       "text": "Save"
@@ -1052,23 +1052,23 @@
     },
     {
       "text": "Check Out",
-      "href": "https://beautina-cosmetic.myshopify.com/checkout"
+      "href": "https://the woman company-cosmetic.myshopify.com/checkout"
     },
     {
       "text": "View Cart",
-      "href": "https://beautina-cosmetic.myshopify.com/cart"
+      "href": "https://the woman company-cosmetic.myshopify.com/cart"
     },
     {
       "text": "SHOP NOW",
-      "href": "https://beautina-cosmetic.myshopify.com/collections/accessories"
+      "href": "https://the woman company-cosmetic.myshopify.com/collections/accessories"
     },
     {
       "text": "SHOP NOW",
-      "href": "https://beautina-cosmetic.myshopify.com/collections/skincare"
+      "href": "https://the woman company-cosmetic.myshopify.com/collections/skincare"
     },
     {
       "text": "SHOP NOW",
-      "href": "https://beautina-cosmetic.myshopify.com/collections/moisture-cream"
+      "href": "https://the woman company-cosmetic.myshopify.com/collections/moisture-cream"
     },
     {
       "text": "GET 15% OFF"
@@ -1084,55 +1084,55 @@
     },
     {
       "text": "SHOP SKIN CARE",
-      "href": "https://beautina-cosmetic.myshopify.com/collections/skincare"
+      "href": "https://the woman company-cosmetic.myshopify.com/collections/skincare"
     },
     {
       "text": "SHOP SERUMS",
-      "href": "https://beautina-cosmetic.myshopify.com/collections/serum-cream"
+      "href": "https://the woman company-cosmetic.myshopify.com/collections/serum-cream"
     },
     {
       "text": "SHOP NOW",
-      "href": "https://beautina-cosmetic.myshopify.com/"
+      "href": "https://the woman company-cosmetic.myshopify.com/"
     },
     {
       "text": "SHOP NOW",
-      "href": "https://beautina-cosmetic.myshopify.com/"
+      "href": "https://the woman company-cosmetic.myshopify.com/"
     },
     {
       "text": "DISCOVER NOW",
-      "href": "https://beautina-cosmetic.myshopify.com/"
+      "href": "https://the woman company-cosmetic.myshopify.com/"
     },
     {
       "text": "SHOP NOW",
-      "href": "https://beautina-cosmetic.myshopify.com/"
+      "href": "https://the woman company-cosmetic.myshopify.com/"
     },
     {
       "text": "Shop Now",
-      "href": "https://beautina-cosmetic.myshopify.com/products/deep-moisture-day-cream"
+      "href": "https://the woman company-cosmetic.myshopify.com/products/deep-moisture-day-cream"
     },
     {
       "text": "Shop Now",
-      "href": "https://beautina-cosmetic.myshopify.com/products/luminous-perfecting-concealer"
+      "href": "https://the woman company-cosmetic.myshopify.com/products/luminous-perfecting-concealer"
     },
     {
       "text": "Shop Now",
-      "href": "https://beautina-cosmetic.myshopify.com/products/vitamin-c-intense-glow-concentrate"
+      "href": "https://the woman company-cosmetic.myshopify.com/products/vitamin-c-intense-glow-concentrate"
     },
     {
       "text": "Shop Now",
-      "href": "https://beautina-cosmetic.myshopify.com/products/superseed-age-recovery-organic-facial-oil"
+      "href": "https://the woman company-cosmetic.myshopify.com/products/superseed-age-recovery-organic-facial-oil"
     },
     {
       "text": "MORE DETAILS",
-      "href": "https://beautina-cosmetic.myshopify.com/blogs/news/must-have-beauty-accessories-for-your-daily-routine"
+      "href": "https://the woman company-cosmetic.myshopify.com/blogs/news/must-have-beauty-accessories-for-your-daily-routine"
     },
     {
       "text": "MORE DETAILS",
-      "href": "https://beautina-cosmetic.myshopify.com/blogs/news/why-face-serums-are-a-must-have-in-your-skincare-routine"
+      "href": "https://the woman company-cosmetic.myshopify.com/blogs/news/why-face-serums-are-a-must-have-in-your-skincare-routine"
     },
     {
       "text": "MORE DETAILS",
-      "href": "https://beautina-cosmetic.myshopify.com/blogs/news/how-face-creams-help-keep-your-skin-soft-and-hydrated"
+      "href": "https://the woman company-cosmetic.myshopify.com/blogs/news/how-face-creams-help-keep-your-skin-soft-and-hydrated"
     },
     {
       "text": "SUBSCRIBE"
@@ -1149,246 +1149,246 @@
   ],
   "announcementText": "Fb\nPin\nIns\nYou\nTiktok\n✌🏼 Free Express Shipping on orders $970.05!\nShop now\nIndia (INR ₹)\nEnglish",
   "beforeAfterImages": [
-    "https://beautina-cosmetic.myshopify.com/cdn/shop/files/home-after_1.jpg?v=1773290459&width=1500",
-    "https://beautina-cosmetic.myshopify.com/cdn/shop/files/home-before_1.jpg?v=1773290460&width=1500",
-    "https://beautina-cosmetic.myshopify.com/cdn/shop/files/home-after_1.jpg?v=1773290459&width=1500",
-    "https://beautina-cosmetic.myshopify.com/cdn/shop/files/home-before_1.jpg?v=1773290460&width=1500"
+    "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/home-after_1.jpg?v=1773290459&width=1500",
+    "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/home-before_1.jpg?v=1773290460&width=1500",
+    "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/home-after_1.jpg?v=1773290459&width=1500",
+    "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/home-before_1.jpg?v=1773290460&width=1500"
   ],
   "collectionsSection": [
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-botanic-niacinamide-alternative-5-in-1-serum-A2223.jpg?crop=center&height=80&v=1773123675&width=80",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-botanic-niacinamide-alternative-5-in-1-serum-A2223.jpg?crop=center&height=80&v=1773123675&width=80",
       "alt": "SkinCare"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-sos-hydra-repair-intensive-serum-A3021.jpg?crop=center&height=80&v=1773123668&width=80",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-sos-hydra-repair-intensive-serum-A3021.jpg?crop=center&height=80&v=1773123668&width=80",
       "alt": "Serum & Cream"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-balancing-fluid-A2211.jpg?crop=center&height=80&v=1773123681&width=80",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-balancing-fluid-A2211.jpg?crop=center&height=80&v=1773123681&width=80",
       "alt": "Moisture Cream"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1_grow_combo.jpg?crop=center&height=80&v=1773123687&width=80",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1_grow_combo.jpg?crop=center&height=80&v=1773123687&width=80",
       "alt": "Hair Care"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-age-pro-intense-wrinkle-serum-A3340.jpg?crop=center&height=80&v=1773123652&width=80",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-age-pro-intense-wrinkle-serum-A3340.jpg?crop=center&height=80&v=1773123652&width=80",
       "alt": "Accessories"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/s2_1512x_98eb4d02-1fb4-4572-912e-640bff0b5a70.jpg?v=1773124924&width=1000",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/s2_1512x_98eb4d02-1fb4-4572-912e-640bff0b5a70.jpg?v=1773124924&width=1000",
       "alt": "Shop 20%"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1_grow_combo.jpg?v=1773123687&width=60",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1_grow_combo.jpg?v=1773123687&width=60",
       "alt": ""
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-age-pro-intense-wrinkle-serum-A3340.jpg?v=1773123652&width=60",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-age-pro-intense-wrinkle-serum-A3340.jpg?v=1773123652&width=60",
       "alt": "MÁDARA Organic Skincare age pro intense wrinkle serum A3340 serum product photo on plain background."
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-botanic-niacinamide-alternative-5-in-1-serum-A2223.jpg?v=1773123675&width=60",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-botanic-niacinamide-alternative-5-in-1-serum-A2223.jpg?v=1773123675&width=60",
       "alt": ""
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-balancing-fluid-A2211.jpg?v=1773123681&width=60",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-balancing-fluid-A2211.jpg?v=1773123681&width=60",
       "alt": "MÁDARA Organic Skincare deep moisture balancing fluid A2211 product photo on plain background."
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/custom-banner-2.jpg?v=1773124923&width=1000",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/custom-banner-2.jpg?v=1773124923&width=1000",
       "alt": "Hair Care"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/5-madara-sos-skincare-A3021_2e459d9d-7110-4c29-8b0c-94120530ea94.jpg?v=1773134298&width=1000",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/5-madara-sos-skincare-A3021_2e459d9d-7110-4c29-8b0c-94120530ea94.jpg?v=1773134298&width=1000",
       "alt": "Accessories"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-anti-age-recovery-treatment-A2603.jpg?v=1773123649&width=1000",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-anti-age-recovery-treatment-A2603.jpg?v=1773123649&width=1000",
       "alt": "SkinCare"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/4-replenishing-night-cream-A3062.jpg?v=1773123650&width=1000",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/4-replenishing-night-cream-A3062.jpg?v=1773123650&width=1000",
       "alt": "Moisture Cream"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-superseed-age-recovery-oil-30ml-A2603.jpg?v=1773123649&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-superseed-age-recovery-oil-30ml-A2603.jpg?v=1773123649&width=400",
       "alt": "Age Recovery Facial Oil"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-balancing-fluid-A2211.jpg?v=1773123681&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-balancing-fluid-A2211.jpg?v=1773123681&width=400",
       "alt": "Balancing Fluid"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-after-shave-serum-for-men-madara-A5002.jpg?v=1773123669&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-after-shave-serum-for-men-madara-A5002.jpg?v=1773123669&width=400",
       "alt": "After Shave Serum for Men"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-age-pro-intense-wrinkle-serum-A3340.jpg?v=1773123652&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-age-pro-intense-wrinkle-serum-A3340.jpg?v=1773123652&width=400",
       "alt": "Intense Wrinkle Serum"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-hydra-firm-hyaluron-jelly-A3342.jpg?v=1773123654&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-hydra-firm-hyaluron-jelly-A3342.jpg?v=1773123654&width=400",
       "alt": "Hydra Firm Hyaluron Jelly"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-omega-3-6-9-concentrate-A3263.jpg?v=1773123671&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-omega-3-6-9-concentrate-A3263.jpg?v=1773123671&width=400",
       "alt": "Custom Actives"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-derma-collagen-peptides-serum-A3061.jpg?v=1773123657&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-derma-collagen-peptides-serum-A3061.jpg?v=1773123657&width=400",
       "alt": "Peptide Serum"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-age-pro-smooth-day-cream-A3330.jpg?v=1773123655&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-age-pro-smooth-day-cream-A3330.jpg?v=1773123655&width=400",
       "alt": "Smooth Day Cream"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-age-pro-night-cream-A3335.jpg?v=1773123653&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-age-pro-night-cream-A3335.jpg?v=1773123653&width=400",
       "alt": "Renew Night Cream"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-contour-wrinkle-eye-cream-A3343.jpg?v=1773123652&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-contour-wrinkle-eye-cream-A3343.jpg?v=1773123652&width=400",
       "alt": "Contour Wrinkle Eye Cream"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-derma-collagen-peptide-day-cream.jpg?v=1773123651&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-derma-collagen-peptide-day-cream.jpg?v=1773123651&width=400",
       "alt": "Peptide Day Cream"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/derma-collagen-peptide-night-cream-madara-a3062.jpg?v=1773123650&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/derma-collagen-peptide-night-cream-madara-a3062.jpg?v=1773123650&width=400",
       "alt": "Peptide Night cream"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-superseed-age-recovery-oil-30ml-A2603.jpg?v=1773123649&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-superseed-age-recovery-oil-30ml-A2603.jpg?v=1773123649&width=400",
       "alt": "Age Recovery Facial Oil"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-botanic-niacinamide-alternative-5-in-1-serum-A2223.jpg?v=1773123675&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-botanic-niacinamide-alternative-5-in-1-serum-A2223.jpg?v=1773123675&width=400",
       "alt": "Niacinamide Alternative 5-in-1 Serum"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-brightening-5-aha-peel-mask-A2101.jpg?v=1773123676&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-brightening-5-aha-peel-mask-A2101.jpg?v=1773123676&width=400",
       "alt": "Brightening AHA Peel Mask"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-creamy-clay-7-aha-peel-mask-A2105.jpg?v=1773123674&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-creamy-clay-7-aha-peel-mask-A2105.jpg?v=1773123674&width=400",
       "alt": "Creamy Clay AHA Peel Mask"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-exfoliating-oil-to-milk-scrub-A2151.jpg?v=1773123673&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-exfoliating-oil-to-milk-scrub-A2151.jpg?v=1773123673&width=400",
       "alt": "Exfoliating Oil-To-Milk Scrub"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-clarifying-toner-A2051.jpg?v=1773123673&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-clarifying-toner-A2051.jpg?v=1773123673&width=400",
       "alt": "Clarifying Toner"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-acne-spot-roll-on-A2103.jpg?v=1773123672&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-acne-spot-roll-on-A2103.jpg?v=1773123672&width=400",
       "alt": "Spot Roll-On"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-sebum-control-clear-skin-wash-A2004.jpg?v=1773123671&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-sebum-control-clear-skin-wash-A2004.jpg?v=1773123671&width=400",
       "alt": "Sebum Control Clear Skin Wash"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-omega-3-6-9-concentrate-A3263.jpg?v=1773123671&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-omega-3-6-9-concentrate-A3263.jpg?v=1773123671&width=400",
       "alt": "Custom Actives"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-his-face-cream-for-men-A5003.jpg?v=1773123670&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-his-face-cream-for-men-A5003.jpg?v=1773123670&width=400",
       "alt": "Face Cream for Men"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-after-shave-serum-for-men-madara-A5002.jpg?v=1773123669&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-after-shave-serum-for-men-madara-A5002.jpg?v=1773123669&width=400",
       "alt": "After Shave Serum for Men"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-balancing-fluid-A2211.jpg?v=1773123681&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-balancing-fluid-A2211.jpg?v=1773123681&width=400",
       "alt": "Balancing Fluid"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/madara-deep-moisture-night-cream-a2242.png?v=1773123694&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/madara-deep-moisture-night-cream-a2242.png?v=1773123694&width=400",
       "alt": "Night Cream"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/madara-deep-moisture-day-cream-a2212.png?v=1773123694&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/madara-deep-moisture-day-cream-a2212.png?v=1773123694&width=400",
       "alt": "Day Cream"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-vitamin-oil-A2281.jpg?v=1773123678&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-vitamin-oil-A2281.jpg?v=1773123678&width=400",
       "alt": "Vitamin Oil"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-eye-contour-cream-A2271.jpg?v=1773123678&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-eye-contour-cream-A2271.jpg?v=1773123678&width=400",
       "alt": "Eye Contour Cream"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-regenerating-night-cream-A2241.jpg?v=1773123677&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-regenerating-night-cream-A2241.jpg?v=1773123677&width=400",
       "alt": "Regenerating Night Cream"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-deep-moisture-cream-A2221.jpg?v=1773123676&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-deep-moisture-cream-A2221.jpg?v=1773123676&width=400",
       "alt": "Nourishing Cream"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-skinonym-foundation-rose-ivory-A6083.jpg?v=1773123648&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-skinonym-foundation-rose-ivory-A6083.jpg?v=1773123648&width=400",
       "alt": "Semi-Matte Peptide Foundation"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-concealer-honey-madara-A6102.jpg?v=1773123645&width=400",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-concealer-honey-madara-A6102.jpg?v=1773123645&width=400",
       "alt": "Luminous Perfecting Concealer"
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1_grow_combo.jpg?v=1773123687&width=80",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1_grow_combo.jpg?v=1773123687&width=80",
       "alt": ""
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-age-pro-intense-wrinkle-serum-A3340.jpg?v=1773123652&width=80",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-age-pro-intense-wrinkle-serum-A3340.jpg?v=1773123652&width=80",
       "alt": ""
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-botanic-niacinamide-alternative-5-in-1-serum-A2223.jpg?v=1773123675&width=80",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-botanic-niacinamide-alternative-5-in-1-serum-A2223.jpg?v=1773123675&width=80",
       "alt": ""
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-balancing-fluid-A2211.jpg?v=1773123681&width=80",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-balancing-fluid-A2211.jpg?v=1773123681&width=80",
       "alt": ""
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/custom-banner-2.jpg?v=1773124923&width=800",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/custom-banner-2.jpg?v=1773124923&width=800",
       "alt": ""
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/5-madara-sos-skincare-A3021_2e459d9d-7110-4c29-8b0c-94120530ea94.jpg?v=1773134298&width=800",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/5-madara-sos-skincare-A3021_2e459d9d-7110-4c29-8b0c-94120530ea94.jpg?v=1773134298&width=800",
       "alt": ""
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-anti-age-recovery-treatment-A2603.jpg?v=1773123649&width=800",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-anti-age-recovery-treatment-A2603.jpg?v=1773123649&width=800",
       "alt": ""
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/4-replenishing-night-cream-A3062.jpg?v=1773123650&width=800",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/4-replenishing-night-cream-A3062.jpg?v=1773123650&width=800",
       "alt": ""
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/5-omega-and-vitamin-e-oil-for-face-A2281.jpg?v=1773123679&width=800",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/5-omega-and-vitamin-e-oil-for-face-A2281.jpg?v=1773123679&width=800",
       "alt": ""
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/6-peel-aha-exfoliating-mask-madara-A2101.jpg?v=1773123676&width=800",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/6-peel-aha-exfoliating-mask-madara-A2101.jpg?v=1773123676&width=800",
       "alt": ""
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/3-peel-scalp-treatment-A4074.jpg?v=1773123686&width=800",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/3-peel-scalp-treatment-A4074.jpg?v=1773123686&width=800",
       "alt": ""
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/4-organic-certified-men-face-cream-A5003.jpg?v=1773123670&width=800",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/4-organic-certified-men-face-cream-A5003.jpg?v=1773123670&width=800",
       "alt": ""
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/5-madara-sos-line-A3011.jpg?v=1773123667&width=800",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/5-madara-sos-line-A3011.jpg?v=1773123667&width=800",
       "alt": ""
     }
   ],
@@ -1396,7 +1396,7 @@
     {
       "name": "Age Recovery Facial Oil",
       "price": "Regular price\n          Rs. 5,900.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-superseed-age-recovery-oil-30ml-A2603.jpg?crop=center&height=1&v=1773123649&width=1"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-superseed-age-recovery-oil-30ml-A2603.jpg?crop=center&height=1&v=1773123649&width=1"
     },
     {
       "name": "Age Recovery Facial Oil",
@@ -1405,7 +1405,7 @@
     {
       "name": "After Shave Serum for Men",
       "price": "Regular price\n          Rs. 3,000.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-after-shave-serum-for-men-madara-A5002.jpg?crop=center&height=1&v=1773123669&width=1"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-after-shave-serum-for-men-madara-A5002.jpg?crop=center&height=1&v=1773123669&width=1"
     },
     {
       "name": "After Shave Serum for Men",
@@ -1414,7 +1414,7 @@
     {
       "name": "3 Min Growth Boost Scalp Treatment",
       "price": "Regular price\n          Rs. 48,700.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-3-min-growth-boost-scalp-treatment-A4070.jpg?crop=center&height=1&v=1773123686&width=1"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-3-min-growth-boost-scalp-treatment-A4070.jpg?crop=center&height=1&v=1773123686&width=1"
     },
     {
       "name": "3 Min Growth Boost Scalp Treatment",
@@ -1423,7 +1423,7 @@
     {
       "name": "Clarifying Toner",
       "price": "Regular price\n          Rs. 1,900.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-clarifying-toner-A2051.jpg?crop=center&height=1&v=1773123673&width=1"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-clarifying-toner-A2051.jpg?crop=center&height=1&v=1773123673&width=1"
     },
     {
       "name": "Clarifying Toner",
@@ -1432,7 +1432,7 @@
     {
       "name": "Brightening AHA Peel Mask",
       "price": "From Rs. 100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-brightening-5-aha-peel-mask-A2101.jpg?crop=center&height=1&v=1773123676&width=1"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-brightening-5-aha-peel-mask-A2101.jpg?crop=center&height=1&v=1773123676&width=1"
     },
     {
       "name": "Brightening AHA Peel Mask",
@@ -1441,7 +1441,7 @@
     {
       "name": "Contour Wrinkle Eye Cream",
       "price": "From Rs. 100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-contour-wrinkle-eye-cream-A3343.jpg?crop=center&height=1&v=1773123652&width=1"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-contour-wrinkle-eye-cream-A3343.jpg?crop=center&height=1&v=1773123652&width=1"
     },
     {
       "name": "Contour Wrinkle Eye Cream",
@@ -1450,7 +1450,7 @@
     {
       "name": "Creamy Clay AHA Peel Mask",
       "price": "From Rs. 100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-creamy-clay-7-aha-peel-mask-A2105.jpg?crop=center&height=1&v=1773123674&width=1"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-creamy-clay-7-aha-peel-mask-A2105.jpg?crop=center&height=1&v=1773123674&width=1"
     },
     {
       "name": "Creamy Clay AHA Peel Mask",
@@ -1459,7 +1459,7 @@
     {
       "name": "Day Cream",
       "price": "From Rs. 100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/madara-deep-moisture-day-cream-a2212.png?crop=center&height=1&v=1773123694&width=1"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/madara-deep-moisture-day-cream-a2212.png?crop=center&height=1&v=1773123694&width=1"
     },
     {
       "name": "Day Cream",
@@ -1469,199 +1469,199 @@
       "name": "",
       "price": "",
       "vendor": "",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-superseed-age-recovery-oil-30ml-A2603.jpg?v=1773123649&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-superseed-age-recovery-oil-30ml-A2603.jpg?v=1773123649&width=400"
     },
     {
       "name": "",
       "price": "",
       "vendor": "",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-balancing-fluid-A2211.jpg?v=1773123681&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-balancing-fluid-A2211.jpg?v=1773123681&width=400"
     },
     {
       "name": "",
       "price": "",
       "vendor": "",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-after-shave-serum-for-men-madara-A5002.jpg?v=1773123669&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-after-shave-serum-for-men-madara-A5002.jpg?v=1773123669&width=400"
     },
     {
       "name": "Intense Wrinkle Serum",
       "price": "Rs. 100.00",
       "vendor": "Madara Cosmetics",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-age-pro-intense-wrinkle-serum-A3340.jpg?v=1773123652&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-age-pro-intense-wrinkle-serum-A3340.jpg?v=1773123652&width=400"
     },
     {
       "name": "Hydra Firm Hyaluron Jelly",
       "price": "Rs. 100.00",
       "vendor": "Madara Cosmetics",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-hydra-firm-hyaluron-jelly-A3342.jpg?v=1773123654&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-hydra-firm-hyaluron-jelly-A3342.jpg?v=1773123654&width=400"
     },
     {
       "name": "Custom Actives",
       "price": "Rs. 1,700.00",
       "vendor": "Madara Cosmetics",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-omega-3-6-9-concentrate-A3263.jpg?v=1773123671&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-omega-3-6-9-concentrate-A3263.jpg?v=1773123671&width=400"
     },
     {
       "name": "Peptide Serum",
       "price": "Rs. 100.00",
       "vendor": "Madara Cosmetics",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-derma-collagen-peptides-serum-A3061.jpg?v=1773123657&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-derma-collagen-peptides-serum-A3061.jpg?v=1773123657&width=400"
     },
     {
       "name": "Smooth Day Cream",
       "price": "Rs. 100.00",
       "vendor": "Madara Cosmetics",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-age-pro-smooth-day-cream-A3330.jpg?v=1773123655&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-age-pro-smooth-day-cream-A3330.jpg?v=1773123655&width=400"
     },
     {
       "name": "Renew Night Cream",
       "price": "Rs. 100.00",
       "vendor": "Madara Cosmetics",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-age-pro-night-cream-A3335.jpg?v=1773123653&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-age-pro-night-cream-A3335.jpg?v=1773123653&width=400"
     },
     {
       "name": "Contour Wrinkle Eye Cream",
       "price": "Rs. 100.00",
       "vendor": "Madara Cosmetics",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-contour-wrinkle-eye-cream-A3343.jpg?v=1773123652&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-contour-wrinkle-eye-cream-A3343.jpg?v=1773123652&width=400"
     },
     {
       "name": "Peptide Day Cream",
       "price": "Rs. 4,200.00",
       "vendor": "Madara Cosmetics",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-derma-collagen-peptide-day-cream.jpg?v=1773123651&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-derma-collagen-peptide-day-cream.jpg?v=1773123651&width=400"
     },
     {
       "name": "Peptide Night cream",
       "price": "Rs. 100.00",
       "vendor": "Madara Cosmetics",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/derma-collagen-peptide-night-cream-madara-a3062.jpg?v=1773123650&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/derma-collagen-peptide-night-cream-madara-a3062.jpg?v=1773123650&width=400"
     },
     {
       "name": "Age Recovery Facial Oil",
       "price": "Rs. 5,900.00",
       "vendor": "Madara Cosmetics",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-superseed-age-recovery-oil-30ml-A2603.jpg?v=1773123649&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-superseed-age-recovery-oil-30ml-A2603.jpg?v=1773123649&width=400"
     },
     {
       "name": "Niacinamide Alternative 5-in-1 Serum",
       "price": "Rs. 2,200.00",
       "vendor": "Madara Cosmetics",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-botanic-niacinamide-alternative-5-in-1-serum-A2223.jpg?v=1773123675&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-botanic-niacinamide-alternative-5-in-1-serum-A2223.jpg?v=1773123675&width=400"
     },
     {
       "name": "Brightening AHA Peel Mask",
       "price": "Rs. 100.00",
       "vendor": "Masks and Exfoliators",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-brightening-5-aha-peel-mask-A2101.jpg?v=1773123676&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-brightening-5-aha-peel-mask-A2101.jpg?v=1773123676&width=400"
     },
     {
       "name": "Creamy Clay AHA Peel Mask",
       "price": "Rs. 100.00",
       "vendor": "Masks and Exfoliators",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-creamy-clay-7-aha-peel-mask-A2105.jpg?v=1773123674&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-creamy-clay-7-aha-peel-mask-A2105.jpg?v=1773123674&width=400"
     },
     {
       "name": "Exfoliating Oil-To-Milk Scrub",
       "price": "Rs. 2,600.00",
       "vendor": "Madara Cosmetics",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-exfoliating-oil-to-milk-scrub-A2151.jpg?v=1773123673&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-exfoliating-oil-to-milk-scrub-A2151.jpg?v=1773123673&width=400"
     },
     {
       "name": "Clarifying Toner",
       "price": "Rs. 1,900.00",
       "vendor": "Madara Cosmetics",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-clarifying-toner-A2051.jpg?v=1773123673&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-clarifying-toner-A2051.jpg?v=1773123673&width=400"
     },
     {
       "name": "Spot Roll-On",
       "price": "Rs. 1,500.00",
       "vendor": "Madara Cosmetics",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-acne-spot-roll-on-A2103.jpg?v=1773123672&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-acne-spot-roll-on-A2103.jpg?v=1773123672&width=400"
     },
     {
       "name": "Sebum Control Clear Skin Wash",
       "price": "Rs. 2,100.00",
       "vendor": "Madara Cosmetics",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-sebum-control-clear-skin-wash-A2004.jpg?v=1773123671&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-sebum-control-clear-skin-wash-A2004.jpg?v=1773123671&width=400"
     },
     {
       "name": "Custom Actives",
       "price": "Rs. 1,700.00",
       "vendor": "Madara Cosmetics",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-omega-3-6-9-concentrate-A3263.jpg?v=1773123671&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-omega-3-6-9-concentrate-A3263.jpg?v=1773123671&width=400"
     },
     {
       "name": "Face Cream for Men",
       "price": "Rs. 100.00",
       "vendor": "Madara Cosmetics",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-his-face-cream-for-men-A5003.jpg?v=1773123670&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-his-face-cream-for-men-A5003.jpg?v=1773123670&width=400"
     },
     {
       "name": "After Shave Serum for Men",
       "price": "Rs. 3,000.00",
       "vendor": "Madara Cosmetics",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-after-shave-serum-for-men-madara-A5002.jpg?v=1773123669&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-after-shave-serum-for-men-madara-A5002.jpg?v=1773123669&width=400"
     },
     {
       "name": "Balancing Fluid",
       "price": "Rs. 3,000.00",
       "vendor": "Madara Cosmetics",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-balancing-fluid-A2211.jpg?v=1773123681&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-balancing-fluid-A2211.jpg?v=1773123681&width=400"
     },
     {
       "name": "Night Cream",
       "price": "Rs. 100.00",
       "vendor": "Madara Cosmetics",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/madara-deep-moisture-night-cream-a2242.png?v=1773123694&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/madara-deep-moisture-night-cream-a2242.png?v=1773123694&width=400"
     },
     {
       "name": "Day Cream",
       "price": "Rs. 100.00",
       "vendor": "Madara Cosmetics",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/madara-deep-moisture-day-cream-a2212.png?v=1773123694&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/madara-deep-moisture-day-cream-a2212.png?v=1773123694&width=400"
     },
     {
       "name": "Vitamin Oil",
       "price": "Rs. 3,000.00",
       "vendor": "Madara Cosmetics",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-vitamin-oil-A2281.jpg?v=1773123678&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-vitamin-oil-A2281.jpg?v=1773123678&width=400"
     },
     {
       "name": "Eye Contour Cream",
       "price": "Rs. 3,000.00",
       "vendor": "Madara Cosmetics",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-eye-contour-cream-A2271.jpg?v=1773123678&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-eye-contour-cream-A2271.jpg?v=1773123678&width=400"
     },
     {
       "name": "Regenerating Night Cream",
       "price": "Rs. 100.00",
       "vendor": "Madara Cosmetics",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-regenerating-night-cream-A2241.jpg?v=1773123677&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-regenerating-night-cream-A2241.jpg?v=1773123677&width=400"
     },
     {
       "name": "Nourishing Cream",
       "price": "Rs. 100.00",
       "vendor": "Madara Cosmetics",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-deep-moisture-cream-A2221.jpg?v=1773123676&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-deep-moisture-cream-A2221.jpg?v=1773123676&width=400"
     },
     {
       "name": "Semi-Matte Peptide Foundation",
       "price": "Rs. 100.00",
       "vendor": "Madara Cosmetics",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-skinonym-foundation-rose-ivory-A6083.jpg?v=1773123648&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-skinonym-foundation-rose-ivory-A6083.jpg?v=1773123648&width=400"
     },
     {
       "name": "Luminous Perfecting Concealer",
       "price": "Rs. 2,800.00",
       "vendor": "Madara Cosmetics",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-concealer-honey-madara-A6102.jpg?v=1773123645&width=400"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-concealer-honey-madara-A6102.jpg?v=1773123645&width=400"
     },
     {
       "name": "Sebum Control Clear Skin Wash",
       "price": "Regular price\nRs. 2,100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-sebum-control-clear-skin-wash-A2004.jpg?v=1773123671&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-acne-cleansing-treatment-A2004.jpg?v=1773123671&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-sebum-control-clear-skin-wash-A2004.jpg?v=1773123671&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-acne-cleansing-treatment-A2004.jpg?v=1773123671&width=720"
     },
     {
       "name": "Sebum Control Clear Skin Wash",
@@ -1670,8 +1670,8 @@
     {
       "name": "Custom Actives",
       "price": "From Rs. 1,700.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-omega-3-6-9-concentrate-A3263.jpg?v=1773123671&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-omega-concentrate-A3263.jpg?v=1773123670&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-omega-3-6-9-concentrate-A3263.jpg?v=1773123671&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-omega-concentrate-A3263.jpg?v=1773123670&width=720"
     },
     {
       "name": "Custom Actives",
@@ -1680,8 +1680,8 @@
     {
       "name": "Face Cream For Men",
       "price": "From Rs. 100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-his-face-cream-for-men-A5003.jpg?v=1773123670&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/madara-face-cream-for-men-2ml-sample-SC5003-2.jpg?v=1773123670&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-his-face-cream-for-men-A5003.jpg?v=1773123670&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/madara-face-cream-for-men-2ml-sample-SC5003-2.jpg?v=1773123670&width=720"
     },
     {
       "name": "Face Cream For Men",
@@ -1690,8 +1690,8 @@
     {
       "name": "After Shave Serum For Men",
       "price": "Regular price\nRs. 3,000.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-after-shave-serum-for-men-madara-A5002.jpg?v=1773123669&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-after-shave-for-men-A5002.jpg?v=1773123669&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-after-shave-serum-for-men-madara-A5002.jpg?v=1773123669&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-after-shave-for-men-A5002.jpg?v=1773123669&width=720"
     },
     {
       "name": "After Shave Serum For Men",
@@ -1700,8 +1700,8 @@
     {
       "name": "Niacinamide Alternative 5-In-1 Serum",
       "price": "From Rs. 2,200.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-botanic-niacinamide-alternative-5-in-1-serum-A2223.jpg?v=1773123675&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-niacinamide-alternative-travel-size-SM2223-15.jpg?v=1773123675&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-botanic-niacinamide-alternative-5-in-1-serum-A2223.jpg?v=1773123675&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-niacinamide-alternative-travel-size-SM2223-15.jpg?v=1773123675&width=720"
     },
     {
       "name": "Niacinamide Alternative 5-In-1 Serum",
@@ -1710,8 +1710,8 @@
     {
       "name": "Brightening AHA Peel Mask",
       "price": "From Rs. 100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-brightening-5-aha-peel-mask-A2101.jpg?v=1773123676&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/madara-brightening-aha-peel-mask-5ml-SC2101-5.jpg?v=1773123676&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-brightening-5-aha-peel-mask-A2101.jpg?v=1773123676&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/madara-brightening-aha-peel-mask-5ml-SC2101-5.jpg?v=1773123676&width=720"
     },
     {
       "name": "Brightening AHA Peel Mask",
@@ -1720,8 +1720,8 @@
     {
       "name": "Creamy Clay AHA Peel Mask",
       "price": "From Rs. 100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-creamy-clay-7-aha-peel-mask-A2105.jpg?v=1773123674&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/madara-creamy-peel-aha-clay-mask-3ml-SC2105-3.jpg?v=1773123674&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-creamy-clay-7-aha-peel-mask-A2105.jpg?v=1773123674&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/madara-creamy-peel-aha-clay-mask-3ml-SC2105-3.jpg?v=1773123674&width=720"
     },
     {
       "name": "Creamy Clay AHA Peel Mask",
@@ -1730,8 +1730,8 @@
     {
       "name": "Exfoliating Oil-To-Milk Scrub",
       "price": "Regular price\nRs. 2,600.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-exfoliating-oil-to-milk-scrub-A2151.jpg?v=1773123673&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-oil-based-face-scrub-texture-A2151.jpg?v=1773123673&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-exfoliating-oil-to-milk-scrub-A2151.jpg?v=1773123673&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-oil-based-face-scrub-texture-A2151.jpg?v=1773123673&width=720"
     },
     {
       "name": "Exfoliating Oil-To-Milk Scrub",
@@ -1740,8 +1740,8 @@
     {
       "name": "Clarifying Toner",
       "price": "Regular price\nRs. 1,900.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-clarifying-toner-A2051.jpg?v=1773123673&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-cosmos-natural-exfoliating-toner-A2051.jpg?v=1773123673&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-clarifying-toner-A2051.jpg?v=1773123673&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-cosmos-natural-exfoliating-toner-A2051.jpg?v=1773123673&width=720"
     },
     {
       "name": "Clarifying Toner",
@@ -1750,8 +1750,8 @@
     {
       "name": "Spot Roll-On",
       "price": "Regular price\nRs. 1,500.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-acne-spot-roll-on-A2103.jpg?v=1773123672&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-salicylic-acid-treatment-A2103.jpg?v=1773123673&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-acne-spot-roll-on-A2103.jpg?v=1773123672&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-salicylic-acid-treatment-A2103.jpg?v=1773123673&width=720"
     },
     {
       "name": "Spot Roll-On",
@@ -1760,8 +1760,8 @@
     {
       "name": "Sebum Control Clear Skin Wash",
       "price": "Regular price\nRs. 2,100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-sebum-control-clear-skin-wash-A2004.jpg?v=1773123671&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-acne-cleansing-treatment-A2004.jpg?v=1773123671&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-sebum-control-clear-skin-wash-A2004.jpg?v=1773123671&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-acne-cleansing-treatment-A2004.jpg?v=1773123671&width=720"
     },
     {
       "name": "Sebum Control Clear Skin Wash",
@@ -1770,8 +1770,8 @@
     {
       "name": "Custom Actives",
       "price": "From Rs. 1,700.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-omega-3-6-9-concentrate-A3263.jpg?v=1773123671&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-omega-concentrate-A3263.jpg?v=1773123670&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-omega-3-6-9-concentrate-A3263.jpg?v=1773123671&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-omega-concentrate-A3263.jpg?v=1773123670&width=720"
     },
     {
       "name": "Custom Actives",
@@ -1780,8 +1780,8 @@
     {
       "name": "Face Cream For Men",
       "price": "From Rs. 100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-his-face-cream-for-men-A5003.jpg?v=1773123670&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/madara-face-cream-for-men-2ml-sample-SC5003-2.jpg?v=1773123670&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-his-face-cream-for-men-A5003.jpg?v=1773123670&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/madara-face-cream-for-men-2ml-sample-SC5003-2.jpg?v=1773123670&width=720"
     },
     {
       "name": "Face Cream For Men",
@@ -1790,8 +1790,8 @@
     {
       "name": "After Shave Serum For Men",
       "price": "Regular price\nRs. 3,000.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-after-shave-serum-for-men-madara-A5002.jpg?v=1773123669&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-after-shave-for-men-A5002.jpg?v=1773123669&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-after-shave-serum-for-men-madara-A5002.jpg?v=1773123669&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-after-shave-for-men-A5002.jpg?v=1773123669&width=720"
     },
     {
       "name": "After Shave Serum For Men",
@@ -1800,8 +1800,8 @@
     {
       "name": "Niacinamide Alternative 5-In-1 Serum",
       "price": "From Rs. 2,200.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-botanic-niacinamide-alternative-5-in-1-serum-A2223.jpg?v=1773123675&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-niacinamide-alternative-travel-size-SM2223-15.jpg?v=1773123675&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-botanic-niacinamide-alternative-5-in-1-serum-A2223.jpg?v=1773123675&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-niacinamide-alternative-travel-size-SM2223-15.jpg?v=1773123675&width=720"
     },
     {
       "name": "Niacinamide Alternative 5-In-1 Serum",
@@ -1810,8 +1810,8 @@
     {
       "name": "Brightening AHA Peel Mask",
       "price": "From Rs. 100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-brightening-5-aha-peel-mask-A2101.jpg?v=1773123676&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/madara-brightening-aha-peel-mask-5ml-SC2101-5.jpg?v=1773123676&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-brightening-5-aha-peel-mask-A2101.jpg?v=1773123676&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/madara-brightening-aha-peel-mask-5ml-SC2101-5.jpg?v=1773123676&width=720"
     },
     {
       "name": "Brightening AHA Peel Mask",
@@ -1820,8 +1820,8 @@
     {
       "name": "Creamy Clay AHA Peel Mask",
       "price": "From Rs. 100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-creamy-clay-7-aha-peel-mask-A2105.jpg?v=1773123674&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/madara-creamy-peel-aha-clay-mask-3ml-SC2105-3.jpg?v=1773123674&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-creamy-clay-7-aha-peel-mask-A2105.jpg?v=1773123674&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/madara-creamy-peel-aha-clay-mask-3ml-SC2105-3.jpg?v=1773123674&width=720"
     },
     {
       "name": "Creamy Clay AHA Peel Mask",
@@ -1830,8 +1830,8 @@
     {
       "name": "Exfoliating Oil-To-Milk Scrub",
       "price": "Regular price\nRs. 2,600.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-exfoliating-oil-to-milk-scrub-A2151.jpg?v=1773123673&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-oil-based-face-scrub-texture-A2151.jpg?v=1773123673&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-exfoliating-oil-to-milk-scrub-A2151.jpg?v=1773123673&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-oil-based-face-scrub-texture-A2151.jpg?v=1773123673&width=720"
     },
     {
       "name": "Exfoliating Oil-To-Milk Scrub",
@@ -1840,8 +1840,8 @@
     {
       "name": "Rich Hydra-Barrier CICA Cream",
       "price": "From Rs. 100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-sos-rich-hydra-barrier-cica-cream-A3012.jpg?v=1773123663&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/madara-sos-rich-hydra-barrier-cica-cream-2ml-SC3012-2.jpg?v=1773123663&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-sos-rich-hydra-barrier-cica-cream-A3012.jpg?v=1773123663&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/madara-sos-rich-hydra-barrier-cica-cream-2ml-SC3012-2.jpg?v=1773123663&width=720"
     },
     {
       "name": "Rich Hydra-Barrier CICA Cream",
@@ -1850,8 +1850,8 @@
     {
       "name": "Illuminating Recovery Cream",
       "price": "From Rs. 100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-A3302-vitamin-c-illuminating-recovery-cream-madara_fac25d95-bad7-467c-8120-525e46626e3c.jpg?v=1773123660&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-vitamin-c-illuminating-recovery-cream-madara-A3302.jpg?v=1773123660&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-A3302-vitamin-c-illuminating-recovery-cream-madara_fac25d95-bad7-467c-8120-525e46626e3c.jpg?v=1773123660&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-vitamin-c-illuminating-recovery-cream-madara-A3302.jpg?v=1773123660&width=720"
     },
     {
       "name": "Illuminating Recovery Cream",
@@ -1860,8 +1860,8 @@
     {
       "name": "Intense Glow Concentrate",
       "price": "Regular price\n  Rs. 4,400.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-vitamin-c-intense-glow-concentrate-A3301.jpg?v=1773123659&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-radiance-boosting-essence-A3301.jpg?v=1773123659&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-vitamin-c-intense-glow-concentrate-A3301.jpg?v=1773123659&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-radiance-boosting-essence-A3301.jpg?v=1773123659&width=720"
     },
     {
       "name": "Intense Glow Concentrate",
@@ -1870,8 +1870,8 @@
     {
       "name": "Hydra Moisture+Radiance Mask",
       "price": "Regular price\n  Rs. 3,400.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-instant-moisture-radiance-face-mask-A3025.jpg?v=1773123658&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-organic-moisturising-face-mask-A3025.jpg?v=1773123658&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-instant-moisture-radiance-face-mask-A3025.jpg?v=1773123658&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-organic-moisturising-face-mask-A3025.jpg?v=1773123658&width=720"
     },
     {
       "name": "Hydra Moisture+Radiance Mask",
@@ -1880,8 +1880,8 @@
     {
       "name": "Hydra Repair Intensive Serum",
       "price": "From Rs. 100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-sos-hydra-repair-intensive-serum-A3021.jpg?v=1773123668&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/madara-sos-hydra-repair-intensive-serum-2ml-SC3021-2.jpg?v=1773123668&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-sos-hydra-repair-intensive-serum-A3021.jpg?v=1773123668&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/madara-sos-hydra-repair-intensive-serum-2ml-SC3021-2.jpg?v=1773123668&width=720"
     },
     {
       "name": "Hydra Repair Intensive Serum",
@@ -1890,8 +1890,8 @@
     {
       "name": "Hydra Recharge Cream",
       "price": "From Rs. 100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-A3011-SOS-hydra-recharge-cream-madara.jpg?v=1773123667&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-sos-hydra-recharge-cream-A3011.jpg?v=1773123667&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-A3011-SOS-hydra-recharge-cream-madara.jpg?v=1773123667&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-sos-hydra-recharge-cream-A3011.jpg?v=1773123667&width=720"
     },
     {
       "name": "Hydra Recharge Cream",
@@ -1900,8 +1900,8 @@
     {
       "name": "Eye Revive Hydra Cream & Mask",
       "price": "Regular price\n  Rs. 3,400.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-eye-revive-hydra-cream-and-mask-A3031.jpg?v=1773123666&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-moisturising-eye-mask-madara-A3031.jpg?v=1773123666&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-eye-revive-hydra-cream-and-mask-A3031.jpg?v=1773123666&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-moisturising-eye-mask-madara-A3031.jpg?v=1773123666&width=720"
     },
     {
       "name": "Eye Revive Hydra Cream & Mask",
@@ -1910,8 +1910,8 @@
     {
       "name": "Hydra Intense Rose Jelly",
       "price": "Regular price\n  Rs. 3,600.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-sos-hydra-intense-rose-jelly-A3022.jpg?v=1773123665&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-rose-water-jelly-A3022.jpg?v=1773123666&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-sos-hydra-intense-rose-jelly-A3022.jpg?v=1773123665&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-rose-water-jelly-A3022.jpg?v=1773123666&width=720"
     },
     {
       "name": "Hydra Intense Rose Jelly",
@@ -1920,8 +1920,8 @@
     {
       "name": "Sensitive Moisturiser",
       "price": "From Rs. 1,500.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-sos-sensitive-moisturiser-A3015.jpg?v=1773123665&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-sos-sensitive-moisturiser-travel-size-SM3015-15.jpg?v=1773123665&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-sos-sensitive-moisturiser-A3015.jpg?v=1773123665&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-sos-sensitive-moisturiser-travel-size-SM3015-15.jpg?v=1773123665&width=720"
     },
     {
       "name": "Sensitive Moisturiser",
@@ -1930,8 +1930,8 @@
     {
       "name": "Sensitive Night Cream",
       "price": "From Rs. 1,500.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-sos-sensitive-night-cream-A3014.jpg?v=1773123664&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-sos-sensitive-night-cream-travel-size-SM3014-17.jpg?v=1773123664&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-sos-sensitive-night-cream-A3014.jpg?v=1773123664&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-sos-sensitive-night-cream-travel-size-SM3014-17.jpg?v=1773123664&width=720"
     },
     {
       "name": "Sensitive Night Cream",
@@ -1940,8 +1940,8 @@
     {
       "name": "Rich Hydra-Barrier CICA Cream",
       "price": "From Rs. 100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-sos-rich-hydra-barrier-cica-cream-A3012.jpg?v=1773123663&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/madara-sos-rich-hydra-barrier-cica-cream-2ml-SC3012-2.jpg?v=1773123663&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-sos-rich-hydra-barrier-cica-cream-A3012.jpg?v=1773123663&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/madara-sos-rich-hydra-barrier-cica-cream-2ml-SC3012-2.jpg?v=1773123663&width=720"
     },
     {
       "name": "Rich Hydra-Barrier CICA Cream",
@@ -1950,8 +1950,8 @@
     {
       "name": "Illuminating Recovery Cream",
       "price": "From Rs. 100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-A3302-vitamin-c-illuminating-recovery-cream-madara_fac25d95-bad7-467c-8120-525e46626e3c.jpg?v=1773123660&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-vitamin-c-illuminating-recovery-cream-madara-A3302.jpg?v=1773123660&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-A3302-vitamin-c-illuminating-recovery-cream-madara_fac25d95-bad7-467c-8120-525e46626e3c.jpg?v=1773123660&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-vitamin-c-illuminating-recovery-cream-madara-A3302.jpg?v=1773123660&width=720"
     },
     {
       "name": "Illuminating Recovery Cream",
@@ -1960,8 +1960,8 @@
     {
       "name": "Intense Glow Concentrate",
       "price": "Regular price\n  Rs. 4,400.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-vitamin-c-intense-glow-concentrate-A3301.jpg?v=1773123659&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-radiance-boosting-essence-A3301.jpg?v=1773123659&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-vitamin-c-intense-glow-concentrate-A3301.jpg?v=1773123659&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-radiance-boosting-essence-A3301.jpg?v=1773123659&width=720"
     },
     {
       "name": "Intense Glow Concentrate",
@@ -1970,8 +1970,8 @@
     {
       "name": "Hydra Moisture+Radiance Mask",
       "price": "Regular price\n  Rs. 3,400.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-instant-moisture-radiance-face-mask-A3025.jpg?v=1773123658&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-organic-moisturising-face-mask-A3025.jpg?v=1773123658&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-instant-moisture-radiance-face-mask-A3025.jpg?v=1773123658&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-organic-moisturising-face-mask-A3025.jpg?v=1773123658&width=720"
     },
     {
       "name": "Hydra Moisture+Radiance Mask",
@@ -1980,8 +1980,8 @@
     {
       "name": "Hydra Repair Intensive Serum",
       "price": "From Rs. 100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-sos-hydra-repair-intensive-serum-A3021.jpg?v=1773123668&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/madara-sos-hydra-repair-intensive-serum-2ml-SC3021-2.jpg?v=1773123668&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-sos-hydra-repair-intensive-serum-A3021.jpg?v=1773123668&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/madara-sos-hydra-repair-intensive-serum-2ml-SC3021-2.jpg?v=1773123668&width=720"
     },
     {
       "name": "Hydra Repair Intensive Serum",
@@ -1990,8 +1990,8 @@
     {
       "name": "Hydra Recharge Cream",
       "price": "From Rs. 100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-A3011-SOS-hydra-recharge-cream-madara.jpg?v=1773123667&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-sos-hydra-recharge-cream-A3011.jpg?v=1773123667&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-A3011-SOS-hydra-recharge-cream-madara.jpg?v=1773123667&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-sos-hydra-recharge-cream-A3011.jpg?v=1773123667&width=720"
     },
     {
       "name": "Hydra Recharge Cream",
@@ -2000,8 +2000,8 @@
     {
       "name": "Eye Revive Hydra Cream & Mask",
       "price": "Regular price\n  Rs. 3,400.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-eye-revive-hydra-cream-and-mask-A3031.jpg?v=1773123666&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-moisturising-eye-mask-madara-A3031.jpg?v=1773123666&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-eye-revive-hydra-cream-and-mask-A3031.jpg?v=1773123666&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-moisturising-eye-mask-madara-A3031.jpg?v=1773123666&width=720"
     },
     {
       "name": "Eye Revive Hydra Cream & Mask",
@@ -2010,8 +2010,8 @@
     {
       "name": "Hydra Intense Rose Jelly",
       "price": "Regular price\n  Rs. 3,600.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-sos-hydra-intense-rose-jelly-A3022.jpg?v=1773123665&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-rose-water-jelly-A3022.jpg?v=1773123666&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-sos-hydra-intense-rose-jelly-A3022.jpg?v=1773123665&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-rose-water-jelly-A3022.jpg?v=1773123666&width=720"
     },
     {
       "name": "Hydra Intense Rose Jelly",
@@ -2020,8 +2020,8 @@
     {
       "name": "Gloss and Vibrancy Shampoo",
       "price": "Regular price\n  Rs. 1,600.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-gloss-and-vibrancy-shampoo-A4003.jpg?v=1773123683&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-gloss-and-vibrancy-shampoo-texture-A4003.jpg?v=1773123683&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-gloss-and-vibrancy-shampoo-A4003.jpg?v=1773123683&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-gloss-and-vibrancy-shampoo-texture-A4003.jpg?v=1773123683&width=720"
     },
     {
       "name": "Gloss and Vibrancy Shampoo",
@@ -2030,7 +2030,7 @@
     {
       "name": "Gloss and Vibrancy Conditioner",
       "price": "Regular price\n  Rs. 1,600.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-conditioner-for-all-hair-types-A4053.jpg?v=1773123685&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-conditioner-for-all-hair-types-A4053.jpg?v=1773123685&width=720"
     },
     {
       "name": "Gloss and Vibrancy Conditioner",
@@ -2039,8 +2039,8 @@
     {
       "name": "Colour and Shine Shampoo",
       "price": "Regular price\n  Rs. 1,600.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-colour-and-shine-shampoo-A4002.jpg?v=1773123682&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-colour-and-shine-shampoo-texture-A4002.jpg?v=1773123683&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-colour-and-shine-shampoo-A4002.jpg?v=1773123682&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-colour-and-shine-shampoo-texture-A4002.jpg?v=1773123683&width=720"
     },
     {
       "name": "Colour and Shine Shampoo",
@@ -2049,8 +2049,8 @@
     {
       "name": "Colour and Shine Conditioner",
       "price": "Regular price\n  Rs. 1,600.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-colour-and-shine-conditioner-madara-A4052.jpg?v=1773123684&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-conditioner-for-coloured-hair-A4052.jpg?v=1773123684&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-colour-and-shine-conditioner-madara-A4052.jpg?v=1773123684&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-conditioner-for-coloured-hair-A4052.jpg?v=1773123684&width=720"
     },
     {
       "name": "Colour and Shine Conditioner",
@@ -2059,8 +2059,8 @@
     {
       "name": "Grow Volume Hair Care Set for Fuller, Stronger Hair",
       "price": "Regular price\n  Rs. 4,100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1_grow_combo.jpg?v=1773123687&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2_madara-cosmetics-grow-volume-shampoo-results-hair.jpg?v=1773123687&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1_grow_combo.jpg?v=1773123687&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2_madara-cosmetics-grow-volume-shampoo-results-hair.jpg?v=1773123687&width=720"
     },
     {
       "name": "Grow Volume Hair Care Set for Fuller, Stronger Hair",
@@ -2069,8 +2069,8 @@
     {
       "name": "3-Step Hair Care Set for Thinning Hair",
       "price": "Regular price\n  Rs. 6,600.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1_grow_duo_and_boost.jpg?v=1773123688&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2_madara-cosmetics-grow-hair-care-results.jpg?v=1773123688&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1_grow_duo_and_boost.jpg?v=1773123688&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2_madara-cosmetics-grow-hair-care-results.jpg?v=1773123688&width=720"
     },
     {
       "name": "3-Step Hair Care Set for Thinning Hair",
@@ -2079,8 +2079,8 @@
     {
       "name": "3-Step Hair Care Routine for Fuller, Stronger Hair",
       "price": "Regular price\n  Rs. 6,100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1_grow_duo_and_silk.jpg?v=1773123688&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2_madara-cosmetics-grow-silk-haircare-results-blonde-hair-volume-shine_c7a5cec7-a575-48e2-bed9-55d84c9200c6.jpg?v=1773123688&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1_grow_duo_and_silk.jpg?v=1773123688&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2_madara-cosmetics-grow-silk-haircare-results-blonde-hair-volume-shine_c7a5cec7-a575-48e2-bed9-55d84c9200c6.jpg?v=1773123688&width=720"
     },
     {
       "name": "3-Step Hair Care Routine for Fuller, Stronger Hair",
@@ -2089,8 +2089,8 @@
     {
       "name": "Scalp Peel Serum",
       "price": "Regular price\n  Rs. 2,000.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-scalp-peel-serum-madara-A4074.jpg?v=1773123686&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-natural-scalp-serum-A4074.jpg?v=1773123687&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-scalp-peel-serum-madara-A4074.jpg?v=1773123686&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-natural-scalp-serum-A4074.jpg?v=1773123687&width=720"
     },
     {
       "name": "Scalp Peel Serum",
@@ -2099,8 +2099,8 @@
     {
       "name": "Nourish and Repair Shampoo",
       "price": "From Rs. 100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-nourish-and-repair-shampoo-A4001.jpg?v=1773123682&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/madara-nourish-and-repair-shampoo-10ml-SC4001-10.jpg?v=1773123681&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-nourish-and-repair-shampoo-A4001.jpg?v=1773123682&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/madara-nourish-and-repair-shampoo-10ml-SC4001-10.jpg?v=1773123681&width=720"
     },
     {
       "name": "Nourish and Repair Shampoo",
@@ -2109,8 +2109,8 @@
     {
       "name": "Nourish and Repair Conditioner",
       "price": "Regular price\n  Rs. 1,600.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-nourish-and-repair-conditioner-A4051.jpg?v=1773123683&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-nourish-and-repair-hair-care-A4051.jpg?v=1773123684&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-nourish-and-repair-conditioner-A4051.jpg?v=1773123683&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-nourish-and-repair-hair-care-A4051.jpg?v=1773123684&width=720"
     },
     {
       "name": "Nourish and Repair Conditioner",
@@ -2119,8 +2119,8 @@
     {
       "name": "Gloss and Vibrancy Shampoo",
       "price": "Regular price\n  Rs. 1,600.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-gloss-and-vibrancy-shampoo-A4003.jpg?v=1773123683&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-gloss-and-vibrancy-shampoo-texture-A4003.jpg?v=1773123683&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-gloss-and-vibrancy-shampoo-A4003.jpg?v=1773123683&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-gloss-and-vibrancy-shampoo-texture-A4003.jpg?v=1773123683&width=720"
     },
     {
       "name": "Gloss and Vibrancy Shampoo",
@@ -2129,7 +2129,7 @@
     {
       "name": "Gloss and Vibrancy Conditioner",
       "price": "Regular price\n  Rs. 1,600.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-conditioner-for-all-hair-types-A4053.jpg?v=1773123685&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-conditioner-for-all-hair-types-A4053.jpg?v=1773123685&width=720"
     },
     {
       "name": "Gloss and Vibrancy Conditioner",
@@ -2138,8 +2138,8 @@
     {
       "name": "Colour and Shine Shampoo",
       "price": "Regular price\n  Rs. 1,600.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-colour-and-shine-shampoo-A4002.jpg?v=1773123682&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-colour-and-shine-shampoo-texture-A4002.jpg?v=1773123683&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-colour-and-shine-shampoo-A4002.jpg?v=1773123682&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-colour-and-shine-shampoo-texture-A4002.jpg?v=1773123683&width=720"
     },
     {
       "name": "Colour and Shine Shampoo",
@@ -2148,8 +2148,8 @@
     {
       "name": "Colour and Shine Conditioner",
       "price": "Regular price\n  Rs. 1,600.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-colour-and-shine-conditioner-madara-A4052.jpg?v=1773123684&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-conditioner-for-coloured-hair-A4052.jpg?v=1773123684&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-colour-and-shine-conditioner-madara-A4052.jpg?v=1773123684&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-conditioner-for-coloured-hair-A4052.jpg?v=1773123684&width=720"
     },
     {
       "name": "Colour and Shine Conditioner",
@@ -2158,8 +2158,8 @@
     {
       "name": "Grow Volume Hair Care Set for Fuller, Stronger Hair",
       "price": "Regular price\n  Rs. 4,100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1_grow_combo.jpg?v=1773123687&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2_madara-cosmetics-grow-volume-shampoo-results-hair.jpg?v=1773123687&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1_grow_combo.jpg?v=1773123687&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2_madara-cosmetics-grow-volume-shampoo-results-hair.jpg?v=1773123687&width=720"
     },
     {
       "name": "Grow Volume Hair Care Set for Fuller, Stronger Hair",
@@ -2168,8 +2168,8 @@
     {
       "name": "3-Step Hair Care Set for Thinning Hair",
       "price": "Regular price\n  Rs. 6,600.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1_grow_duo_and_boost.jpg?v=1773123688&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2_madara-cosmetics-grow-hair-care-results.jpg?v=1773123688&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1_grow_duo_and_boost.jpg?v=1773123688&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2_madara-cosmetics-grow-hair-care-results.jpg?v=1773123688&width=720"
     },
     {
       "name": "3-Step Hair Care Set for Thinning Hair",
@@ -2178,8 +2178,8 @@
     {
       "name": "3-Step Hair Care Routine for Fuller, Stronger Hair",
       "price": "Regular price\n  Rs. 6,100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1_grow_duo_and_silk.jpg?v=1773123688&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2_madara-cosmetics-grow-silk-haircare-results-blonde-hair-volume-shine_c7a5cec7-a575-48e2-bed9-55d84c9200c6.jpg?v=1773123688&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1_grow_duo_and_silk.jpg?v=1773123688&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2_madara-cosmetics-grow-silk-haircare-results-blonde-hair-volume-shine_c7a5cec7-a575-48e2-bed9-55d84c9200c6.jpg?v=1773123688&width=720"
     },
     {
       "name": "3-Step Hair Care Routine for Fuller, Stronger Hair",
@@ -2188,8 +2188,8 @@
     {
       "name": "Scalp Peel Serum",
       "price": "Regular price\n  Rs. 2,000.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-scalp-peel-serum-madara-A4074.jpg?v=1773123686&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-natural-scalp-serum-A4074.jpg?v=1773123687&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-scalp-peel-serum-madara-A4074.jpg?v=1773123686&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-natural-scalp-serum-A4074.jpg?v=1773123687&width=720"
     },
     {
       "name": "Scalp Peel Serum",
@@ -2198,8 +2198,8 @@
     {
       "name": "Contour Wrinkle Eye Cream",
       "price": "From Rs. 100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-contour-wrinkle-eye-cream-A3343.jpg?v=1773123652&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/madara-contour-wrinkle-eye-cream-1.5ml-sample-SC3343-1.5.jpg?v=1773123652&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-contour-wrinkle-eye-cream-A3343.jpg?v=1773123652&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/madara-contour-wrinkle-eye-cream-1.5ml-sample-SC3343-1.5.jpg?v=1773123652&width=720"
     },
     {
       "name": "Contour Wrinkle Eye Cream",
@@ -2208,8 +2208,8 @@
     {
       "name": "Peptide Day Cream",
       "price": "Regular price\nRs. 4,200.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-derma-collagen-peptide-day-cream.jpg?v=1773123651&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-collagen-boosting-day-cream.jpg?v=1773123650&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-derma-collagen-peptide-day-cream.jpg?v=1773123651&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-collagen-boosting-day-cream.jpg?v=1773123650&width=720"
     },
     {
       "name": "Peptide Day Cream",
@@ -2218,8 +2218,8 @@
     {
       "name": "Peptide Night Cream",
       "price": "From Rs. 100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/derma-collagen-peptide-night-cream-madara-a3062.jpg?v=1773123650&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-night-source-sleeping-cream-madara-A3062.jpg?v=1773123650&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/derma-collagen-peptide-night-cream-madara-a3062.jpg?v=1773123650&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-night-source-sleeping-cream-madara-A3062.jpg?v=1773123650&width=720"
     },
     {
       "name": "Peptide Night Cream",
@@ -2228,8 +2228,8 @@
     {
       "name": "Age Recovery Facial Oil",
       "price": "Regular price\nRs. 5,900.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-superseed-age-recovery-oil-30ml-A2603.jpg?v=1773123649&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-anti-age-recovery-treatment-A2603.jpg?v=1773123649&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-superseed-age-recovery-oil-30ml-A2603.jpg?v=1773123649&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-anti-age-recovery-treatment-A2603.jpg?v=1773123649&width=720"
     },
     {
       "name": "Age Recovery Facial Oil",
@@ -2238,8 +2238,8 @@
     {
       "name": "Intense Wrinkle Serum",
       "price": "From Rs. 100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-age-pro-intense-wrinkle-serum-A3340.jpg?v=1773123652&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/madara-intense-wrinkle-serum-2ml-sample-SC3340-2.jpg?v=1773123651&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-age-pro-intense-wrinkle-serum-A3340.jpg?v=1773123652&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/madara-intense-wrinkle-serum-2ml-sample-SC3340-2.jpg?v=1773123651&width=720"
     },
     {
       "name": "Intense Wrinkle Serum",
@@ -2248,8 +2248,8 @@
     {
       "name": "Hydra Firm Hyaluron Jelly",
       "price": "From Rs. 100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-hydra-firm-hyaluron-jelly-A3342.jpg?v=1773123654&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/madara-hydra-firm-hyaluron-jelly-2ml-sample-SC3342-2.jpg?v=1773123654&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-hydra-firm-hyaluron-jelly-A3342.jpg?v=1773123654&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/madara-hydra-firm-hyaluron-jelly-2ml-sample-SC3342-2.jpg?v=1773123654&width=720"
     },
     {
       "name": "Hydra Firm Hyaluron Jelly",
@@ -2258,8 +2258,8 @@
     {
       "name": "Custom Actives",
       "price": "From Rs. 1,700.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-omega-3-6-9-concentrate-A3263.jpg?v=1773123671&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-omega-concentrate-A3263.jpg?v=1773123670&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-omega-3-6-9-concentrate-A3263.jpg?v=1773123671&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-omega-concentrate-A3263.jpg?v=1773123670&width=720"
     },
     {
       "name": "Custom Actives",
@@ -2268,8 +2268,8 @@
     {
       "name": "Peptide Serum",
       "price": "From Rs. 100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-derma-collagen-peptides-serum-A3061.jpg?v=1773123657&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/madara-derma-collagen-hydra-fill-firming-serum-2ml-SC3061-2.jpg?v=1773123657&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-derma-collagen-peptides-serum-A3061.jpg?v=1773123657&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/madara-derma-collagen-hydra-fill-firming-serum-2ml-SC3061-2.jpg?v=1773123657&width=720"
     },
     {
       "name": "Peptide Serum",
@@ -2278,8 +2278,8 @@
     {
       "name": "Smooth Day Cream",
       "price": "From Rs. 100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-age-pro-smooth-day-cream-A3330.jpg?v=1773123655&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/madara-smooth-day-cream-2ml-sample-SC3330-2.jpg?v=1773123655&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-age-pro-smooth-day-cream-A3330.jpg?v=1773123655&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/madara-smooth-day-cream-2ml-sample-SC3330-2.jpg?v=1773123655&width=720"
     },
     {
       "name": "Smooth Day Cream",
@@ -2288,8 +2288,8 @@
     {
       "name": "Renew Night Cream",
       "price": "From Rs. 100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-age-pro-night-cream-A3335.jpg?v=1773123653&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/madara-renew-night-cream-2ml-sample-SC3335-2.jpg?v=1773123652&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-age-pro-night-cream-A3335.jpg?v=1773123653&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/madara-renew-night-cream-2ml-sample-SC3335-2.jpg?v=1773123652&width=720"
     },
     {
       "name": "Renew Night Cream",
@@ -2298,8 +2298,8 @@
     {
       "name": "Contour Wrinkle Eye Cream",
       "price": "From Rs. 100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-contour-wrinkle-eye-cream-A3343.jpg?v=1773123652&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/madara-contour-wrinkle-eye-cream-1.5ml-sample-SC3343-1.5.jpg?v=1773123652&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-contour-wrinkle-eye-cream-A3343.jpg?v=1773123652&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/madara-contour-wrinkle-eye-cream-1.5ml-sample-SC3343-1.5.jpg?v=1773123652&width=720"
     },
     {
       "name": "Contour Wrinkle Eye Cream",
@@ -2308,8 +2308,8 @@
     {
       "name": "Peptide Day Cream",
       "price": "Regular price\nRs. 4,200.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-derma-collagen-peptide-day-cream.jpg?v=1773123651&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-collagen-boosting-day-cream.jpg?v=1773123650&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-derma-collagen-peptide-day-cream.jpg?v=1773123651&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-collagen-boosting-day-cream.jpg?v=1773123650&width=720"
     },
     {
       "name": "Peptide Day Cream",
@@ -2318,8 +2318,8 @@
     {
       "name": "Peptide Night Cream",
       "price": "From Rs. 100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/derma-collagen-peptide-night-cream-madara-a3062.jpg?v=1773123650&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-night-source-sleeping-cream-madara-A3062.jpg?v=1773123650&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/derma-collagen-peptide-night-cream-madara-a3062.jpg?v=1773123650&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-night-source-sleeping-cream-madara-A3062.jpg?v=1773123650&width=720"
     },
     {
       "name": "Peptide Night Cream",
@@ -2328,8 +2328,8 @@
     {
       "name": "Age Recovery Facial Oil",
       "price": "Regular price\nRs. 5,900.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-superseed-age-recovery-oil-30ml-A2603.jpg?v=1773123649&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-anti-age-recovery-treatment-A2603.jpg?v=1773123649&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-superseed-age-recovery-oil-30ml-A2603.jpg?v=1773123649&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-anti-age-recovery-treatment-A2603.jpg?v=1773123649&width=720"
     },
     {
       "name": "Age Recovery Facial Oil",
@@ -2338,8 +2338,8 @@
     {
       "name": "Intense Wrinkle Serum",
       "price": "From Rs. 100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-age-pro-intense-wrinkle-serum-A3340.jpg?v=1773123652&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/madara-intense-wrinkle-serum-2ml-sample-SC3340-2.jpg?v=1773123651&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-age-pro-intense-wrinkle-serum-A3340.jpg?v=1773123652&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/madara-intense-wrinkle-serum-2ml-sample-SC3340-2.jpg?v=1773123651&width=720"
     },
     {
       "name": "Intense Wrinkle Serum",
@@ -2348,8 +2348,8 @@
     {
       "name": "Hydra Firm Hyaluron Jelly",
       "price": "From Rs. 100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-hydra-firm-hyaluron-jelly-A3342.jpg?v=1773123654&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/madara-hydra-firm-hyaluron-jelly-2ml-sample-SC3342-2.jpg?v=1773123654&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-hydra-firm-hyaluron-jelly-A3342.jpg?v=1773123654&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/madara-hydra-firm-hyaluron-jelly-2ml-sample-SC3342-2.jpg?v=1773123654&width=720"
     },
     {
       "name": "Hydra Firm Hyaluron Jelly",
@@ -2358,8 +2358,8 @@
     {
       "name": "Custom Actives",
       "price": "From Rs. 1,700.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-madara-omega-3-6-9-concentrate-A3263.jpg?v=1773123671&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-omega-concentrate-A3263.jpg?v=1773123670&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-madara-omega-3-6-9-concentrate-A3263.jpg?v=1773123671&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-omega-concentrate-A3263.jpg?v=1773123670&width=720"
     },
     {
       "name": "Custom Actives",
@@ -2368,8 +2368,8 @@
     {
       "name": "Peptide Serum",
       "price": "From Rs. 100.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-derma-collagen-peptides-serum-A3061.jpg?v=1773123657&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/madara-derma-collagen-hydra-fill-firming-serum-2ml-SC3061-2.jpg?v=1773123657&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-derma-collagen-peptides-serum-A3061.jpg?v=1773123657&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/madara-derma-collagen-hydra-fill-firming-serum-2ml-SC3061-2.jpg?v=1773123657&width=720"
     },
     {
       "name": "Peptide Serum",
@@ -2378,8 +2378,8 @@
     {
       "name": "Eye Contour Cream",
       "price": "Regular price\nRs. 3,000.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-eye-contour-cream-A2271.jpg?v=1773123678&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-organic-eye-contour-cream-A2271.jpg?v=1773123678&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-eye-contour-cream-A2271.jpg?v=1773123678&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-organic-eye-contour-cream-A2271.jpg?v=1773123678&width=720"
     },
     {
       "name": "Eye Contour Cream",
@@ -2388,8 +2388,8 @@
     {
       "name": "Exfoliating Oil-To-Milk Scrub",
       "price": "Regular price\nRs. 2,600.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-exfoliating-oil-to-milk-scrub-A2151.jpg?v=1773123673&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-oil-based-face-scrub-texture-A2151.jpg?v=1773123673&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-exfoliating-oil-to-milk-scrub-A2151.jpg?v=1773123673&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-oil-based-face-scrub-texture-A2151.jpg?v=1773123673&width=720"
     },
     {
       "name": "Exfoliating Oil-To-Milk Scrub",
@@ -2398,8 +2398,8 @@
     {
       "name": "3 Min Growth Boost Scalp Treatment",
       "price": "Regular price\nRs. 48,700.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-3-min-growth-boost-scalp-treatment-A4070.jpg?v=1773123686&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-natural-hair-growth-booster-A4070.jpg?v=1773123685&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-3-min-growth-boost-scalp-treatment-A4070.jpg?v=1773123686&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-natural-hair-growth-booster-A4070.jpg?v=1773123685&width=720"
     },
     {
       "name": "3 Min Growth Boost Scalp Treatment",
@@ -2408,8 +2408,8 @@
     {
       "name": "Eye Contour Cream",
       "price": "Regular price\nRs. 3,000.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-eye-contour-cream-A2271.jpg?v=1773123678&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-organic-eye-contour-cream-A2271.jpg?v=1773123678&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-deep-moisture-eye-contour-cream-A2271.jpg?v=1773123678&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-organic-eye-contour-cream-A2271.jpg?v=1773123678&width=720"
     },
     {
       "name": "Eye Contour Cream",
@@ -2418,8 +2418,8 @@
     {
       "name": "Exfoliating Oil-To-Milk Scrub",
       "price": "Regular price\nRs. 2,600.00",
-      "img": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/1-exfoliating-oil-to-milk-scrub-A2151.jpg?v=1773123673&width=720",
-      "img2": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/2-oil-based-face-scrub-texture-A2151.jpg?v=1773123673&width=720"
+      "img": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/1-exfoliating-oil-to-milk-scrub-A2151.jpg?v=1773123673&width=720",
+      "img2": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/2-oil-based-face-scrub-texture-A2151.jpg?v=1773123673&width=720"
     },
     {
       "name": "Exfoliating Oil-To-Milk Scrub",
@@ -2436,27 +2436,27 @@
   "testimonialItems": [],
   "instagramImages": [
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/b17_540x_aa6b96c0-cd33-460e-8da7-208e8c30f82e.webp?v=1773124923&width=600",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/b17_540x_aa6b96c0-cd33-460e-8da7-208e8c30f82e.webp?v=1773124923&width=600",
       "alt": ""
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/custom-banner-2.jpg?v=1773124923&width=600",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/custom-banner-2.jpg?v=1773124923&width=600",
       "alt": ""
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/gallery-2-v2.webp?v=1773124923&width=600",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/gallery-2-v2.webp?v=1773124923&width=600",
       "alt": ""
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/gallery-image-7.webp?v=1773124923&width=600",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/gallery-image-7.webp?v=1773124923&width=600",
       "alt": ""
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/gallery-image-1.jpg?v=1773124923&width=600",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/gallery-image-1.jpg?v=1773124923&width=600",
       "alt": ""
     },
     {
-      "src": "https://beautina-cosmetic.myshopify.com/cdn/shop/files/about-img-3.webp?v=1773124923&width=600",
+      "src": "https://the woman company-cosmetic.myshopify.com/cdn/shop/files/about-img-3.webp?v=1773124923&width=600",
       "alt": ""
     }
   ],

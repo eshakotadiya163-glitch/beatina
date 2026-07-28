@@ -45,7 +45,7 @@ const itemVariants = {
 
 const BlogPreview = () => {
   return (
-    <section className="bg-white py-16 md:py-24 border-y border-gray-100 overflow-hidden">
+    <section className="bg-white py-12 md:py-16 border-y border-gray-100 overflow-hidden">
       <div className="container mx-auto px-4 max-w-[1400px]">
         
         {/* Section Heading */}
@@ -56,12 +56,15 @@ const BlogPreview = () => {
           viewport={{ once: true }}
           className="text-center mb-10 md:mb-14"
         >
-          <div className="text-[10px] md:text-[11px] font-semibold tracking-[0.25em] uppercase text-gray-500 mb-4 font-sans">
+          <div className="font-body text-[13px] md:text-[15px] font-[400] text-gray-500 mb-2">
             Sub Title Top
           </div>
-          <h2 className="text-3xl md:text-[40px] font-light text-[#111111] font-serif leading-tight">
-            Journal
-          </h2>
+          <h3 className="font-serif text-[28px] md:text-[36px] lg:text-[42px] text-[#111111] font-[400] mb-2 leading-tight">
+            <span>Journal</span>
+          </h3>
+          <div className="font-body text-[15px] md:text-[16px] text-gray-500 font-[400]">
+            Subscribe for latest news and blog updates from our editor.
+          </div>
         </motion.div>
         
         <motion.div 

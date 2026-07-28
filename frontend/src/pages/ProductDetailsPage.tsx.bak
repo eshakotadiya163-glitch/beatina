@@ -1,0 +1,646 @@
+import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
+import api from '../api/axios';
+import { useState, useEffect } from 'react';
+import { Star, Truck, ShieldCheck, Plus, Minus, ArrowRight, Heart, Share2, Shuffle, Check } from 'lucide-react';
+import { useInView } from 'react-intersection-observer';
+import InnerImageZoomPkg from 'react-inner-image-zoom';
+const InnerImageZoom = InnerImageZoomPkg.default || InnerImageZoomPkg.InnerImageZoom || InnerImageZoomPkg;
+import 'react-inner-image-zoom/lib/styles.min.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Thumbs, Pagination } from 'swiper/modules';
+import type { Swiper as SwiperType } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
+import 'swiper/css/pagination';
+import { motion, AnimatePresence } from 'framer-motion';
+import ProductCard from '../components/ProductCard';
+import useCartStore from '../store/cartStore';
+import useCompareStore from '../store/compareStore';
+import toast from 'react-hot-toast';
+
+const ProductDetailsPage = () => {
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const queryClient = useQueryClient();
+  const [activeTab, setActiveTab] = useState<'description' | 'ingredients' | 'howToUse' | 'features' | 'specifications' | 'benefits' | 'reviews'>('description');
+  const [qty, setQty] = useState(1);
+  const [activeImage, setActiveImage] = useState(0);
+  const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
+  const [selectedVariant, setSelectedVariant] = useState('');
+  const [isCopied, setIsCopied] = useState(false);
+  
+  const { addItem, setIsOpen } = useCartStore();
+  const { addItem: addCompareItem, items: compareItems } = useCompareStore();
+  
+  const { ref: addToCartRef, inView: isAddToCartVisible } = useInView({
+    threshold: 0,
+    rootMargin: "-100px 0px 0px 0px",
+  });
+
+  const { data: product, isLoading, error } = useQuery({
+    queryKey: ['product', id],
+    queryFn: async () => {
+      const { data } = await api.get(`/products/${id}`);
+      return data;
+    },
+  });
+
+  // Ensure activeTab falls back to a tab that actually has data
+  useEffect(() => {
+    if (product) {
+      console.log('--- PRODUCT DATA FROM API ---');
+      console.log(product);
+      console.log('-----------------------------');
+      
+      const tabs = [
+        { id: 'description', hasData: !!product?.description },
+        { id: 'benefits', hasData: product?.benefits && product.benefits.length > 0 },
+        { id: 'ingredients', hasData: !!product?.ingredients },
+        { id: 'howToUse', hasData: !!product?.howToUse },
+        { id: 'features', hasData: product?.features && product.features.length > 0 },
+        { id: 'specifications', hasData: product?.specifications && product.specifications.length > 0 },
+        { id: 'reviews', hasData: true }
+      ];
+      const currentTab = tabs.find(t => t.id === activeTab);
+      if (currentTab && !currentTab.hasData) {
+        const firstAvailableTab = tabs.find(t => t.hasData)?.id;
+        if (firstAvailableTab) setActiveTab(firstAvailableTab as any);
+      }
+    }
+  }, [product, activeTab]);
+
+  const { data: wishlist } = useQuery({
+    queryKey: ['wishlist'],
+    queryFn: async () => {
+      try {
+        const { data } = await api.get('/wishlist');
+        return data;
+      } catch (err) {
+        return [];
+      }
+    },
+    retry: false
+  });
+
+  const addToWishlistMutation = useMutation({
+    mutationFn: async (productId: string) => {
+      await api.post('/wishlist', { productId });
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['wishlist'] });
+      toast.success('Added to wishlist');
+    },
+    onError: () => {
+      toast.error('Please login to use wishlist');
+      navigate('/login');
+    }
+  });
+
+  const removeFromWishlistMutation = useMutation({
+    mutationFn: async (productId: string) => {
+      await api.delete(`/wishlist/${productId}`);
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['wishlist'] });
+      toast.success('Removed from wishlist');
+    }
+  });
+
+  // Track recently viewed
+  const [recentlyViewedIds, setRecentlyViewedIds] = useState<string[]>([]);
+  useEffect(() => {
+    if (product?._id) {
+      const stored = JSON.parse(localStorage.getItem('recentlyViewed') || '[]');
+      const updated = [product._id, ...stored.filter((x: string) => x !== product._id)].slice(0, 4);
+      localStorage.setItem('recentlyViewed', JSON.stringify(updated));
+      setRecentlyViewedIds(updated.filter(x => x !== product._id));
+      
+      // Document title
+      document.title = product.seoTitle || `${product.name} | Beautina`;
+      
+      // Auto-select first variant if available
+      if (product.sizes && product.sizes.length > 0 && !selectedVariant) {
+        setSelectedVariant(product.sizes[0]);
+      }
+    }
+  }, [product]);
+
+  const categoryId = product?.category?._id || product?.category;
+  const { data: relatedData } = useQuery({
+    queryKey: ['products', 'related', categoryId],
+    queryFn: async () => {
+      const { data } = await api.get(`/products?category=${categoryId}&limit=8`);
+      return data;
+    },
+    enabled: !!categoryId,
+  });
+
+  const { data: recentlyViewedData } = useQuery({
+    queryKey: ['products', 'recent', recentlyViewedIds],
+    queryFn: async () => {
+      const promises = recentlyViewedIds.map(rid => api.get(`/products/${rid}`).then(res => res.data).catch(() => null));
+      const results = await Promise.all(promises);
+      return results.filter(Boolean);
+    },
+    enabled: recentlyViewedIds.length > 0,
+  });
+
+  if (isLoading) return <div className="min-h-screen bg-white flex items-center justify-center pt-20"><div className="w-8 h-8 border-2 border-brand-dark border-t-transparent rounded-full animate-spin"></div></div>;
+  if (error || !product) return <div className="min-h-screen bg-white flex items-center justify-center pt-20 text-brand-dark font-body">Product not found</div>;
+
+  const productImages = product.images?.map((i: any) => i.url) || [];
+  const inWishlist = wishlist?.some((item: any) => item._id === product._id);
+  const inCompare = compareItems.some((item) => item._id === product._id);
+
+  const discountPercent = product.compareAtPrice && product.compareAtPrice > product.price 
+    ? Math.round(((product.compareAtPrice - product.price) / product.compareAtPrice) * 100)
+    : 0;
+
+  const addToCartHandler = () => {
+    addItem({
+      _id: product._id,
+      name: product.name,
+      image: product.images?.[0]?.url || '',
+      price: product.price,
+      qty,
+      countInStock: product.countInStock || 0
+    });
+    toast.success('Added to bag');
+    setIsOpen(true);
+  };
+
+  const buyNowHandler = () => {
+    addItem({
+      _id: product._id,
+      name: product.name,
+      image: product.images?.[0]?.url || '',
+      price: product.price,
+      qty,
+      countInStock: product.countInStock || 0
+    });
+    navigate('/checkout');
+  };
+
+  const toggleWishlist = () => {
+    if (inWishlist) {
+      removeFromWishlistMutation.mutate(product._id);
+    } else {
+      addToWishlistMutation.mutate(product._id);
+    }
+  };
+
+  const handleShare = () => {
+    navigator.clipboard.writeText(window.location.href);
+    setIsCopied(true);
+    toast.success('Link copied to clipboard');
+    setTimeout(() => setIsCopied(false), 2000);
+  };
+
+  const handleCompare = () => {
+    if (!inCompare) {
+      addCompareItem({
+        _id: product._id,
+        name: product.name,
+        image: product.images?.[0]?.url || '',
+        price: product.price,
+        compareAtPrice: product.compareAtPrice,
+        brand: product.brand,
+        category: product.category,
+        rating: product.rating,
+        numReviews: product.numReviews,
+        features: product.features,
+        specifications: product.specifications,
+        shortDescription: product.shortDescription
+      });
+      toast.success('Added to comparison');
+    } else {
+      toast('Already in comparison', { icon: 'ℹ️' });
+    }
+  };
+
+  return (
+    <div className="pt-[116px] pb-32 bg-white min-h-screen">
+      
+      {/* Sticky Add To Cart Bar */}
+      <AnimatePresence>
+        {!isAddToCartVisible && (
+          <motion.div 
+            initial={{ y: 100 }}
+            animate={{ y: 0 }}
+            exit={{ y: 100 }}
+            className="fixed bottom-0 left-0 w-full bg-white border-t border-brand-border shadow-[0_-10px_40px_-15px_rgba(0,0,0,0.05)] z-40 py-3"
+          >
+            <div className="max-w-[1400px] mx-auto px-4 md:px-8 flex items-center justify-between">
+              <div className="flex items-center gap-4">
+                <img src={productImages[0]} alt={product.name} className="w-12 h-16 object-cover hidden sm:block bg-brand-light" />
+                <div>
+                  <h3 className="font-heading text-sm text-brand-dark line-clamp-1">{product.name}</h3>
+                  <span className="font-body text-brand-muted text-sm">₹{product?.price?.toFixed(2) || '0.00'}</span>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="hidden sm:flex border border-brand-border bg-white">
+                  <button onClick={() => setQty(Math.max(1, qty - 1))} className="px-3 py-2 text-brand-dark hover:bg-brand-light transition-colors"><Minus size={14} /></button>
+                  <div className="px-3 py-2 font-body text-sm text-brand-dark border-l border-r border-brand-border flex items-center min-w-[40px] justify-center">{qty}</div>
+                  <button onClick={() => setQty(Math.min(product.countInStock || 10, qty + 1))} className="px-3 py-2 text-brand-dark hover:bg-brand-light transition-colors"><Plus size={14} /></button>
+                </div>
+                <button 
+                  onClick={addToCartHandler}
+                  disabled={product.countInStock === 0}
+                  className="bg-brand-dark text-white font-body uppercase tracking-[0.2em] text-xs px-8 py-3 hover:bg-black transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {product.countInStock > 0 ? 'Add to Bag' : 'Out of Stock'}
+                </button>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-8 mt-4 md:mt-12">
+        {/* Breadcrumb */}
+        <div className="flex flex-wrap items-center gap-2 font-body text-xs text-brand-muted uppercase tracking-widest mb-8">
+          <Link to="/" className="hover:text-brand-dark transition-colors whitespace-nowrap">Home</Link>
+          <span>/</span>
+          <Link to="/shop" className="hover:text-brand-dark transition-colors whitespace-nowrap">Shop</Link>
+          {product.category && (
+            <>
+              <span>/</span>
+              <Link to={`/category/${product.category._id || product.category}`} className="hover:text-brand-dark transition-colors whitespace-nowrap">
+                {product.category.name || 'Category'}
+              </Link>
+            </>
+          )}
+          <span>/</span>
+          <span className="text-brand-dark line-clamp-1 break-all">{product.name}</span>
+        </div>
+
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 relative">
+          
+          {/* Left: Image Gallery */}
+          <div className="w-full lg:w-1/2">
+            <div className="sticky top-32 flex flex-col md:flex-row gap-4">
+              
+              {/* Desktop Thumbnails */}
+              <div className="hidden md:block w-20 flex-shrink-0 h-[60vh] md:h-[75vh]">
+                <Swiper
+                  onSwiper={setThumbsSwiper}
+                  direction="vertical"
+                  spaceBetween={12}
+                  slidesPerView="auto"
+                  watchSlidesProgress={true}
+                  modules={[Navigation, Thumbs]}
+                  className="h-full custom-scrollbar"
+                >
+                  {productImages.map((img: string, idx: number) => (
+                    <SwiperSlide key={idx} className="!h-auto !aspect-[3/4] cursor-pointer">
+                      <div className={`w-full h-full border overflow-hidden transition-opacity bg-brand-light ${activeImage === idx ? 'border-brand-dark opacity-100' : 'border-transparent opacity-60 hover:opacity-100'}`}>
+                        <img src={img} alt={`Thumbnail ${idx}`} className="w-full h-full object-cover mix-blend-multiply" />
+                      </div>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
+
+              {/* Main Image Slider */}
+              <div className="flex-1 bg-brand-light overflow-hidden relative group border border-brand-border/50 h-[50vh] md:h-[75vh] w-full">
+                {discountPercent > 0 && (
+                  <div className="absolute top-4 left-4 bg-red-600 text-white font-body text-xs font-medium tracking-wider px-3 py-1.5 z-10">
+                    -{discountPercent}%
+                  </div>
+                )}
+                
+                <Swiper
+                  modules={[Navigation, Thumbs, Pagination]}
+                  navigation={{
+                    prevEl: '.swiper-button-prev',
+                    nextEl: '.swiper-button-next',
+                  }}
+                  pagination={{ clickable: true, el: '.swiper-pagination-mobile' }}
+                  thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
+                  onSlideChange={(swiper) => setActiveImage(swiper.activeIndex)}
+                  className="h-full w-full"
+                >
+                  {productImages.map((img: string, idx: number) => (
+                    <SwiperSlide key={idx} className="h-full w-full">
+                      <InnerImageZoom 
+                        src={img} 
+                        zoomSrc={img} 
+                        className="w-full h-full object-cover mix-blend-multiply"
+                        zoomType="hover"
+                        zoomPreload={true}
+                        hideHint={true}
+                      />
+                    </SwiperSlide>
+                  ))}
+                  
+                  <div className="swiper-button-prev !text-brand-dark !left-4 opacity-0 group-hover:opacity-100 transition-opacity after:!text-xl hidden md:flex w-10 h-10 bg-white items-center justify-center rounded-full shadow-md hover:bg-brand-dark hover:!text-white"></div>
+                  <div className="swiper-button-next !text-brand-dark !right-4 opacity-0 group-hover:opacity-100 transition-opacity after:!text-xl hidden md:flex w-10 h-10 bg-white items-center justify-center rounded-full shadow-md hover:bg-brand-dark hover:!text-white"></div>
+                </Swiper>
+              </div>
+
+              <div className="md:hidden mt-4">
+                 <div className="swiper-pagination-mobile flex justify-center gap-2"></div>
+              </div>
+              
+              <div className="flex md:hidden gap-3 overflow-x-auto mt-2 no-scrollbar">
+                {productImages.map((img: string, idx: number) => (
+                  <button 
+                    key={idx} 
+                    onClick={() => {
+                      const swiperEl = document.querySelector('.flex-1 .swiper') as any;
+                      if (swiperEl && swiperEl.swiper) swiperEl.swiper.slideTo(idx);
+                    }}
+                    className={`border ${activeImage === idx ? 'border-brand-dark' : 'border-transparent'} w-16 aspect-[3/4] flex-shrink-0 bg-brand-light`}
+                  >
+                    <img src={img} alt={`Thumbnail ${idx}`} className="w-full h-full object-cover mix-blend-multiply" />
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Right: Product Info */}
+          <div className="w-full lg:w-1/2 flex flex-col py-4 lg:py-0">
+            <h2 className="text-[10px] font-body uppercase tracking-[0.2em] text-brand-muted mb-4">{product.brand || 'Beautina'}</h2>
+            <h1 className="text-3xl md:text-5xl font-heading mb-6 text-brand-dark leading-tight">{product.name}</h1>
+            
+            <div className="flex items-center gap-4 mb-6">
+              <div className="flex text-brand-dark text-sm">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} size={14} fill={i < Math.floor(product.rating || 5) ? 'currentColor' : 'none'} strokeWidth={1.5} />
+                ))}
+              </div>
+              <span className="font-body text-xs tracking-widest uppercase text-brand-muted cursor-pointer hover:text-brand-dark transition-colors">
+                {product.numReviews ? `${product.numReviews} Reviews` : 'No reviews yet'}
+              </span>
+              {product.sku && (
+                <>
+                  <span className="text-brand-border">|</span>
+                  <span className="font-body text-xs uppercase tracking-widest text-brand-muted">SKU: {product.sku}</span>
+                </>
+              )}
+            </div>
+
+            <div className="mb-8 border-b border-brand-border pb-8">
+               <div className="flex items-end gap-3 mb-2">
+                 <span className="text-2xl font-body text-brand-dark">₹{product?.price?.toFixed(2) || '0.00'}</span>
+                 {product?.compareAtPrice && product.compareAtPrice > product.price && (
+                   <span className="text-sm font-body text-brand-muted line-through mb-1">₹{product?.compareAtPrice?.toFixed(2) || '0.00'}</span>
+                 )}
+               </div>
+               
+               {/* Stock Status */}
+               <div className="mt-3 font-body text-xs uppercase tracking-widest">
+                 {product?.countInStock > 5 ? (
+                   <span className="text-green-600 flex items-center"><span className="w-2 h-2 rounded-full bg-green-600 mr-2"></span>In Stock</span>
+                 ) : product?.countInStock > 0 ? (
+                   <span className="text-orange-500 flex items-center"><span className="w-2 h-2 rounded-full bg-orange-500 mr-2"></span>Low Stock ({product.countInStock} left)</span>
+                 ) : (
+                   <span className="text-red-500 flex items-center"><span className="w-2 h-2 rounded-full bg-red-500 mr-2"></span>Out of Stock</span>
+                 )}
+               </div>
+
+               {product?.shortDescription && (
+                 <p className="text-sm font-body text-brand-muted mt-4 leading-relaxed">
+                   {product.shortDescription}
+                 </p>
+               )}
+            </div>
+
+            {/* Variants / Sizes */}
+            {product.sizes && product.sizes.length > 0 && (
+              <div className="mb-8">
+                <div className="flex justify-between items-center mb-3">
+                  <span className="font-heading text-sm uppercase tracking-widest text-brand-dark">Select Size</span>
+                </div>
+                <div className="flex flex-wrap gap-3">
+                  {product.sizes.map((variant: string) => (
+                    <button 
+                      key={variant}
+                      onClick={() => setSelectedVariant(variant)}
+                      className={`min-w-[100px] px-4 py-3 font-body text-xs uppercase tracking-widest border transition-colors ${selectedVariant === variant ? 'border-brand-dark bg-brand-dark text-white' : 'border-brand-border bg-white text-brand-dark hover:border-brand-dark'}`}
+                    >
+                      {variant}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Actions */}
+            <div ref={addToCartRef} className="flex flex-col gap-4 mb-6">
+              <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex border border-brand-border sm:w-32 bg-white">
+                  <button onClick={() => setQty(Math.max(1, qty - 1))} className="flex-1 py-4 sm:py-3 text-brand-dark hover:bg-brand-light flex justify-center items-center transition-colors"><Minus size={14} /></button>
+                  <div className="flex-1 py-4 sm:py-3 font-body text-sm text-brand-dark border-l border-r border-brand-border flex justify-center items-center">{qty}</div>
+                  <button onClick={() => setQty(Math.min(product.countInStock || 10, qty + 1))} className="flex-1 py-4 sm:py-3 text-brand-dark hover:bg-brand-light flex justify-center items-center transition-colors"><Plus size={14} /></button>
+                </div>
+                <button 
+                  onClick={addToCartHandler}
+                  disabled={product.countInStock === 0}
+                  className="flex-1 bg-white border border-brand-dark text-brand-dark font-body uppercase tracking-[0.2em] text-xs hover:bg-brand-light py-4 sm:py-0 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {product.countInStock > 0 ? 'Add to Bag' : 'Out of Stock'}
+                </button>
+              </div>
+              <button 
+                onClick={buyNowHandler}
+                disabled={product.countInStock === 0}
+                className="w-full bg-brand-dark text-white font-body uppercase tracking-[0.2em] text-xs py-4 hover:bg-black transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                Buy It Now
+              </button>
+            </div>
+
+            {/* Utility Links */}
+            <div className="flex flex-wrap items-center gap-6 border-b border-brand-border pb-8 mb-8">
+               <button onClick={toggleWishlist} className="flex items-center gap-2 text-xs font-body uppercase tracking-widest text-brand-muted hover:text-brand-dark transition-colors">
+                 <Heart size={16} fill={inWishlist ? 'currentColor' : 'none'} className={inWishlist ? 'text-brand-primary' : ''} />
+                 {inWishlist ? 'Saved' : 'Add to Wishlist'}
+               </button>
+               <button onClick={handleCompare} className="flex items-center gap-2 text-xs font-body uppercase tracking-widest text-brand-muted hover:text-brand-dark transition-colors">
+                 <Shuffle size={16} className={inCompare ? 'text-brand-primary' : ''} />
+                 {inCompare ? 'Added to Compare' : 'Compare'}
+               </button>
+               <button onClick={handleShare} className="flex items-center gap-2 text-xs font-body uppercase tracking-widest text-brand-muted hover:text-brand-dark transition-colors">
+                 {isCopied ? <Check size={16} className="text-green-500" /> : <Share2 size={16} />}
+                 Share
+               </button>
+            </div>
+
+            {/* Horizontal Tabs */}
+            <div>
+              <div className="flex flex-wrap border-b border-brand-border">
+                {/* Dynamically filter tabs that have content */}
+                {[
+                  { id: 'description', label: 'Description', hasData: !!product.description },
+                  { id: 'benefits', label: 'Benefits', hasData: product.benefits && product.benefits.length > 0 },
+                  { id: 'ingredients', label: 'Ingredients', hasData: !!product.ingredients },
+                  { id: 'howToUse', label: 'How to Use', hasData: !!product.howToUse },
+                  { id: 'features', label: 'Features', hasData: product.features && product.features.length > 0 },
+                  { id: 'specifications', label: 'Specs', hasData: product.specifications && product.specifications.length > 0 },
+                  { id: 'reviews', label: 'Reviews', hasData: true }
+                ].filter(tab => tab.hasData).map(tab => (
+                  <button 
+                    key={tab.id}
+                    onClick={() => setActiveTab(tab.id as any)}
+                    className={`px-4 py-4 font-heading text-sm uppercase tracking-widest text-center transition-colors relative ${activeTab === tab.id ? 'text-brand-dark' : 'text-brand-muted hover:text-brand-dark'}`}
+                  >
+                    {tab.label}
+                    {activeTab === tab.id && (
+                      <motion.div 
+                        layoutId="activeTab" 
+                        className="absolute bottom-0 left-0 right-0 h-[2px] bg-brand-dark" 
+                      />
+                    )}
+                  </button>
+                ))}
+              </div>
+              
+              <div className="py-6 min-h-[150px]">
+                <AnimatePresence mode="wait">
+                  {activeTab === 'description' && product.description && (
+                    <motion.div key="desc" initial={{ opacity: 0, y: 5 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -5 }}>
+                      <div className="font-body text-sm text-brand-muted leading-relaxed prose prose-sm prose-p:mb-4 max-w-none" dangerouslySetInnerHTML={{ __html: product.description }} />
+                    </motion.div>
+                  )}
+                  {activeTab === 'benefits' && product.benefits && (
+                    <motion.div key="ben" initial={{ opacity: 0, y: 5 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -5 }}>
+                      <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        {product.benefits.map((benefit: string, index: number) => (
+                          <li key={index} className="flex items-start text-sm font-body text-brand-muted">
+                            <Check size={16} className="text-brand-primary mr-2 mt-0.5 flex-shrink-0" />
+                            {benefit}
+                          </li>
+                        ))}
+                      </ul>
+                    </motion.div>
+                  )}
+                  {activeTab === 'ingredients' && product.ingredients && (
+                    <motion.div key="ingr" initial={{ opacity: 0, y: 5 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -5 }}>
+                      <div className="font-body text-sm text-brand-muted leading-relaxed">
+                        <p>{product.ingredients}</p>
+                      </div>
+                    </motion.div>
+                  )}
+                  {activeTab === 'howToUse' && product.howToUse && (
+                    <motion.div key="how" initial={{ opacity: 0, y: 5 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -5 }}>
+                      <div className="font-body text-sm text-brand-muted leading-relaxed">
+                        <p>{product.howToUse}</p>
+                      </div>
+                    </motion.div>
+                  )}
+                  {activeTab === 'features' && product.features && (
+                    <motion.div key="feat" initial={{ opacity: 0, y: 5 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -5 }}>
+                       <ul className="list-disc pl-5 space-y-2 font-body text-sm text-brand-muted">
+                        {product.features.map((feature: string, index: number) => (
+                          <li key={index}>{feature}</li>
+                        ))}
+                      </ul>
+                    </motion.div>
+                  )}
+                  {activeTab === 'specifications' && product.specifications && (
+                    <motion.div key="spec" initial={{ opacity: 0, y: 5 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -5 }}>
+                      <table className="w-full text-sm font-body text-left border-collapse">
+                        <tbody>
+                          {product.specifications.map((spec: any, index: number) => (
+                            <tr key={index} className="border-b border-brand-border last:border-0">
+                              <th className="py-3 font-medium text-brand-dark w-1/3">{spec.name}</th>
+                              <td className="py-3 text-brand-muted">{spec.value}</td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </motion.div>
+                  )}
+                  {activeTab === 'reviews' && (
+                    <motion.div key="rev" initial={{ opacity: 0, y: 5 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -5 }}>
+                      {product.reviews && product.reviews.length > 0 ? (
+                        <div className="space-y-6">
+                          {product.reviews.map((review: any, index: number) => (
+                            <div key={index} className="border-b border-brand-border pb-6 last:border-0">
+                              <div className="flex items-center gap-2 mb-2">
+                                <div className="flex text-brand-dark">
+                                  {[...Array(5)].map((_, i) => (
+                                    <Star key={i} size={14} fill={i < Math.floor(review.rating) ? 'currentColor' : 'none'} strokeWidth={1.5} />
+                                  ))}
+                                </div>
+                                <span className="text-xs font-body font-medium text-brand-dark">{review.name}</span>
+                                <span className="text-xs font-body text-brand-muted ml-auto">
+                                  {new Date(review.createdAt).toLocaleDateString()}
+                                </span>
+                              </div>
+                              <p className="font-body text-sm text-brand-muted leading-relaxed">
+                                "{review.comment}"
+                              </p>
+                            </div>
+                          ))}
+                        </div>
+                      ) : (
+                        <p className="font-body text-sm text-brand-muted py-4">No reviews yet.</p>
+                      )}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            </div>
+
+            {/* Badges */}
+            <div className="mt-8 grid grid-cols-3 gap-4 border-t border-brand-border pt-8">
+              <div className="flex flex-col items-center text-center text-brand-dark">
+                <ShieldCheck size={24} className="mb-3 stroke-[1.5]" />
+                <span className="font-body text-[10px] uppercase tracking-widest text-brand-muted">100% Genuine</span>
+              </div>
+              <div className="flex flex-col items-center text-center text-brand-dark">
+                <Truck size={24} className="mb-3 stroke-[1.5]" />
+                <span className="font-body text-[10px] uppercase tracking-widest text-brand-muted">Free Shipping</span>
+              </div>
+              <div className="flex flex-col items-center text-center text-brand-dark">
+                <Star size={24} className="mb-3 stroke-[1.5]" />
+                <span className="font-body text-[10px] uppercase tracking-widest text-brand-muted">Top Rated</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      {/* Related Products */}
+      {relatedData?.products?.length > 1 && (
+        <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-20 mt-12 border-t border-brand-border">
+          <div className="flex justify-between items-end mb-12">
+            <h3 className="text-3xl font-heading text-brand-dark uppercase tracking-wide">You May Also Like</h3>
+            <Link to="/shop" className="text-xs font-body uppercase tracking-widest text-brand-dark hover:text-brand-muted transition-colors flex items-center">
+              View All <ArrowRight size={14} className="ml-2" />
+            </Link>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 gap-y-12">
+            {relatedData.products.filter((p: any) => p._id !== product._id).slice(0, 4).map((p: any) => (
+              <ProductCard key={p._id} product={p} onQuickView={() => {}} />
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Recently Viewed */}
+      {recentlyViewedData && recentlyViewedData.length > 0 && (
+        <div className="bg-brand-light py-20 border-t border-brand-border">
+          <div className="max-w-[1400px] mx-auto px-4 md:px-8">
+            <h3 className="text-3xl font-heading mb-12 text-brand-dark uppercase tracking-wide text-center">Recently Viewed</h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 gap-y-12">
+              {recentlyViewedData.map((p: any) => (
+                <ProductCard key={p._id} product={p} onQuickView={() => {}} />
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
+    </div>
+  );
+};
+
+export default ProductDetailsPage;

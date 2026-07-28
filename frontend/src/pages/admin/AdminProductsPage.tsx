@@ -4,17 +4,21 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Plus, Search, Edit2, Trash2, Loader2, Image as ImageIcon } from 'lucide-react';
 import { toast } from 'react-hot-toast';
 import api from '../../api/axios';
+import { getImageUrl } from '../../utils/imageHelper';
+import useAuthStore from '../../store/authStore';
 
 const AdminProductsPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [page, setPage] = useState(1);
   const queryClient = useQueryClient();
   const navigate = useNavigate();
+  const { user } = useAuthStore();
 
   const { data, isLoading } = useQuery({
-    queryKey: ['adminProducts', page, searchTerm],
+    queryKey: ['adminProducts', page, searchTerm, user?._id],
     queryFn: async () => {
-      const { data } = await api.get(`/products?pageNumber=${page}&keyword=${searchTerm}&limit=10`);
+      const vendorQuery = user && !user.isAdmin && user.isVendor ? `&vendor=${user._id}` : '';
+      const { data } = await api.get(`/products?pageNumber=${page}&keyword=${searchTerm}&limit=10${vendorQuery}`);
       return data;
     },
   });
@@ -121,7 +125,7 @@ const AdminProductsPage = () => {
                   <tr key={product._id} className="hover:bg-gray-50/50 transition-colors">
                     <td className="p-4">
                       {product.images?.length > 0 ? (
-                        <img src={product.images[0].url} alt={product.name} className="w-10 h-12 object-cover border border-gray-100 rounded-sm bg-white" />
+                        <img src={getImageUrl(product)} alt={product.name} className="w-10 h-12 object-cover border border-gray-100 rounded-sm bg-white" />
                       ) : (
                         <div className="w-10 h-12 bg-gray-100 flex items-center justify-center rounded-sm text-gray-400">
                           <ImageIcon size={16} />

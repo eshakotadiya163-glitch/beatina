@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import { motion, AnimatePresence } from 'framer-motion';
 import ProductCard from '../ProductCard';
+import { getImageUrl } from '../../utils/imageHelper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
@@ -16,18 +17,22 @@ const shopVideos = [
   {
     videoSrc: "/images/migrated/40_b11b019c831543709c9f0852c3d79b21.HD-1080p-3.3Mbps-77545356.mp4",
     poster: "/images/migrated/41_b11b019c831543709c9f0852c3d79b21.thumbnail.0000000000_small.jpg",
+    customTitle: "Hydrating Eye Patches",
   },
   {
     videoSrc: "/images/migrated/42_788b041920114347915fb7d4a16de257.HD-1080p-7.2Mbps-77545360.mp4",
     poster: "/images/migrated/43_788b041920114347915fb7d4a16de257.thumbnail.0000000000_small.jpg",
+    customTitle: "Glossy Lip Hydration",
   },
   {
     videoSrc: "/images/migrated/44_fb984906407f4fb9b5c5ceb14dd78350.HD-1080p-2.5Mbps-77626008.mp4",
     poster: "/images/migrated/45_fb984906407f4fb9b5c5ceb14dd78350.thumbnail.0000000000_small.jpg",
+    customTitle: "Vitamin C Illuminating Serum",
   },
   {
     videoSrc: "/images/migrated/46_4b2f2c0725434683af01f499b85d7b90.HD-1080p-4.8Mbps-77545359.mp4",
     poster: "/images/migrated/47_4b2f2c0725434683af01f499b85d7b90.thumbnail.0000000000_small.jpg",
+    customTitle: "Age-Defying Day Cream",
   }
 ];
 
@@ -36,11 +41,10 @@ const ShoppableVideos: React.FC<ShoppableVideosProps> = ({ products = [] }) => {
   const [activeVideoIndex, setActiveVideoIndex] = useState(0);
 
   const formatPrice = (price: number) => {
-    return new Intl.NumberFormat('en-IN', {
-      style: 'currency',
-      currency: 'USD',
+    return `Rs. ${price.toLocaleString('en-IN', {
       minimumFractionDigits: 2,
-    }).format(price);
+      maximumFractionDigits: 2,
+    })}`;
   };
 
   const shoppableProductsRaw = products.filter(p => p.tabCategory === 'Shoppable Videos');
@@ -67,7 +71,7 @@ const ShoppableVideos: React.FC<ShoppableVideosProps> = ({ products = [] }) => {
   };
 
   return (
-    <section className="bg-white py-16 md:py-24 relative px-4 max-w-[1600px] mx-auto border-y border-gray-100">
+    <section className="bg-white py-12 md:py-16 relative px-4 max-w-[1600px] mx-auto border-y border-gray-100">
       <motion.h2 
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -102,8 +106,16 @@ const ShoppableVideos: React.FC<ShoppableVideosProps> = ({ products = [] }) => {
           className="w-full"
         >
           {shopVideos.map((video, index) => {
-            const product = shoppableProducts[index % Math.max(shoppableProducts.length, 1)];
-            if (!product) return null;
+            const baseProduct = shoppableProducts[index % Math.max(shoppableProducts.length, 1)];
+            if (!baseProduct) return null;
+            
+            const product = {
+              ...baseProduct,
+              name: video.customTitle,
+              title: video.customTitle,
+              images: [{ url: video.poster }],
+              image: video.poster
+            };
 
             return (
               <SwiperSlide key={index} className="h-auto">
@@ -124,10 +136,9 @@ const ShoppableVideos: React.FC<ShoppableVideosProps> = ({ products = [] }) => {
                       playsInline={true}
                     />
                     
-                    {/* Floating Product Badge */}
                     <div className="absolute bottom-3 left-[10px] translate-y-1/2 w-[68px] h-[74px] rounded-[6px] z-20 shadow-sm border border-white bg-white">
                       <img 
-                        src={product.images?.[0] || video.poster} 
+                        src={getImageUrl(product, 0, video.poster)} 
                         className="w-full h-full object-cover rounded-[4px]" 
                         alt={product.title}
                       />
@@ -208,7 +219,15 @@ const ShoppableVideos: React.FC<ShoppableVideosProps> = ({ products = [] }) => {
                 {shoppableProducts[activeVideoIndex % Math.max(shoppableProducts.length, 1)] && (
                   <div className="w-full max-w-sm mx-auto">
                     <h4 className="font-serif text-2xl font-light mb-8 pb-4 border-b border-gray-100 text-[#111111]">Featured Product</h4>
-                    <ProductCard product={shoppableProducts[activeVideoIndex % Math.max(shoppableProducts.length, 1)]} />
+                    <ProductCard 
+                      product={{
+                        ...shoppableProducts[activeVideoIndex % Math.max(shoppableProducts.length, 1)],
+                        name: shopVideos[activeVideoIndex]?.customTitle || 'Featured Product',
+                        title: shopVideos[activeVideoIndex]?.customTitle || 'Featured Product',
+                        images: [{ url: shopVideos[activeVideoIndex]?.poster }],
+                        image: shopVideos[activeVideoIndex]?.poster
+                      }} 
+                    />
                   </div>
                 )}
               </div>

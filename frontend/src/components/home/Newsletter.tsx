@@ -13,7 +13,7 @@ const Newsletter = () => {
   };
 
   return (
-    <section className="py-16 md:py-20 bg-brand-dark text-white">
+    <section className="py-12 md:py-14 bg-brand-dark text-white">
       <div className="max-w-3xl mx-auto px-4 md:px-8 text-center">
         <span className="font-body text-[10px] uppercase tracking-[0.25em] text-white/60 mb-4 block">
           Newsletter

@@ -1,5 +1,6 @@
 import { Suspense, lazy } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import { Toaster } from 'react-hot-toast';
 import MainLayout from './layouts/MainLayout';
 import HomePage from './pages/HomePage';
 import AdminLayout from './layouts/AdminLayout';
@@ -14,8 +15,18 @@ const AdminCategoriesPage = lazy(() => import('./pages/admin/AdminCategoriesPage
 const AdminCouponsPage = lazy(() => import('./pages/admin/AdminCouponsPage'));
 const AdminReviewsPage = lazy(() => import('./pages/admin/AdminReviewsPage'));
 
+// SaaS Admin Routes
+const AdminLeadsPage = lazy(() => import('./pages/admin/AdminLeadsPage'));
+const AdminCustomersPage = lazy(() => import('./pages/admin/AdminCustomersPage'));
+const AdminCustomerProfilePage = lazy(() => import('./pages/admin/AdminCustomerProfilePage'));
+const AdminAppointmentsPage = lazy(() => import('./pages/admin/AdminAppointmentsPage'));
+const AdminServicesPage = lazy(() => import('./pages/admin/AdminServicesPage'));
+const AdminInvoicesPage = lazy(() => import('./pages/admin/AdminInvoicesPage'));
+const AdminPaymentsPage = lazy(() => import('./pages/admin/AdminPaymentsPage'));
+const AdminStaffPage = lazy(() => import('./pages/admin/AdminStaffPage'));
+const AdminSettingsPage = lazy(() => import('./pages/admin/AdminSettingsPage'));
+
 // Lazy loaded Public/Customer Routes
-const ShopPage = lazy(() => import('./pages/ShopPage'));
 const ProductDetailsPage = lazy(() => import('./pages/ProductDetailsPage'));
 const CategoryPage = lazy(() => import('./pages/CategoryPage'));
 const SearchPage = lazy(() => import('./pages/SearchPage'));
@@ -44,6 +55,7 @@ const TrackOrderPage = lazy(() => import('./pages/TrackOrderPage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
 const BlogPage = lazy(() => import('./pages/BlogPage'));
+const BlogDetailsPage = lazy(() => import('./pages/BlogDetailsPage'));
 const PolicyPage = lazy(() => import('./pages/PolicyPage'));
 const FaqPage = lazy(() => import('./pages/FaqPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
@@ -57,6 +69,7 @@ const PageLoader = () => (
 function App() {
   return (
     <Suspense fallback={<PageLoader />}>
+      <Toaster position="bottom-center" />
       <Routes>
         {/* Admin Routes */}
         <Route path="/admin" element={<AdminLayout />}>
@@ -68,13 +81,23 @@ function App() {
           <Route path="categories" element={<AdminCategoriesPage />} />
           <Route path="coupons" element={<AdminCouponsPage />} />
           <Route path="reviews" element={<AdminReviewsPage />} />
+          {/* New SaaS Modules */}
+          <Route path="leads" element={<AdminLeadsPage />} />
+          <Route path="customers" element={<AdminCustomersPage />} />
+          <Route path="customers/:id" element={<AdminCustomerProfilePage />} />
+          <Route path="appointments" element={<AdminAppointmentsPage />} />
+          <Route path="services" element={<AdminServicesPage />} />
+          <Route path="invoices" element={<AdminInvoicesPage />} />
+          <Route path="payments" element={<AdminPaymentsPage />} />
+          <Route path="staff" element={<AdminStaffPage />} />
+          <Route path="settings" element={<AdminSettingsPage />} />
         </Route>
 
         {/* Public/Customer Routes */}
         <Route path="/" element={<MainLayout />}>
           <Route index element={<HomePage />} />
-          <Route path="shop" element={<ShopPage />} />
-          <Route path="category/:id" element={<CategoryPage />} />
+          <Route path="shop" element={<Navigate to="/shop/category/all" replace />} />
+          <Route path="shop/category/:id" element={<CategoryPage />} />
           <Route path="search" element={<SearchPage />} />
           <Route path="product/:id" element={<ProductDetailsPage />} />
           <Route path="wishlist" element={<WishlistPage />} />
@@ -102,6 +125,7 @@ function App() {
           <Route path="about" element={<AboutPage />} />
           <Route path="contact" element={<ContactPage />} />
           <Route path="blog" element={<BlogPage />} />
+          <Route path="blog/:id" element={<BlogDetailsPage />} />
           <Route path="privacy" element={<PolicyPage />} />
           <Route path="terms" element={<PolicyPage />} />
           <Route path="shipping" element={<PolicyPage />} />

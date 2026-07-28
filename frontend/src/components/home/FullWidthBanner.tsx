@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 
-// Real Beautina banner image from Shopify CDN
+// Real The Woman Company banner image from Shopify CDN
 const FullWidthBanner = () => {
   return (
     <section className="relative w-full overflow-hidden">
-      {/* Two-column split banner matching Beautina layout */}
+      {/* Two-column split banner matching The Woman Company layout */}
       <div className="flex flex-col md:flex-row">
         {/* Left panel - Hair Care banner */}
         <div className="relative w-full md:w-1/2 aspect-[4/3] md:aspect-auto md:min-h-[500px] overflow-hidden group">
@@ -21,7 +21,7 @@ const FullWidthBanner = () => {
               Hair Care
             </h3>
             <Link
-              to="/category/hair-care"
+              to="/shop/category/hair-care"
               className="bg-white text-brand-dark font-body text-xs uppercase tracking-[0.15em] px-8 py-3 hover:bg-brand-dark hover:text-white transition-colors duration-300"
             >
               Shop Now
@@ -44,7 +44,7 @@ const FullWidthBanner = () => {
               SkinCare
             </h3>
             <Link
-              to="/category/skincare"
+              to="/shop/category/skin-care"
               className="bg-white text-brand-dark font-body text-xs uppercase tracking-[0.15em] px-8 py-3 hover:bg-brand-dark hover:text-white transition-colors duration-300"
             >
               Shop Now

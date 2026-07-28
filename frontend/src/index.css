@@ -3,17 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600&family=Figtree:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
 
 @theme {
-  /* === EXACT Beautina Colors (extracted from storefront) === */
+  /* === EXACT The Woman Company Colors (extracted from storefront) === */
   --color-brand-bg: #FFFFFF;           /* Page background */
-  --color-brand-dark: #000000;         /* Primary text */
+  --color-brand-dark: #111111;         /* Primary text */
   --color-brand-accent: #A0765E;       /* Warm brown/gold accent */
   --color-brand-light: #F5F2EE;        /* Light cream section backgrounds */
   --color-brand-muted: #777777;        /* Muted text */
   --color-brand-border: #E8E0D8;       /* Borders */
-  --color-brand-btn: #000000;          /* Button background */
-  --color-brand-btn-hover: #333333;    /* Button hover */
+  --color-brand-btn: #111111;          /* Button background */
+  --color-brand-btn-hover: #ffb6c1;    /* Button hover */
 
-  /* === EXACT Beautina Fonts === */
+  /* === EXACT The Woman Company Fonts === */
   --font-serif: 'Fraunces', serif; 
   --font-sans: 'Figtree', sans-serif;
   --font-heading: 'Fraunces', serif; 
@@ -72,7 +72,7 @@
 
 /* ===== Utility Components ===== */
 @layer components {
-  /* Beautina-style primary button: dark background, white text, square */
+  /* The Woman Company-style primary button: dark background, white text, square */
   .btn-primary {
     @apply inline-block bg-brand-dark text-white font-body text-xs uppercase tracking-widest px-8 py-3.5 transition-all duration-300 hover:bg-brand-btn-hover cursor-pointer;
     letter-spacing: 0.1em;
@@ -84,7 +84,7 @@
     letter-spacing: 0.1em;
   }
 
-  /* Input field - Beautina style */
+  /* Input field - The Woman Company style */
   .input-luxury {
     @apply w-full border border-brand-border bg-transparent px-4 py-3 text-sm font-body text-brand-dark placeholder-brand-muted focus:outline-none focus:border-brand-dark transition-colors;
   }
@@ -122,4 +122,23 @@
   .animate-marquee {
     animation: marquee 25s linear infinite;
   }
+}
+
+/* ===== Swiper Pagination Override for Hero ===== */
+.hero-swiper .swiper-pagination {
+  bottom: 25px !important;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.hero-swiper .hero-pagination-bullet {
+  width: 45px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.4);
+  display: block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.hero-swiper .hero-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #ffffff;
 }

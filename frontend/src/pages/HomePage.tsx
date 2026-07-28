@@ -14,17 +14,18 @@ import ImageTextPromo from '../components/home/ImageTextPromo';
 import SummerSpecialGrid from '../components/home/SummerSpecialGrid';
 // 6. InteractiveImage
 import InteractiveImage from '../components/home/InteractiveImage';
+
 // 7. FaqAccordion
 import FaqAccordion from '../components/home/FaqAccordion';
 // 8. FeaturedCollections
 import FeaturedCollections from '../components/home/FeaturedCollections';
+
 import TextMarquee from '../components/home/TextMarquee';
 // 10. PressTestimonials
 import PressTestimonials from '../components/home/PressTestimonials';
 // 11. BeforeAfterSection
 import BeforeAfterSection from '../components/home/BeforeAfterSection';
-// 12. ProductListBestSellers
-import ProductListBestSellers from '../components/home/ProductListBestSellers';
+import BestSellersGrid from '../components/home/BestSellersGrid';
 // 13. CountdownBanner
 import CountdownBanner from '../components/home/CountdownBanner';
 // 14. ShopTheLook
@@ -37,11 +38,11 @@ import TestimonialsCarousel from '../components/home/TestimonialsCarousel';
 import IconFeatures from '../components/home/IconFeatures';
 // 18. BlogPreview
 import BlogPreview from '../components/home/BlogPreview';
-// 19. InstagramGrid
 import InstagramGrid from '../components/home/InstagramGrid';
+import FloatingLiveVideo from '../components/home/FloatingLiveVideo';
+
 const HomePage = () => {
-  // Fetch products for sliders
-  const { data: productsData } = useQuery({
+  const { data: productsData, isLoading } = useQuery({
     queryKey: ['homepage-products'],
     queryFn: async () => {
       const { data } = await api.get('/products?limit=100');
@@ -51,8 +52,19 @@ const HomePage = () => {
 
   const products = productsData?.products || [];
 
+  if (isLoading) {
+    return (
+      <main className="overflow-x-hidden min-h-screen flex items-center justify-center bg-white">
+        <div className="flex flex-col items-center">
+           <div className="w-12 h-12 border-4 border-brand-light border-t-brand-dark rounded-full animate-spin mb-4"></div>
+           <p className="font-heading uppercase tracking-widest text-brand-dark text-sm">Loading The Woman Company...</p>
+        </div>
+      </main>
+    );
+  }
+
   return (
-    <main className="overflow-x-hidden pt-[116px]">
+    <main className="overflow-x-hidden">
       {/* 1. Slideshow-1 */}
       <HeroBanner />
       
@@ -89,8 +101,8 @@ const HomePage = () => {
       {/* 11. before-after */}
       <BeforeAfterSection />
 
-      {/* 12. product-list */}
-      <ProductListBestSellers products={products} />
+      {/* 12. best-sellers */}
+      <BestSellersGrid />
 
       {/* 13. 8d7aa2ec... (Countdown) */}
       <CountdownBanner />
@@ -112,6 +124,9 @@ const HomePage = () => {
 
       {/* 19. instagram */}
       <InstagramGrid />
+
+      {/* Floating Live Video */}
+      <FloatingLiveVideo />
     </main>
   );
 };

@@ -38,15 +38,15 @@ const RegisterPage = () => {
   };
 
   return (
-    <div className="pt-[116px] pb-20 bg-brand-light min-h-[85vh] flex items-center justify-center">
+    <div className="pt-[116px] pb-14 bg-brand-light min-h-[85vh] flex items-center justify-center">
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="bg-white p-10 md:p-14 w-full max-w-lg shadow-sm border border-brand-border my-10"
       >
-        <h1 className="text-4xl font-heading text-center mb-4 text-brand-dark uppercase tracking-wide">Join Us</h1>
-        <p className="text-center text-xs font-body text-brand-muted mb-10 tracking-widest uppercase">Create your Beautina account</p>
+        <h1 className="text-4xl font-heading text-center mb-4 text-[#111111] uppercase tracking-wide">Join Us</h1>
+        <p className="text-center text-xs font-body text-brand-muted mb-10 tracking-widest uppercase">Create your The Woman Company account</p>
 
         <form onSubmit={submitHandler} className="space-y-6 font-body">
           <div className="flex gap-4">
@@ -118,7 +118,7 @@ const RegisterPage = () => {
           <p className="text-xs font-body text-brand-muted mb-4 uppercase tracking-widest">
             Already have an account?
           </p>
-          <Link to="/login" className="inline-block border-b border-brand-dark text-brand-dark font-body uppercase tracking-[0.2em] text-[10px] hover:text-brand-muted hover:border-brand-muted transition-colors pb-1">
+          <Link to="/login" className="inline-block border-b border-brand-dark text-[#111111] font-body uppercase tracking-[0.2em] text-[10px] hover:text-brand-muted hover:border-brand-muted transition-colors pb-1">
             Sign In Instead
           </Link>
         </div>

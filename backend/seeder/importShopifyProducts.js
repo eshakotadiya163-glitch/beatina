@@ -50,7 +50,7 @@ const seedFromShopify = async () => {
   // Default fallback category
   const fallbackCat = await Category.findOneAndUpdate(
     { slug: 'all' },
-    { name: 'All Products', slug: 'all', description: 'All Beautina products' },
+    { name: 'All Products', slug: 'all', description: 'All The Woman Company products' },
     { upsert: true, new: true }
   );
   categoryMap['all'] = fallbackCat._id;
@@ -131,7 +131,7 @@ const seedFromShopify = async () => {
       const productData = {
         name: sp.title,
         slug: handle,
-        brand: sp.vendor || 'Beautina',
+        brand: sp.vendor || 'The Woman Company',
         category: categoryId,
         description,
         price,

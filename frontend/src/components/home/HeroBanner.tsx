@@ -1,123 +1,168 @@
-import { Link } from 'react-router-dom';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, EffectFade, Navigation } from 'swiper/modules';
-import { motion } from 'framer-motion';
-import 'swiper/css';
-import 'swiper/css/effect-fade';
-import 'swiper/css/navigation';
+import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import {
+  Autoplay,
+  Navigation,
+  Pagination,
+  EffectFade,
+} from "swiper/modules";
 
-const slides = [
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/effect-fade";
+
+type SlidePosition = "left" | "right";
+
+interface Slide {
+  id: number;
+  image: string;
+  mobileImage: string;
+  label: string;
+  title: string;
+  button: string;
+  link: string;
+  position: SlidePosition;
+}
+
+const slides: Slide[] = [
   {
-    id: 'slide-1',
-    image: '/images/migrated/11_2.png',
-    mobileImage: '/images/migrated/12_s31_900x_8f09b4d4-6d08-410a-b6c2-5f291c6eb648.webp',
-    bgColor: '#3190ae',
-    label: 'New Skincare Arrival',
-    title: "Skin's Natural\nRadiance.",
-    cta: 'Shop Skin Care',
-    link: '/collections/skincare',
-    textColor: 'text-white',
+    id: 1,
+    image: "/images/hero/BanerHero2.png",
+    mobileImage:
+      "/images/migrated/12_s31_900x_8f09b4d4-6d08-410a-b6c2-5f291c6eb648.webp",
+    label: "NEW SKINCARE ARRIVAL",
+    title: "SKIN'S NATURAL\nRADIANCE.",
+    button: "SHOP SKIN CARE",
+    link: "/shop/category/skincare",
+    position: "right", // content left side
   },
   {
-    id: 'slide-2',
-    image: '/images/migrated/13_1.png',
-    mobileImage: '/images/migrated/14_s32_900x_8acd0d58-b6ff-42e4-9796-69f7e92d8ef7.jpg',
-    bgColor: '#858961',
-    label: 'Nighttime Ritual',
-    title: 'Glow While\nYou Sleep.',
-    cta: 'Shop Serums',
-    link: '/collections/serum-cream',
-    textColor: 'text-white',
+    id: 2,
+    image: "/images/hero/BHero12.png",
+    mobileImage:
+      "/images/migrated/14_s32_900x_8acd0d58-b6ff-42e4-9796-69f7e92d8ef7.jpg",
+    label: "NEW SKINCARE ARRIVAL",
+    title: "Your Glow\nStarts Here.",
+    button: "SHOP CREAM",
+    link: "/shop/category/serum-cream",
+    position: "left", // content right side
   },
 ];
 
-const HeroBanner = () => {
+export default function HeroBanner() {
   return (
-    <section className="relative w-full h-[85vh] min-h-[600px] max-h-[900px] overflow-hidden">
+    // h-[100dvh] fixes mobile browsers where h-screen (100vh) gets cut off
+    // by the address bar / bottom nav. min-h-screen is a safe fallback.
+    <section className="relative w-full h-[100dvh] min-h-screen overflow-hidden bg-black">
       <Swiper
-        modules={[Autoplay, EffectFade, Navigation]}
+        modules={[Autoplay, Navigation, Pagination, EffectFade]}
         effect="fade"
-        speed={1500}
-        autoplay={{ delay: 6000, disableOnInteraction: false }}
-        navigation={{ nextEl: '.swiper-next-hero', prevEl: '.swiper-prev-hero' }}
         loop={true}
+        speed={1200}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
+        navigation={{
+          prevEl: ".hero-prev",
+          nextEl: ".hero-next",
+        }}
+        pagination={{
+          clickable: true,
+        }}
         className="w-full h-full"
       >
-        {[...slides, ...slides.map(s => ({...s, id: s.id + '-dup'}))].map((slide, index) => (
-          <SwiperSlide key={slide.id} style={{ backgroundColor: slide.bgColor }}>
-            <div className="relative w-full h-full">
-              {/* Soft Gradient Overlay for Premium Look */}
-              <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-t from-black/60 via-black/20 to-black/10"></div>
-              {/* Background Images */}
-              <picture className="absolute inset-0 w-full h-full z-0">
-                <source media="(max-width: 768px)" srcSet={slide.mobileImage} />
-                <img
-                  src={slide.image}
-                  alt={slide.title.replace('\n', ' ')}
-                  className="w-full h-full object-cover object-center scale-in duration-1000"
-                  loading={index === 0 ? 'eager' : 'lazy'}
-                />
-              </picture>
+        {slides.map((slide: Slide, index: number) => {
+          const isLeft = slide.position === "left";
 
-              {/* Content Container */}
-              <div className="absolute inset-0 z-20 flex flex-col justify-center items-center w-full px-4 md:px-12 mt-12">
-                <motion.div 
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1, ease: "easeOut" }}
-                  className="w-full flex flex-col items-center text-center max-w-4xl mx-auto"
+          return (
+            <SwiperSlide key={slide.id}>
+              {/* Fixed height wrapper so absolute image always has a box to fill */}
+              <div className="relative w-full h-full">
+
+                {/* Full Background Image */}
+                <picture className="absolute inset-0 block w-full h-full">
+                  <source
+                    media="(max-width: 768px)"
+                    srcSet={slide.mobileImage}
+                  />
+                  <img
+                    src={slide.image}
+                    alt={slide.title.replace("\n", " ")}
+                    className="w-full h-full object-cover object-center"
+                    loading={index === 0 ? "eager" : "lazy"}
+                    fetchPriority={index === 0 ? "high" : "auto"}
+                    draggable={false}
+                  />
+                </picture>
+
+                {/* Gradient overlay - direction follows content side */}
+                <div
+                  className={`absolute inset-0 bg-gradient-to-${
+                    isLeft ? "r" : "l"
+                  } from-black/60 via-black/20 to-transparent`}
+                ></div>
+
+                {/* Content - left or right depending on slide position */}
+                <div
+                  className={`absolute inset-0 z-20 flex items-center ${
+                    isLeft ? "justify-start" : "justify-end"
+                  }`}
                 >
-                  <ul className="list-none p-0 m-0 w-full flex flex-col items-center">
-                    <motion.li 
-                      initial={{ opacity: 0, y: 15 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-                      className="mb-4"
-                    >
-                      <p className="m-0 uppercase tracking-[0.25em] text-[12px] md:text-[14px] font-medium text-white/90 font-body">
-                        {slide.label}
-                      </p>
-                    </motion.li>
-                    <motion.li 
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
-                      className="mb-8"
-                    >
-                      <h2 className="m-0 whitespace-pre-line text-[55px] md:text-[80px] lg:text-[90px] leading-[1.05] font-heading font-light text-white drop-shadow-sm">
-                        {slide.title}
-                      </h2>
-                    </motion.li>
-                  </ul>
-                  <motion.div 
-                    initial={{ opacity: 0, y: 15 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.7, ease: "easeOut" }}
-                    className="flex justify-center"
+                  <div
+                    className={`max-w-[650px] px-8 ${
+                      isLeft ? "lg:pl-28 text-left" : "lg:pr-48 text-right"
+                    } text-white`}
                   >
+
+                    <div
+                      className={`flex items-center gap-4 mb-5 ${
+                        isLeft ? "justify-start" : "justify-end"
+                      }`}
+                    >
+                      <span className="uppercase tracking-[4px] text-xs font-semibold drop-shadow-md">
+                        {slide.label}
+                      </span>
+                      <span className="w-12 h-px bg-white/40"></span>
+                    </div>
+
+                    <div
+                      className={`flex mb-5 ${
+                        isLeft ? "justify-start" : "justify-end"
+                      }`}
+                    >
+                      ✦
+                    </div>
+
+                    <h1 className="whitespace-pre-line font-serif font-bold leading-[1.2] text-[45px] md:text-[65px] lg:text-[80px] drop-shadow-md">
+                      {slide.title}
+                    </h1>
+
                     <Link
                       to={slide.link}
-                      className="inline-flex items-center justify-center bg-white text-black text-[12px] md:text-[13px] tracking-[0.15em] font-medium uppercase px-10 py-[16px] transition-all duration-500 ease-out hover:bg-black hover:text-white rounded-none"
+                      className="inline-block mt-10 bg-white text-black border border-white px-12 py-4 uppercase tracking-[3px] text-sm font-semibold transition-all duration-300 hover:bg-transparent hover:text-white"
                     >
-                      {slide.cta}
+                      {slide.button}
                     </Link>
-                  </motion.div>
-                </motion.div>
+                  </div>
+                </div>
+
               </div>
-            </div>
-          </SwiperSlide>
-        ))}
-        
-        {/* Custom Nav Arrows */}
-        <button className="swiper-prev-hero absolute left-[15px] top-1/2 -translate-y-1/2 z-30 w-[40px] h-[40px] flex items-center justify-center bg-transparent cursor-pointer border-0" style={{ color: 'rgba(255,255,255,0.5)' }}>
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1"><path strokeLinecap="round" strokeLinejoin="round" d="M15 18l-6-6 6-6"/></svg>
+            </SwiperSlide>
+          );
+        })}
+
+        {/* Left Arrow */}
+        <button className="hero-prev absolute left-6 top-1/2 -translate-y-1/2 z-30 h-12 w-12 rounded-full bg-white/20 text-white hover:bg-white/40 transition">
+          ❮
         </button>
-        <button className="swiper-next-hero absolute right-[15px] top-1/2 -translate-y-1/2 z-30 w-[40px] h-[40px] flex items-center justify-center bg-transparent cursor-pointer border-0" style={{ color: 'rgba(255,255,255,0.5)' }}>
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1"><path strokeLinecap="round" strokeLinejoin="round" d="M9 18l6-6-6-6"/></svg>
+
+        {/* Right Arrow */}
+        <button className="hero-next absolute right-6 top-1/2 -translate-y-1/2 z-30 h-12 w-12 rounded-full bg-white/20 text-white hover:bg-white/40 transition">
+          ❯
         </button>
       </Swiper>
     </section>
   );
-};
-
-export default HeroBanner;
+}
