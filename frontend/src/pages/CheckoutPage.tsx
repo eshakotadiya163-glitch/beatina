@@ -256,27 +256,63 @@ const CheckoutPage = () => {
   return (
     <>
       {showSuccessPopup && (
-        <div className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-[#10b981] p-4 animate-in fade-in duration-500">
-          <div className="bg-white/20 p-6 rounded-full mb-8 shadow-[0_0_50px_rgba(255,255,255,0.3)] animate-bounce" style={{ animationIterationCount: 3 }}>
-            <div className="w-32 h-32 bg-white text-[#10b981] flex items-center justify-center rounded-full shadow-2xl">
-              <Check size={64} strokeWidth={4} />
+        <div className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-black/40 backdrop-blur-sm p-4 animate-in fade-in duration-300">
+          <div className="bg-white rounded-3xl p-10 flex flex-col items-center justify-center max-w-[380px] w-full shadow-2xl relative animate-in zoom-in-95 duration-300">
+            {/* The Custom SVG Illustration */}
+            <div className="relative mb-4 mt-2">
+              {/* Sparkles / Stars */}
+              <div className="absolute top-4 -left-6 w-2.5 h-2.5 bg-green-400 rounded-full" />
+              <div className="absolute top-10 -right-6 w-2 h-2 bg-green-400 rounded-full" />
+              <div className="absolute top-2 right-2 w-1.5 h-1.5 bg-green-400 rounded-full" />
+              <div className="absolute bottom-6 -left-8 text-green-500 scale-75">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+              </div>
+              <div className="absolute bottom-12 -right-8 text-green-500 scale-50">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+              </div>
+
+              {/* Shopping Bag SVG */}
+              <svg width="140" height="150" viewBox="0 0 140 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                {/* Back handle */}
+                <path d="M50 45V20C50 11.7157 56.7157 5 65 5H75C83.2843 5 90 11.7157 90 20V45" stroke="#1e3a8a" strokeWidth="6" strokeLinecap="round" />
+                
+                {/* Bag shadow/side */}
+                <path d="M30 40L35 140H115L120 40H30Z" fill="#3b82f6" />
+                <path d="M120 45L125 130L115 140H120L130 40H120Z" fill="#2563eb" />
+                
+                {/* Front handle */}
+                <path d="M40 45V30C40 18.9543 48.9543 10 60 10H80C91.0457 10 100 18.9543 100 30V45" stroke="#1e3a8a" strokeWidth="6" strokeLinecap="round" />
+
+                {/* Bag Front panel */}
+                <path d="M20 45L25 145H105L110 45H20Z" fill="#60a5fa" />
+                
+                {/* White Circle */}
+                <circle cx="65" cy="95" r="32" fill="white" />
+                
+                {/* Green Checkmark */}
+                <path d="M48 95L58 105L82 81" stroke="#4ade80" strokeWidth="9" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              
+              {/* Bag shadow on floor */}
+              <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-28 h-4 bg-black/10 rounded-[100%] blur-sm"></div>
             </div>
+            
+            <h2 className="text-[28px] font-extrabold text-black mb-3 text-center tracking-tight" style={{ fontFamily: 'sans-serif' }}>
+              Order Placed
+            </h2>
+            
+            <p className="text-[15px] text-gray-500 font-medium text-center mb-8 leading-[1.4]" style={{ fontFamily: 'sans-serif' }}>
+              Your order has been placed<br/>successfully.
+            </p>
+            
+            <button 
+              onClick={() => navigate(`/order/${placedOrderId}`)}
+              className="w-full bg-gradient-to-b from-[#5c8aff] to-[#3a6bf5] text-white font-semibold py-3.5 rounded-[12px] hover:brightness-110 transition-all shadow-[0_4px_14px_0_rgba(58,107,245,0.39)] text-[17px]"
+              style={{ fontFamily: 'sans-serif' }}
+            >
+              View Order
+            </button>
           </div>
-          
-          <h2 className="text-4xl md:text-6xl font-heading text-white mb-4 tracking-wide text-center drop-shadow-md">
-            Order Placed Successfully!
-          </h2>
-          
-          <p className="text-lg md:text-xl text-white/90 font-body max-w-lg mx-auto text-center mb-12 drop-shadow-sm">
-            Thank you for your purchase. Your order has been confirmed and we're getting it ready.
-          </p>
-          
-          <button 
-            onClick={() => navigate(`/order/${placedOrderId}`)}
-            className="bg-white text-[#10b981] font-bold py-4 px-12 rounded-full hover:bg-gray-100 transition-all hover:scale-105 shadow-2xl text-sm tracking-widest uppercase"
-          >
-            View Order Details
-          </button>
         </div>
       )}
       <div className="pt-[116px] pb-14 bg-brand-light min-h-screen">
