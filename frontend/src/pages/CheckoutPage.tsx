@@ -256,22 +256,27 @@ const CheckoutPage = () => {
   return (
     <>
       {showSuccessPopup && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
-          <div className="bg-white p-8 max-w-sm w-full mx-auto text-center border border-brand-border">
-            <div className="w-16 h-16 bg-[#DCE8D5] text-[#3f3f46] flex items-center justify-center rounded-full mx-auto mb-6">
-              <Check size={32} />
+        <div className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-[#10b981] p-4 animate-in fade-in duration-500">
+          <div className="bg-white/20 p-6 rounded-full mb-8 shadow-[0_0_50px_rgba(255,255,255,0.3)] animate-bounce" style={{ animationIterationCount: 3 }}>
+            <div className="w-32 h-32 bg-white text-[#10b981] flex items-center justify-center rounded-full shadow-2xl">
+              <Check size={64} strokeWidth={4} />
             </div>
-            <h2 className="text-2xl font-heading text-brand-dark mb-4">Order Placed!</h2>
-            <p className="text-sm font-body text-brand-muted mb-8 uppercase tracking-widest leading-relaxed">
-              Your order has been placed successfully. Thank you for shopping with us.
-            </p>
-            <button 
-              onClick={() => navigate(`/order/${placedOrderId}`)}
-              className="w-full bg-[#111111] text-white py-[15px] font-body uppercase tracking-[1px] text-[11px] hover:bg-[#ffb6c1] transition-colors"
-            >
-              View Order Details
-            </button>
           </div>
+          
+          <h2 className="text-4xl md:text-6xl font-heading text-white mb-4 tracking-wide text-center drop-shadow-md">
+            Order Placed Successfully!
+          </h2>
+          
+          <p className="text-lg md:text-xl text-white/90 font-body max-w-lg mx-auto text-center mb-12 drop-shadow-sm">
+            Thank you for your purchase. Your order has been confirmed and we're getting it ready.
+          </p>
+          
+          <button 
+            onClick={() => navigate(`/order/${placedOrderId}`)}
+            className="bg-white text-[#10b981] font-bold py-4 px-12 rounded-full hover:bg-gray-100 transition-all hover:scale-105 shadow-2xl text-sm tracking-widest uppercase"
+          >
+            View Order Details
+          </button>
         </div>
       )}
       <div className="pt-[116px] pb-14 bg-brand-light min-h-screen">
