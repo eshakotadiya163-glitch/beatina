@@ -3,6 +3,7 @@ import useCompareStore from '../store/compareStore';
 import toast from 'react-hot-toast';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import api from '../api/axios';
+import useCartStore from '../store/cartStore';
 
 interface CollectionProductCardProps {
   product: any;
@@ -31,6 +32,31 @@ const CollectionProductCard = ({ product }: CollectionProductCardProps) => {
       toast.error('Failed to add to wishlist. Please login.');
     }
   });
+
+  const handleAddToCart = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const { cartItems, addItem, setIsOpen } = useCartStore.getState();
+    const existingItem = cartItems.find((x) => x._id === product._id);
+    const newQty = existingItem ? existingItem.qty + 1 : 1;
+    
+    if (product.countInStock && newQty > product.countInStock) {
+      toast.error('Not enough stock');
+      return;
+    }
+
+    addItem({
+      _id: product._id,
+      name: product.name,
+      image: primaryImage || '/placeholder.png',
+      price: price,
+      qty: newQty,
+      countInStock: product.countInStock || 0,
+      variantKey: undefined // Optional, if needed
+    });
+    toast.success('Added to bag');
+    setIsOpen(true);
+  };
 
   const handleCompare = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -140,7 +166,10 @@ const CollectionProductCard = ({ product }: CollectionProductCardProps) => {
         </div>
 
         {/* Add to cart link */}
-        <button className="relative cursor-pointer text-[13px] font-body text-[#111111] hover:text-gray-500 transition-colors bg-transparent border-0 p-0 m-0 text-left w-fit">
+        <button 
+          onClick={handleAddToCart}
+          className="relative cursor-pointer text-[13px] font-body text-[#111111] hover:text-gray-500 transition-colors bg-transparent border-0 p-0 m-0 text-left w-fit"
+        >
           + Add to cart
         </button>
       </div>

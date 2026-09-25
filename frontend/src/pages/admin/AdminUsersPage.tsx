@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { Search, Loader2, ShieldAlert, ShieldCheck, Trash2, Mail, Package } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Search, Loader2, ShieldAlert, ShieldCheck, Trash2, Mail, Eye } from 'lucide-react';
 import { toast } from 'react-hot-toast';
 import api from '../../api/axios';
 
@@ -8,13 +9,30 @@ const AdminUsersPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const queryClient = useQueryClient();
 
+  const prevUsersLengthRef = useRef<number | null>(null);
+
   const { data: users, isLoading } = useQuery({
     queryKey: ['adminUsers'],
     queryFn: async () => {
       const { data } = await api.get('/users');
       return data;
     },
+    refetchInterval: 5000,
   });
+
+  useEffect(() => {
+    if (users && prevUsersLengthRef.current !== null) {
+      if (users.length > prevUsersLengthRef.current) {
+        toast.success('New customer registered!', {
+          icon: '🔔',
+          duration: 5000,
+        });
+      }
+    }
+    if (users) {
+      prevUsersLengthRef.current = users.length;
+    }
+  }, [users]);
 
   const deleteMutation = useMutation({
     mutationFn: async (id: string) => {
@@ -29,22 +47,6 @@ const AdminUsersPage = () => {
     }
   });
 
-  const updateMutation = useMutation({
-    mutationFn: async ({ id, isVendor }: { id: string, isVendor: boolean }) => {
-      await api.put(`/users/${id}`, { isVendor });
-    },
-    onSuccess: () => {
-      toast.success('User updated');
-      queryClient.invalidateQueries({ queryKey: ['adminUsers'] });
-    },
-    onError: (error: any) => {
-      toast.error(error.response?.data?.message || 'Failed to update user');
-    }
-  });
-
-  const handleToggleVendor = (id: string, currentVendor: boolean) => {
-    updateMutation.mutate({ id, isVendor: !currentVendor });
-  };
 
   const handleDelete = (id: string, isAdmin: boolean) => {
     if (isAdmin) {
@@ -56,26 +58,21 @@ const AdminUsersPage = () => {
     }
   };
 
-  const filteredUsers = users?.filter((user: any) => {
+  const filteredUsers = (users?.filter((user: any) => {
     return (
       user.firstName.toLowerCase().includes(searchTerm.toLowerCase()) ||
       user.lastName.toLowerCase().includes(searchTerm.toLowerCase()) ||
       user.email.toLowerCase().includes(searchTerm.toLowerCase())
     );
-  }) || [];
+  }) || []).sort((a: any, b: any) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
 
   return (
     <div className="space-y-6 pb-14">
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
-        <div>
-          <h1 className="text-2xl font-heading text-brand-dark">Customers</h1>
-          <p className="text-sm text-gray-500 font-body mt-1">Manage registered users and their permissions.</p>
-        </div>
-      </div>
 
-      <div className="bg-white rounded-sm shadow-sm border border-gray-100 overflow-hidden">
+
+      <div className="bg-white dark:bg-zinc-900/50 rounded-sm shadow-sm border border-gray-100 dark:border-zinc-800/50 overflow-hidden backdrop-blur-md">
         {/* Toolbar */}
-        <div className="p-4 border-b border-gray-100 flex items-center bg-gray-50/50">
+        <div className="p-4 border-b border-gray-100 dark:border-zinc-800/50 flex flex-col sm:flex-row items-start sm:items-center gap-4 bg-gray-50/50 dark:bg-zinc-900/50">
           <div className="relative w-full max-w-sm">
             <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
             <input 
@@ -83,10 +80,10 @@ const AdminUsersPage = () => {
               placeholder="Search customers..." 
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-10 pr-4 py-2 text-sm border border-gray-200 rounded-sm focus:border-brand-primary focus:outline-none font-body"
+              className="w-full pl-10 pr-4 py-2 text-sm border border-gray-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-brand-dark dark:text-twc-white rounded-sm focus:border-brand-primary dark:focus:border-brand-primary focus:outline-none font-body"
             />
           </div>
-          <div className="ml-auto text-xs text-gray-500 font-body uppercase tracking-widest font-medium">
+          <div className="sm:ml-auto text-xs text-gray-500 dark:text-zinc-400 font-body uppercase tracking-widest font-medium">
             {filteredUsers.length} Users
           </div>
         </div>
@@ -94,7 +91,7 @@ const AdminUsersPage = () => {
         {/* Table */}
         <div className="overflow-x-auto">
           <table className="w-full text-left font-body text-sm">
-            <thead className="bg-gray-50 text-gray-500 uppercase text-[10px] tracking-wider border-b border-gray-200">
+            <thead className="bg-gray-50 dark:bg-zinc-800/50 text-gray-500 dark:text-zinc-400 uppercase text-[10px] tracking-wider border-b border-gray-200 dark:border-zinc-800/50">
               <tr>
                 <th className="p-4 font-medium">Name</th>
                 <th className="p-4 font-medium">Email</th>
@@ -103,7 +100,7 @@ const AdminUsersPage = () => {
                 <th className="p-4 font-medium text-right">Actions</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-gray-100">
+            <tbody className="divide-y divide-gray-100 dark:divide-zinc-800/50">
               {isLoading ? (
                 <tr>
                   <td colSpan={5} className="p-12 text-center">
@@ -118,18 +115,18 @@ const AdminUsersPage = () => {
                 </tr>
               ) : (
                 filteredUsers.map((user: any) => (
-                  <tr key={user._id} className="hover:bg-gray-50/50 transition-colors">
+                  <tr key={user._id} className="hover:bg-gray-50/50 dark:hover:bg-zinc-800/30 transition-colors">
                     <td className="p-4">
                       <div className="flex items-center space-x-3">
-                        <div className="w-8 h-8 rounded-full bg-brand-primary/10 text-brand-primary flex items-center justify-center font-heading font-medium text-xs">
+                        <div className="w-8 h-8 rounded-full bg-brand-primary/10 text-brand-primary flex items-center justify-center font-heading font-medium text-xs shrink-0">
                           {user.firstName[0]}{user.lastName[0]}
                         </div>
-                        <span className="font-medium text-brand-dark">{user.firstName} {user.lastName}</span>
+                        <span className="font-medium text-brand-dark dark:text-twc-white">{user.firstName} {user.lastName}</span>
                       </div>
                     </td>
-                    <td className="p-4 text-gray-600 flex items-center space-x-2">
-                      <Mail size={14} className="text-gray-400" />
-                      <span>{user.email}</span>
+                    <td className="p-4 text-gray-600 dark:text-zinc-300 flex items-center space-x-2">
+                      <Mail size={14} className="text-gray-400 dark:text-zinc-500 shrink-0" />
+                      <span className="truncate">{user.email}</span>
                     </td>
                     <td className="p-4">
                       {user.isAdmin ? (
@@ -137,37 +134,29 @@ const AdminUsersPage = () => {
                           <ShieldCheck size={12} />
                           <span>Admin</span>
                         </span>
-                      ) : user.isVendor ? (
-                        <span className="inline-flex items-center space-x-1 px-2 py-1 rounded-sm text-[10px] uppercase font-button tracking-widest bg-blue-100 text-blue-700">
-                          <Package size={12} />
-                          <span>Vendor</span>
-                        </span>
                       ) : (
-                        <span className="inline-flex items-center space-x-1 px-2 py-1 rounded-sm text-[10px] uppercase font-button tracking-widest bg-gray-100 text-gray-600">
+                        <span className="inline-flex items-center space-x-1 px-2 py-1 rounded-sm text-[10px] uppercase font-button tracking-widest bg-gray-100 dark:bg-zinc-800 text-gray-600 dark:text-zinc-400">
                           <ShieldAlert size={12} />
                           <span>Customer</span>
                         </span>
                       )}
                     </td>
-                    <td className="p-4 text-gray-500">
+                    <td className="p-4 text-gray-500 dark:text-zinc-400">
                       {new Date(user.createdAt).toLocaleDateString()}
                     </td>
                     <td className="p-4 text-right">
                       <div className="flex justify-end space-x-2">
-                        {!user.isAdmin && (
-                          <button 
-                            onClick={() => handleToggleVendor(user._id, user.isVendor)}
-                            disabled={updateMutation.isPending}
-                            className={`p-2 rounded-sm transition-colors text-gray-400 hover:text-brand-primary hover:bg-brand-primary/10`}
-                            title={user.isVendor ? "Remove Vendor" : "Make Vendor"}
-                          >
-                            <Package size={16} className={user.isVendor ? "text-brand-primary" : ""} />
-                          </button>
-                        )}
+                        <Link 
+                          to={`/admin/customers/${user._id}`}
+                          className="p-2 rounded-sm transition-colors text-gray-400 dark:text-zinc-500 hover:text-brand-primary dark:hover:text-brand-primary hover:bg-brand-primary/10 dark:hover:bg-brand-primary/20"
+                          title="View Details"
+                        >
+                          <Eye size={16} />
+                        </Link>
                         <button 
                           onClick={() => handleDelete(user._id, user.isAdmin)}
                           disabled={deleteMutation.isPending || user.isAdmin}
-                          className={`p-2 rounded-sm transition-colors ${user.isAdmin ? 'text-gray-300 cursor-not-allowed' : 'text-gray-400 hover:text-red-600 hover:bg-red-50'}`}
+                          className={`p-2 rounded-sm transition-colors ${user.isAdmin ? 'text-gray-300 dark:text-zinc-700 cursor-not-allowed' : 'text-gray-400 dark:text-zinc-500 hover:text-red-600 dark:hover:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/20'}`}
                           title="Delete User"
                         >
                           <Trash2 size={16} />

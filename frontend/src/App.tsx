@@ -4,6 +4,7 @@ import { Toaster } from 'react-hot-toast';
 import MainLayout from './layouts/MainLayout';
 import HomePage from './pages/HomePage';
 import AdminLayout from './layouts/AdminLayout';
+import ScrollToTop from './components/ScrollToTop';
 
 // Lazy loaded Admin Routes
 const AdminDashboardPage = lazy(() => import('./pages/admin/AdminDashboardPage'));
@@ -14,6 +15,14 @@ const AdminUsersPage = lazy(() => import('./pages/admin/AdminUsersPage'));
 const AdminCategoriesPage = lazy(() => import('./pages/admin/AdminCategoriesPage'));
 const AdminCouponsPage = lazy(() => import('./pages/admin/AdminCouponsPage'));
 const AdminReviewsPage = lazy(() => import('./pages/admin/AdminReviewsPage'));
+const AdminSettingsPage = lazy(() => import('./pages/admin/AdminSettingsPage'));
+const AdminInventoryPage = lazy(() => import('./pages/admin/AdminInventoryPage'));
+const AdminAnalyticsPage = lazy(() => import('./pages/admin/AdminAnalyticsPage'));
+const AdminMarketingPage = lazy(() => import('./pages/admin/AdminMarketingPage'));
+const AdminNewsletterPage = lazy(() => import('./pages/admin/AdminNewsletterPage'));
+const AdminAppearancePage = lazy(() => import('./pages/admin/AdminAppearancePage'));
+const AdminBlogPage = lazy(() => import('./pages/admin/AdminBlogPage'));
+const AdminPlaceholderPage = lazy(() => import('./pages/admin/AdminPlaceholderPage'));
 
 // SaaS Admin Routes
 const AdminLeadsPage = lazy(() => import('./pages/admin/AdminLeadsPage'));
@@ -24,7 +33,7 @@ const AdminServicesPage = lazy(() => import('./pages/admin/AdminServicesPage'));
 const AdminInvoicesPage = lazy(() => import('./pages/admin/AdminInvoicesPage'));
 const AdminPaymentsPage = lazy(() => import('./pages/admin/AdminPaymentsPage'));
 const AdminStaffPage = lazy(() => import('./pages/admin/AdminStaffPage'));
-const AdminSettingsPage = lazy(() => import('./pages/admin/AdminSettingsPage'));
+
 
 // Lazy loaded Public/Customer Routes
 const ProductDetailsPage = lazy(() => import('./pages/ProductDetailsPage'));
@@ -69,6 +78,7 @@ const PageLoader = () => (
 function App() {
   return (
     <Suspense fallback={<PageLoader />}>
+      <ScrollToTop />
       <Toaster position="bottom-center" />
       <Routes>
         {/* Admin Routes */}
@@ -91,6 +101,15 @@ function App() {
           <Route path="payments" element={<AdminPaymentsPage />} />
           <Route path="staff" element={<AdminStaffPage />} />
           <Route path="settings" element={<AdminSettingsPage />} />
+          
+          {/* Placeholder for new TWC Premium modules */}
+          <Route path="inventory" element={<AdminInventoryPage />} />
+          <Route path="analytics" element={<AdminAnalyticsPage />} />
+          <Route path="marketing" element={<AdminMarketingPage />} />
+          <Route path="appearance" element={<AdminAppearancePage />} />
+          <Route path="blog" element={<AdminBlogPage />} />
+          <Route path="messages" element={<AdminPlaceholderPage />} />
+          <Route path="newsletter" element={<AdminNewsletterPage />} />
         </Route>
 
         {/* Public/Customer Routes */}

@@ -150,7 +150,7 @@ const OrderDetailsPage = () => {
             <div className="space-y-3 font-body text-sm text-gray-600 mb-6">
               <div className="flex justify-between">
                 <span>Subtotal</span>
-                <span>₹{order.itemsPrice.toLocaleString('en-IN')}</span>
+                <span>₹{(order.itemsPrice || order.orderItems.reduce((a: any, i: any) => a + i.price * i.qty, 0)).toLocaleString('en-IN')}</span>
               </div>
               <div className="flex justify-between">
                 <span>Shipping</span>

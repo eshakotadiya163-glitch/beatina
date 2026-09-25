@@ -20,6 +20,8 @@ import uploadRoutes from './routes/uploadRoutes.js';
 import contactRoutes from './routes/contactRoutes.js';
 import newsletterRoutes from './routes/newsletterRoutes.js';
 import adminRoutes from './routes/adminRoutes.js';
+import settingRoutes from './routes/settingRoutes.js';
+import notificationRoutes from './routes/notificationRoutes.js';
 import path from 'path';
 
 dotenv.config();
@@ -34,11 +36,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(cors({
-  
   origin: [
     "http://localhost:5173",
     "http://localhost:5174",
-    "https://YOUR_FRONTEND_URL.vercel.app"
+    process.env.FRONTEND_URL || "https://YOUR_FRONTEND_URL.vercel.app"
   ],
   credentials: true
 }));
@@ -61,6 +62,8 @@ app.use('/api/upload', uploadRoutes);
 app.use('/api/contact', contactRoutes);
 app.use('/api/newsletter', newsletterRoutes);
 app.use('/api/admin', adminRoutes);
+app.use('/api/settings', settingRoutes);
+app.use('/api/notifications', notificationRoutes);
 
 const __dirname = path.resolve();
 app.use('/uploads', express.static(path.join(__dirname, '/uploads')));

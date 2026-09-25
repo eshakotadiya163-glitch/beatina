@@ -10,20 +10,29 @@ const getDashboardData = async (req, res, next) => {
     const isVendorOnly = req.user.isVendor && !req.user.isAdmin;
     const productFilter = isVendorOnly ? { vendor: req.user._id } : {};
 
-    const totalOrders = await Order.countDocuments(); // Ideally filter by vendor's products in orders
-    const totalProducts = await Product.countDocuments(productFilter);
-    const totalUsers = await User.countDocuments({ role: 'user' });
+    // Determine date range filter
+    let dateFilter = {};
+    const days = parseInt(req.query.days);
+    if (days && days > 0) {
+      const pastDate = new Date();
+      pastDate.setDate(pastDate.getDate() - days);
+      dateFilter = { createdAt: { $gte: pastDate } };
+    }
 
-    const orders = await Order.find({});
+    const totalOrders = await Order.countDocuments(dateFilter);
+    const totalProducts = await Product.countDocuments(productFilter);
+    const totalUsers = await User.countDocuments({ role: 'user', ...dateFilter });
+
+    const orders = await Order.find(dateFilter);
     const totalSales = orders.reduce((acc, order) => acc + (order.isPaid ? order.totalPrice : 0), 0);
 
-    // Sales over time (last 7 days as example, but simple implementation here)
-    const recentOrders = await Order.find({}).sort({ createdAt: -1 }).limit(5).populate('user', 'firstName lastName email');
+    // Sales over time
+    const recentOrders = await Order.find(dateFilter).sort({ createdAt: -1 }).limit(5).populate('user', 'firstName lastName email');
     
     // Group orders by date for chart
     const salesData = await Order.aggregate([
       {
-        $match: { isPaid: true }
+        $match: { isPaid: true, ...dateFilter }
       },
       {
         $group: {

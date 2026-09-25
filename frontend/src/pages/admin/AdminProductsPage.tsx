@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { Plus, Search, Edit2, Trash2, Loader2, Image as ImageIcon } from 'lucide-react';
 import { toast } from 'react-hot-toast';
 import api from '../../api/axios';
@@ -8,7 +8,8 @@ import { getImageUrl } from '../../utils/imageHelper';
 import useAuthStore from '../../store/authStore';
 
 const AdminProductsPage = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchParams] = useSearchParams();
+  const [searchTerm, setSearchTerm] = useState(searchParams.get('search') || '');
   const [page, setPage] = useState(1);
   const queryClient = useQueryClient();
   const navigate = useNavigate();
@@ -22,6 +23,14 @@ const AdminProductsPage = () => {
       return data;
     },
   });
+
+  // Keep state in sync if URL changes
+  useEffect(() => {
+    const search = searchParams.get('search');
+    if (search !== null && search !== searchTerm) {
+      setSearchTerm(search);
+    }
+  }, [searchParams]);
 
   const deleteMutation = useMutation({
     mutationFn: async (id: string) => {
@@ -61,24 +70,20 @@ const AdminProductsPage = () => {
 
   return (
     <div className="space-y-6">
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
-        <div>
-          <h1 className="text-2xl font-heading text-brand-dark">Products</h1>
-          <p className="text-sm text-gray-500 font-body mt-1">Manage your catalog, inventory, and pricing.</p>
-        </div>
+      <div className="flex flex-col sm:flex-row justify-end items-start sm:items-center gap-4 mb-8">
         <button 
           onClick={handleCreate}
           disabled={createMutation.isPending}
-          className="flex items-center space-x-2 bg-brand-primary text-white px-5 py-2.5 text-sm font-button uppercase tracking-widest rounded-sm hover:bg-brand-dark transition-colors disabled:opacity-50"
+          className="flex items-center space-x-2 bg-twc-text dark:bg-twc-white text-white dark:text-twc-text px-5 py-2.5 text-sm font-bold uppercase tracking-widest rounded-[14px] hover:bg-twc-gold dark:hover:bg-twc-gold hover:text-white transition-colors disabled:opacity-50 shadow-sm"
         >
           {createMutation.isPending ? <Loader2 size={16} className="animate-spin" /> : <Plus size={16} />}
           <span>Add Product</span>
         </button>
       </div>
 
-      <div className="bg-white rounded-sm shadow-sm border border-gray-100 overflow-hidden">
+      <div className="bg-white dark:bg-zinc-900/50 rounded-sm shadow-sm border border-gray-100 dark:border-zinc-800/50 overflow-hidden backdrop-blur-md">
         {/* Toolbar */}
-        <div className="p-4 border-b border-gray-100 flex items-center justify-between bg-gray-50/50">
+        <div className="p-4 border-b border-gray-100 dark:border-zinc-800/50 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-gray-50/50 dark:bg-zinc-900/50">
           <div className="relative w-full max-w-sm">
             <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
             <input 
@@ -86,10 +91,10 @@ const AdminProductsPage = () => {
               placeholder="Search products..." 
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-10 pr-4 py-2 text-sm border border-gray-200 rounded-sm focus:border-brand-primary focus:outline-none font-body"
+              className="w-full pl-10 pr-4 py-2 text-sm border border-gray-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-brand-dark dark:text-twc-white rounded-sm focus:border-brand-primary dark:focus:border-brand-primary focus:outline-none font-body"
             />
           </div>
-          <div className="text-xs text-gray-500 font-body uppercase tracking-widest font-medium">
+          <div className="text-xs text-gray-500 dark:text-zinc-400 font-body uppercase tracking-widest font-medium">
             {data?.total || 0} Products
           </div>
         </div>
@@ -97,7 +102,7 @@ const AdminProductsPage = () => {
         {/* Table */}
         <div className="overflow-x-auto">
           <table className="w-full text-left font-body text-sm">
-            <thead className="bg-gray-50 text-gray-500 uppercase text-[10px] tracking-wider border-b border-gray-200">
+            <thead className="bg-gray-50 dark:bg-zinc-800/50 text-gray-500 dark:text-zinc-400 uppercase text-[10px] tracking-wider border-b border-gray-200 dark:border-zinc-800/50">
               <tr>
                 <th className="p-4 font-medium w-16">Image</th>
                 <th className="p-4 font-medium">Name</th>
@@ -107,7 +112,7 @@ const AdminProductsPage = () => {
                 <th className="p-4 font-medium text-right">Actions</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-gray-100">
+            <tbody className="divide-y divide-gray-100 dark:divide-zinc-800/50">
               {isLoading ? (
                 <tr>
                   <td colSpan={6} className="p-12 text-center">
@@ -122,30 +127,30 @@ const AdminProductsPage = () => {
                 </tr>
               ) : (
                 data?.products?.map((product: any) => (
-                  <tr key={product._id} className="hover:bg-gray-50/50 transition-colors">
+                  <tr key={product._id} className="hover:bg-gray-50/50 dark:hover:bg-zinc-800/30 transition-colors">
                     <td className="p-4">
                       {product.images?.length > 0 ? (
-                        <img src={getImageUrl(product)} alt={product.name} className="w-10 h-12 object-cover border border-gray-100 rounded-sm bg-white" />
+                        <img src={getImageUrl(product)} alt={product.name} className="w-10 h-12 object-cover border border-gray-100 dark:border-zinc-700 rounded-sm bg-white dark:bg-zinc-800" />
                       ) : (
-                        <div className="w-10 h-12 bg-gray-100 flex items-center justify-center rounded-sm text-gray-400">
+                        <div className="w-10 h-12 bg-gray-100 dark:bg-zinc-800 flex items-center justify-center rounded-sm text-gray-400 dark:text-zinc-500">
                           <ImageIcon size={16} />
                         </div>
                       )}
                     </td>
                     <td className="p-4">
-                      <p className="font-heading text-sm text-brand-dark line-clamp-1">{product.name}</p>
-                      <p className="text-[10px] uppercase tracking-widest text-gray-400 mt-1">{product.brand}</p>
+                      <p className="font-heading text-sm text-brand-dark dark:text-twc-white line-clamp-1">{product.name}</p>
+                      <p className="text-[10px] uppercase tracking-widest text-gray-400 dark:text-zinc-500 mt-1">{product.brand}</p>
                     </td>
                     <td className="p-4">
-                      <div className="font-medium text-brand-dark">₹{product.price}</div>
-                      {product.discount > 0 && <div className="text-[10px] text-green-600 mt-1">{product.discount}% OFF</div>}
+                      <div className="font-medium text-brand-dark dark:text-twc-white">₹{product.price}</div>
+                      {product.discount > 0 && <div className="text-[10px] text-green-600 dark:text-green-400 mt-1">{product.discount}% OFF</div>}
                     </td>
-                    <td className="p-4 text-gray-600">{product.category?.name || 'Uncategorized'}</td>
+                    <td className="p-4 text-gray-600 dark:text-zinc-400">{product.category?.name || 'Uncategorized'}</td>
                     <td className="p-4">
                       <span className={`px-2 py-1 rounded-sm text-[10px] uppercase font-button tracking-widest ${
-                        product.countInStock > 10 ? 'bg-green-100 text-green-700' :
-                        product.countInStock > 0 ? 'bg-yellow-100 text-yellow-700' :
-                        'bg-red-100 text-red-700'
+                        product.countInStock > 10 ? 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400' :
+                        product.countInStock > 0 ? 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400' :
+                        'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400'
                       }`}>
                         {product.countInStock} IN STOCK
                       </span>
@@ -154,7 +159,7 @@ const AdminProductsPage = () => {
                       <div className="flex justify-end space-x-2">
                         <Link 
                           to={`/admin/products/${product._id}/edit`}
-                          className="p-2 text-gray-400 hover:text-brand-primary hover:bg-brand-primary/10 rounded-sm transition-colors"
+                          className="p-2 text-gray-400 dark:text-zinc-500 hover:text-brand-primary dark:hover:text-brand-primary hover:bg-brand-primary/10 dark:hover:bg-brand-primary/20 rounded-sm transition-colors"
                           title="Edit"
                         >
                           <Edit2 size={16} />
@@ -162,7 +167,7 @@ const AdminProductsPage = () => {
                         <button 
                           onClick={() => handleDelete(product._id)}
                           disabled={deleteMutation.isPending}
-                          className="p-2 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded-sm transition-colors disabled:opacity-50"
+                          className="p-2 text-gray-400 dark:text-zinc-500 hover:text-red-600 dark:hover:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/20 rounded-sm transition-colors disabled:opacity-50"
                           title="Delete"
                         >
                           <Trash2 size={16} />
@@ -178,7 +183,7 @@ const AdminProductsPage = () => {
         
         {/* Pagination */}
         {data?.pages > 1 && (
-          <div className="p-4 border-t border-gray-100 flex items-center justify-center space-x-2 bg-gray-50/30">
+          <div className="p-4 border-t border-gray-100 dark:border-zinc-800/50 flex items-center justify-center space-x-2 bg-gray-50/30 dark:bg-zinc-900/30">
             {[...Array(data.pages).keys()].map((x) => (
               <button
                 key={x + 1}
@@ -186,7 +191,7 @@ const AdminProductsPage = () => {
                 className={`w-8 h-8 flex items-center justify-center rounded-sm text-xs font-button transition-colors ${
                   page === x + 1 
                     ? 'bg-brand-primary text-white' 
-                    : 'bg-white border border-gray-200 text-gray-600 hover:border-brand-primary hover:text-brand-primary'
+                    : 'bg-white dark:bg-zinc-800 border border-gray-200 dark:border-zinc-700 text-gray-600 dark:text-zinc-400 hover:border-brand-primary hover:text-brand-primary dark:hover:text-brand-primary'
                 }`}
               >
                 {x + 1}

@@ -29,15 +29,12 @@ const CheckoutPage = () => {
   const [step, setStep] = useState(1);
   const [selectedAddressId, setSelectedAddressId] = useState<string | null>(null);
   const [isAddingNew, setIsAddingNew] = useState(false);
+  const [newAddressData, setNewAddressData] = useState<AddressFormValues | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
+  const [paymentMethod, setPaymentMethod] = useState('Razorpay');
   const { user } = useAuthStore();
   const { cartItems, clearCart } = useCartStore();
   const navigate = useNavigate();
-
-  const subtotal = cartItems.reduce((acc, item) => acc + item.price * item.qty, 0);
-  const isFreeShipping = subtotal > 500;
-  const shippingCost = isFreeShipping ? 0 : 50;
-  const total = subtotal + shippingCost;
 
   const { data: profile, isLoading } = useQuery({
     queryKey: ['userProfile'],
@@ -47,6 +44,49 @@ const CheckoutPage = () => {
     },
     enabled: !!user,
   });
+
+  const { data: myOrders } = useQuery({
+    queryKey: ['myOrders'],
+    queryFn: async () => {
+      const { data } = await api.get('/orders/mine');
+      return data;
+    },
+    enabled: !!user,
+  });
+
+  const getSelectedAddress = () => {
+    if (newAddressData) {
+      return newAddressData;
+    }
+    return profile?.addresses?.find((a: any) => a._id === selectedAddressId);
+  };
+
+  const selectedAddr = getSelectedAddress();
+  const stateStr = selectedAddr?.state?.toLowerCase() || '';
+
+  // Ensure myOrders is loaded before assuming it's the first order, 
+  // but default to false if not logged in to be safe
+  const isFirstOrder = myOrders ? myOrders.length === 0 : false;
+  
+  let shippingCost = 100; // Default to moderate
+  
+  if (isFirstOrder) {
+    shippingCost = 0;
+  } else if (stateStr) {
+    const nearStates = ['gujarat', 'maharashtra', 'rajasthan', 'madhya pradesh'];
+    const farStates = ['jammu', 'kashmir', 'assam', 'meghalaya', 'nagaland', 'manipur', 'mizoram', 'tripura', 'arunachal', 'sikkim', 'kerala', 'tamil nadu'];
+    
+    if (nearStates.some(s => stateStr.includes(s))) {
+      shippingCost = 50;
+    } else if (farStates.some(s => stateStr.includes(s))) {
+      shippingCost = 150;
+    }
+  }
+
+  const subtotal = cartItems.reduce((acc, item) => acc + item.price * item.qty, 0);
+  const total = subtotal + shippingCost;
+
+
 
   useEffect(() => {
     if (profile?.addresses?.length > 0 && !selectedAddressId) {
@@ -59,7 +99,8 @@ const CheckoutPage = () => {
     resolver: zodResolver(addressSchema),
   });
 
-  const onSubmitNewAddress = async () => {
+  const onSubmitNewAddress = async (data: AddressFormValues) => {
+    setNewAddressData(data);
     setStep(2);
   };
 
@@ -68,9 +109,7 @@ const CheckoutPage = () => {
     setStep(2);
   };
 
-  const getSelectedAddress = () => {
-    return profile?.addresses?.find((a: any) => a._id === selectedAddressId);
-  };
+
 
   const loadRazorpayScript = () => {
     return new Promise((resolve) => {
@@ -89,6 +128,31 @@ const CheckoutPage = () => {
   const handlePayment = async () => {
     try {
       setIsProcessing(true);
+      
+      if (paymentMethod === 'COD') {
+        const orderPayload = {
+          orderItems: cartItems.map((item) => ({
+            name: item.name,
+            qty: item.qty,
+            image: item.image,
+            price: item.price,
+            product: item._id,
+          })),
+          shippingAddress: getSelectedAddress(),
+          paymentMethod: 'COD',
+          itemsPrice: subtotal,
+          shippingPrice: shippingCost,
+          totalPrice: total,
+          isPaid: false, // COD is unpaid until delivery
+        };
+
+        const { data: finalOrder } = await api.post('/orders', orderPayload);
+        clearCart();
+        navigate(`/order/${finalOrder._id}`);
+        return;
+      }
+
+      // Razorpay Flow
       const res = await loadRazorpayScript();
 
       if (!res) {
@@ -163,9 +227,9 @@ const CheckoutPage = () => {
 
       const paymentObject = new window.Razorpay(options);
       paymentObject.open();
-    } catch (error) {
+    } catch (error: any) {
       console.error(error);
-      alert('Something went wrong during payment initialization.');
+      alert(error.response?.data?.message || 'Something went wrong during order initialization.');
     } finally {
       setIsProcessing(false);
     }
@@ -299,7 +363,7 @@ const CheckoutPage = () => {
                           {profile?.addresses?.length > 0 && (
                             <button 
                               type="button" 
-                              onClick={() => setIsAddingNew(false)}
+                              onClick={() => { setIsAddingNew(false); setNewAddressData(null); }}
                               className="text-xs font-body uppercase tracking-[0.2em] text-brand-muted hover:text-brand-dark transition-colors"
                             >
                               Cancel
@@ -335,16 +399,16 @@ const CheckoutPage = () => {
 
                {step === 2 && (
                  <div>
-                    <div className="p-6 border border-brand-dark bg-brand-light mb-6">
+                    <div className={`p-6 border ${paymentMethod === 'Razorpay' ? 'border-brand-dark bg-brand-light' : 'border-gray-200'} mb-4 transition-colors`}>
                       <label className="flex items-center cursor-pointer">
-                        <input type="radio" name="payment" defaultChecked className="mr-4 accent-brand-dark w-4 h-4" />
+                        <input type="radio" name="payment" checked={paymentMethod === 'Razorpay'} onChange={() => setPaymentMethod('Razorpay')} className="mr-4 accent-brand-dark w-4 h-4" />
                         <span className="font-body font-medium text-brand-dark uppercase tracking-widest text-xs">Pay via Razorpay (Cards, UPI, NetBanking)</span>
                       </label>
                     </div>
-                    <div className="p-6 border border-gray-200 mb-8 opacity-60">
+                    <div className={`p-6 border ${paymentMethod === 'COD' ? 'border-brand-dark bg-brand-light' : 'border-gray-200'} mb-8 transition-colors`}>
                       <label className="flex items-center cursor-pointer">
-                        <input type="radio" name="payment" disabled className="mr-4 w-4 h-4" />
-                        <span className="font-body font-medium text-gray-500 uppercase tracking-widest text-xs">Cash on Delivery (Unavailable)</span>
+                        <input type="radio" name="payment" checked={paymentMethod === 'COD'} onChange={() => setPaymentMethod('COD')} className="mr-4 accent-brand-dark w-4 h-4" />
+                        <span className="font-body font-medium text-brand-dark uppercase tracking-widest text-xs">Cash on Delivery</span>
                       </label>
                     </div>
 
@@ -390,9 +454,13 @@ const CheckoutPage = () => {
                 </div>
                 <div className="flex justify-between">
                   <span className="uppercase tracking-widest text-xs">Shipping</span>
-                  <span className={isFreeShipping ? "text-brand-accent uppercase tracking-widest text-[10px]" : "text-brand-dark"}>
-                    {isFreeShipping ? 'Complimentary' : `₹${shippingCost.toLocaleString()}`}
-                  </span>
+                  <div className="text-right">
+                    <span className={shippingCost === 0 ? "text-brand-accent uppercase tracking-widest text-[10px]" : "text-brand-dark"}>
+                      {shippingCost === 0 ? 'Complimentary' : `₹${shippingCost.toLocaleString()}`}
+                    </span>
+                    {shippingCost === 0 && <p className="text-[9px] text-brand-muted mt-1 uppercase tracking-widest">First Order Free!</p>}
+                    {shippingCost > 0 && <p className="text-[9px] text-brand-muted mt-1 uppercase tracking-widest">Area-based Charge</p>}
+                  </div>
                 </div>
               </div>
               

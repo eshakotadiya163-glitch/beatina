@@ -1,5 +1,6 @@
 import Order from '../models/Order.js';
 import Product from '../models/Product.js';
+import Notification from '../models/Notification.js';
 
 // @desc    Create new order
 // @route   POST /api/orders
@@ -23,19 +24,27 @@ const addOrderItems = async (req, res, next) => {
       const order = new Order({
         orderItems: orderItems.map((x) => ({
           ...x,
-          product: x._id,
+          product: x.product || x._id,
           _id: undefined,
         })),
         user: req.user._id,
         shippingAddress,
         paymentMethod,
-        itemsPrice,
-        taxPrice,
-        shippingPrice,
-        totalPrice,
+        itemsPrice: itemsPrice || 0.0,
+        taxPrice: taxPrice || 0.0,
+        shippingPrice: shippingPrice || 0.0,
+        totalPrice: totalPrice || 0.0,
       });
 
       const createdOrder = await order.save();
+      
+      // Trigger New Order Notification
+      await Notification.create({
+        type: 'order',
+        title: `New order #${createdOrder._id.toString().substring(createdOrder._id.toString().length - 6).toUpperCase()} received`,
+        message: `Order placed for ₹${createdOrder.totalPrice.toFixed(2)}`,
+        relatedId: createdOrder._id
+      });
 
       res.status(201).json(createdOrder);
     }
@@ -99,6 +108,15 @@ const updateOrderToPaid = async (req, res, next) => {
         if (product) {
           product.countInStock -= item.qty;
           await product.save();
+          
+          if (product.countInStock <= 5) {
+             await Notification.create({
+                type: 'stock',
+                title: `Stock alert: ${product.name}`,
+                message: `Only ${product.countInStock} items left in stock.`,
+                relatedId: product._id
+             });
+          }
         }
       }
 

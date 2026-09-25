@@ -89,7 +89,7 @@ const Footer = () => {
           <div className="lg:col-span-3">
             <h4 className="font-serif text-lg text-[#111111] font-medium mb-6">About us</h4>
             <div className="font-sans text-[15px] text-[#444444] leading-relaxed">
-              <p>The Woman Company is an exclusive brand that makes beauty product.</p>
+              <p>Women's India Personal Care Pvt. Ltd.<br />First Floor, Local Shopping Complex, 7, Panchsheel Marg, Panchsheel Park North, Panchsheel Park, New Delhi, Delhi 110017</p>
             </div>
           </div>
 

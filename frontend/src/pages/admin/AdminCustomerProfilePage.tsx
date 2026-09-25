@@ -44,6 +44,18 @@ const AdminCustomerProfilePage = () => {
 
   const { customer, purchases, appointments, payments } = data;
 
+  const orderPayments = purchases.map((order: any) => {
+    return {
+      _id: `order-pay-${order._id}`,
+      paymentDate: order.paidAt || order.createdAt,
+      method: order.paymentMethod || 'Cash On Delivery',
+      status: order.isPaid ? 'Completed' : 'Pending',
+      amount: order.totalPrice
+    };
+  });
+  
+  const allPayments = [...payments, ...orderPayments].sort((a, b) => new Date(b.paymentDate).getTime() - new Date(a.paymentDate).getTime());
+
   return (
     <div className="space-y-6">
       <div className="flex items-center gap-4">
@@ -115,7 +127,7 @@ const AdminCustomerProfilePage = () => {
                 }`}
               >
                 <CreditCard size={16} />
-                Payments ({payments.length})
+                Payments ({allPayments.length})
               </button>
             </nav>
           </div>
@@ -186,10 +198,10 @@ const AdminCustomerProfilePage = () => {
                     </TableRow>
                   </TableHeader>
                   <TableBody>
-                    {payments.length === 0 ? (
+                    {allPayments.length === 0 ? (
                       <TableRow><TableCell colSpan={4} className="text-center py-4">No payments yet.</TableCell></TableRow>
                     ) : (
-                      payments.map((pay: any) => (
+                      allPayments.map((pay: any) => (
                         <TableRow key={pay._id}>
                           <TableCell>{new Date(pay.paymentDate).toLocaleDateString()}</TableCell>
                           <TableCell>{pay.method}</TableCell>

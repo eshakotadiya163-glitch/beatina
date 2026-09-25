@@ -97,7 +97,7 @@ const ProductDetailsPage = () => {
 
   const addToWishlistMutation = useMutation({
     mutationFn: async (productId: string) => {
-      await api.post('/wishlist', { productId });
+      await api.post(`/wishlist/${productId}`);
     },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['wishlist'] });
@@ -215,21 +215,6 @@ const ProductDetailsPage = () => {
           <Link to="/shop" className="hover:text-brand-dark transition-colors">Shop</Link>
           <span>/</span>
           <span className="text-brand-dark line-clamp-1">{product.name}</span>
-        </div>
-
-        {/* Breadcrumbs */}
-        <div className="text-[11px] font-body text-gray-500 mb-6 flex items-center gap-2">
-          <Link to="/" className="hover:text-black">Home</Link>
-          <span>/</span>
-          {product.category && (
-            <>
-              <Link to={`/collections/${product.category.slug || product.category}`} className="hover:text-black">
-                {product.category.name || product.category}
-              </Link>
-              <span>/</span>
-            </>
-          )}
-          <span className="text-gray-400">{product.name}</span>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[48px] mb-12">
@@ -408,7 +393,7 @@ const ProductDetailsPage = () => {
             {/* Terms Checkbox */}
             <div className="flex items-center gap-2 mb-4">
               <input type="checkbox" id="terms" className="w-3 h-3 border-gray-300 rounded-sm" />
-              <label htmlFor="terms" className="text-[12px] font-body text-gray-500">
+              <label htmlFor="agree_product" className="font-body text-[14px] text-[#555] cursor-pointer">
                 I agree with the <span className="underline cursor-pointer">terms and conditions</span>
               </label>
             </div>

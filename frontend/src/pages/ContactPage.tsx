@@ -45,9 +45,9 @@ const ContactPage = () => {
             <div>
               <h3 className="font-heading text-xl text-[#111] mb-2 tracking-wide">Address</h3>
               <p className="font-body text-[14px] text-[#666] leading-relaxed">
-                D Washington Square South New York, NY
-                <br />
-                10012, United States
+                Women's India Personal Care Pvt. Ltd.<br />
+                First Floor, Local Shopping Complex, 7, Panchsheel Marg,<br />
+                Panchsheel Park North, Panchsheel Park, New Delhi, Delhi 110017
               </p>
             </div>
           </div>
@@ -173,7 +173,7 @@ const ContactPage = () => {
       {/* Bottom Map with Overlay */}
       <div className="relative w-full h-[600px]">
         <iframe 
-          src="https://maps.google.com/maps?q=CN%20Tower,%20Toronto,%20Canada&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+          src="https://maps.google.com/maps?q=7,%20Panchsheel%20Marg,%20New%20Delhi&t=&z=13&ie=UTF8&iwloc=&output=embed" 
           width="100%" 
           height="100%" 
           style={{ border: 0 }} 
@@ -189,9 +189,9 @@ const ContactPage = () => {
           
           <div className="font-body text-[14px] text-[#666] leading-relaxed mb-8 space-y-4">
             <p>
-              123 Fake St
-              <br />
-              Toronto, Canada
+              Women's India Personal Care Pvt. Ltd.<br />
+              First Floor, Local Shopping Complex, 7, Panchsheel Marg,<br />
+              Panchsheel Park North, Panchsheel Park, New Delhi, Delhi 110017
             </p>
             <p>
               Mon - Fri, 10am - 9pm
@@ -203,7 +203,7 @@ const ContactPage = () => {
           </div>
 
           <a 
-            href="https://maps.google.com/?q=123+Fake+St,+Toronto,+Canada" 
+            href="https://maps.google.com/?q=7+Panchsheel+Marg,+New+Delhi" 
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 bg-[#111] text-white px-8 py-4 font-sans text-[12px] uppercase tracking-[0.2em] font-semibold hover:bg-black/80 transition-colors w-full"

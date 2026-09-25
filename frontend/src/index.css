@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:is(.dark *));
 
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600&family=Figtree:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
 
@@ -12,6 +13,15 @@
   --color-brand-border: #E8E0D8;       /* Borders */
   --color-brand-btn: #111111;          /* Button background */
   --color-brand-btn-hover: #ffb6c1;    /* Button hover */
+
+  /* === TWC Premium Admin Dashboard Colors === */
+  --color-twc-white: #FFFFFF;
+  --color-twc-beige: #F8F5F2;
+  --color-twc-nude: #E8DCCF;
+  --color-twc-gold: #C8A96A;
+  --color-twc-sage: #DCE8D5;
+  --color-twc-text: #2A241E;
+  --color-twc-muted: #8A8177;
 
   /* === EXACT The Woman Company Fonts === */
   --font-serif: 'Fraunces', serif; 
@@ -141,4 +151,38 @@
 }
 .hero-swiper .hero-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #ffffff;
+}
+
+/* ===== Print Styles (Invoice) ===== */
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+  nav, header, footer, aside, .no-print, [role="navigation"] {
+    display: none !important;
+  }
+  .pt-\[116px\] {
+    padding-top: 0 !important;
+  }
+  .bg-gray-50 {
+    background-color: white !important;
+  }
+  main {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .container {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  /* Specifically hide Back to orders link and Invoice button */
+  a[href="/orders"], button:has(.lucide-download) {
+    display: none !important;
+  }
+  .shadow-sm {
+    box-shadow: none !important;
+    border: 1px solid #eee !important;
+  }
 }

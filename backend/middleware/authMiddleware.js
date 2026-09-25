@@ -52,7 +52,7 @@ const vendor = (req, res, next) => {
 // Role-based middleware
 const requireRole = (...roles) => {
   return (req, res, next) => {
-    if (req.user && (roles.includes(req.user.role) || req.user.role === 'superadmin')) {
+    if (req.user && (roles.includes(req.user.role) || req.user.role === 'superadmin' || req.user.isAdmin)) {
       next();
     } else {
       res.status(403);

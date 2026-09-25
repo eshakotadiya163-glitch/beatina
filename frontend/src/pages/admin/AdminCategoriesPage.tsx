@@ -65,10 +65,11 @@ const AdminCategoriesPage = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const slug = name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
     if (isEditing) {
-      updateMutation.mutate({ name, description });
+      updateMutation.mutate({ name, slug, description });
     } else {
-      createMutation.mutate({ name, description });
+      createMutation.mutate({ name, slug, description });
     }
   };
 
@@ -94,44 +95,39 @@ const AdminCategoriesPage = () => {
 
   return (
     <div className="space-y-6 pb-14">
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
-        <div>
-          <h1 className="text-2xl font-heading text-brand-dark">Categories</h1>
-          <p className="text-sm text-gray-500 font-body mt-1">Organize your products into collections.</p>
-        </div>
-      </div>
+
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         
         {/* Form */}
         <div className="lg:col-span-1">
-          <div className="bg-white p-6 rounded-sm shadow-sm border border-gray-100 sticky top-24">
-            <h2 className="text-lg font-heading text-brand-dark mb-6">{isEditing ? 'Edit Category' : 'Add New Category'}</h2>
+          <div className="bg-white dark:bg-zinc-900/50 p-6 rounded-sm shadow-sm border border-gray-100 dark:border-zinc-800/50 sticky top-24 backdrop-blur-md">
+            <h2 className="text-lg font-serif font-bold text-twc-text dark:text-twc-white mb-6">{isEditing ? 'Edit Category' : 'Add New Category'}</h2>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label className="block text-xs uppercase tracking-widest text-gray-500 mb-2 font-medium">Name *</label>
+                <label className="block text-xs uppercase tracking-widest text-gray-500 dark:text-zinc-400 mb-2 font-medium">Name *</label>
                 <input 
                   type="text" 
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="input-luxury"
+                  className="input-luxury dark:bg-zinc-800 dark:border-zinc-700 dark:text-white"
                   required 
                 />
               </div>
               <div>
-                <label className="block text-xs uppercase tracking-widest text-gray-500 mb-2 font-medium">Description</label>
+                <label className="block text-xs uppercase tracking-widest text-gray-500 dark:text-zinc-400 mb-2 font-medium">Description</label>
                 <textarea 
                   value={description}
                   onChange={(e) => setDescription(e.target.value)}
                   rows={4}
-                  className="input-luxury resize-none"
+                  className="input-luxury resize-none dark:bg-zinc-800 dark:border-zinc-700 dark:text-white"
                 ></textarea>
               </div>
               <div className="pt-4 flex space-x-3">
                 <button 
                   type="submit" 
                   disabled={createMutation.isPending || updateMutation.isPending}
-                  className="flex-1 bg-brand-primary text-white py-3 text-sm font-button uppercase tracking-widest rounded-sm hover:bg-brand-dark transition-colors disabled:opacity-50 flex items-center justify-center space-x-2"
+                  className="flex-1 bg-twc-text dark:bg-twc-white text-white dark:text-twc-text py-3 text-[11px] font-bold uppercase tracking-widest rounded-xl hover:bg-twc-gold dark:hover:bg-twc-gold hover:text-white transition-all shadow-md disabled:opacity-50 flex items-center justify-center space-x-2"
                 >
                   {(createMutation.isPending || updateMutation.isPending) ? <Loader2 size={16} className="animate-spin" /> : isEditing ? <Edit2 size={16} /> : <Plus size={16} />}
                   <span>{isEditing ? 'Update' : 'Add'} Category</span>
@@ -140,7 +136,7 @@ const AdminCategoriesPage = () => {
                   <button 
                     type="button" 
                     onClick={resetForm}
-                    className="px-4 py-3 border border-gray-200 text-gray-600 rounded-sm text-sm font-button uppercase tracking-widest hover:bg-gray-50 transition-colors"
+                    className="px-4 py-3 border border-gray-200 dark:border-zinc-700 text-gray-600 dark:text-zinc-400 rounded-sm text-sm font-button uppercase tracking-widest hover:bg-gray-50 dark:hover:bg-zinc-800 transition-colors"
                   >
                     Cancel
                   </button>
@@ -152,10 +148,10 @@ const AdminCategoriesPage = () => {
 
         {/* List */}
         <div className="lg:col-span-2">
-          <div className="bg-white rounded-sm shadow-sm border border-gray-100 overflow-hidden">
+          <div className="bg-white dark:bg-zinc-900/50 rounded-sm shadow-sm border border-gray-100 dark:border-zinc-800/50 overflow-hidden backdrop-blur-md">
             <div className="overflow-x-auto">
               <table className="w-full text-left font-body text-sm">
-                <thead className="bg-gray-50 text-gray-500 uppercase text-[10px] tracking-wider border-b border-gray-200">
+                <thead className="bg-gray-50 dark:bg-zinc-800/50 text-gray-500 dark:text-zinc-400 uppercase text-[10px] tracking-wider border-b border-gray-200 dark:border-zinc-800/50">
                   <tr>
                     <th className="p-4 font-medium">Name</th>
                     <th className="p-4 font-medium">Slug</th>
@@ -163,11 +159,11 @@ const AdminCategoriesPage = () => {
                     <th className="p-4 font-medium text-right">Actions</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-gray-100">
+                <tbody className="divide-y divide-gray-100 dark:divide-zinc-800/50">
                   {isLoading ? (
                     <tr>
                       <td colSpan={4} className="p-12 text-center">
-                        <Loader2 className="w-8 h-8 animate-spin text-brand-primary mx-auto" />
+                        <Loader2 className="w-8 h-8 animate-spin text-twc-gold mx-auto" />
                       </td>
                     </tr>
                   ) : categories?.length === 0 ? (
@@ -178,15 +174,15 @@ const AdminCategoriesPage = () => {
                     </tr>
                   ) : (
                     categories?.map((category: any) => (
-                      <tr key={category._id} className="hover:bg-gray-50/50 transition-colors">
-                        <td className="p-4 font-medium text-brand-dark">{category.name}</td>
-                        <td className="p-4 text-gray-500">{category.slug}</td>
-                        <td className="p-4 text-gray-500">--</td>
+                      <tr key={category._id} className="hover:bg-gray-50/50 dark:hover:bg-zinc-800/30 transition-colors">
+                        <td className="p-4 font-bold text-twc-text dark:text-twc-white">{category.name}</td>
+                        <td className="p-4 text-gray-500 dark:text-zinc-400">{category.slug}</td>
+                        <td className="p-4 text-gray-500 dark:text-zinc-400">--</td>
                         <td className="p-4 text-right">
                           <div className="flex justify-end space-x-2">
                             <button 
                               onClick={() => handleEdit(category)}
-                              className="p-2 text-gray-400 hover:text-brand-primary hover:bg-brand-primary/10 rounded-sm transition-colors"
+                              className="p-2 text-gray-400 dark:text-zinc-500 hover:text-twc-gold dark:hover:text-twc-gold hover:bg-twc-gold/10 dark:hover:bg-twc-gold/20 rounded-xl transition-colors"
                               title="Edit"
                             >
                               <Edit2 size={16} />
@@ -194,7 +190,7 @@ const AdminCategoriesPage = () => {
                             <button 
                               onClick={() => handleDelete(category._id)}
                               disabled={deleteMutation.isPending}
-                              className="p-2 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded-sm transition-colors disabled:opacity-50"
+                              className="p-2 text-gray-400 dark:text-zinc-500 hover:text-red-600 dark:hover:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/20 rounded-sm transition-colors disabled:opacity-50"
                               title="Delete"
                             >
                               <Trash2 size={16} />
