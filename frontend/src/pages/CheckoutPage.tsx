@@ -34,6 +34,8 @@ const CheckoutPage = () => {
   const [paymentMethod, setPaymentMethod] = useState('Razorpay');
   const { user } = useAuthStore();
   const { cartItems, clearCart } = useCartStore();
+  const [showSuccessPopup, setShowSuccessPopup] = useState(false);
+  const [placedOrderId, setPlacedOrderId] = useState<string | null>(null);
   const navigate = useNavigate();
 
   const { data: profile, isLoading } = useQuery({
@@ -148,7 +150,8 @@ const CheckoutPage = () => {
 
         const { data: finalOrder } = await api.post('/orders', orderPayload);
         clearCart();
-        navigate(`/order/${finalOrder._id}`);
+        setPlacedOrderId(finalOrder._id);
+        setShowSuccessPopup(true);
         return;
       }
 
@@ -210,7 +213,8 @@ const CheckoutPage = () => {
 
             const { data: finalOrder } = await api.post('/orders', orderPayload);
             clearCart();
-            navigate(`/order/${finalOrder._id}`);
+            setPlacedOrderId(finalOrder._id);
+            setShowSuccessPopup(true);
           } catch (error) {
             console.error('Verification/Order Creation failed:', error);
             alert('Payment verification failed');
@@ -250,7 +254,27 @@ const CheckoutPage = () => {
   }
 
   return (
-    <div className="pt-[116px] pb-14 bg-brand-light min-h-screen">
+    <>
+      {showSuccessPopup && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
+          <div className="bg-white p-8 max-w-sm w-full mx-auto text-center border border-brand-border">
+            <div className="w-16 h-16 bg-[#DCE8D5] text-[#3f3f46] flex items-center justify-center rounded-full mx-auto mb-6">
+              <Check size={32} />
+            </div>
+            <h2 className="text-2xl font-heading text-brand-dark mb-4">Order Placed!</h2>
+            <p className="text-sm font-body text-brand-muted mb-8 uppercase tracking-widest leading-relaxed">
+              Your order has been placed successfully. Thank you for shopping with us.
+            </p>
+            <button 
+              onClick={() => navigate(`/order/${placedOrderId}`)}
+              className="w-full bg-[#111111] text-white py-[15px] font-body uppercase tracking-[1px] text-[11px] hover:bg-[#ffb6c1] transition-colors"
+            >
+              View Order Details
+            </button>
+          </div>
+        </div>
+      )}
+      <div className="pt-[116px] pb-14 bg-brand-light min-h-screen">
       <div className="container mx-auto px-4 md:px-8 max-w-6xl py-8">
         
         <div className="text-center border-b border-brand-border pb-6 mb-12">
@@ -473,7 +497,8 @@ const CheckoutPage = () => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 
