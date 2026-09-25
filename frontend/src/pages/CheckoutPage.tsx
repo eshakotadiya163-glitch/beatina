@@ -239,7 +239,7 @@ const CheckoutPage = () => {
     }
   };
 
-  if (cartItems.length === 0) {
+  if (cartItems.length === 0 && !showSuccessPopup) {
     return (
       <div className="pt-[116px] pb-14 bg-brand-light min-h-[85vh] flex items-center justify-center">
         <div className="text-center p-8 bg-white border border-brand-border">
