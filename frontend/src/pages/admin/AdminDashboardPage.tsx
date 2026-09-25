@@ -40,7 +40,7 @@ const AdminDashboardPage = () => {
   }
 
   const { 
-    totalRevenue, totalOrders, totalCustomers, productsSold, 
+    totalRevenue, totalOrders, totalCustomers, 
     salesData, topSellingProducts, recentOrders, customersOverview,
     inventory 
   } = data;

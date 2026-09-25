@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { 
   ImageIcon, Layout, Plus, Search, Calendar, Edit3, Eye, Copy, Monitor, 
-  Smartphone, UploadCloud, Sparkles, TrendingUp, MousePointerClick, 
-  IndianRupee, Activity, CheckCircle, Clock
+  Smartphone, UploadCloud, Sparkles, MousePointerClick, 
+  IndianRupee, CheckCircle, Clock
 } from 'lucide-react';
 import { 
   AreaChart, Area, BarChart, Bar, LineChart, Line,

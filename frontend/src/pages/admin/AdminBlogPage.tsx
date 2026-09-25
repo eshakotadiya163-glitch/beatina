@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { 
   FileText, Edit3, Image as ImageIcon, Eye, Clock, MessageSquare, 
-  ThumbsUp, Share2, Sparkles, Plus, Search, Calendar, CheckCircle, 
-  MoreHorizontal, Type, LayoutTemplate, Trash2, ArrowUpRight, 
-  BarChart2, Globe
+  Sparkles, Plus, Search, Calendar, CheckCircle, 
+  Trash2, 
+  Globe
 } from 'lucide-react';
 import { 
   AreaChart, Area, PieChart, Pie, Cell,

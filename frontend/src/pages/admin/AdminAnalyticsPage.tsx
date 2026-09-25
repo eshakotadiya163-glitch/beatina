@@ -1,16 +1,15 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { 
   Download, Calendar, TrendingUp, IndianRupee, ShoppingCart, 
-  Users, Package, Activity, RefreshCw, Sparkles, AlertCircle, 
-  ChevronDown, Search, ArrowUpRight, BarChart3, CreditCard, PieChart as PieChartIcon
+  Users, Package, Activity, RefreshCw, Sparkles, 
+  ChevronDown, ArrowUpRight, CreditCard
 } from 'lucide-react';
 import { 
   AreaChart, Area, LineChart, Line, BarChart, Bar, PieChart, Pie, Cell, 
-  XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend
+  XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer
 } from 'recharts';
 import api from '../../api/axios';
-import { Input } from '../../components/ui/input';
 import { toast } from 'sonner';
 
 // MOCK DATA FOR ADVANCED ANALYTICS
@@ -64,7 +63,7 @@ const AdminAnalyticsPage = () => {
   };
 
   // Fetch actual data from backend
-  const { data: dashboardData, isLoading } = useQuery({
+  const { data: dashboardData } = useQuery({
     queryKey: ['adminAnalyticsDashboard', dateRange],
     queryFn: async () => {
       const days = getDays(dateRange);
@@ -73,10 +72,10 @@ const AdminAnalyticsPage = () => {
     }
   });
 
-  const { data: ordersData } = useQuery({
+  const { } = useQuery({
     queryKey: ['adminAnalyticsOrders', dateRange],
     queryFn: async () => {
-      const days = getDays(dateRange);
+      // const days = getDays(dateRange);
       // Wait, let's just use orders list if needed. Assuming /orders has some backend logic for dates if we want. But for now just use regular
       const response = await api.get('/orders');
       return response.data;

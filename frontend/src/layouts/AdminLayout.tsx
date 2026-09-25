@@ -1,14 +1,13 @@
 import { Outlet, Link, useLocation, useNavigate } from 'react-router-dom';
 import { 
-  LayoutDashboard, Users, Wrench, FileText, 
-  CreditCard, MessageCircle, BarChart3, Settings, LogOut, ShieldAlert,
-  Search, Bell, Menu, Package, Grid, ShoppingBag, MessageSquare, Tag,
-  Image as ImageIcon, Edit3, UserCheck, Sliders, Sun, Moon,
-  TrendingUp, ClipboardList, ArrowLeft
+  LayoutDashboard, Users, 
+  Settings, LogOut, ShieldAlert,
+  Search, Bell, Menu, Package, Grid, ShoppingBag, 
+  Sun, Moon,
+  ArrowLeft
 } from 'lucide-react';
 import useAuthStore from '../store/authStore';
 import { useState } from 'react';
-import { toast } from 'sonner';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import api from '../api/axios';
 
