@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { 
   Search, Filter, Download, Plus, AlertCircle, TrendingUp, 
-  Package, Boxes, DollarSign, IndianRupee, ArrowUpRight, Activity, MapPin, 
-  History, Clock, CheckCircle2, AlertTriangle, ArrowRight, Upload
+  Package, Boxes, DollarSign, IndianRupee, ArrowUpRight, 
+  History, Clock, CheckCircle2, AlertTriangle, Upload
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { 

@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { 
   Mail, Users, MousePointerClick, UserMinus, Sparkles, Send, 
   Clock, LayoutTemplate, Image as ImageIcon, Type, ArrowUpRight,
-  TrendingUp, Download, Upload, Plus, Search, Calendar, Edit3
+  TrendingUp, Download, Plus, Search
 } from 'lucide-react';
 import { 
   AreaChart, Area, BarChart, Bar, 

@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { 
-  Megaphone, Mail, BellRing, Tag, Plus, TrendingUp, IndianRupee, 
-  Users, Target, Sparkles, Image as ImageIcon, Calendar, ChevronRight,
-  Activity, ArrowUpRight, BarChart3, Filter, Search
+  Megaphone, Mail, BellRing, Tag, Plus, IndianRupee, 
+  Target, Sparkles, Image as ImageIcon, 
+  ArrowUpRight, Search
 } from 'lucide-react';
 import { 
   AreaChart, Area, PieChart, Pie, Cell, 

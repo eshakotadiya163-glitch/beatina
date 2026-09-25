@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { 
   Settings, User, Briefcase, CreditCard, Truck, Mail, MessageCircle, 
   Bell, Globe, Shield, Layout, Share2, FileText, Package, Sparkles, 
-  Database, Image as ImageIcon, Save, Check, Search, Download
+  Database, Image as ImageIcon, Save, Search, Download
 } from 'lucide-react';
 import { Input } from '../../components/ui/input';
 import { toast } from 'react-hot-toast';
